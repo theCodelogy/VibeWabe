@@ -1,7 +1,9 @@
+import Navbar from "@/components/shared/navbar/Navbar";
+
 export default function VideoLayout({ children }) {
     return (
-      <div>
-        <h1>Video Header</h1>
+      <div className="bg-[#060606]">
+        <Navbar/>
             {children}
         <h1>Video Footre</h1>
       </div>
