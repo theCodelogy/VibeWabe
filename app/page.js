@@ -1,3 +1,4 @@
+import LandPageFooter from "@/components/shared/footer/landFooter";
 import Navbar from "@/components/shared/navbar/Navbar";
 
 
@@ -7,6 +8,8 @@ const HomePage = () => {
 
       <Navbar />
       <h1>Home page</h1>
+      <LandPageFooter/>
+      
     </div>
   );
 };
