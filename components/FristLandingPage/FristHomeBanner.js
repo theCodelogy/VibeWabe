@@ -1,11 +1,13 @@
 import Link from "next/link";
+import banner from '@/assets/banner.jpg'
+import Image from "next/image";
 
 const FristHomeBanner = () => {
     return (
         <div>
             <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
                 <div className="absolute inset-0">
-                    <img src="https://i.ibb.co/rFMNVWf/BD-en-20240108-popsignuptwoweeks-perspective-alpha-website-medium.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
+                    <Image src={banner} alt="banner" className="object-cover object-center w-full h-full"/>
                     <div className="absolute inset-0 bg-black opacity-50"></div>
                 </div>
 
@@ -13,7 +15,7 @@ const FristHomeBanner = () => {
                     <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
                         <div className="text-center">
                             <p
-                                className=" mx-auto mb-4 text-4xl font-bold  text-white text-2xl lg:text-6xl lg:leading-tight">
+                                className=" mx-auto mb-4 md:text-4xl font-bold  text-white text-2xl lg:text-6xl lg:leading-tight">
                                 Welcome to VibeWave Website
                             </p>
                             <h1 className="max-w-2xl mx-auto px-6 lg:text-xl text-white font-inter text-xs">
