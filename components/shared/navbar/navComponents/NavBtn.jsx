@@ -11,7 +11,7 @@ const NavBtn = () => {
         Login
       </Link>
       <Link
-        href={"/signUp"}
+        href={"/signup"}
         className="transition-all hover:scale-95 ease-in-out duration-200 shadow-md border-2 border-red-500 font-semibold py-2 px-8 text-white rounded-xl flex items-center justify-center"
       >
         Sign Up
