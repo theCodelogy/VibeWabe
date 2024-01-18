@@ -1,3 +1,5 @@
+
+import FirstTrendingMovies from "@/components/FristLandingPage/FirstTrandingMovies";
 import FristHomeBanner from "@/components/FristLandingPage/FristHomeBanner";
 import FristLandingFeature from "@/components/FristLandingPage/FristLandingFeature";
 import LandPageFooter from "@/components/shared/footer/landFooter";
@@ -11,6 +13,7 @@ const HomePage = () => {
       <Navbar />
       <FristHomeBanner/>
       <FristLandingFeature/>
+      <FirstTrendingMovies/>
       <LandPageFooter/>
      
       

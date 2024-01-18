@@ -20,6 +20,7 @@ const FristLandingFeature = () => {
                 Dolby Vision and HDR10+ support,
               </p>
               <div className="flex justify-center">
+                
                 <button className="ml-4 inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                   See details
                 </button>
