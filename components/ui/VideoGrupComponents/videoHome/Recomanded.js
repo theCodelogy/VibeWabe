@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import React from 'react';
 import recomanded1 from '@/assets/recomanded-1.jpg'
+import Carousol from '@/components/shared/Carousol';
 
 const Recomanded = () => {
     return (
@@ -9,7 +10,7 @@ const Recomanded = () => {
 
             <div>
                 <div>
-                    
+                    <Carousol/>
                 </div>
             </div>
         </div>
