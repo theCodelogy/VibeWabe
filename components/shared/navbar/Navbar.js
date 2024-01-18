@@ -25,7 +25,6 @@ const Navbar = () => {
 
         {/* large screen navigation */}
         <ul className="hidden md:flex gap-4 font-semibold text-lg lg:flex-1 xl:justify-center">
-          {/* <NavigationLinks />*/}
           <NavLinks />
         </ul>
 
