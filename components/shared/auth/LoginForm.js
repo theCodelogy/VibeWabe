@@ -56,7 +56,7 @@ const LoginForm = () => {
                     <FcGoogle className="text-3xl cursor-pointer mx-auto"></FcGoogle>
                 </div>
                 <div className="text-center font-medium text-slate-900 -mt-2">
-                    <p>Don't have any account ? Please <Link className="text-red-500" href='/signup'>Sign Up</Link></p>
+                    <p>Do not have any account ? Please <Link className="text-red-500" href='/signup'>Sign Up</Link></p>
                 </div>
             </form>
         </div>
