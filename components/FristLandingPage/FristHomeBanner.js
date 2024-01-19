@@ -1,9 +1,11 @@
+import Image from "next/image";
+import BannerIage from '@/assets/BD-en-20240108-popsignuptwoweeks-perspective_alpha_website_medium.jpg'
 const FristHomeBanner = () => {
     return (
         <div>
         <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-screen text-white overflow-hidden">
 <div className="absolute inset-0">
- <img src="https://i.ibb.co/rFMNVWf/BD-en-20240108-popsignuptwoweeks-perspective-alpha-website-medium.jpg" alt="Background Image" className="object-cover object-center w-full h-full" />
+<Image src={BannerIage} className="object-cover object-center w-full h-full" />
  <div className="absolute inset-0 bg-black opacity-50"></div>
 </div>
 

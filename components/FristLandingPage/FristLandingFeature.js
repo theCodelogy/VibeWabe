@@ -1,5 +1,8 @@
-import React from 'react';
 
+import React from 'react';
+import imageOne from '@/assets/Screenshot 2024-01-17 113244 1.png'
+import imageTwo from '@/assets/watch-movies-online-in-australia-ctv 1.png'
+import Image from 'next/image';
 const FristLandingFeature = () => {
     return (
         <div className="my-5 bg-black">
@@ -29,20 +32,12 @@ const FristLandingFeature = () => {
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
                 <div className="w-full h-64 lg:w-1/2 lg:h-auto">
-                  <img
-                    className="h-full w-full object-cover"
-                    src="https://i.ibb.co/qjK3BLK/watch-movies-online-in-australia-ctv-1.png"
-                    alt="Winding mountain road"
-                  />
+                 <Image src={imageOne}  className="h-full w-full object-cover"/>
                 </div>
   
                 <div className="absolute md:top-0 mt-32 md:mt-50 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-8 xl:ml-24">
                   <div className="flex flex-col p-12 md:px-16">
-                    <img
-                      className="h-full w-full object-cover"
-                      src="https://i.ibb.co/wKRtdkn/Screenshot-2024-01-17-113244-1.png"
-                      alt="Winding mountain road"
-                    />
+                   <Image src={imageTwo} className="h-full w-full object-cover"/>
                   </div>
                 </div>
               </div>

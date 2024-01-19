@@ -4,6 +4,7 @@ import LandPageFooter from "@/components/shared/footer/landFooter";
 import Navbar from "@/components/shared/navbar/Navbar";
 
 
+
 const HomePage = () => {
   return (
     <div className="bg-black">
