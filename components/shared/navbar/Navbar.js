@@ -11,7 +11,7 @@ const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
 
   return (
-    <header className="px-[0.375rem] xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 z-10">
+    <header className="px-[0.375rem] z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
       <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-gray-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
         {/* logo */}
         <div className="lg:flex-1 h-full justify-center">
@@ -25,7 +25,6 @@ const Navbar = () => {
 
         {/* large screen navigation */}
         <ul className="hidden md:flex gap-4 font-semibold text-lg lg:flex-1 xl:justify-center">
-          {/* <NavigationLinks />*/}
           <NavLinks />
         </ul>
 

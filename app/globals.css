@@ -2,3 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    background-color: #151921;
+}
+
+.slick-slide>div{
+    margin: 0 10px;
+}

@@ -1,3 +1,7 @@
+import Image from 'next/image';
+import React from 'react';
+import war1 from '@/assets/war1.png'
+import war2 from '@/assets/war2.png'
 
 import React from 'react';
 import imageOne from '@/assets/Screenshot 2024-01-17 113244 1.png'
@@ -23,6 +27,7 @@ const FristLandingFeature = () => {
                 Dolby Vision and HDR10+ support,
               </p>
               <div className="flex justify-center">
+                
                 <button className="ml-4 inline-flex text-white bg-red-600 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">
                   See details
                 </button>
@@ -32,12 +37,12 @@ const FristLandingFeature = () => {
             <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
               <div className="relative flex flex-col items-center mx-auto lg:flex-row-reverse lg:max-w-5xl lg:mt-12 xl:max-w-6xl">
                 <div className="w-full h-64 lg:w-1/2 lg:h-auto">
-                 <Image src={imageOne}  className="h-full w-full object-cover"/>
+                  <Image src={war2} alt='image' className="h-full w-full object-cover"/>
                 </div>
   
                 <div className="absolute md:top-0 mt-32 md:mt-50 lg:w-3/5 lg:left-0 lg:mt-20 lg:ml-20 xl:mt-8 xl:ml-24">
                   <div className="flex flex-col p-12 md:px-16">
-                   <Image src={imageTwo} className="h-full w-full object-cover"/>
+                  <Image src={war1} alt='image' className="h-full w-full object-cover"/>
                   </div>
                 </div>
               </div>
