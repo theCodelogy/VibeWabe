@@ -1,26 +1,50 @@
 "use client"
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form"
 import { FcGoogle } from "react-icons/fc";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
 import Link from 'next/link';
+import { authContext } from '@/utils/AuthProvider';
+import toast from "react-hot-toast";
+import { useRouter } from 'next/navigation'
 
 
 const LoginForm = () => {
+    const router = useRouter();
+    const {signIn,signIngWithGoogle}= useContext(authContext)
+    const [err,setErr]=useState(false)
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
+        reset
     } = useForm()
 
     const [passwordShow, setPasswordShow] = useState(false)
 
-    console.log(errors)
+// Login with email and password
     const handle = (data) => {
-        console.log(data)
+        signIn(data.email,data.password)
+        .then(res=>{
+            toast.success('Successfully Login!')
+            setErr(false)
+            router.push('/video'); 
+            reset()
+        })
+        .catch(err=>{
+            setErr(true)
+        })
+    }
 
+    // Login with google
+    const googleSignUpHandle=()=>{
+        signIngWithGoogle()
+        .then(()=>{
+            toast.success('Successfully Login!')
+            router.push('/video')
+        })
+        .catch()
     }
     return (
         <div>
@@ -49,14 +73,15 @@ const LoginForm = () => {
                     </span>
                     <p className="text-red-700">{errors.password?.message}</p>
                 </div>
+                <p className='text-red-500 font-medium '>{err&&'Please provide valid email and password.'}</p>
                 <div className=" mt-6">
                     <button type="submit" className="bg-[#6D28D9 bg-red-600 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
                 </div>
-                <div className="text-center border-t border-slate-600 my-4 pt-3">
+                <div onClick={googleSignUpHandle}  className="text-center border-t border-slate-600 my-4 pt-3">
                     <FcGoogle className="text-3xl cursor-pointer mx-auto"></FcGoogle>
                 </div>
                 <div className="text-center font-medium text-slate-900 -mt-2">
-                    <p>Don't have any account ? Please <Link className="text-red-500" href='/signup'>Sign Up</Link></p>
+                    <p>Do not have any account ? Please <Link className="text-red-500" href='/signup'>Sign Up</Link></p>
                 </div>
             </form>
         </div>
