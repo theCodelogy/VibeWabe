@@ -1,26 +1,43 @@
 "use client"
-import React from 'react';
+import React, { useContext } from 'react';
 import { useForm } from "react-hook-form"
 import { FcGoogle } from "react-icons/fc";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
 import { useState } from "react";
 import Link from 'next/link';
+import { authContext } from '@/utils/AuthProvider';
+import toast from "react-hot-toast";
 
 
 const SignUpForm = () => {
+    const {createUseWithEmail,signIngWithGoogle}= useContext(authContext)
     const {
         register,
         handleSubmit,
-        watch,
         formState: { errors },
+        reset
     } = useForm()
 
     const [passwordShow, setPasswordShow] = useState(false)
 
-    console.log(errors)
+    // Signup with email and password
     const handle = (data) => {
-        console.log(data)
+        createUseWithEmail(data.email,data.password)
+        .then(res=>{
+            toast.success('Successfully Signup!')
+            reset()
+        })
+        .catch()
 
+    }
+
+    // signup with google
+    const gogleLoginHandle=()=>{
+        signIngWithGoogle()
+        .then((res)=>{
+            toast.success('Successfully Signup!')
+        })
+        .catch()
     }
     return (
         <div>
@@ -58,7 +75,7 @@ const SignUpForm = () => {
                 <div className=" mt-6">
                     <button type="submit" className="bg-[#6D28D9 bg-red-600 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
                 </div>
-                <div className="text-center border-t border-slate-600 my-4 pt-3">
+                <div onClick={gogleLoginHandle} className="text-center border-t border-slate-600 my-4 pt-3">
                     <FcGoogle className="text-3xl cursor-pointer mx-auto"></FcGoogle>
                 </div>
                 <div className="text-center font-medium text-slate-900 -mt-2">
