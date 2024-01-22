@@ -1,4 +1,3 @@
-
 import FirstTrendingMovies from "@/components/FristLandingPage/FirstTrandingMovies";
 import FristHomeBanner from "@/components/FristLandingPage/FristHomeBanner";
 import FristLandingAudio from "@/components/FristLandingPage/FristLandingAudio";
@@ -6,6 +5,7 @@ import FristLandingFeature from "@/components/FristLandingPage/FristLandingFeatu
 import Faq from "@/components/FristLandingPage/QuetionAns/Faq";
 import LandPageFooter from "@/components/shared/footer/landFooter";
 import Navbar from "@/components/shared/navbar/Navbar";
+import FirstMusicTypes from "./../components/FristLandingPage/FirstMusicTypes";
 
 
 
@@ -13,10 +13,11 @@ const HomePage = () => {
   return (
     <div className="bg-black">
       <Navbar />
-      <FristHomeBanner/>
-      <FristLandingFeature/>
+      <FristHomeBanner />
+      <FirstMusicTypes />
+      <FristLandingFeature />
       <FristLandingAudio/>
-      <FirstTrendingMovies/>
+      <FirstTrendingMovies />
       <Faq />
       <LandPageFooter />
     </div>
