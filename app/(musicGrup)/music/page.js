@@ -1,9 +1,18 @@
+import Card from '@/components/MusicPage/Card';
+import TrendingMusic from '@/components/MusicPage/TrendingMusic';
 import React from 'react';
 
 const Musec = () => {
     return (
         <div>
-            This is Music Page
+            <div>
+            <Card></Card>
+            </div>
+            <div>
+            <TrendingMusic></TrendingMusic>
+            </div>
+      
+         
         </div>
     );
 };
