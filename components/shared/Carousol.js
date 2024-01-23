@@ -2,10 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import Slider from "react-slick";
-import slide1 from '@/assets/recomanded-1.jpg'
-import slide2 from '@/assets/recomanded-2.jpg'
-import slide3 from '@/assets/recomanded-3.jpg'
-import slide4 from '@/assets/recomanded-4.jpg'
+import slide1 from '@/assets/Recomended-movie/d3e6plk-14712041-47d4-43f7-9806-8aa132e62941.jpg'
+import slide2 from '@/assets/Recomended-movie/s-l1200.webp'
+import slide3 from '@/assets/Recomended-movie/the-black-demon.jpg'
+import slide4 from '@/assets/Recomended-movie/65.jpg'
+import slide5 from '@/assets/Recomended-movie/the-tank.jpeg'
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -59,20 +60,77 @@ const Carousol = () => {
         <div>
             <div>
                 <Slider {...settings}>
-                    <div className='transition-all hover:scale-105 duration-300'>
-                        <Image className='w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl' src={slide1} alt='slice image'/>
-                    </div>
+{/* slide One */}
+                <div>
+        <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+          <Image src={slide1} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+        </a>
 
-                    <div className='transition-all hover:scale-105  duration-300'>
-                        <Image className='w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl' src={slide2} alt='slice image'/>
-                    </div><div className='transition-all hover:scale-105  duration-300'>
-                        <Image className='w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl' src={slide3} alt='slice image'/>
-                    </div><div className='transition-all hover:scale-105  duration-300 '>
-                        <Image className='w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl' src={slide4} alt='slice image'/>
-                    </div><div className='transition-all hover:scale-105  duration-300'>
-                        <Image className='w-[350px] md:w-[300px] h-[350px] md:h-full rounded-xl' src={slide3} alt='slice image'/>
-                    </div>
+        <div className="flex flex-col">
+          <span className="text-gray-200">JHON WICK</span>
+          <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+        </div>
+      </div>
+
+{/* end slide one */}
+
+
+{/* slide two */}
+<div>
+        <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+          <Image src={slide2} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+        </a>
+
+        <div className="flex flex-col">
+          <span className="text-gray-200">JHON WICK</span>
+          <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+        </div>
+      </div>
+    {/* end slide two */}
+                    {/* slide three */}
+                    <div>
+        <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+          <Image src={slide3} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+        </a>
+
+        <div className="flex flex-col">
+          <span className="text-gray-200">JHON WICK</span>
+          <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+        </div>
+      </div>
+
+                    {/* end slide three */}
                     
+                    {/* slide four */}
+                    <div>
+        <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+          <Image src={slide4} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+        </a>
+
+        <div className="flex flex-col">
+          <span className="text-gray-200">JHON WICK</span>
+          <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+        </div>
+      </div>
+                    {/* end slide four */}
+                    
+                    {/* slide five */}
+                    <div>
+        <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
+          <Image src={slide5} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
+          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+        </a>
+
+        <div className="flex flex-col">
+          <span className="text-gray-200">JHON WICK</span>
+          <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+        </div>
+      </div>
+                    {/* end slide five */}
                 </Slider>
             </div>
         </div>

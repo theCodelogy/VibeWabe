@@ -197,6 +197,7 @@ const MainBanner = () => {
 
   </Carousel>
 </div>
+
         </>
     )
 }

@@ -35,8 +35,8 @@ const FirstMusicTypes = () => {
             {hoveredIndex === index && (
               <div className="absolute top-0 left-0 w-full h-full bg-black opacity-30 rounded-lg" />
             )}
-            {hoveredIndex === index && (
-              clickOnPlay ? (
+            {hoveredIndex === index &&
+              (clickOnPlay ? (
                 <FaPauseCircle
                   onClick={() => setClickOnPlay(!clickOnPlay)}
                   className="text-5xl text-gray-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
@@ -46,8 +46,7 @@ const FirstMusicTypes = () => {
                   onClick={() => setClickOnPlay(!clickOnPlay)}
                   className="text-5xl text-gray-100 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer"
                 />
-              )
-            )}
+              ))}
             <Image
               src={imgSrc}
               alt={`banner-${index}`}
