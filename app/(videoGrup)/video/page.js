@@ -9,6 +9,7 @@ const Video = () => {
             <MainBanner/>
             <Upcomming/>
             <Recomanded/>
+            
         </div>
     );
 };
