@@ -38,6 +38,9 @@ const NavBtn = () => {
                 <li>
                   <p>{user?.email}</p>
                 </li>
+                <li>
+                  <Link href={"/myStuff"}>My Stuff</Link>
+                </li>
               </ul>
             )}
           </div>
