@@ -12,7 +12,7 @@ const FristLandingAudio = () => {
    <div className="flex items-center py-5 md:w-1/2 md:pb-20 md:pt-10 md:pl-10">
         <div className="relative rounded md:p-8">
           <div className="rounded-lg bg-white text-black w-full">
-          <Image src={war1} />
+          <Image src={war1} alt='music'/>
           </div>
         </div>
       </div>
