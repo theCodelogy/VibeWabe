@@ -5,7 +5,6 @@ const navigationLinks = [
   { href: "/video", label: "Vidoe" },
   { href: "/music", label: "Music" },
   { href: "/category", label: "Category" },
-  { href: "/myStuff", label: "My Stuff" },
 ];
 
 const NavLinks = () => {
