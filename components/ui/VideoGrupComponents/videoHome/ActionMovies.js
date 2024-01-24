@@ -22,7 +22,7 @@ import Link from "next/link";
 const ActionMovies = () => {
   return (
     <div className="text-white container  mx-auto px-5  ">
-       <div className="relative group">
+      <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
             Actions{" "}
@@ -57,19 +57,22 @@ const ActionMovies = () => {
         }}
       >
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
-              src={theCreator}
-              alt="the Creator Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">
-            The Creator
-          </h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
+                src={theCreator}
+                alt="the Creator Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              The Creator
+            </h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
@@ -78,9 +81,11 @@ const ActionMovies = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">Animal</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
@@ -91,9 +96,11 @@ const ActionMovies = () => {
           <h5 className="text-center mt-1 text-lg font-semibold">
             The Hunger Games
           </h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
@@ -102,9 +109,11 @@ const ActionMovies = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">Salaar</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  rounded-xl transform transition-transform duration-300 group-hover:scale-110 "
@@ -113,6 +122,7 @@ const ActionMovies = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">The Killer</h5>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </div>

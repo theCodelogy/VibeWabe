@@ -4,7 +4,9 @@ import Link from "next/link";
 const navigationLinks = [
   { href: "/video", label: "Vidoe" },
   { href: "/music", label: "Music" },
-  { href: "/category", label: "Category" },
+  { href: "/video/movies", label: "Movies" },
+  { href: "/video/series", label: "Series" },
+  { href: "/video/drama", label: "Drama" },
 ];
 
 const NavLinks = () => {

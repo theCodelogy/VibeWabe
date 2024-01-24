@@ -57,60 +57,74 @@ const NewReleses = () => {
         }}
       >
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={imaginary}
-              alt="Imaginary Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Imaginary</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={imaginary}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              Imaginary
+            </h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={theNew}
-              alt="The New look Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">
-            The New look
-          </h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={theNew}
+                alt="The New look Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              The New look
+            </h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={code8}
-              alt="Code8 Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Code8</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={code8}
+                alt="Code8 Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">Code8</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={dunki}
-              alt="Dunki Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Dunki</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={dunki}
+                alt="Dunki Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">Dunki</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-          <div className="relative group overflow-hidden">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={fullSpeed}
-              alt="Full Speed Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Full Speed</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={fullSpeed}
+                alt="Full Speed Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              Full Speed
+            </h5>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </div>
