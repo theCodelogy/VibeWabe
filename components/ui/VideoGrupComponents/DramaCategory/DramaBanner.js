@@ -3,11 +3,11 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
-import imageOne from '@/assets/Series-Image/wp7640384.webp'
-import imageTwo from '@/assets/Series-Image/635895019246814711-panda2.webp'
-import imageThree from '@/assets/Series-Image/avatar-3_xgXR5ks.webp'
+import imageOne from '@/assets/Drama-Image/1661426207632_1920x1080_16x9Images.jpg'
+import imageTwo from '@/assets/Drama-Image/744234df-ea9f-44f3-86ae-127f620fdf7d.webp'
+import imageThree from '@/assets/Drama-Image/1628771715601_unoloukikposter3840x10804thepcopy_32x9Images.jpg'
 import imageFour from '@/assets/BannerImage/gruesome-banner-john-wick-2.jpg'
-const SeriesBanner = () => {
+const DramaBanner = () => {
     return (
         <div>
                 <div className="relative">
@@ -30,7 +30,7 @@ const SeriesBanner = () => {
               alt=''
              />
           <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-tl from-black via-transparent to-black p-8  opacity-100 transition-opacity duration-300">
-
+{/* 
 <section>
 <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
     
@@ -46,7 +46,7 @@ const SeriesBanner = () => {
         </div>
 
 </div>
-</section>
+</section> */}
 
 
 </div>
@@ -69,7 +69,7 @@ const SeriesBanner = () => {
 
             <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-tl from-black via-transparent to-black p-8  opacity-100 transition-opacity duration-300">
 
-            <section>
+            {/* <section>
 <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
     
 <div class="w-full md:w-1/2 lg:pr-32">
@@ -84,7 +84,7 @@ const SeriesBanner = () => {
         </div>
 
 </div>
-</section>
+</section> */}
 
 
             </div>
@@ -108,7 +108,7 @@ const SeriesBanner = () => {
             />
             <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-tl from-black via-transparent to-black p-8  opacity-100 transition-opacity duration-300">
 
-     
+{/*      
             <section>
 <div className="relative items-center w-full px-5 py-12 mx-auto md:px-12 lg:px-16 max-w-7xl lg:py-24">
     
@@ -124,7 +124,7 @@ const SeriesBanner = () => {
         </div>
 
 </div>
-</section>
+</section> */}
 
 
             </div>
@@ -185,4 +185,4 @@ const SeriesBanner = () => {
     );
 };
 
-export default SeriesBanner;
+export default DramaBanner;
