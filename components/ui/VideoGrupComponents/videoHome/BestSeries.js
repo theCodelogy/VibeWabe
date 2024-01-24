@@ -59,6 +59,7 @@ const BestSeries = () => {
         }}
       >
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -67,9 +68,11 @@ const BestSeries = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">Call</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -80,9 +83,11 @@ const BestSeries = () => {
           <h5 className="text-center mt-1 text-lg font-semibold">
             The Gray Man
           </h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -91,9 +96,11 @@ const BestSeries = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">The Guilty</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -102,9 +109,11 @@ const BestSeries = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">Pandora</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -113,9 +122,11 @@ const BestSeries = () => {
             />
           </div>
           <h5 className="text-center mt-1 text-lg font-semibold">Extinction</h5>
+          </Link>
         </SwiperSlide>
 
         <SwiperSlide>
+        <Link href={"/video/id"}>
           <div className="relative group overflow-hidden ">
             <Image
               className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
@@ -126,6 +137,7 @@ const BestSeries = () => {
           <h5 className="text-center mt-1 text-lg font-semibold">
             Night Is Lonely
           </h5>
+          </Link>
         </SwiperSlide>
       </Swiper>
     </div>
