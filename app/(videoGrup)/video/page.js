@@ -8,7 +8,8 @@ import NewReleses from "@/components/ui/VideoGrupComponents/videoHome/NewReleses
 import Recomanded from "@/components/ui/VideoGrupComponents/videoHome/Recomanded";
 import ThrillersMovies from "@/components/ui/VideoGrupComponents/videoHome/ThrillersMovies";
 import Upcomming from "@/components/ui/VideoGrupComponents/videoHome/Upcomming";
-import React from "react";
+import { authContext } from "@/utils/AuthProvider";
+import React, { useContext } from "react";
 
 const Video = () => {
   return (
@@ -24,7 +25,6 @@ const Video = () => {
         <ThrillersMovies />
         <HorrorMovies />
       </div>
-      <Footer />
     </>
   );
 };
