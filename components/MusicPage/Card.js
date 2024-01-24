@@ -6,6 +6,7 @@ import card1 from '@/assets/music/card1.jpg'
 import card2 from '@/assets/music/card2.jpg'
 import card3 from '@/assets/music/card3.jpg'
 import card4 from '@/assets/music/card4.jpg'
+import Link from 'next/link';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -60,11 +61,12 @@ const Card = () => {
         <div className='my-14 container mx-auto px-10'>
         
             <Slider {...settings}>
-                <div className='transition-all hover:scale-105 duration-300 border w-[350px] h-[300px]'>
-                    <Image className='w-full md:w-full h-[350px] md:h-full' src={card1} alt='slice image'/>
-                    <h3 className='text-xl py-2 text-white'>Tere vaste-Trending song</h3>
-                </div>
-
+                <Link href={"/music/id"}>
+                  <div className='transition-all hover:scale-105 duration-300 border w-[350px] h-[300px]'>
+                      <Image className='w-full md:w-full h-[350px] md:h-full' src={card1} alt='slice image'/>
+                      <h3 className='text-xl py-2 text-white'>Tere vaste-Trending song</h3>
+                  </div>
+                </Link>
                 <div className='transition-all hover:scale-105  duration-300 border w-[350px] h-[300px]'>
                     <Image className='w-full md:w-full h-[350px] md:h-full' src={card2} alt='slice image'/>
                     <h3 className='text-xl py-2 text-white'>Tere vaste-Trending song</h3>
