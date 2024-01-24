@@ -23,6 +23,7 @@ const Video = () => {
         <BestSeries />
         <ThrillersMovies />
         <HorrorMovies />
+        
       </div>
       <Footer />
     </>

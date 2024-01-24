@@ -103,7 +103,7 @@ const DramaBanner = () => {
           <div className="h-[600px]">
             <Image
               className="bg-cover w-full h-full"
-              src={imageFour}
+              src={imageThree}
               alt=''
             />
             <div className="absolute inset-0 flex flex-col items-start justify-end bg-gradient-to-tl from-black via-transparent to-black p-8  opacity-100 transition-opacity duration-300">

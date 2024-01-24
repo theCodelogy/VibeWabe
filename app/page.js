@@ -20,6 +20,7 @@ const HomePage = () => {
       <FirstTrendingMovies />
       <Faq />
       <LandPageFooter />
+     
     </div>
   );
 };
