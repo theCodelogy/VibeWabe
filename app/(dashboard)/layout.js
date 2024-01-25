@@ -4,7 +4,8 @@ export default function DashboardLayout({ children }) {
   return (
     <div className="drawer lg:drawer-open">
       <input id="my-drawer-2" type="checkbox" className="drawer-toggle" />
-      <div className="drawer-content flex flex-col items-center justify-center">
+      {/* <div className="drawer-content flex flex-col items-center justify-center"> */}
+      <div className="drawer-content p-10">
         {/* Page content here */}
         {children}
         <label
@@ -23,16 +24,22 @@ export default function DashboardLayout({ children }) {
         <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
           {/* Sidebar content here */}
           <li>
-            <Link className="text-2xl font-bold flex justify-center" href={"/video"}>
+            <Link
+              className="text-2xl font-bold flex justify-center"
+              href={"/video"}
+            >
               VibeWabe
             </Link>
           </li>
           <div className="divider"></div>
           <li>
-            <Link href={"#"}>Watch list</Link>
+            <Link href={"/dashboard/alreadyWatched"}>Profile</Link>
           </li>
           <li>
-            <Link href={"#"}>Alredy Watched</Link>
+            <Link href={"/dashboard/videoUpload"}>Video Upload</Link>
+          </li>
+          <li>
+            <Link href={"/dashboard/musicUpload"}>Music Upload</Link>
           </li>
         </ul>
       </div>
