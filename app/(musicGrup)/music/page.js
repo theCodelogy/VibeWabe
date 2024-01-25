@@ -1,4 +1,5 @@
 import Card from '@/components/MusicPage/Card';
+import HotArtists from '@/components/MusicPage/HotArtists';
 import TrendingMusic from '@/components/MusicPage/TrendingMusic';
 import Card2 from '@/components/ui/MusicPage/Card2';
 import MusicBanner from '@/components/ui/MusicPage/MusicBanner';
@@ -18,6 +19,8 @@ const Musec = () => {
          {/* music card */}
              <Card></Card>
             <TrendingMusic></TrendingMusic>
+            {/* music hot artists */}
+            <HotArtists></HotArtists>
           {/* music slider 2*/}
              <MusicSlider2></MusicSlider2>
          {/* music card 2*/}
