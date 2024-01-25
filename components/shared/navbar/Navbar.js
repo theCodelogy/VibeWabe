@@ -4,7 +4,7 @@ import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavLinks from "./navComponents/NavLinks";
 import NavBtn from "./navComponents/NavBtn";
 import Link from "next/link";
-import { authContext } from "@/utils/AuthProvider";
+
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
