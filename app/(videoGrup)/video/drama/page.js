@@ -3,7 +3,7 @@ import DramaTrandingCard from '@/components/ui/VideoGrupComponents/DramaCategory
 import DramaUpcomingCard from '@/components/ui/VideoGrupComponents/DramaCategory/DramaUpcomingCard';
 import Filter from '@/components/ui/VideoGrupComponents/DramaCategory/Filter';
 import React from 'react';
-
+import Footer from "@/components/shared/footer/footer";
 const page = () => {
     return (
         <div>
@@ -11,6 +11,7 @@ const page = () => {
             <Filter/>
             <DramaTrandingCard/>
             <DramaUpcomingCard/>
+            <Footer/>
         </div>
     );
 };

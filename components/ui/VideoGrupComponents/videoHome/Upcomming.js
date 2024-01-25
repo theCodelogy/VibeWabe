@@ -15,8 +15,8 @@ const Upcomming = () => {
                     <h1 className='text-2xl my-3 font-bold '>Title: Aladdin 2019 Movie</h1>
                     <p className='text-lg font-normal leading-7'>Details:  movie typefaces with the glitter and glamour of Hollywood movie typefaces with the glitter and glamour of Hollywood movie typefaces with the glitter</p>
                     <div className='flex gap-6 mt-6'>
-                        <button className='py-3 px-5 font-bold bg-[#f60404]'>Watch Now</button>
-                        <button className='py-3 px-5 font-bold text-[#f60404] bg-white'>Add to list</button>
+                        <button className='py-3 px-5 font-bold bg-gradient-to-r from-red-600 to-zinc-500'>Watch Now</button>
+                        <button className='py-3 px-5 font-bold bg-gradient-to-r from-red-600 to-zinc-500 bg-white'>Add to list</button>
                     </div>
                 </div>
             </div>

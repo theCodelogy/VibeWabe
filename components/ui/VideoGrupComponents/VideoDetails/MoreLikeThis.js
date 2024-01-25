@@ -1,32 +1,105 @@
+// components/MoreLikeThis.js
+
+import Image from 'next/image';
+import imageOne from '@/assets/Thrillers-movies/Pandora.jpeg'; 
+import theNew from "@/assets/New-Releases/theNewLook.jpg";
+import fullSpeed from "@/assets/New-Releases/fullSpeed.jpg";
+import code8 from "@/assets/New-Releases/code8.jpg";
+import dunki from "@/assets/New-Releases/Dunki_poster.jpg";
+import imaginary from "@/assets/New-Releases/imaginary.jpg";
+import Link from 'next/link';
 
 const MoreLikeThis = () => {
-    return (
-        <div className="pt-5">
-           <h3 className="text-2xl font-semibold">More Like This</h3> 
-           <div className="grid grid-cols-5 gap-3 mt-12">
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">1</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">2</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">3</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">4</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">5</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">6</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">7</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">8</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">9</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">10</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">11</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">12</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">13</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">14</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">15</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">16</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">17</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">18</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">19</div>
-            <div className="w-[250px] h-[200px] border-red-400 flex justify-center items-center rounded-lg border">20</div>
-           </div>
-        </div>
-    );
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200px] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={code8}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200pxpx] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={theNew}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200px] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={fullSpeed}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200px] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={code8}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200px] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={dunki}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+     <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden">
+              <Image
+                className="w-[200px] md:w-[300px] h-[150px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={imageOne}
+                alt="Imaginary Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-xs  md:text-[15px] font-semibold">
+              Imaginary
+            </h5>
+          </Link>
+     
+    
+
+
+
+     
+
+
+    </div>
+  );
 };
 
 export default MoreLikeThis;

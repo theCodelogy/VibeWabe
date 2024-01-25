@@ -3,7 +3,7 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
-import imageOne from '@/assets/Drama-Image/1661426207632_1920x1080_16x9Images.jpg'
+import imageOne from '@/assets/Drama-Image/1668682072420_1920x1080_16x9Images.jpg'
 import imageTwo from '@/assets/Drama-Image/744234df-ea9f-44f3-86ae-127f620fdf7d.webp'
 import imageThree from '@/assets/Drama-Image/1628771715601_unoloukikposter3840x10804thepcopy_32x9Images.jpg'
 import imageFour from '@/assets/BannerImage/gruesome-banner-john-wick-2.jpg'

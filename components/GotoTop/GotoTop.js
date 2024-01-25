@@ -38,7 +38,7 @@ const BackToTopButton = () => {
       title="Go To Top"
       className={`${
         isVisible
-          ? 'fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md bg-red-600  hover:bg-red-700  text-white text-lg font-semibold transition-colors duration-300'
+          ? 'fixed z-50 bottom-10 right-10 p-4 border-0 w-14 h-14 rounded-full shadow-md  bg-gradient-to-r from-red-600 to-zinc-500  hover:bg-red-700  text-white text-lg font-semibold transition-colors duration-300'
           : 'hidden'
       }`}
     >

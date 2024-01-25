@@ -4,7 +4,7 @@ import SeriesBanner from '@/components/ui/VideoGrupComponents/webSeries/SeriesBa
 import SeriesCard from '@/components/ui/VideoGrupComponents/webSeries/SeriesCard'
 import UpComingCard from '@/components/ui/VideoGrupComponents/webSeries/UpComingCard';
 import React from 'react';
-
+import Footer from "@/components/shared/footer/footer";
 const page = () => {
     return (
         <div>
@@ -12,6 +12,7 @@ const page = () => {
         <Filter/>
         <SeriesCard/>
         <UpComingCard/>
+        <Footer/>
    
         </div>
     );
