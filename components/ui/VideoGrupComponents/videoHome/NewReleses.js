@@ -16,7 +16,7 @@ import Image from "next/image";
 import theNew from "@/assets/New-Releases/theNewLook.jpg";
 import fullSpeed from "@/assets/New-Releases/fullSpeed.jpg";
 import code8 from "@/assets/New-Releases/code8.jpg";
-import dunki from "@/assets/New-Releases/Dunki_poster.jpg";
+import dunki from "@/assets/New-Releases/AAAAQWIzP26lfPx5u8_EHyeEi8SLM-0qvyQuTeKgTk8BjkQ-dSzp6F0GGXqlXX2iCQiwZQsUMlxF0S0dCO3IpUtzBrSSUnM2jgW1rarX1GrvrS0ahIZulIq4jf7bzvKVcqrg_93YDII0E1QtRnOD6C6f0LRe.jpg";
 import imaginary from "@/assets/New-Releases/imaginary.jpg";
 import Link from "next/link";
 const NewReleses = () => {

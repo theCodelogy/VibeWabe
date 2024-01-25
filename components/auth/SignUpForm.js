@@ -115,7 +115,7 @@ const SignUpForm = () => {
                     <p className="text-red-700">{errors.password?.message}</p>
                 </div>
                 <div className=" mt-6">
-                    <button type="submit" className="bg-[#6D28D9 bg-red-600 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
+                    <button type="submit" className="bg-[#6D28D9 bg-gradient-to-r from-red-600 to-zinc-500 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
                 </div>
                 <div onClick={gogleLoginHandle} className="text-center border-t border-slate-600 my-4 pt-3">
                     <FcGoogle className="text-3xl cursor-pointer mx-auto"></FcGoogle>

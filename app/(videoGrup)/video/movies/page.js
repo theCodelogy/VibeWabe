@@ -3,7 +3,7 @@ import MovieBanner from '@/components/ui/VideoGrupComponents/movieCategory/movie
 import Filter from '@/components/ui/VideoGrupComponents/movieCategory/Filter';
 import MovieTrandingCard from '@/components/ui/VideoGrupComponents/movieCategory/MovieTrandingCard';
 import MovieUpComingCard from '@/components/ui/VideoGrupComponents/movieCategory/MovieUpComingCard';
-
+import Footer from "@/components/shared/footer/footer";
 const Page = () => {
     return (
         <div>
@@ -11,6 +11,7 @@ const Page = () => {
             <Filter/>
             <MovieTrandingCard/>
             <MovieUpComingCard/>
+            <Footer/>
         </div>
     );
 };

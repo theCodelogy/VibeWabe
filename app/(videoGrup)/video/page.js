@@ -14,9 +14,10 @@ import React, { useContext } from "react";
 const Video = () => {
   return (
     <>
-      <div className="max-w-[1200px]  mx-auto px-6 ">
+      <div>
         <MainBanner />
-        <Upcomming />
+      <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
+      <Upcomming />
         <Recomanded />
         <NewReleses />
         <KidsMovies />
@@ -24,6 +25,7 @@ const Video = () => {
         <BestSeries />
         <ThrillersMovies />
         <HorrorMovies />
+      </div>
         
       </div>
     </>

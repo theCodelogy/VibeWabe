@@ -1,11 +1,14 @@
-import Banner from "./Banner";
+
 import MoreLikeThis from "./MoreLikeThis";
 
 const VideoDetails = () => {
     return (
-        <div className="text-white container  mx-auto px-5 py-12">
-            <Banner/>
-            <MoreLikeThis/>
+        <div>
+           
+            <div className="text-white max-w-screen-xl mx-auto ">
+            <h2 className="text-xl text-white  font-semibold my-4 md:my-10 ">More Like Movie</h2>
+          <MoreLikeThis/>
+      </div>
         </div>
     );
 };

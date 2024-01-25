@@ -3,9 +3,9 @@ import React from 'react';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
-import imageOne from '@/assets/Movies-Image/66396bc9-2b26-400a-95ce-5ae74ffb9b28.webp'
-import imageTwo from '@/assets/Movies-Image/2e8772b1-2ff3-4405-ab99-1fd701ce1815.webp'
-import imageThree from '@/assets/Series-Image/avatar-3_xgXR5ks.webp'
+import imageOne from '@/assets/Movies-Image/Polar-new-banner.jpg'
+import imageTwo from '@/assets/Movies-Image/p21562309_v_h8_aa.jpg'
+import imageThree from '@/assets/Movies-Image/Broad-Peak-banner-1-e1662657343870.jpg'
 import imageFour from '@/assets/BannerImage/gruesome-banner-john-wick-2.jpg'
 const movieBanner = () => {
     return (
@@ -25,7 +25,7 @@ const movieBanner = () => {
         >
           <div className="h-[600px]">
             <Image 
-              className=" bg-cover w-full h-full"
+              className=" bg-cover object-cover object-center w-full h-full"
               src={imageOne}
               alt=''
              />
@@ -62,7 +62,7 @@ const movieBanner = () => {
         >
           <div className="h-[600px]">
             <Image
-              className="bg-cover w-full h-full"
+              className="bg-cover  w-full h-full"
               src={imageTwo}
               alt=''
             />
