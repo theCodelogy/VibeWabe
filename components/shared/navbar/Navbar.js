@@ -1,11 +1,10 @@
 "use client";
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import NavLinks from "./navComponents/NavLinks";
 import NavBtn from "./navComponents/NavBtn";
 import Link from "next/link";
-import Image from "next/image";
-import logo from "@/public/logo.png";
+
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);

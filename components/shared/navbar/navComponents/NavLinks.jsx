@@ -2,9 +2,11 @@
 import Link from "next/link";
 
 const navigationLinks = [
-  { href: "/", label: "Home" },
-  { href: "/category", label: "Category" },
-  { href: "/myStuff", label: "My Stuff" },
+  { href: "/video", label: "Vidoe" },
+  { href: "/music", label: "Music" },
+  { href: "/video/movies", label: "Movies" },
+  { href: "/video/series", label: "Series" },
+  { href: "/video/drama", label: "Drama" },
 ];
 
 const NavLinks = () => {
@@ -12,7 +14,7 @@ const NavLinks = () => {
     <>
       {navigationLinks.map((link, index) => (
         <li
-          className="hover:scale-95 duration-200 ease-in-out transition-all text-white"
+          className="hover:scale-95  duration-200 ease-in-out transition-all text-white"
           key={index}
         >
           <Link href={link.href}>{link.label}</Link>

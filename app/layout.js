@@ -1,6 +1,8 @@
 import { Inter } from "next/font/google";
 import "./globals.css";
-
+import AuthProvider from "@/utils/AuthProvider";
+import { Toaster } from "react-hot-toast";
+import GotoTop from "@/components/GotoTop/GotoTop"
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -15,7 +17,16 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <AuthProvider>
+          {children}
+          <Toaster
+            position="top-right"
+            reverseOrder={false}
+          />
+          <GotoTop/>
+        </AuthProvider>
+      </body>
     </html>
   );
 }
