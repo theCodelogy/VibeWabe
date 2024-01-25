@@ -16,7 +16,7 @@ const LoginForm = () => {
     const [currentUser, setCurrentUser] = useState({})
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/user/${user?.email}`)
+        axios.get(`https://vibe-wabe-server.vercel.app/user/${user?.email}`)
             .then(data => setCurrentUser(data.data))
     }, [user])
 
@@ -59,7 +59,7 @@ const LoginForm = () => {
                     email: res.user.email, role: 'subscriber',
                 }
                 toast.success('Successfully SignUp!')
-                axios.post('http://localhost:5000/user', user)
+                axios.post('https://vibe-wabe-server.vercel.app/user', user)
                     .then()
                     .catch()
                 if (currentUser?.role === 'videoUser' || currentUser?.role === 'videoAndMusicUser' || currentUser?.role === 'freeTrail') {

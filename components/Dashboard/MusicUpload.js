@@ -9,7 +9,7 @@ import axios from "axios";
 
 
 
-const VideoUpload = () => {
+const MusiUpload = () => {
 
     const [selectedCities, setSelectedCities] = useState([]);
     const cities = [
@@ -32,22 +32,22 @@ const VideoUpload = () => {
 
 
     const handle = async (data) => {
-        const video = {
-            title:data.title,
-            url:data.url,
-            category:data.category,
-            tags:tags,
-            thambnail:data.thambnail,
-            description:data.description,
-            rating:data.rating,
-            language:data.language,
-            hero:data.hero,
-            date : new Date().toLocaleDateString('en-US')
+        const music = {
+            title: data.title,
+            url: data.url,
+            category: data.category,
+            tags: tags,
+            thambnail: data.thambnail,
+            description: data.description,
+            rating: data.rating,
+            language: data.language,
+            Singer: data.Singer,
+            date: new Date().toLocaleDateString('en-US')
         }
-
-     const res = await  axios.post('https://vibe-wabe-server.vercel.app/video',video)
-        if(res.data.insertedId){
-            toast.success('Successfully Upload Video!')
+   
+        const res = await axios.post('https://vibe-wabe-server.vercel.app/music', music)
+        if (res.data.insertedId) {
+            toast.success('Successfully Upload Music!')
             setSelectedCities([])
             reset()
         }
@@ -57,22 +57,22 @@ const VideoUpload = () => {
     return (
         <div className='bg-white text-black w-2/3 mx-auto my-8'>
             <form onSubmit={handleSubmit((data) => handle(data))} className=" px-6 pt-4 pb-6 text-sm ">
-                <h1 className="text-4xl text-red-500 pt-3 font-bold text-center mb-4">Upload Video</h1>
+                <h1 className="text-4xl text-red-500 pt-3 font-bold text-center mb-4">Upload Music</h1>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                     <div className="flex flex-col gap-1 mb-2">
                         <label className="text-md font-medium" for='title'>
-                            Video Title<span className='text-red-500'>*</span>
+                            Music Title<span className='text-red-500'>*</span>
                         </label>
-                        <input type="text" id='title' placeholder="Enter Video Title" {...register("title", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded " />
+                        <input type="text" id='title' placeholder="Enter Music Title" {...register("title", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded " />
                         <p className="text-red-700">{errors.title?.message}</p>
                     </div>
 
                     <div className="flex flex-col gap-1 mb-2">
-                        <label className="text-md font-medium" for='videoUrl'>
-                            Video Url<span className='text-red-500'>*</span>
+                        <label className="text-md font-medium" for='MusicUrl'>
+                            Music Url<span className='text-red-500'>*</span>
                         </label>
-                        <input type="url" id='videoUrl' placeholder="Enter Video Url" {...register("url", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
+                        <input type="url" id='MusicUrl' placeholder="Enter Music Url" {...register("url", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
                         <p className="text-red-700">{errors.url?.message}</p>
                     </div>
                 </div>
@@ -84,9 +84,12 @@ const VideoUpload = () => {
                         </label>
                         <select defaultValue='deafult' id="category" {...register("category", { required: "This field is required" })} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white ">
                             <option disabled value='deafult' >Select Category</option>
-                            <option value={'movie'}>Movie</option>
-                            <option value={'series'}>Series</option>
-                            <option value={'drama'}>Drama</option>
+                            <option value={'Classical'}>Classical</option>
+                            <option value={'Remix'}>Remix</option>
+                            <option value={'Sad'}>Sad</option>
+                            <option value={'SaHip-hopd'}>Hip-hop</option>
+                            <option value={'Romantic'}>Romantic</option>
+                            <option value={'webdding'}>webdding</option>
                         </select>
                         <p className="text-red-700">{errors.category?.message}</p>
                     </div>
@@ -109,20 +112,23 @@ const VideoUpload = () => {
                         </label>
                         <select defaultValue='deafult' id="language" {...register("language", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow rounded bg-[#101726] text-white ">
                             <option disabled value='deafult' >Select Language</option>
-                            <option value={'english'}>English</option>
-                            <option value={'bangla'}>Bangla</option>
-                            <option value={'hindi'}>Hindi</option>
+                            <option value={'English'}>English</option>
+                            <option value={'Bangla'}>Bangla</option>
+                            <option value={'Hindi'}>Hindi</option>
+                            <option value={'Arabic'}>Arabic</option>
+                            <option value={'korean'}>korean</option>
+                            <option value={'Spanish'}>Spanish</option>
                         </select>
                         <p className="text-red-700">{errors.language?.message}</p>
                     </div>
 
 
                     <div className="flex flex-col gap-1 mb-2">
-                        <label className="text-md font-medium" for='hero'>
-                            Hero Name<span className='text-red-500'>*</span>
+                        <label className="text-md font-medium" for='Singer'>
+                            Singer Name<span className='text-red-500'>*</span>
                         </label>
-                        <input type="text" id='hero' placeholder="Enter Hero Name" {...register("hero",)} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white " />
-                        <p className="text-red-700">{errors.hero?.message}</p>
+                        <input type="text" id='Singer' placeholder="Enter Singer Name" {...register("Singer",)} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white " />
+                        <p className="text-red-700">{errors.Singer?.message}</p>
                     </div>
                 </div>
 
@@ -139,7 +145,7 @@ const VideoUpload = () => {
 
                     <div className="flex flex-col gap-1 mb-2">
                         <label className="text-md font-medium" for='thambnail'>
-                            Video Thambnail Url<span className='text-red-500'>*</span>
+                            Music Thambnail Url<span className='text-red-500'>*</span>
                         </label>
 
                         <input type="url" id='thambnail' placeholder="Enter Thambnail Url" {...register("thambnail", { required: "This field is required" })} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
@@ -147,7 +153,7 @@ const VideoUpload = () => {
                     </div>
                 </div>
 
-                <textarea {...register("description", { required: "This field is required" })} className=" md:mt-6 drop-shadow-lg w-full p-3 bg-[#101726] text-white rounded flex-1" name="description" placeholder="Enter video Description" id="" rows="7"></textarea>
+                <textarea {...register("description", { required: "This field is required" })} className=" md:mt-6 drop-shadow-lg w-full p-3 bg-[#101726] text-white rounded flex-1" name="description" placeholder="Enter Music Description" id="" rows="7"></textarea>
 
 
                 <div className=" mt-6">
@@ -160,4 +166,4 @@ const VideoUpload = () => {
     );
 };
 
-export default VideoUpload;
+export default MusiUpload;

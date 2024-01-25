@@ -16,7 +16,7 @@ const SignUpForm = () => {
     const { createUseWithEmail, signIngWithGoogle, user } = useContext(authContext)
     const [currentUser, setCurrentUser] = useState({})
     useEffect(() => {
-        axios.get(`http://localhost:5000/user/${user?.email}`)
+        axios.get(`https://vibe-wabe-server.vercel.app/user/${user?.email}`)
             .then(data => setCurrentUser(data.data))
     }, [user])
     const router = useRouter();
@@ -38,7 +38,7 @@ const SignUpForm = () => {
                     email: data.email, role: 'subscriber',
                 }
                 // store user data in mongodb
-                axios.post('http://localhost:5000/user', user)
+                axios.post('https://vibe-wabe-server.vercel.app/user', user)
                     .then(res => {
                         console.log(res.data)
                         if (res.data.insertedId) {
@@ -67,7 +67,7 @@ const SignUpForm = () => {
                     email: res.user.email, role: 'subscriber',
                 }
                 toast.success('Successfully SignUp!')
-                axios.post('http://localhost:5000/user', user)
+                axios.post('https://vibe-wabe-server.vercel.app/user', user)
                     .then()
                     .catch()
 
