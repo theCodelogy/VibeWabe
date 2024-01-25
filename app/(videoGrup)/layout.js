@@ -6,8 +6,7 @@ export default function VideoLayout({ children }) {
       <div >
         <Navbar/>
             {children}
-            
-        <h1>Video Footre</h1>
+          
       </div>
     )
   }

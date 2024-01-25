@@ -14,8 +14,8 @@ const Banner = () => {
                 Run time | Publish Year | Category
             </p>
             <p className="text-xs lg:text-lg w-full font-normal ">
-              When two prized jackfruits disappear from a politician's garden, a
-              spirited cop's investigation takes an unexpected turn as she digs
+              When two prized jackfruits disappear from a politicians garden, a
+              spirited cops investigation takes an unexpected turn as she digs
               for the truth.
             </p>
             <h6 className="mt-2 text-lg">Actors: Sanya Malhotra, Anant Joshi, Vijay Raaz</h6>

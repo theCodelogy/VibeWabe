@@ -2,11 +2,11 @@
 import Image from 'next/image';
 import React from 'react';
 import Slider from "react-slick";
-import slide1 from '@/assets/Recomended-movie/d3e6plk-14712041-47d4-43f7-9806-8aa132e62941.jpg'
-import slide2 from '@/assets/Recomended-movie/s-l1200.webp'
-import slide3 from '@/assets/Recomended-movie/the-black-demon.jpg'
-import slide4 from '@/assets/Recomended-movie/65.jpg'
-import slide5 from '@/assets/Recomended-movie/the-tank.jpeg'
+import slide1 from '@/assets/Series-Image/AAAABYOh_qSTCE0CjK1UqWGAadvbnn55fMNFzyKslyB6v0AOBd0I9NIZwE1ctGeC_2FrCcCAHal5K4XRrE19fUf-IkCR_3pyk9zXrvzSKH2wnaB8eNZXX9DJ8jdvsLNEBcNWoF6ddg.jpg'
+import slide2 from '@/assets/Series-Image/AAAAQROwTYEBX6jBgdzzxXMHOIxYDjyTKbZaGszQ38pJCDW4-Mxs3wa12Il3goPnykiB92fvjYt3g5_YOQUAHv_ywLXmQ-q9SLeLhfV7wii_zLu5LFctYX87GEMD_BHDg9A4cGK20728irptybLWnFU6CCFu.jpg'
+import slide3 from '@/assets/Series-Image/s-l1200.webp'
+import slide4 from '@/assets/Series-Image/space-force-netflix-159794.jpg'
+import slide5 from '@/assets/Series-Image/AAAABdG_jOQeldU-v8TiX0GGxwemOu2KF7d0kIGFgraQM8fbO4ZXadbUUvfyMaXPdj2ZhGR2hWHaT85EGpA-sOb65nHfjMHx7zn5s9J-.jpg'
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -65,7 +65,7 @@ const UpComingCard = () => {
                 <div>
         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <Image src={slide1} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+         
         </a>
 
         <div className="flex flex-col">
@@ -81,7 +81,7 @@ const UpComingCard = () => {
 <div>
         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <Image src={slide2} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+         
         </a>
 
         <div className="flex flex-col">
@@ -94,7 +94,7 @@ const UpComingCard = () => {
                     <div>
         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <Image src={slide3} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+         
         </a>
 
         <div className="flex flex-col">
@@ -109,7 +109,7 @@ const UpComingCard = () => {
                     <div>
         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <Image src={slide4} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+         
         </a>
 
         <div className="flex flex-col">
@@ -123,7 +123,7 @@ const UpComingCard = () => {
                     <div>
         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
           <Image src={slide5} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-          <span className="absolute left-0 top-0 rounded-br-lg bg-red-500 px-3 py-1.5 text-sm uppercase tracking-wider text-white">Premium</span>
+         
         </a>
 
         <div className="flex flex-col">
