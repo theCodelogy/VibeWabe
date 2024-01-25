@@ -39,7 +39,7 @@ const NavBtn = () => {
                   <p>{user?.email}</p>
                 </li>
                 <li>
-                  <Link href={"/dashboard/myStuff"}>My Stuff</Link>
+                  <Link href={"/dashboard/profile"}>Dashboard</Link>
                 </li>
               </ul>
             )}
