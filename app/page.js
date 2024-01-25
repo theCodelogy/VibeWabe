@@ -11,7 +11,7 @@ import FirstMusicTypes from "./../components/FristLandingPage/FirstMusicTypes";
 // #131722
 const HomePage = () => {
   return (
-    <div className="bg-black">
+    <div>
       <Navbar />
       <FristHomeBanner />
       <FirstMusicTypes />

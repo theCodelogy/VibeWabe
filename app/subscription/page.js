@@ -1,5 +1,5 @@
+import SubscriptionCard from '@/components/Subscription/SubscriptionCard';
 import React from 'react';
-import SubscriptionCard from './SubscriptionCard';
 
 const page = () => {
     return (

@@ -1,16 +1,25 @@
 "use client"
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useForm } from "react-hook-form"
 import { FcGoogle } from "react-icons/fc";
 import { AiFillEye, AiFillEyeInvisible } from "react-icons/ai";
-import { useState } from "react";
 import Link from 'next/link';
-import { authContext } from '@/utils/AuthProvider';
+import { authContext, useAuth } from '@/utils/AuthProvider';
 import toast from "react-hot-toast";
+import axios from 'axios';
+import { updateProfile } from 'firebase/auth';
+import { useRouter } from 'next/navigation'
 
 
 const SignUpForm = () => {
-    const {createUseWithEmail,signIngWithGoogle}= useContext(authContext)
+
+    const { createUseWithEmail, signIngWithGoogle, user } = useContext(authContext)
+    const [currentUser, setCurrentUser] = useState({})
+    useEffect(() => {
+        axios.get(`http://localhost:5000/user/${user?.email}`)
+            .then(data => setCurrentUser(data.data))
+    }, [user])
+    const router = useRouter();
     const {
         register,
         handleSubmit,
@@ -22,22 +31,55 @@ const SignUpForm = () => {
 
     // Signup with email and password
     const handle = (data) => {
-        createUseWithEmail(data.email,data.password)
-        .then(res=>{
-            toast.success('Successfully Signup!')
-            reset()
-        })
-        .catch()
-
+        createUseWithEmail(data.email, data.password)
+            .then(res => {
+                const user = {
+                    name: data.name,
+                    email: data.email, role: 'subscriber',
+                }
+                // store user data in mongodb
+                axios.post('http://localhost:5000/user', user)
+                    .then(res => {
+                        console.log(res.data)
+                        if (res.data.insertedId) {
+                            toast.success('Successfully SignUp!')
+                            router.push('/subscription')
+                        }
+                    })
+                    .catch()
+                // update user
+                updateProfile(res.user, {
+                    displayName: data.name
+                })
+                    .then()
+                    .catch()
+                reset()
+            })
+            .catch()
     }
 
     // signup with google
-    const gogleLoginHandle=()=>{
+    const gogleLoginHandle = () => {
         signIngWithGoogle()
-        .then((res)=>{
-            toast.success('Successfully Signup!')
-        })
-        .catch()
+            .then(res => {
+                const user = {
+                    name: res.user.displayName,
+                    email: res.user.email, role: 'subscriber',
+                }
+                toast.success('Successfully SignUp!')
+                axios.post('http://localhost:5000/user', user)
+                    .then()
+                    .catch()
+
+                if (currentUser?.role === 'videoUser' || currentUser?.role === 'videoAndMusicUser' || currentUser?.role === 'freeTrail') {
+                    router.push('/video')
+                } else if (currentUser?.role === 'musicUser') {
+                    router.push('/music')
+                } else {
+                    router.push('/subscription')
+                }
+            })
+            .catch()
     }
     return (
         <div>

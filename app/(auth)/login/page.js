@@ -1,6 +1,7 @@
 import Image from "next/image";
 import liginimg from '@/assets/Login1.png'
-import LoginForm from "@/components/shared/auth/LoginForm";
+import LoginForm from "@/components/auth/LoginForm";
+
 
 
 const Login = () => {
