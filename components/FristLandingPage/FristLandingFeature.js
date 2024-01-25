@@ -16,7 +16,7 @@ const FristLandingFeature = () => {
                             We’re compatible.
                         </h1>
                         <p className="mb-8 leading-relaxed text-xs lg:text-xl text-white">
-                        Experience a new dimension of music with VideoWeb Visionary. Sync your playlists with captivating music videos, adding a visual layer to your audio journey. Choose from customizable themes, and watch as each beat comes to life in perfect harmony. Elevate your music experience with VideoWeb Visionary – where sound meets sight in perfect sync! 🎵📽️✨
+                        Experience a new dimension of music with VideoWeb Visionary. Sync your playlists with captivating music videos, adding a visual layer to your audio journey. Choose from customizable themes, and watch as each beat comes to life in perfect harmony. Elevate your music experience with VideoWeb Visionary – where sound meets sight in perfect sync! 📽️✨
                         </p>
                         
                     </div>

@@ -11,11 +11,11 @@ const DynamicVideoBanner = () => {
         <div className='max-w-screen-xl mx-auto'>
              <video className="w-full h-[90vh] " controls>
       <source src={Video} type="video/mp4" />
-      Your browser does not support the video tag.
+     
     </video> 
     <div className="gap-12 flex p-4 md:p-6  items-center bg-[#212121] justify-between">
       <div>
-        <h6 className="text-white text-xs md:text-lg">Starting from ৳50</h6>
+        <h6 className="text-white text-xs md:text-lg">Starting from ৳60</h6>
         <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
       </div>
       <button className="btn bg-red-600 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">

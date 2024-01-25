@@ -41,6 +41,9 @@ const NavBtn = () => {
                 <li>
                   <Link href={"/dashboard/profile"}>Dashboard</Link>
                 </li>
+                <li>
+                  <Link href={"/mystuff"}>My Stuff</Link>
+                </li>
               </ul>
             )}
           </div>
