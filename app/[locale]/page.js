@@ -11,7 +11,7 @@ import TranslationsProvider from "@/components/TranslationProvider";
 
 // #131722
 export default async function HomePage ({params: {locale}}) {
-  const i18NameSpaces = ['common', 'mystuff'];
+  const i18NameSpaces = ['common', 'mystuff', 'landing'];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
     <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>

@@ -5,7 +5,9 @@ import bannerTwo from '@/assets/Black and White Simple Minimalist Futuristic Gam
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { useTranslation } from "react-i18next";
 const FristHomeBanner = () => {
+    const {t} = useTranslation();
     return (
         <div>
 
