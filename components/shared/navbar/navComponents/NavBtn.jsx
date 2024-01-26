@@ -51,7 +51,7 @@ const NavBtn = () => {
           </div>
           <button
             onClick={signout}
-            className="bg-[#6D28D9  bg-gradient-to-r from-red-600 to-zinc-500 font-semibold text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
+            className="bg-[#6D28D9 bg-blue-500 font-semibold text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
             // className="bg-[#F29F05] drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
           >
             Logout
@@ -61,13 +61,13 @@ const NavBtn = () => {
         <div className="flex sm:gap-5 lg:gap-8 uppercase">
           <Link
             href={"/login"}
-            className="bg-[#6D28D9  bg-gradient-to-r from-red-600 to-zinc-500 font-semibold text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
+            className="bg-[#6D28D9 bg-blue-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
           >
             {t("login")}
           </Link>
           <Link
             href={"/signUp"}
-            className="transition-all hover:scale-95 ease-in-out duration-200 shadow-md border-2 border-red-500 font-semibold py-2 px-8 text-white rounded-xl flex items-center justify-center"
+            className="text-white border border-blue-500 px-4 py-2 rounded-full"
           >
             {t("signup")}
           </Link>

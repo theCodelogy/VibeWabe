@@ -15,7 +15,7 @@ export default async function HomePage ({params: {locale}}) {
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
     <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
-    <div className="bg-black">
+    <div className="">
       <Navbar />
       <FristHomeBanner />
       <FirstMusicTypes />
