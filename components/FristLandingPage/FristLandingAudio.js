@@ -5,7 +5,7 @@ import war2 from '@/assets/war2.png';
 
 const FristLandingAudio = () => {
     return (
-        <div className="my-5 bg-black">
+        <div className="my-5 ">
         <section className="text-gray-600 body-font">
             <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
                 <div
