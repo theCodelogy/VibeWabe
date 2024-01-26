@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import Video from '@/assets/video.webm'
+import Video from '@/assets/PeakyBlinder.webm'
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
 import { AiFillDislike } from "react-icons/ai";
@@ -18,7 +18,7 @@ const DynamicVideoBanner = () => {
         <h6 className="text-white text-xs md:text-lg">Starting from ৳60</h6>
         <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
       </div>
-      <button className="btn bg-red-600 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+      <button className="btn bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
         Remove Ads
       </button>
     </div>
