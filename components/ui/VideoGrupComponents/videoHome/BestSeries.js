@@ -24,7 +24,7 @@ import Link from "next/link";
 const BestSeries = () => {
   return (
     <div className="text-white container  mx-auto px-5 pt-12">
-       <div className="relative group">
+      <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
             Best Series{" "}
@@ -59,84 +59,88 @@ const BestSeries = () => {
         }}
       >
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={call}
-              alt="Call Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Call</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                src={call}
+                alt="Call Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">Call</h5>
           </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={theGrayMan}
-              alt="The Gray Man Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">
-            The Gray Man
-          </h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden rounded-lg">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-lg"
+                src={theGrayMan}
+                alt="The Gray Man Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              The Gray Man
+            </h5>
           </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={TheGuilty}
-              alt="the Guilty Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">The Guilty</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden ">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={TheGuilty}
+                alt="the Guilty Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              The Guilty
+            </h5>
           </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={pandora}
-              alt="pandora Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Pandora</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden ">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={pandora}
+                alt="pandora Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">Pandora</h5>
           </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={extinction}
-              alt="Extinction Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">Extinction</h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden ">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={extinction}
+                alt="Extinction Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              Extinction
+            </h5>
           </Link>
         </SwiperSlide>
 
         <SwiperSlide>
-        <Link href={"/video/id"}>
-          <div className="relative group overflow-hidden ">
-            <Image
-              className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-              src={nightIsLonely}
-              alt="Night Is Lonely Movie"
-            />
-          </div>
-          <h5 className="text-center mt-1 text-lg font-semibold">
-            Night Is Lonely
-          </h5>
+          <Link href={"/video/id"}>
+            <div className="relative group overflow-hidden ">
+              <Image
+                className="w-[350px] md:w-[300px] h-[350px] md:h-full  transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
+                src={nightIsLonely}
+                alt="Night Is Lonely Movie"
+              />
+            </div>
+            <h5 className="text-center mt-1 text-lg font-semibold">
+              Night Is Lonely
+            </h5>
           </Link>
         </SwiperSlide>
       </Swiper>
