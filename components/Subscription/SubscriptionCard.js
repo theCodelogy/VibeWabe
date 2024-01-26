@@ -58,7 +58,7 @@ const SubscriptionCard = () => {
               </ul>
             </div>
             <div>
-              <Link href="/cheackout" className="bg-blue-500 text-white hover:bg-blue-300 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
+              <Link href="/subscription/subscriptionForm" className="bg-red-600 text-white hover:bg-red-800 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ const SubscriptionCard = () => {
               </ul>
             </div>
             <div>
-              <Link href="/auth/login" className="bg-blue-500 text-white hover:bg-blue-300 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
+              <Link href="/subscription/subscriptionForm" className="bg-red-600 text-white hover:bg-red-800 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
             </div>
           </div>
 
@@ -152,7 +152,7 @@ const SubscriptionCard = () => {
               </ul>
             </div>
             <div>
-              <Link href="/auth/login" className="bg-blue-500 text-white hover:bg-blue-300 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
+              <Link href="/subscription/subscriptionForm" className="bg-red-600 text-white hover:bg-red-800 mt-8 block w-full py-3 px-6 border border-transparent rounded-md text-center font-medium">Tack It</Link>
             </div>
           </div>
 
