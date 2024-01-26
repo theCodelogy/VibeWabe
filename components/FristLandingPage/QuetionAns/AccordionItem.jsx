@@ -6,8 +6,8 @@ const AccordionItem = ({ open, toggle, title, description }) => {
   return (
     <div className="border-b-[1px] border-gray-500 text-gray-200">
       <div
-        className={` py-5 px-10 flex justify-between items-center cursor-pointer hover:bg-indigo-500 active:bg-indigo-500 ${
-          open ? "bg-indigo-600 rounded-b-lg" : ""
+        className={` py-5 px-10 flex justify-between items-center cursor-pointer hover:bg-blue-500 active:bg-blue-500 ${
+          open ? "bg-blue-500 rounded-b-lg" : ""
         }`}
         onClick={toggle}
       >

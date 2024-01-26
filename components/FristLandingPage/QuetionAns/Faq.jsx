@@ -44,8 +44,8 @@ const Faq = () => {
   return (
     <div className="max-w-screen-xl mx-auto my-10">
       
-      <div className="container mx-auto flex gap-28 md:flex-row flex-col items-center">
-        <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center flex-1">
+      <div className="container mx-auto flex md:gap-28 md:flex-row flex-col items-center">
+        <div className="lg:flex-grow md:w-1/2 flex flex-col md:items-start md:text-left md:mb-0 items-center text-center flex-1">
           <div className="h-[500px]">
             <Lottie className="h-full" animationData={animation} />
           </div>

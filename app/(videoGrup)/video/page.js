@@ -7,7 +7,9 @@ import KidsMovies from "@/components/ui/VideoGrupComponents/videoHome/KidsMovies
 import NewReleses from "@/components/ui/VideoGrupComponents/videoHome/NewReleses";
 import Recomanded from "@/components/ui/VideoGrupComponents/videoHome/Recomanded";
 import ThrillersMovies from "@/components/ui/VideoGrupComponents/videoHome/ThrillersMovies";
-import Upcomming from "@/components/ui/VideoGrupComponents/videoHome/Upcomming";
+import Upcomming from "@/components/ui/VideoGrupComponents/videoHome/MovieTrailer";
+import { authContext } from "@/utils/AuthProvider";
+import React, { useContext } from "react";
 
 const Video = () => {
   return (
@@ -15,11 +17,12 @@ const Video = () => {
       <div>
         <MainBanner />
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
-          <Upcomming />
           <Recomanded />
           <NewReleses />
-          <Drama />
           <KidsMovies />
+        </div>
+        <Upcomming />
+        <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
           <ActionMovies />
           <BestSeries />
           <ThrillersMovies />
