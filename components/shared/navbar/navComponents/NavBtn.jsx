@@ -2,10 +2,12 @@
 import { authContext } from "@/utils/AuthProvider";
 import Link from "next/link";
 import { useContext, useState } from "react";
+import { useTranslation } from "react-i18next";
 
 const NavBtn = () => {
   const { user, signout } = useContext(authContext);
   const [showProfile, setShowProfile] = useState(false);
+  const {t} = useTranslation();
   return (
     <>
       {user?.email ? (
@@ -61,13 +63,13 @@ const NavBtn = () => {
             href={"/login"}
             className="bg-[#6D28D9 bg-blue-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
           >
-            Login
+            {t("login")}
           </Link>
           <Link
             href={"/signUp"}
             className="text-white border border-blue-500 px-4 py-2 rounded-full"
           >
-            Sign Up
+            {t("signup")}
           </Link>
         </div>
       )}

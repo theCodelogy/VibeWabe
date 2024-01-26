@@ -18,12 +18,14 @@ import theConference from "@/assets/Trending-Movies/theConference.jpg";
 import maestro from "@/assets/Trending-Movies/maestro.jpg";
 import scremVi from "@/assets/Trending-Movies/scremVijpg.jpg";
 import fail from "@/assets/Trending-Movies/12th-failjpg.jpg";
+import { useTranslation } from "react-i18next";
 
 const FirstTrendingMovies = () => {
+  const {t} = useTranslation();
   return (
     <div className="text-white container mx-auto px-5 py-24 ">
       <h3 className="text-xl md:text-2xl lg:text-3xl font-semibold mb-6">
-        Trending Movies{" "}
+        {t("landing:trending")}{" "}
       </h3>
       <Swiper
         // slidesPerView={3}

@@ -1,9 +1,12 @@
+'use client'
 import React from 'react';
 import Image from 'next/image';
 import war1 from '@/assets/war1.png';
 import war2 from '@/assets/war2.png';
+import { useTranslation } from "react-i18next";
 
 const FristLandingAudio = () => {
+    const {t} = useTranslation();
     return (
         <div className="my-5 ">
         <section className="text-gray-600 body-font">
@@ -12,7 +15,7 @@ const FristLandingAudio = () => {
                     className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center"
                 >
                    <h1 className="title-font text-xl md:text-2xl mb-4 font-medium text-white">
-                        We’re compatible.
+                   {t("landing:compatible")}
                     </h1>
                     <p className="mb-8 leading-relaxed text-xs lg:text-xl text-white">
                     Experience a new dimension of music with VideoWeb Visionary. Sync your playlists with captivating music videos, adding a visual layer to your audio journey. Choose from customizable themes, and watch as each beat comes to life in perfect harmony. Elevate your music experience with VideoWeb Visionary – where sound meets sight in perfect sync! 🎵📽️✨

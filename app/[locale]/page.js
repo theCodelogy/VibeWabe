@@ -1,3 +1,4 @@
+import FirstMusicTypes from "@/components/FristLandingPage/FirstMusicTypes";
 import FirstTrendingMovies from "@/components/FristLandingPage/FirstTrandingMovies";
 import FristHomeBanner from "@/components/FristLandingPage/FristHomeBanner";
 import FristLandingAudio from "@/components/FristLandingPage/FristLandingAudio";
@@ -5,12 +6,15 @@ import FristLandingFeature from "@/components/FristLandingPage/FristLandingFeatu
 import Faq from "@/components/FristLandingPage/QuetionAns/Faq";
 import LandPageFooter from "@/components/shared/footer/landFooter";
 import Navbar from "@/components/shared/navbar/Navbar";
-import FirstMusicTypes from "./../components/FristLandingPage/FirstMusicTypes";
-
+import initTranslations from "../i18n";
+import TranslationsProvider from "@/components/TranslationProvider";
 
 // #131722
-const HomePage = () => {
+export default async function HomePage ({params: {locale}}) {
+  const i18NameSpaces = ['common', 'mystuff', 'landing'];
+  const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
+    <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
     <div className="">
       <Navbar />
       <FristHomeBanner />
@@ -22,7 +26,8 @@ const HomePage = () => {
       <LandPageFooter />
      
     </div>
+    </TranslationsProvider> 
   );
 };
 
-export default HomePage;
+

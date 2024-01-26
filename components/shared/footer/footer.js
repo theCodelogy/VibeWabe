@@ -1,7 +1,10 @@
+"use client";
 import Image from "next/image";
 import logo from "@/public/VibeWabe.png";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 const Footer = () => {
+  const {t} = useTranslation();
   return (
     <div className="bg-black text-[#fff]">
       <div className="container mx-auto px-8 py-4 md:py-12">
@@ -14,7 +17,7 @@ const Footer = () => {
             <div className="flex flex-row md:flex-col gap-3">
               <Link href="#">
                 <h6 className="md:my-6 text-center hover:underline">
-                  Why we are
+                  {t("we")}
                 </h6>
               </Link>
               <Link href="#">

@@ -39,7 +39,7 @@ const SubscriptionForm = () => {
     };
     console.log(subscribeForm);
 
-    fetch("http://localhost:5000/payment", {
+    fetch("https://vibewabe-server.vercel.app/payment", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(subscribeForm),
