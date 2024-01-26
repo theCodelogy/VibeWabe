@@ -2,7 +2,9 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import logo from "@/public/VibeWabe.png";
+// import { useTranslation } from "react-i18next";
 const LandPageFooter = () => {
+  // const {t} = useTranslation();
   return (
     <div className="bg-black text-[#fff]">
       <div className="container mx-auto px-8 py-4 md:py-12">
@@ -29,7 +31,7 @@ const LandPageFooter = () => {
             </Link>
             <Link href="#">
               <h6 className=" hover:underline mb-1 md:mb-3">
-                Terms & Conditions
+              Terms & Conditions
               </h6>
             </Link>
             <Link href="#">
@@ -40,7 +42,7 @@ const LandPageFooter = () => {
         {/* copy right text  */}
         <h6 className="text-center mt-6 text-sm text-gray-300">
           {" "}
-          © {new Date().getFullYear()} VibeWave Website . All right reversed by
+          © {new Date().getFullYear()} VibeWave Website . All right reserved by 
           <Link
             className="hover:underline"
             href="https://github.com/thecodelogy"

@@ -1,6 +1,6 @@
 // next.config.js
 module.exports = {
-    webpack: (config, { isServer }) => {
+      webpack: (config, { isServer }) => {
       // Add file-loader for video files
       config.module.rules.push({
         test: /\.(webm|mp4)$/,
