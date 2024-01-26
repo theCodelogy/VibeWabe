@@ -2,7 +2,7 @@
 import Link from "next/link";
 
 const navigationLinks = [
-  { href: "/video", label: "Vidoe" },
+  { href: "/video", label: "Video" },
   { href: "/music", label: "Music" },
   { href: "/video/movies", label: "Movies" },
   { href: "/video/series", label: "Series" },

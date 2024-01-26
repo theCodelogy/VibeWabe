@@ -29,14 +29,10 @@ const TrendingMusic = () => {
               Album: Satyameva Jayate 2
             </p>
             <p className="text-lg font-normal leading-7">Release Date: 2022</p>
-            <div className="flex gap-6 mt-6">
-              <button className="py-3 px-5 font-bold bg-[#f60404] rounded-md">
-                Watch Now
-              </button>
-              <button className="py-3 px-5 font-bold text-[#f60404] bg-white rounded-md">
-                Add to list
-              </button>
-            </div>
+            <div className="flex">
+            <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
+            <button className="text-blue-500 border border-blue-500 px-4 py-2 rounded-full">Add to List</button>
+        </div>
           </div>
         </div>
       </div>
