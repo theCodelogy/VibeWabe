@@ -1,7 +1,7 @@
-import Footer from "@/components/shared/footer/footer";
 import MainBanner from "@/components/ui/VideoGrupComponents/MainBanner/MainBanner";
 import ActionMovies from "@/components/ui/VideoGrupComponents/videoHome/ActionMovies";
 import BestSeries from "@/components/ui/VideoGrupComponents/videoHome/BestSeries";
+import Drama from "@/components/ui/VideoGrupComponents/videoHome/Drama";
 import HorrorMovies from "@/components/ui/VideoGrupComponents/videoHome/HorrorMovies";
 import KidsMovies from "@/components/ui/VideoGrupComponents/videoHome/KidsMovies";
 import NewReleses from "@/components/ui/VideoGrupComponents/videoHome/NewReleses";
@@ -16,23 +16,18 @@ const Video = () => {
     <>
       <div>
         <MainBanner />
-       
-      
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
-        <Recomanded />
-        <NewReleses />
-        <KidsMovies />
+          <Recomanded />
+          <NewReleses />
+          <KidsMovies />
         </div>
         <Upcomming />
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
-        <ActionMovies />
-        <BestSeries />
-        <ThrillersMovies />
-        <HorrorMovies />
+          <ActionMovies />
+          <BestSeries />
+          <ThrillersMovies />
+          <HorrorMovies />
         </div>
-        
-   
-        
       </div>
     </>
   );
