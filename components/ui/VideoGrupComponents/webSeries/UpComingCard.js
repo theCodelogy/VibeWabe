@@ -7,6 +7,7 @@ import slide2 from '@/assets/Series-Image/AAAAQROwTYEBX6jBgdzzxXMHOIxYDjyTKbZaGs
 import slide3 from '@/assets/Series-Image/s-l1200.webp'
 import slide4 from '@/assets/Series-Image/space-force-netflix-159794.jpg'
 import slide5 from '@/assets/Series-Image/AAAABdG_jOQeldU-v8TiX0GGxwemOu2KF7d0kIGFgraQM8fbO4ZXadbUUvfyMaXPdj2ZhGR2hWHaT85EGpA-sOb65nHfjMHx7zn5s9J-.jpg'
+import { useTranslation } from 'react-i18next';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -22,6 +23,7 @@ function SampleNextArrow(props) {
   }
 
 const UpComingCard = () => {
+  const {t} = useTranslation();
     const settings = {
         dots: true,
         infinite: true,
@@ -58,7 +60,7 @@ const UpComingCard = () => {
     };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10'>
-              <h1 className='text-2xl my-5 text-white font-bold'>Upcoming Movie </h1>
+              <h1 className='text-2xl my-5 text-white font-bold'>{t("series:upcomingseries")} </h1>
             <div>
                 <Slider {...settings}>
 {/* slide One */}

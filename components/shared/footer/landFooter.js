@@ -4,6 +4,7 @@ import Link from "next/link";
 import React from "react";
 import logo from "@/public/VibeWabe.png";
 import { useTranslation } from "react-i18next";
+import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 const LandPageFooter = () => {
   const {t} = useTranslation();
   return (
@@ -15,6 +16,7 @@ const LandPageFooter = () => {
             <Link href="/">
               <Image className="w-28 md:w-40 mx-auto " src={logo} alt="logo" />
             </Link>
+            
             <div className="flex justify-center gap-5 md:gap-40 text-center mt-4 mx-auto">
               <Link href="#">
                 <h6 className="text-center hover:underline">{t("why")}</h6>
@@ -52,6 +54,7 @@ const LandPageFooter = () => {
           </Link>
         </h6>
       </div>
+    
     </div>
   );
 };

@@ -7,6 +7,7 @@ import slide2 from '@/assets/Drama-Image/81927347-8c39-44da-861b-272e3a5ec268.we
 import slide3 from '@/assets/Drama-Image/c9cf53b4-36b3-4c5b-a949-4daef88e9053.webp'
 import slide4 from '@/assets/Drama-Image/d6a5c125-1944-4217-ac3b-3e93f655bbcf.webp'
 import slide5 from '@/assets/Drama-Image/60e76c61-30d8-4b51-b0be-08bd5351ae8c.webp'
+import { useTranslation } from 'react-i18next';
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -22,6 +23,7 @@ function SampleNextArrow(props) {
   }
 
 const DramaUpcomingCard = () => {
+  const {t} = useTranslation();
     const settings = {
         dots: true,
         infinite: true,
@@ -58,7 +60,7 @@ const DramaUpcomingCard = () => {
     };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10'>
-              <h1 className='text-2xl my-5 text-white font-bold'>Upcoming Drama </h1>
+              <h1 className='text-2xl my-5 text-white font-bold'>{t("drama:upcomingdrama")} </h1>
             <div>
                 <Slider {...settings}>
 {/* slide One */}

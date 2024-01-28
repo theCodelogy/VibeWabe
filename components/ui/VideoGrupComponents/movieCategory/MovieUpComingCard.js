@@ -7,6 +7,7 @@ import slide2 from '@/assets/Recomended-movie/s-l1200.webp'
 import slide3 from '@/assets/Recomended-movie/the-black-demon.jpg'
 import slide4 from '@/assets/Recomended-movie/65.jpg'
 import slide5 from '@/assets/Recomended-movie/the-tank.jpeg'
+import { useTranslation } from "react-i18next";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
@@ -22,6 +23,7 @@ function SampleNextArrow(props) {
   }
 
 const MovieUpComingCard = () => {
+  const {t} = useTranslation();
     const settings = {
         dots: true,
         infinite: true,
@@ -58,7 +60,7 @@ const MovieUpComingCard = () => {
     };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10'>
-              <h1 className='text-2xl my-5 text-white font-bold'>Upcoming Movie </h1>
+              <h1 className='text-2xl my-5 text-white font-bold'>{t("Movies:Upcoming")} </h1>
             <div>
                 <Slider {...settings}>
 {/* slide One */}

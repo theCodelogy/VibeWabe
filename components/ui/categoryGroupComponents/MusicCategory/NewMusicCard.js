@@ -17,12 +17,14 @@ import musicImg3 from '@/assets/Musics/CategoryImg/baaa.png'
 import musicImg4 from '@/assets/Musics/CategoryImg/categorybanner22.jpeg'
 import musicImg5 from '@/assets/Musics/CategoryImg/card4.jpg'
 import musicImg6 from '@/assets/Musics/CategoryImg/Categorybanner5.jpg'
+import { useTranslation } from 'react-i18next';
 
 
 const NewMusicCard = () => {
+    const {t} = useTranslation();
     return (
         <div className='container mx-auto px-5'>
-            <h3 className='text-white text-xl font-bold mb-8 px-5'>Music Album</h3>
+            <h3 className='text-white text-xl font-bold mb-8 px-5'>{t("music:musicalbum")}</h3>
             <Swiper 
                 slidesPerView={1}
                 spaceBetween={10}

@@ -14,12 +14,14 @@ import artists2 from '@/assets/music/artists2.jpeg';
 import artists3 from '@/assets/music/artists3.webp';
 import artists4 from '@/assets/music/artists4.jpg';
 import artists5 from '@/assets/music/artists5.webp';
+import { useTranslation } from 'react-i18next';
 
 
 const HotArtists = () => {
+  const {t} = useTranslation();
     return (
         <div className='my-15 container mx-auto px-10 mb-10'>
-             <h1 className='text-2xl font-bold text-white py-3 border-b-2 border-white mb-6 '>Hot Artists</h1>
+             <h1 className='text-2xl font-bold text-white py-3 border-b-2 border-white mb-6 '>{t("music:hotartists")}</h1>
              <Swiper
         slidesPerView={4}
         spaceBetween={30}

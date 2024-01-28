@@ -7,9 +7,12 @@ import slide2 from "@/assets/New-Releases/fullSpeed.jpg";
 import slide3 from "@/assets/New-Releases/code8.jpg";
 import slide4 from "@/assets/New-Releases/AAAAQWIzP26lfPx5u8_EHyeEi8SLM-0qvyQuTeKgTk8BjkQ-dSzp6F0GGXqlXX2iCQiwZQsUMlxF0S0dCO3IpUtzBrSSUnM2jgW1rarX1GrvrS0ahIZulIq4jf7bzvKVcqrg_93YDII0E1QtRnOD6C6f0LRe.jpg";
 import slide5 from "@/assets/New-Releases/imaginary.jpg";
+import { useTranslation } from "react-i18next";
+import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 
 function SampleNextArrow(props) {
     const { className, style, onClick } = props;
+    
     return (
       <div
         className={className}
@@ -22,6 +25,7 @@ function SampleNextArrow(props) {
   }
 
 const MovieTrandingCard = () => {
+  const {t} = useTranslation();
     const settings = {
         dots: true,
         infinite: true,
@@ -58,7 +62,7 @@ const MovieTrandingCard = () => {
     };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5'>
-            <h1 className='text-2xl my-5 text-white font-bold'>Tranding Movie </h1>
+            <h1 className='text-2xl my-5 text-white font-bold'>{t("Movies:trending")} </h1>
             <div>
                 <Slider {...settings}>
 {/* slide One */}

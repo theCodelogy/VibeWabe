@@ -1,12 +1,15 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import musicimg from "@/assets/music/card2.jpg";
+import { useTranslation } from "react-i18next";
 
 const TrendingMusic = () => {
+  const {t} = useTranslation();
   return (
     <div className="my-14 container mx-auto px-10">
       <h1 className="text-2xl font-bold text-white py-3 border-b-2 border-white mb-6 ">
-        Trending Songs
+        {t("music:trendingsongs")}
       </h1>
 
       <div className="border-2 p-5 rounded-md bg-zinc-800">

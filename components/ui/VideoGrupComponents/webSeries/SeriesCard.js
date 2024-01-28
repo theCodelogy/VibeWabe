@@ -7,8 +7,10 @@ import slide2 from '@/assets/Series-Image/AAAAQYApbyEA8dTOxD7XXJZ7gnnghPd3GL5xGL
 import slide3 from '@/assets/Series-Image/main-qimg-4e6cd31edc1a1856d03ef87ad331b00d-lq.jpeg'
 import slide4 from '@/assets/Series-Image/kingdom-ashin-of-the-north-1.jpg'
 import slide5 from '@/assets/Series-Image/mm-608x900.jpg'
+import { useTranslation } from 'react-i18next';
 
 function SampleNextArrow(props) {
+  
     const { className, style, onClick } = props;
     return (
       <div
@@ -22,6 +24,7 @@ function SampleNextArrow(props) {
   }
 
 const SeriesCard = () => {
+  const {t} = useTranslation();
     const settings = {
         dots: true,
         infinite: true,
@@ -58,7 +61,7 @@ const SeriesCard = () => {
     };
     return (
         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5'>
-            <h1 className='text-2xl my-5 text-white font-bold'>Tranding Series </h1>
+            <h1 className='text-2xl my-5 text-white font-bold'>{t("series:trendingseries")} </h1>
             <div>
                 <Slider {...settings}>
 {/* slide One */}
