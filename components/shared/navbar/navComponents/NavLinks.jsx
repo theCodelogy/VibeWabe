@@ -1,10 +1,11 @@
 "use client";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 
-
 const NavLinks = () => {
-  const {t} = useTranslation();
+  const pathName = usePathname();
+  const { t } = useTranslation();
   const navigationLinks = [
     { href: "/video", label: "Video" },
     { href: "/music", label: "Music" },
@@ -20,6 +21,7 @@ const NavLinks = () => {
           key={index}
         >
           <Link href={link.href}>{t(link.label)}</Link>
+          {/* {pathName == "/" ? "" : <Link href={link.href}>{t(link.label)}</Link>} */}
         </li>
       ))}
     </>

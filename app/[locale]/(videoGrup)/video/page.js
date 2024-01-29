@@ -20,6 +20,7 @@ const Video = () => {
           <Recomanded />
           <NewReleses />
           <KidsMovies />
+          <Drama/>
         </div>
         <Upcomming />
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">

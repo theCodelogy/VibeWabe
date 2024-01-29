@@ -10,7 +10,7 @@ const page = () => {
         </h2>
         <div className="text-center mt-5">
           {/* added live link change localhost 3000 */}
-          <Link href="http://localhost:3000/subscription/subscriptionForm">
+          <Link href="https://vibe-wabe-five.vercel.app/subscription/subscriptionForm">
             {" "}
             <button className="btn bg-gradient-to-r from-red-600 to-zinc-500">
               Go to Subscription Page
