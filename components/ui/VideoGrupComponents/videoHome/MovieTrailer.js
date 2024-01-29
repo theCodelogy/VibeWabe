@@ -8,7 +8,7 @@ const Upcomming = () => {
         <div>
  
         <video className="w-full h-[43vh] " controls>
-      <source src={Video} type="video/mp4" />
+      <source src="https://www.youtube.com/embed/oVzVdvGIC7U?si=k73-XAC26shE3r8i" type="video/mp4" />
      
     </video> 
 
