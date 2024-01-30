@@ -30,8 +30,8 @@ const TrendingMusic = () => {
             </p>
             <p className="text-lg font-normal leading-7">Release Date: 2022</p>
             <div className="flex">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
-            <button className="text-blue-500 border border-blue-500 px-4 py-2 rounded-full">Add to List</button>
+            <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
+            <button className="text-white border border-red-600 px-4 py-2 rounded-full">Add to List</button>
         </div>
           </div>
         </div>
