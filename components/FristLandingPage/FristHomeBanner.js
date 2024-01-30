@@ -5,7 +5,9 @@ import bannerTwo from '@/assets/Black and White Simple Minimalist Futuristic Gam
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
+import { useTranslation } from "react-i18next";
 const FristHomeBanner = () => {
+    const {t} = useTranslation();
     return (
         <div>
 
@@ -38,7 +40,7 @@ const FristHomeBanner = () => {
                                 by showcasing your creative skills through a
                             </h1>
                             <div className="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-                                <Link  href={'/signup'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-blue-500 border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                                <Link  href={'/signup'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-zinc-500 border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                                     Get Started
                                 </Link>
                                
@@ -70,7 +72,7 @@ const FristHomeBanner = () => {
                                 by showcasing your creative skills through a
                             </h1>
                             <div className="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-                            <Link  href={'/signup'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-blue-500 border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                            <Link  href={'/signup'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-zinc-500 border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                                     Get Started
                                 </Link>
                                 
