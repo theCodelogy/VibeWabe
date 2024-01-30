@@ -54,7 +54,7 @@ const MainBanner = () => {
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-500 lg:px-10 rounded-xl hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500 lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
               </div>
             </div>
           </div>
@@ -96,7 +96,7 @@ const MainBanner = () => {
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div class="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div class="mt-3 rounded-lg sm:mt-0">
-                <button class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-500 lg:px-10 rounded-xl hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
               </div>
             </div>
           </div>
@@ -137,7 +137,7 @@ const MainBanner = () => {
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-500 lg:px-10 rounded-xl hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
               </div>
             </div>
           </div>
@@ -178,7 +178,7 @@ const MainBanner = () => {
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-blue-500 lg:px-10 rounded-xl hover:bg-blue-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
               </div>
             </div>
           </div>
