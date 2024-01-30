@@ -19,13 +19,15 @@ import code8 from "@/assets/New-Releases/code8.jpg";
 import dunki from "@/assets/New-Releases/AAAAQWIzP26lfPx5u8_EHyeEi8SLM-0qvyQuTeKgTk8BjkQ-dSzp6F0GGXqlXX2iCQiwZQsUMlxF0S0dCO3IpUtzBrSSUnM2jgW1rarX1GrvrS0ahIZulIq4jf7bzvKVcqrg_93YDII0E1QtRnOD6C6f0LRe.jpg";
 import imaginary from "@/assets/New-Releases/imaginary.jpg";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 const NewReleses = () => {
+  const {t} = useTranslation();
   return (
     <div className="text-white container  mx-auto px-5 py-12 ">
       <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
-            New Releases{" "}
+            {t("video:newrelease")}{" "}
           </h3>
           <button className="absolute -top-1 left-32  group-hover:inline-block px-4 py-2 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline">
             See All
