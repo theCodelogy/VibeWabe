@@ -10,24 +10,28 @@ import React from 'react';
 
 const Musec = () => {
     return (
+        <div>
+            {/* music banner */}
+            <MusicBanner></MusicBanner>
+        
          <div className='text-white container mx-auto'>
-         {/* music banner */}
-             <MusicBanner></MusicBanner>
-         {/* music slider */}
-             <MusicSlider></MusicSlider>
-         {/* music card */}
-             <Card></Card>
-            <TrendingMusic></TrendingMusic>
-          {/* music slider 2*/}
-             <MusicSlider2></MusicSlider2>
-         {/* music card 2*/}
-             <Card2></Card2>
-         {/* music category */}
-         <MusicCategory></MusicCategory>
-         {/* Music card */}
-         <div className='mb-20'>
-            <NewMusicCard></NewMusicCard>
-         </div>
+            
+            {/* music slider */}
+                <MusicSlider></MusicSlider>
+            {/* music card */}
+                <Card></Card>
+                <TrendingMusic></TrendingMusic>
+            {/* music slider 2*/}
+                <MusicSlider2></MusicSlider2>
+            {/* music card 2*/}
+                <Card2></Card2>
+            {/* music category */}
+            <MusicCategory></MusicCategory>
+            {/* Music card */}
+            <div className='mb-20'>
+                <NewMusicCard></NewMusicCard>
+            </div>
+        </div>
      </div>
     );
 };

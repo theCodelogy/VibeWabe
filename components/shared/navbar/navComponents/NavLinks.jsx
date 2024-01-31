@@ -6,7 +6,7 @@ const navigationLinks = [
   { href: "/music", label: "Music" },
   { href: "/video/movies", label: "Movies" },
   { href: "/video/series", label: "Series" },
-  { href: "/video/drama", label: "Drama" },
+  { href: "/video/drama", label: "series" },
 ];
 
 const NavLinks = () => {

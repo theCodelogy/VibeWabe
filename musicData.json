@@ -1,0 +1,471 @@
+[
+    {
+      "id": 1,
+      "musicTitle": "O priotoma - tranding music",
+      "musicImg": "https://i.ibb.co/D44dH4N/maxresdefault.jpg",
+      "language": "Bangla",
+      "musicCategory": "ScienceFiction",
+      "releaseDate": "2023-05-15",
+      "singerName": "Serene Sounds"
+    },
+    {
+        "id": 2,
+        "musicTitle": "Chere Jeyona",
+        "musicImg": "https://i.ibb.co/wdHL3cx/375x375bb.jpg",
+        "language": "Bangla",
+        "musicCategory": "Sad",
+        "releaseDate": "2023-05-15",
+        "singerName": "Serene Sounds"
+      },
+      {
+        "id": 3,
+        "musicTitle": "Xefer x Muza - Jhumka (Official Music Video)",
+        "musicImg": "https://i.ibb.co/jbXvLkw/Jhumka-English-2023-20230121020930-500x500.jpg",
+        "language": "Bangla",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2023-05-15",
+        "singerName": " x Muza"
+      },
+      {
+        "id": 4,
+        "musicTitle": "Bujhina Toh Tai (বুঝিনা তো তাই )",
+        "musicImg": "https://i.ibb.co/mB7Fn2j/maxresdefault-3.jpg",
+        "language": "Bangla",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2023-05-15",
+        "singerName": "Nusraat Faria"
+      },
+      {
+        "id": 5,
+        "musicTitle": "Kalachan | কালাচান",
+        "musicImg": "https://i.ibb.co/wc8ZhJn/Kalachan-Bengali-2023-20230502225927-500x500.jpg",
+        "language": "Bangla",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2023-05-15",
+        "singerName": "Tosiba Begum & FA Pritom (rap)"
+      },
+      {
+        "id": 6,
+        "musicTitle": "Beni Khuley Slowed Reverb - বেনি খুলে",
+        "musicImg": "https://i.ibb.co/rv0pZQH/hq720.jpg",
+        "language": "Bangla",
+        "musicCategory": "Classical",
+        "releaseDate": "2023-05-15",
+        "singerName": "Muza & Habib Wahid"
+      },
+      {
+        "id": 7,
+        "musicTitle": "Makeup Shundori",
+        "musicImg": "https://i.ibb.co/CBBMGp0/maxresdefault-4.jpg",
+        "language": "Bangla",
+        "musicCategory": "Classical",
+        "releaseDate": "2023-05-15",
+        "singerName": "Ayesha Mousumi"
+      },
+      {
+        "id": 8,
+        "musicTitle": "Bangla Wedding Mashup",
+        "musicImg": "https://i.ibb.co/k3Bypqt/maxresdefault-5.jpg",
+        "language": "Bangla",
+        "musicCategory": "webdding",
+        "releaseDate": "2023-05-15",
+        "singerName": " Rangan Riddo "
+      },
+      {
+        "id": 9,
+        "musicTitle": "মায়াবি চোকে কি মায়া - Song",
+        "musicImg": "https://i.ibb.co/c3Sjnkp/maxresdefault-6.jpg",
+        "language": "Bangla",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2023-05-15",
+        "singerName": "Serene Sounds"
+      },
+    {
+      "id": 10,
+      "musicTitle": "Pran Ashe Jaye | প্রাণ আসে যায়",
+      "musicImg": "https://i.ibb.co/BsQmvRP/106730045-300x300.jpg",
+      "language": "Bangla",
+      "musicCategory": "webdding",
+      "releaseDate": "2022-11-28",
+      "singerName": "Shiekh Sadi x Shezan"
+    },
+    {
+        "id": 11,
+        "musicTitle": "Phir Aur Kya Chahiye",
+        "musicImg": "https://i.ibb.co/sQrXWN7/Zara-Hatke-Zara-Bachke.jpg",
+        "language": "Hindi",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2024-02-10",
+        "singerName": "Arijit Singh, Sachin- Jigar"
+    },
+    {
+        "id": 12,
+        "musicTitle": "Guli Mata - Saad Lamjarred",
+        "musicImg": "https://i.ibb.co/QkY72Hk/artworks-8-Vr6-LUk-XM1-To-Vl7-C-f-Y7u5-A-t500x500.jpg",
+        "language": "Hindi",
+        "musicCategory": "Classical",
+        "releaseDate": "2024-02-10",
+        "singerName": "Saad Lamjarred & Shreya Ghoshal"
+    },
+    {
+        "id": 13,
+        "musicTitle": "Kaifi Khalil - Kahani Suno",
+        "language": "Hindi",
+        "musicImg": "https://i.ibb.co/zPR85Kq/tytes.jpg",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2024-02-10",
+        "singerName": "Kaifi Khalil"
+    },
+    {
+        "id": 14,
+        "musicTitle": "CHANDNI: Sachet Tandon",
+        "musicImg": "https://i.ibb.co/hmYNP9f/ab67616d0000b273f9535d767909f41ca7e683e8.jpg",
+        "language": "Hindi",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2024-02-10",
+        "singerName": "Sachet Tandon & Parampara Tandon "
+    },
+    {
+        "id": 15,
+        "musicTitle": "Pasoori",
+        "musicImg": "https://i.ibb.co/cc84wF6/Pasoori-Hindi-2022-20220711222342-500x500.jpg",
+        "language": "Hindi",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2024-02-10",
+        "singerName": "Ali Sethi x Shae Gill"
+    },
+    {
+        "id": 16,
+        "musicTitle": "Lut Gaye (Full Song)",
+        "musicImg": "https://i.ibb.co/PrJvDNQ/6382.jpg",
+        "language": "Hindi",
+        "musicCategory": "sad",
+        "releaseDate": "2024-02-10",
+        "singerName": "Emraan Hashmi"
+    },
+    {
+        "id": 17,
+        "musicTitle": "Dil Galti Kar Baitha Hai",
+        "musicImg": "https://i.ibb.co/nsktkvk/jjj.jpg",
+        "language": "Hindi",
+        "musicCategory": "Classical",
+        "releaseDate": "2024-02-10",
+        "singerName": "Jubin Nautiyal"
+    },
+    {
+        "id": 18,
+        "musicTitle": "Kusu Kusu Song Ft Nora Fatehi",
+        "musicImg": "https://i.ibb.co/80Z4YBD/Kusu-Kusu-From-Satyameva-Jayate-2-Hindi-2021-20211110111921-500x500.jpg",
+        "language": "Hindi",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2024-02-10",
+        "singerName": " Nora Fatehi"
+    },
+    {
+        "id": 19,
+        "musicTitle": "What Jhumka? - song",
+        "musicImg": "https://i.ibb.co/dPLp7VZ/Bollywood-actresses-Jhumka-look-goes-Viral.jpg",
+        "language": "Hindi",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2024-02-10",
+        "singerName": "Arijit Singh and Jonita Gandhi"
+    },
+    {
+        "id": 20,
+        "musicTitle": "SUPERSTAR - Riyaz Aly & Anushka Sen",
+        "musicImg": "https://i.ibb.co/KDpdRrm/desktop-wallpaper-riyaz-aly-we-didn-t-realize-we-were-making-memories-we-just-knew-riyaz-aly-and-anu.jpg",
+        "language": "Hindi",
+        "musicCategory": "Classical",
+        "releaseDate": "2024-02-10",
+        "singerName": "Neha Kakkar & Vibhor Parashar"
+    },
+    {
+        "id": 21,
+        "musicTitle": "Aaj Sajeya | Alaya F | Goldie Sohel",
+        "musicImg": "https://i.ibb.co/gyn78rB/ab67616d00001e02e02f4acab0b9611dd72d252b.jpg",
+        "language": "Hindi",
+        "musicCategory": "webdding",
+        "releaseDate": "2024-02-10",
+        "singerName": "Goldie Sohel "
+    },
+    {
+        "id": 22,
+        "musicTitle": "Radha (Official Video)",
+        "musicImg": "https://i.ibb.co/ZKjvbGR/artworks-rb-HLke470cq-Uk-P0-T-s86-PQA-t500x500.jpg",
+        "language": "Hindi",
+        "musicCategory": "Classical",
+        "releaseDate": "2024-02-10",
+        "singerName": "Dhvani Bhanushali"
+    },
+    {
+        "id": 23,
+        "musicTitle": "faded remix arabic",
+        "musicImg": "https://i.ibb.co/tLgnxsg/hqdefault.jpg",
+        "language": "Arabic",
+        "musicCategory": "Remix",
+        "releaseDate": "2023-08-21",
+        "singerName": "Smooth Jazz Ensemble"
+    },
+    {
+        "id": 24,
+        "musicTitle": "Lamis Kan - Mesaytara (Official Music Video)",
+        "musicImg": "https://i.ibb.co/V2F6mdf/artworks-0z-VD4-Oi-Es7j5zyzo-Zfxw-QA-t500x500.jpg",
+        "language": "Arabic",
+        "musicCategory": "Classical",
+        "releaseDate": "2023-08-21",
+        "singerName": "Lamis Kan"
+    },
+    {
+        "id": 25,
+        "musicTitle": "Kayfa Haluka I Official Music",
+        "musicImg": "https://i.ibb.co/41nkSdP/maxresdefault.jpg",
+        "language": "Arabic",
+        "musicCategory": "Classical",
+        "releaseDate": "2023-08-21",
+        "singerName": "Jannat Zubair"
+    },
+    {
+        "id": 26,
+        "musicTitle": "Saad Lamjarred - LM3ALLEM",
+        "musicImg": "https://i.ibb.co/Dtt855p/maxresdefault-1.jpg",
+        "language": "Arabic",
+        "musicCategory": "Sad",
+        "releaseDate": "2023-08-21",
+        "singerName": "Saad Lamjarred"
+    },
+    {
+        "id": 27,
+        "musicTitle": "Sherine - El Watar El Hassas | شيرين - الوتر الحساس",
+        "musicImg": "https://i.ibb.co/1vBk0v5/ab67616d0000b273cfa4e906cda39d8f62fe81e3.jpg",
+        "language": "Arabic",
+        "musicCategory": "Remix",
+        "releaseDate": "2023-08-21",
+        "singerName": "Sara Sarhan"
+    },
+    {
+        "id": 28,
+        "musicTitle": "Sherine x Busta - Sabry Aleel",
+        "musicImg": "https://i.ibb.co/dfSMFKj/maxresdefault-2.jpg",
+        "language": "Arabic",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2023-08-21",
+        "singerName": "Terjemahan"
+    },
+    {
+        "id": 28,
+        "musicTitle": "Saad Lamjarred - MAL HBIBI MALOU",
+        "musicImg": "https://i.ibb.co/LYrGT19/ba46011d4a893fffc2b9ff55e1722225-1000x1000x1.jpg",
+        "language": "Arabic",
+        "musicCategory": "Hip-hop",
+        "releaseDate": "2023-08-21",
+        "singerName": "Saad Lamjarred"
+    },
+    {
+        "id": 29,
+        "musicTitle": "Habibi [Slowed+Reverb]",
+        "musicImg": "https://i.ibb.co/8r0kcKV/artworks-RX6mh7-FWSKz8whh-C-jprw-Nw-t500x500.jpg",
+        "language": "Arabic",
+        "musicCategory": "ScienceFiction",
+        "releaseDate": "2023-08-21",
+        "singerName": "Smooth Jazz Ensemble"
+    },
+    {
+        "id": 30,
+        "musicTitle": "Sawaha X Faded: The Beauty of Arab Music",
+        "musicImg": "https://i.ibb.co/m6zSGxp/maxresdefault-3.jpg",
+        "language": "Arabic",
+        "musicCategory": "Remix",
+        "releaseDate": "2023-08-21",
+        "singerName": "Sawaha X Faded"
+    },
+    {
+        "id": 23,
+        "musicTitle": "Firefly Serenade",
+        "musicImg": "https://example.com/firefly_serenade.jpg",
+        "language": "Arabic",
+        "musicCategory": "Classical",
+        "releaseDate": "2023-08-21",
+        "singerName": "Smooth Jazz Ensemble"
+    },
+    {
+      "id": 31,
+      "musicTitle": "IU 'Love wins all' MV",
+      "musicImg": "https://i.ibb.co/mXZxg8v/hq720.jpg",
+      "language": "korean",
+      "musicCategory": "Classical",
+      "releaseDate": "2024-02-10",
+      "singerName": "V and iu"
+    },
+    {
+      "id": 32,
+      "musicTitle": "BLACKPINK - Pink Venom M/V",
+      "musicImg": "https://i.ibb.co/sRZ9SY8/maxresdefault.jpg",
+      "language": "korean",
+      "musicCategory": "Classical",
+      "releaseDate": "2024-02-10",
+      "singerName": "Rose, jennie, lisa"
+    },
+    {
+      "id": 33,
+      "musicTitle": "[MV] 수지(Suzy), 백현(BAEKHYUN)",
+      "musicImg": "https://i.ibb.co/Qk7TQYy/80773053-1452076920947-1-600x600.jpg",
+      "language": "korean",
+      "musicCategory": "webdding",
+      "releaseDate": "2024-02-10",
+      "singerName": "V and iu"
+    },
+    {
+      "id": 34,
+      "musicTitle": "JENNIE - You & Me DANCE PERFORMANCE VIDEO",
+      "musicImg": "https://i.ibb.co/ZB5rqXr/blackpink-231006-jennie-you-and-me-official-photo-1.jpg",
+      "language": "korean",
+      "musicCategory": "Hip-hop",
+      "releaseDate": "2024-02-10",
+      "singerName": "Jennie"
+    },
+    {
+      "id": 35,
+      "musicTitle": "Justin Bieber - Baby ft. Ludacris",
+      "musicImg": "https://i.ibb.co/cDPxCmm/maxresdefault-1.jpg",
+      "language": "korean",
+      "musicCategory": "ScienceFiction",
+      "releaseDate": "2024-02-10",
+      "singerName": "V and iu"
+    },
+    {
+      "id": 36,
+      "musicTitle": "DHARIA - Sugar & Brownies (by Monoir) [Official Video]",
+      "musicImg": "https://i.ibb.co/BZr2zFr/maxresdefault-2.jpg",
+      "language": "korean",
+      "musicCategory": "Remix",
+      "releaseDate": "2024-02-10",
+      "singerName": "Sugar & Brownies"
+    },
+    {
+      "id": 37,
+      "musicTitle": "Serena - Safari (Official Video)",
+      "musicImg": "https://i.ibb.co/wwpRcNp/artworks-000590568620-kppmwq-t500x500.jpg",
+      "language": "korean",
+      "musicCategory": "Classical",
+      "releaseDate": "2024-02-10",
+      "singerName": "Serena"
+    },
+    {
+      "id": 38,
+      "musicTitle": "Marshmello & Anne-Marie - FRIENDS",
+      "musicImg": "https://i.ibb.co/8m5sHvd/MV5-BNm-Y0-OWFl-Mz-Yt-MDNk-ZC00-YTdh-LWI4-ZWEt-M2-I5-OWZl-Yz-Vk-NGQz-Xk-Ey-Xk-Fqc-Gde-QXVy-Nj-E0-ODc.jpg",
+      "language": "korean",
+      "musicCategory": "Classical",
+      "releaseDate": "2024-02-10",
+      "singerName": "Marshmello & Anne-Marie"
+    },
+    {
+      "id": 39,
+      "musicTitle": "FIFTY FIFTY (피프티피프티) ",
+      "musicImg": "https://i.ibb.co/rb0bv4B/artworks-5-Ys2ad-NWBMAVG9-PB-7-S0-T1-A-t500x500.jpg",
+      "language": "korean",
+      "musicCategory": "Hip-hop",
+      "releaseDate": "2024-02-10",
+      "singerName": "Jinsil Baek, Jeff Kim"
+    },
+    {
+      "id": 40,
+      "musicTitle": "[4K] 180526 볼빨간사춘기 '썸 탈꺼야' 직캠",
+      "musicImg": "https://i.ibb.co/QJczKMr/maxresdefault-3.jpg",
+      "language": "korean",
+      "musicCategory": "ScienceFiction",
+      "releaseDate": "2024-02-10",
+      "singerName": "썸 탈꺼야"
+    },
+    {
+      "id": 41,
+      "musicTitle": "Don Omar - Danza Kuduro",
+      "musicImg": "https://i.ibb.co/frM8H54/maxresdefault-4.jpg",
+      "language": "Spanish",
+      "musicCategory": "Remix",
+      "releaseDate": "2023-08-21",
+      "singerName": "Don Omar"
+    },
+    {
+      "id": 42,
+      "musicTitle": "Sofia Reyes - 1, 2, 3 (feat. Jason Derulo & De La Ghetto)",
+      "musicImg": "https://i.ibb.co/3vBW4q9/ab67616d0000b273775d1e288c04237d896e8357.jpg",
+      "language": "Spanish",
+      "musicCategory": "Hip-hop",
+      "releaseDate": "2023-08-21",
+      "singerName": "Sofia Reyes"
+    },
+    {
+      "id": 43,
+      "musicTitle": "Arash - Broken Angel",
+      "musicImg": "https://i.ibb.co/mCHbVny/640x640.jpg",
+      "language": "Spanish",
+      "musicCategory": "Sad",
+      "releaseDate": "2023-08-21",
+      "singerName": "Arash"
+    },
+    {
+      "id": 44,
+      "musicTitle": "Let Me Down Slowly x Main",
+      "musicImg": "https://i.ibb.co/cv1J5fL/maxresdefault-5.jpg",
+      "language": "Spanish",
+      "musicCategory": "Sad",
+      "releaseDate": "2023-08-21",
+      "singerName": "Dhoondne"
+    },
+    {
+      "id": 45,
+      "musicTitle": "Ava Max - Into Your Arms x Alone,",
+      "musicImg": "https://i.ibb.co/SRdQhGw/maxresdefault-6.jpg",
+      "language": "Spanish",
+      "musicCategory": "Sad",
+      "releaseDate": "2023-08-21",
+      "singerName": "Ava"
+    },
+    
+    {
+      "id": 46,
+      "musicTitle": "DHARIA - Miles Above (Official Video)",
+      "musicImg": "https://i.ibb.co/WDcFbvn/artworks-Pb-M9126ijyl-Hjzak-Wlh-Uvw-t500x500.jpg",
+      "language": "Spanish",
+      "musicCategory": "Remix",
+      "releaseDate": "2023-08-21",
+      "singerName": "DHARIA"
+    },
+    {
+      "id": 47,
+      "musicTitle": "DHARIA - August Diaries (Hans Roy Remix)",
+      "musicImg": "https://i.ibb.co/cJKVmmd/artworks-k-Kbsn9b-Fh-PVBpmc0-5uy-Ep-Q-t500x500.jpg",
+      "language": "Spanish",
+      "musicCategory": "Remix",
+      "releaseDate": "2023-08-21",
+      "singerName": "Don Omar"
+    },
+    {
+      "id": 48,
+      "musicTitle": "XO Team - Reason (Lyrics) baby you the reason",
+      "musicImg": "https://i.ibb.co/5xqDvyN/maxresdefault-7.jpg",
+      "language": "Spanish",
+      "musicCategory": "Classical",
+      "releaseDate": "2023-08-21",
+      "singerName": "Don Omar"
+    },
+    {
+      "id": 49,
+      "musicTitle": "Isa - Andro (Lyrics)",
+      "musicImg": "https://i.ibb.co/x7wNq83/maxresdefault-8.jpg",
+      "language": "Spanish",
+      "musicCategory": "Remix",
+      "releaseDate": "2023-08-21",
+      "singerName": "andro || || sonnaya lunnaya "
+    },
+    {
+      "id": 50,
+      "musicTitle": "Lost Sky - Fearless pt. II (feat. Chris Linton)",
+      "musicImg": "https://i.ibb.co/r3Ykmsf/ae26641656047b39e92a7bc2408de9e34d8857e0e623e1978fe64ad9c2851a47.jpg",
+      "language": "Spanish",
+      "musicCategory": "Remix",
+      "releaseDate": "2023-08-21",
+      "singerName": "Chris Linton"
+    }
+  ]
