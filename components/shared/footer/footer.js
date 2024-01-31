@@ -3,6 +3,7 @@ import Image from "next/image";
 import logo from "@/public/VibeWabe.png";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 const Footer = () => {
   const {t} = useTranslation();
   return (
@@ -21,7 +22,7 @@ const Footer = () => {
                 </h6>
               </Link>
               <Link href="#">
-                <h6 className="hover:underline text-center">Contact Us</h6>
+                <h6 className="hover:underline text-center">{t("contact")}</h6>
               </Link>
             </div>
           </div>
@@ -30,10 +31,10 @@ const Footer = () => {
             {/* Browse Part  */}
             <div className="">
               <h2 className="text-xs md:text-lg  font-bold uppercase">
-                Browse
+                {t("Browse")}
               </h2>
               <Link href="#">
-                <h6 className="my-6 hover:underline text-center">Movies</h6>
+                <h6 className="my-6 hover:underline text-center">{t("Movies")}</h6>
               </Link>
               <Link href="#">
                 <h6 className="hover:underline text-center">Musics</h6>
@@ -42,33 +43,35 @@ const Footer = () => {
             {/* Legal Part  */}
             <div className="">
               <h2 className="text-xs md:text-lg text-center md:text-left font-bold uppercase">
-                Legal
+                {t("Legal")}
               </h2>
               <Link href="#">
-                <h6 className=" hover:underline mt-6 mb-1 md:mb-3">FAQ</h6>
+                <h6 className=" hover:underline mt-6 mb-1 md:mb-3">{t("FAQ")}</h6>
               </Link>
               <Link href="#">
-                <h6 className=" hover:underline mb-1 md:mb-3">Agreements</h6>
+                <h6 className=" hover:underline mb-1 md:mb-3">{t("agreements")}</h6>
               </Link>
               <Link href="#">
                 <h6 className=" hover:underline mb-1 md:mb-3">
-                  Terms & Conditions
+                {t("terms")}
                 </h6>
               </Link>
               <Link href="#">
-                <h6 className=" hover:underline mb-3">Privacy Policy</h6>
+                <h6 className=" hover:underline mb-3">{t("privacy")}</h6>
               </Link>
             </div>
           </div>
           {/* select language part */}
           <div className="text-xs md:text-lg  font-bold uppercase">
-            <h2 className="">Select Language</h2>
-            <select className="border p-2 rounded-lg mt-6 bg-black text-sm w-full">
+            <h2 className="">{t("Select Language")}</h2>
+            {/* <select className="border p-2 rounded-lg mt-6 bg-black text-sm w-full">
               <option selected>English</option>
               <option>Bengali</option>
               <option>Arabic</option>
-            </select>
+            </select> */}
+            <LanguageChanger></LanguageChanger>
           </div>
+          
         </div>
         {/* copy right text  */}
         <h6 className="text-center mt-6 text-sm text-gray-300">
