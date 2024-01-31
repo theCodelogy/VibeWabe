@@ -8,6 +8,7 @@ import LandPageFooter from "@/components/shared/footer/landFooter";
 import Navbar from "@/components/shared/navbar/Navbar";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationProvider";
+import ReviewCard from "@/components/ReviewCrad/ReviewCard";
 
 // #131722
 export default async function HomePage ({params: {locale}}) {
@@ -23,6 +24,7 @@ export default async function HomePage ({params: {locale}}) {
       <FristLandingAudio/>
       <FirstTrendingMovies />
       <Faq />
+      <ReviewCard/>
       <LandPageFooter />
      
     </div>
