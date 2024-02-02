@@ -1,4 +1,3 @@
-// next.config.js
 module.exports = {
   webpack: (config, { isServer }) => {
     // Add file-loader for video files
@@ -8,8 +7,8 @@ module.exports = {
         {
           loader: "file-loader",
           options: {
-            outputPath: "static/videos/", // Output path for the videos
-            publicPath: "/_next/static/videos/", // Public path for the videos
+            outputPath: "static/videos/",
+            publicPath: "/_next/static/videos/",
             name: "[name].[ext]",
             esModule: false,
           },
@@ -25,11 +24,11 @@ module.exports = {
     return config;
   },
   images: {
+    domains: ['127.0.0.1', 'localhost'], // Include localhost as an allowed domain
     remotePatterns: [
       {
         protocol: "https",
         hostname: "**",
-        // hostname: "i.ibb.co",
       },
     ],
   },

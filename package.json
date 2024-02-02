@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tanstack/react-query": "^5.18.0",
     "axios": "^1.6.5",
     "firebase": "^10.7.2",
     "i18next": "^23.7.19",
@@ -30,8 +31,10 @@
     "react-player": "^2.14.1",
     "react-responsive-carousel": "^3.2.23",
     "react-slick": "^0.29.0",
+    "react-vanilla-tilt": "^1.0.0",
     "sharp": "^0.33.2",
     "slick-carousel": "^1.8.1",
+    "sweetalert2": "^11.10.4",
     "swiper": "^11.0.5"
   },
   "devDependencies": {
