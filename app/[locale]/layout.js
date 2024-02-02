@@ -14,7 +14,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: {locale}}) {
-  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama'];
+  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama', 'channel'];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
     <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
