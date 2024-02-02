@@ -162,14 +162,21 @@ import { FreeMode, Navigation } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 const MovieUpComingCard = async () => {
-  const {t} = useTranslation();
-  const res = await fetch(
-    "https://vibewabe-server.vercel.app/video?category=movie"
-  );
-  const drama = await res.json();
-  console.log(drama);
+  const { t } = useTranslation();
+  const [drama, setDrama] = useState([]);
+  useEffect(() => {
+    axios
+      .get(
+        "https://vibewabe-server.vercel.app/video?category=movie&tags=comedy"
+      )
+      .then((res) => {
+        setDrama(res.data);
+      });
+  }, []);
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
