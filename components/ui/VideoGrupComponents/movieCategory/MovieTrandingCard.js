@@ -163,15 +163,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { useTranslation } from "react-i18next";
 import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 // eslint-disable-next-line @next/next/no-async-client-component
 const MovieTrandingCard = async () => {
   const {t} = useTranslation();
-  const res = await fetch(
-    "https://vibewabe-server.vercel.app/video?category=movie"
-  );
-  const drama = await res.json();
-  console.log(drama);
+  const [drama ,setDrama] = useState([])
+  useEffect(() =>{
+    axios.get('https://vibewabe-server.vercel.app/video?category=movie')
+    .then(res =>{
+      setDrama(res.data)
+    })
+  },[])
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
