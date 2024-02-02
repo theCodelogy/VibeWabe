@@ -20,14 +20,16 @@ import theGrayMan from "@/assets/Thrillers-movies/theGrayMan.jpeg";
 import nightIsLonely from "@/assets/Thrillers-movies/nightIsLonely.jpeg";
 import TheGuilty from "@/assets/Thrillers-movies/TheGuilty.jpeg";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 
 const BestSeries = () => {
+  const {t} = useTranslation();
   return (
     <div className="text-white container  mx-auto px-5 pt-12">
       <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
-            Best Series{" "}
+            {t("video:bestseries")}{" "}
           </h3>
 
           <button className="absolute top-0 left-28 hidden group-hover:inline-block px-4 py-2 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline">

@@ -19,12 +19,14 @@ import img7 from "@/assets/DramaImage/img7.jpg";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const Watched = () => {
+  const {t} = useTranslation();
   return (
     <div className=" my-14 container mx-auto pt-10 px-10">
       <h1 className="text-xl font-bold text-white py-3 border-b border-zinc-500 mb-6 ">
-        Already Watched
+      {t("mystuff:alreadywatched")}
       </h1>
       <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8">
         <div className="w-full col-span-3">

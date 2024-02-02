@@ -19,12 +19,14 @@ import img7 from "@/assets/DramaImage/img7.jpg";
 import Image from "next/image";
 import { IoIosArrowDropright } from "react-icons/io";
 import { IoIosArrowDropleft } from "react-icons/io";
+import { useTranslation } from "react-i18next";
 
 const StuffBanner = () => {
+  const {t} = useTranslation();
   return (
     <div className="container mx-auto px-10">
       <h1 className="text-xl font-bold text-white py-3 border-b border-zinc-500 mb-6 ">
-        My Watchlists
+        {t("mystuff:mywatchlists")}
       </h1>
       <div className=" grid grid-cols-1 lg:grid-cols-5 gap-8">
         <div className="w-full col-span-3">

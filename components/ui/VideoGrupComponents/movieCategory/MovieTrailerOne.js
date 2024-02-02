@@ -63,7 +63,7 @@ const MovieTrailerOne = () => {
         <div className="mb-4">
             <h6 className="text-sm text-gray-600 mb-1">2022 | Action, Drama</h6>
             <div className="flex items-center">
-                <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-2">Rent ৳20</button>
+                <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Rent ৳20</button>
             </div>
         </div>
         <div className="mb-4">
@@ -72,8 +72,8 @@ const MovieTrailerOne = () => {
             </h6>
         </div>
         <div className="flex">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
-            <button className="text-blue-500 border border-blue-500 px-4 py-2 rounded-full">Add to List</button>
+            <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
+            <button className="text-white  border-red-600 px-4 py-2 rounded-full">Add to List</button>
         </div>
     </div>
 </div>

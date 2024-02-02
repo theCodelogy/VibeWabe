@@ -1,12 +1,15 @@
+'use client'
 import Image from "next/image";
 import React from "react";
 import musicimg from "@/assets/music/card2.jpg";
+import { useTranslation } from "react-i18next";
 
 const TrendingMusic = () => {
+  const {t} = useTranslation();
   return (
     <div className="my-14 container mx-auto px-10">
       <h1 className="text-2xl font-bold text-white py-3 border-b-2 border-white mb-6 ">
-        Trending Songs
+        {t("music:trendingsongs")}
       </h1>
 
       <div className="border-2 p-5 rounded-md bg-zinc-800">
@@ -30,8 +33,8 @@ const TrendingMusic = () => {
             </p>
             <p className="text-lg font-normal leading-7">Release Date: 2022</p>
             <div className="flex">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
-            <button className="text-blue-500 border border-blue-500 px-4 py-2 rounded-full">Add to List</button>
+            <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
+            <button className="text-white border border-red-600 px-4 py-2 rounded-full">Add to List</button>
         </div>
           </div>
         </div>
