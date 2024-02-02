@@ -39,7 +39,7 @@ const SubscriptionForm = () => {
     };
     console.log(subscribeForm);
 
-    fetch("http://localhost:5000/payment", {
+    fetch("https://vibewabe-server.vercel.app/payment", {
       method: "POST",
       headers: { "content-type": "application/json" },
       body: JSON.stringify(subscribeForm),
@@ -74,7 +74,7 @@ const SubscriptionForm = () => {
               id="name"
               placeholder="Enter Your Name"
               {...register("name", { required: "This field is required" })}
-              className=" py-[13px] px-3 border  bg-[#101726] text-white rounded "
+              className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5 "
             />
             <p className="text-red-700">{errors.name?.message}</p>
           </div>
@@ -88,7 +88,7 @@ const SubscriptionForm = () => {
               id="email"
               placeholder="Enter Your E-mail"
               {...register("email", { required: "This field is required" })}
-              className=" py-[13px] px-3 border  bg-[#101726] text-white rounded"
+              className=" w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             />
             <p className="text-red-700">{errors.email?.message}</p>
           </div>
@@ -105,7 +105,7 @@ const SubscriptionForm = () => {
               value={category}
               onChange={(e) => setCategory(e.target.value)}
               id="category"
-              className=" py-[13px] px-3 border rounded  bg-[#101726] text-white "
+              className="w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5 "
               // {...register("category", { required: "This field is required" })}
             >
               <option disabled value="default">
@@ -127,7 +127,7 @@ const SubscriptionForm = () => {
               id="phone"
               placeholder="Enter Your Phone Number"
               {...register("phone", { required: "This field is required" })}
-              className=" py-[13px] px-3 border  bg-[#101726] text-white rounded"
+              className=" w-full px-8 py-4 rounded-lg font-medium bg-gray-100 border border-gray-200 placeholder-gray-500 text-sm focus:outline-none focus:border-gray-400 focus:bg-white mt-5"
             />
             <p className="text-red-700">{errors.phone?.message}</p>
           </div>
