@@ -40,7 +40,7 @@ export default function LanguageChanger() {
 
   return (
     <div className="flex">
-      <Image src={logo} height={27} width={27} />
+      <Image src={logo} alt="multiLenguageIcon" height={27} width={27} />
       <select
         className="text-white font-semibold p-2 rounded-lg bg-black text-sm w-ful"
         onChange={handleChange}

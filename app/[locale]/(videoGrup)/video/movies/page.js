@@ -14,7 +14,7 @@ const Page = () => {
       <MovieTrandingCard />
       <MovieTrailerOne />
       <MovieUpComingCard />
-      {/* <ComedyMovies /> */}
+      <ComedyMovies />
     </div>
   );
 };
