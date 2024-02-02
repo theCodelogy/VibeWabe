@@ -1,4 +1,5 @@
 "use client";
+import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 import { authContext } from "@/utils/AuthProvider";
 import Link from "next/link";
 import { useContext, useState } from "react";
@@ -7,11 +8,12 @@ import { useTranslation } from "react-i18next";
 const NavBtn = () => {
   const { user, signout } = useContext(authContext);
   const [showProfile, setShowProfile] = useState(false);
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <>
       {user?.email ? (
         <>
+          <LanguageChanger />
           <div
             onClick={() => {
               setShowProfile(!showProfile);
@@ -59,6 +61,7 @@ const NavBtn = () => {
         </>
       ) : (
         <div className="flex sm:gap-5 lg:gap-8 uppercase">
+          <LanguageChanger />
           <Link
             href={"/login"}
             className="bg-[#6D28D9 bg-gradient-to-r from-red-600 to-zinc-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
