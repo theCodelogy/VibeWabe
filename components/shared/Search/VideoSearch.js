@@ -9,7 +9,6 @@ import SearchVideoCard from "./SearchVideoCard";
 const VideoSearch= () => {
     const [videos, setVideos] = useState([])
     const [searchText, setSearchText] = useState("")
-    const [limit, setLimit] = useState()
     const [hidden, setHidden] = useState(true)
 
 
@@ -23,7 +22,7 @@ const VideoSearch= () => {
                     setHidden(false)
                 }
             })
-    }, [searchText,limit])
+    }, [searchText])
 
     const searchInputHandle = async e => {
       const value = await e.target.value

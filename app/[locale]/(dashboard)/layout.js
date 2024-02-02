@@ -21,7 +21,7 @@ export default function DashboardLayout({ children }) {
           aria-label="close sidebar"
           className="drawer-overlay"
         ></label>
-        <ul className="menu p-4 w-80 min-h-full bg-base-200 text-base-content">
+        <ul className="menu p-4 w-60 bg-white min-h-full text-black ">
           {/* Sidebar content here */}
           <li>
             <Link
@@ -35,7 +35,10 @@ export default function DashboardLayout({ children }) {
           <li>
             <Link href={"/dashboard/alreadyWatched"}>Profile</Link>
           </li>
-          <li>
+          <li >
+            <Link href={"/dashboard/allVideos"}>All Videos</Link>
+          </li>
+          <li >
             <Link href={"/dashboard/videoUpload"}>Video Upload</Link>
           </li>
           <li>
