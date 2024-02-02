@@ -19,13 +19,15 @@ import theHungerGames from "@/assets/Action-movies/theHungerGames.jpg";
 import animal from "@/assets/Action-movies/animal.jpg";
 import theCreator from "@/assets/Action-movies/theCreator.jpg";
 import Link from "next/link";
+import { useTranslation } from "react-i18next";
 const ActionMovies = () => {
+  const {t} = useTranslation();
   return (
     <div className="text-white container  mx-auto px-5  ">
       <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
-            Actions{" "}
+            {t("video:actions")}{" "}
           </h3>
 
           <button className="absolute top-0 left-20 hidden group-hover:inline-block px-4 py-2 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline">

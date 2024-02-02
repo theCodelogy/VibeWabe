@@ -19,11 +19,13 @@ import banner6 from '@/assets/Musics/CategoryImg/Categorybanner1.jpg'
 import banner5 from '@/assets/Musics/CategoryImg/Categorybanner14.jpg'
 import banner4 from '@/assets/Musics/CategoryImg/Categorybanner3.jpg'
 import { FaCirclePlay } from 'react-icons/fa6';
+import { useTranslation } from 'react-i18next';
 
 const MusicCategory = () => {
+    const {t} = useTranslation();
     return (
         <div className='mb-32 px-5 container mx-auto mt-20'>
-        <h3 className='text-white text-xl font-bold'>Most Popular Song</h3>
+        <h3 className='text-white text-xl font-bold'>{t("music:mostpopularsongs")}</h3>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
