@@ -6,6 +6,10 @@ import MovieTrandingCard from "@/components/ui/VideoGrupComponents/movieCategory
 import MovieUpComingCard from "@/components/ui/VideoGrupComponents/movieCategory/MovieUpComingCard";
 
 import MovieTrailerOne from '@/components/ui/VideoGrupComponents/movieCategory/MovieTrailerOne';
+import MovieComedy from "@/components/ui/VideoGrupComponents/movieCategory/MovieComedy";
+import MovieKids from "@/components/ui/VideoGrupComponents/movieCategory/MovieKids";
+import MovieAdventure from "@/components/ui/VideoGrupComponents/movieCategory/MovieAdventure";
+import MovieHorror from "@/components/ui/VideoGrupComponents/movieCategory/MovieHorror";
 
 const Page = () => {
   
@@ -15,9 +19,12 @@ const Page = () => {
             <MovieBanner />
             <Filter/>
             <MovieTrandingCard/>
-            <MovieTrailerOne/>
             <MovieUpComingCard/>
-            
+            <MovieComedy/>
+            <MovieTrailerOne/>
+            <MovieKids/>
+            <MovieAdventure/>
+            <MovieHorror/>
         </div>
     );
 };
