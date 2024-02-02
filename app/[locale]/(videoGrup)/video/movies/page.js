@@ -1,4 +1,3 @@
-
 import React from "react";
 import MovieBanner from "@/components/ui/VideoGrupComponents/movieCategory/movieBanner";
 import Filter from "@/components/ui/VideoGrupComponents/movieCategory/Filter";
@@ -29,4 +28,3 @@ const Page = () => {
     );
 };
 export default Page;
-

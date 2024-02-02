@@ -10,26 +10,26 @@ import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationProvider";
 import ReviewCard from "@/components/ReviewCrad/ReviewCard";
 
-// #131722
-export default async function HomePage ({params: {locale}}) {
-  const i18NameSpaces = ['common', 'mystuff', 'landing'];
+export default async function HomePage({ params: { locale } }) {
+  const i18NameSpaces = ["common", "mystuff", "landing"];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
-    <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
-    <div className="">
-      <Navbar />
-      <FristHomeBanner />
-      <FirstMusicTypes />
-      <FristLandingFeature />
-      <FristLandingAudio/>
-      <FirstTrendingMovies />
-      <Faq />
-      <ReviewCard/>
-      <LandPageFooter />
-     
-    </div>
-    </TranslationsProvider> 
+    <TranslationsProvider
+      resources={resources}
+      locale={locale}
+      namespaces={i18NameSpaces}
+    >
+      <div className="">
+        <Navbar />
+        <FristHomeBanner />
+        <FirstMusicTypes />
+        <FristLandingFeature />
+        <FristLandingAudio />
+        <FirstTrendingMovies />
+        <Faq />
+        <ReviewCard />
+        <LandPageFooter />
+      </div>
+    </TranslationsProvider>
   );
-};
-
-
+}
