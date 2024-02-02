@@ -10,12 +10,11 @@ const Upcomming = () => {
             <source src={Video} type="video/mp4" />
           </video> */}
           <iframe
-            className="w-full h-[43vh]"
+            className=" w-full h-[100vh] md:h-[43vh]"
             src="https://www.youtube.com/embed/Ruyl8_PT_y8"
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            frameBorder="0"
-            allowFullScreen
+           
           ></iframe>
         </div>
       </div>

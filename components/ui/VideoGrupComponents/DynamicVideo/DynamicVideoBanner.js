@@ -21,7 +21,7 @@ const DynamicVideoBanner = ({video}) => {
           <h6 className="text-white text-xs md:text-lg">Starting from ৳60</h6>
           <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
         </div>
-        <button className="btn bg-blue-500 text-white rounded-full hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300">
+        <button className="btn bg-gradient-to-r from-red-600 to-zinc-500  text-white rounded-full focus:outline-none focus:ring focus:border-blue-300">
           Remove Ads
         </button>
       </div>
@@ -30,12 +30,12 @@ const DynamicVideoBanner = ({video}) => {
       <main className="container mx-auto px-4 py-8">
         <div className="flex md:flex-row flex-col-reverse -mx-4">
           <div className="w-full lg:w-2/3 px-4">
-            <h2 className="text-xl text-white font-bold my-4 md:my-0 ">Suspended Boyfriend</h2>
+            <h2 className="text-xl text-white font-bold my-4 md:my-0 ">{video.title}</h2>
             <p className="text-[#a6a6a6] text-xs my-2">
-              2023 • Single Drama • 40 Min 49 Sec
+             {video.date}
             </p>
             <p className="text-[#a6a6a6] my-4">
-              Every time Shejan makes a mistake, he is punished by his girlfriend Ahona, an arrogant young woman. Despite being madly in love with Ahona, Shejan tol...
+              {video.description}
 
 
             </p>
