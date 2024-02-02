@@ -6,7 +6,7 @@ import { FaStar } from "react-icons/fa";
 const SearchVideoCard = ({ video }) => {
     return (
         <div>
-        <Link href={`http://localhost:3000/video/${video._id}`}>
+        <Link href={`/video/${video._id}`}>
             <div className='flex gap-3 mt-1 md:mt-4 pb-1 px-3 border-b border-white cursor-pointer hover:bg-[#000000de] hover:text-gray-300 transition-all text-white'>
 
                 <Image className=' w-[60px] h-[60px] rounded' src={video.thambnail} alt='image' width={50} height={50} />
