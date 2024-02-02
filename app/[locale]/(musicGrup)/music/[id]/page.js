@@ -4,7 +4,8 @@ import PlayMusic from '@/components/ui/categoryGroupComponents/PlayMusic/PlayMus
 import PlayMusicList from '@/components/ui/categoryGroupComponents/PlayMusic/PlayMusicList';
 import React from 'react';
 
-const MusicDetails = () => {
+const MusicDetails = async() => {
+
     return (
         <div>
             {/* music open */}
