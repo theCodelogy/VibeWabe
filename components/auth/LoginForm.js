@@ -11,6 +11,8 @@ import axios from 'axios';
 import Image from 'next/image';
 import imageOne from '@/assets/15848031292911696601-undraw_designer_life_w96d.svg'
 import Logo from '@/public/VibeWabe.png'
+
+
 const LoginForm = () => {
     const router = useRouter();
     const { signIn, signIngWithGoogle, user } = useContext(authContext)

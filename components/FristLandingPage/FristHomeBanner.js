@@ -1,7 +1,9 @@
 "use client"
 import Link from "next/link";
 import banner from '@/assets/banner.jpg'
-import bannerTwo from '@/assets/Black and White Simple Minimalist Futuristic Gaming YouTube Banner (1).png'
+import bannerTwo from '@/assets/crowd-people-performance-black-and-white.jpg'
+// import bannerTwo from '@/assets/Screenshot 2024-01-30 183339.png'
+// import bannerTwo from '@/assets/tomorrowland-best-summer-music-festivals-europe.jpg'
 import Image from "next/image";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';

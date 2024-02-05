@@ -4,6 +4,7 @@ import AuthProvider from "@/utils/AuthProvider";
 import { Toaster } from "react-hot-toast";
 import GotoTop from "@/components/GotoTop/GotoTop"
 import initTranslations from "../i18n";
+import QueryProvider from "@/QueryProvider";
 const inter = Inter({ subsets: ["latin"] });
 import TranslationsProvider from "@/components/TranslationProvider";
 
@@ -13,7 +14,7 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: {locale}}) {
-  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama'];
+  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama', 'channel'];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
     <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
@@ -23,14 +24,16 @@ export default async function RootLayout({ children, params: {locale}}) {
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </head>
       <body className={inter.className}>
-        <AuthProvider>
-          {children}
-          <Toaster
-            position="top-right"
-            reverseOrder={false}
-          />
-          <GotoTop/>
-        </AuthProvider>
+        <QueryProvider>
+          <AuthProvider>
+            {children}
+            <Toaster
+              position="top-right"
+              reverseOrder={false}
+            />
+            <GotoTop />
+          </AuthProvider>
+        </QueryProvider>
       </body>
     </html>
     </TranslationsProvider>
