@@ -1,11 +1,23 @@
 'use client'
 import React from 'react';
+import toast from 'react-hot-toast';
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
 import { AiFillDislike } from "react-icons/ai";
 
 
 const DynamicVideoBanner = ({video}) => {
+  const handleCopyClick = () => {
+    const codeElement = document.querySelector('.language-javascript code');
+    const textArea = document.createElement('textarea');
+    textArea.value = codeElement.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    toast.success('link copied to clipboard!');
+  };
+
   return (
     <div className='max-w-screen-xl mx-auto'>
       <iframe
@@ -21,8 +33,12 @@ const DynamicVideoBanner = ({video}) => {
           <h6 className="text-white text-xs md:text-lg">Starting from ৳60</h6>
           <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
         </div>
-        <button className="btn bg-gradient-to-r from-red-600 to-zinc-500  text-white rounded-full focus:outline-none focus:ring focus:border-blue-300">
-          Remove Ads
+        <button  id="copyButton"
+            onClick={handleCopyClick} className="btn bg-gradient-to-r from-red-600 to-zinc-500  text-white rounded-full focus:outline-none focus:ring focus:border-blue-300">
+          Copy Link
+          <pre className="language-javascript">
+          <code className="text-sm hidden">{video.url}</code>
+        </pre>
         </button>
       </div>
 
@@ -81,8 +97,7 @@ const DynamicVideoBanner = ({video}) => {
 
 
 
-
-
+     
 
 
     </div>
