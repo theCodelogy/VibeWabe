@@ -2,56 +2,56 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import VideoTabilRow from './VideoTabilRow';
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { RxCross2 } from "react-icons/rx";
+import MusicTableRow from './MusicTableRow';
 
 
-const VideoTabil = () => {
+const MusicTable = () => {
     const [searchText, setSearchText] = useState('')
     const [category, setCategoty] = useState('')
     const [language, setLanguage] = useState('')
     const [itemParPage, setItemParPage] = useState(15)
     const [currentPage, setCurrentPage] = useState(1)
-    const [totalVideos, setTotalVieos] = useState()
+    const [totalMusics, setTotalMusics] = useState()
 
 
 
-    const { data: allVideos = [], refetch, isLoading } = useQuery({
+    const { data: allMusics = [], refetch, isLoading } = useQuery({
         queryKey: [],
         queryFn: async () => {
-            const res = await axios.get(`https://vibewabe-server.vercel.app/video?title=${searchText}&category=${category}&language=${language}&limit=${itemParPage}&page=${currentPage - 1}`)
+            const res = await axios.get(`https://vibewabe-server.vercel.app/music?title=${searchText}&category=${category}&language=${language}&limit=${itemParPage}&page=${currentPage - 1}`)
             return res.data;
         }
     })
 
     useEffect(() => {
-        axios.get(`https://vibewabe-server.vercel.app/video?title=${searchText}&category=${category}&language=${language}`)
-            .then(res => setTotalVieos(res.data.length))
+        axios.get(`https://vibewabe-server.vercel.app/music?title=${searchText}&category=${category}&language=${language}`)
+            .then(res => setTotalMusics(res.data.length))
         refetch()
 
-    }, [category, searchText, refetch, itemParPage, currentPage, allVideos, language])
+    }, [category, searchText, refetch, itemParPage, currentPage, allMusics,language])
 
 
 
 
-    // Video search by title
+    // Music search by Name
     const searchHeandle = async e => {
         const value = await e.target.value
         setSearchText(value)
         setCurrentPage(1)
     }
 
-    // Video search clear
+    // Music search clear
     const clearHandle = () => {
         setSearchText('')
         refetch()
     }
 
-    // video filter by category
-    const filterHandle = async e => {
+    // Music filter by category
+    const categoryFilter = async e => {
         const value = await e.target.value
         if (value === 'all') {
             setCategoty('')
@@ -61,9 +61,8 @@ const VideoTabil = () => {
             setCurrentPage(1)
         }
 
-    }
-
-    // video filter by Language
+    } 
+    // Music filter by Language
     const languageFilter = async e => {
         const value = await e.target.value
         if (value === 'all') {
@@ -77,13 +76,13 @@ const VideoTabil = () => {
     }
 
     // Pagination
-    const pageNumber = Math.ceil(totalVideos / itemParPage)
+    const pageNumber = Math.ceil(totalMusics / itemParPage)
     const pages = []
     for (let i = 1; i <= pageNumber; i++) {
         pages.push(i)
     }
 
-    // Video parpage Handle
+    // Music parpage Handle
     const itemParPageHandle = e => {
         setItemParPage(parseInt(e.target.value))
         setCurrentPage(1)
@@ -109,12 +108,15 @@ const VideoTabil = () => {
             <div className="overflow-x-auto">
                 <div className='flex items-center justify-center gap-3 mb-5 mt-3'>
 
-                    <select onChange={filterHandle} defaultValue={'default'} className='px-3 md:px-4 lg:px-6 py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
+                    <select onChange={categoryFilter} defaultValue={'default'} className='px-3 md:px-4 lg:px-6 py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
                         <option disabled value={'default'}>Category..</option>
                         <option value={'all'}>All</option>
-                        <option value={'drama'}>Drama</option>
-                        <option value={'movie'}>Movie</option>
-                        <option value={'series'}>Series</option>
+                        <option value={'Classical'}>Classical</option>
+                        <option value={'Remix'}>Remix</option>
+                        <option value={'Sad'}>Sad</option>
+                        <option value={'SaHip-hopd'}>Hip-hop</option>
+                        <option value={'Romantic'}>Romantic</option>
+                        <option value={'webdding'}>webdding</option>
                     </select>
 
                     <select onChange={languageFilter} defaultValue={'default'} className='px-3 md:px-4 lg:px-6  py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
@@ -145,7 +147,7 @@ const VideoTabil = () => {
                         <tr className='text-gray-200 text-[10px] md:text-xs font-light '>
                             <th className='font-light lg:font-medium'>No:</th>
                             <th className='font-light lg:font-medium'>Thambnail</th>
-                            <th className='font-light lg:font-medium'>Video Title</th>
+                            <th className='font-light lg:font-medium'>Music Title</th>
                             <th className='font-light lg:font-medium'>Date</th>
                             <th className='font-light lg:font-medium'>Category</th>
                             <th className='font-light lg:font-medium'>Recom..</th>
@@ -157,11 +159,11 @@ const VideoTabil = () => {
                     <tbody>
 
                         {
-                            allVideos?.map((video, videoIndex) => <VideoTabilRow
-                                key={video._id}
-                                video={video}
+                            allMusics?.map((music, musicIndex) => <MusicTableRow
+                                key={music._id}
+                                music={music}
                                 refetch={refetch}
-                                videoIndex={videoIndex}
+                                musicIndex={musicIndex}
                             />)
                         }
 
@@ -170,7 +172,7 @@ const VideoTabil = () => {
                         <tr className='text-gray-200 text-[10px] md:text-xs font-light '>
                             <th className='font-light lg:font-medium'>No:</th>
                             <th className='font-light lg:font-medium'>Thambnail</th>
-                            <th className='font-light lg:font-medium'>Video Title</th>
+                            <th className='font-light lg:font-medium'>Music Title</th>
                             <th className='font-light lg:font-medium'>Date</th>
                             <th className='font-light lg:font-medium'>Category</th>
                             <th className='font-light lg:font-medium'>Recom..</th>
@@ -201,8 +203,8 @@ const VideoTabil = () => {
                     </select>
                 </div>
             </div>
-        </div>
+        </div >
     );
 };
 
-export default VideoTabil;
+export default MusicTable;

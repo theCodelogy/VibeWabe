@@ -1,5 +1,4 @@
 "use client"
-import React, { useEffect, useState } from "react";
 import { MultiSelect } from 'primereact/multiselect';
 import toast from "react-hot-toast";
 import "primereact/resources/themes/lara-light-cyan/theme.css";
@@ -8,9 +7,9 @@ import { useRouter } from 'next/navigation'
 
 
 
-const VideoUpdateForm = ({ video }) => {
+const MusicUpdateForm = ({ music }) => {
     const router = useRouter();
-    
+
     const tagOptions = [
         { name: 'Romantic', code: 'NY' },
         { name: 'Horor', code: 'RM' },
@@ -19,22 +18,12 @@ const VideoUpdateForm = ({ video }) => {
         { name: 'Comedy', code: 'PRS' },
         { name: 'Kids', code: 'PRS' }
     ];
-    const [selectedTags, setSelectedTags] = useState([]);
-    useEffect(() => {
-        const existingTags = tagOptions.filter(item => video?.tags?.includes(item.name))
-        setSelectedTags(existingTags)
-    }, [video])
-
-
-
-
-    const tags = selectedTags.map(item => item.name)
 
 
     const handleSubmit = async (e) => {
         e.preventDefault()
         const form = e.target
-        const updateVideo = {
+        const updateMusic = {
             title: form.title.value,
             url: form.url.value,
             category: form.category.value,
@@ -42,47 +31,51 @@ const VideoUpdateForm = ({ video }) => {
             description: form.description.value,
             rating: form.rating.value,
             language: form.language.value,
-            hero: form.hero.value,
-            date: video.date,
-            tags: tags,
-            featured: video.featured ? video.featured : false,
-            recommended: video.recommended ? video.recommended : false,
-            view: video.view ? video.view : 0
+            singerName: form.singerName.value,
+            date:music.date,
+            featured: music.featured ? music.featured : false,
+            recommended: music.recommended ? music.recommended : false,
+            view: music.view ? music.view : 0
         }
 
 
-        axios.put(`https://vibewabe-server.vercel.app/video/${video._id}`, updateVideo)
+        axios.put(`https://vibewabe-server.vercel.app/music/${music._id}`, updateMusic)
             .then(res => {
                 if (res.data.modifiedCount > 0) {
                     toast.success('Successfully Update Video!')
-                    router.push('/dashboard/allVideos')
-                }else if(res.data.modifiedCount === 0){
-                    toast.error("Please edit this video")
+                    router.push('/dashboard/allMusics')
+                } else if(res.data.modifiedCount === 0){
+                    toast.error("Please edit this music")
                 }
             })
-            .catch(err=>console.log(err.message))
+            .catch(err => console.log(err.message))
+
+  
+
+        
     }
+
 
 
     return (
         <div>
             <div className='bg-white text-black w-full lg:w-2/3 mx-auto mt-3 mb-8'>
                 <form onSubmit={handleSubmit} className=" px-6 pt-4 pb-6 text-sm ">
-                    <h1 className="text-4xl text-red-500 pt-3 font-bold text-center mb-4">Update Video</h1>
+                    <h1 className="text-4xl text-red-500 pt-3 font-bold text-center mb-4">Update Music</h1>
 
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
                         <div className="flex flex-col gap-1 mb-2">
                             <label className="text-md font-medium" for='title'>
                                 Video Title<span className='text-red-500'>*</span>
                             </label>
-                            <input type="text" id='title' defaultValue={video?.title} required name="title" className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded " />
+                            <input type="text" id='title' defaultValue={music?.title} required name="title" className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded " />
                         </div>
 
                         <div className="flex flex-col gap-1 mb-2">
                             <label className="text-md font-medium" for='videoUrl'>
                                 Video Url<span className='text-red-500'>*</span>
                             </label>
-                            <input type="url" id='videoUrl' required name="url" defaultValue={video?.url} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
+                            <input type="url" id='videoUrl' required name="url" defaultValue={music?.url} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
                         </div>
                     </div>
 
@@ -91,10 +84,13 @@ const VideoUpdateForm = ({ video }) => {
                             <label className="text-md font-medium" for='category'>
                                 Categoty<span className='text-red-500'>*</span>
                             </label>
-                            <select id="category" required name="category" defaultValue={video.category} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white ">
-                                <option value={'movie'}>Movie</option>
-                                <option value={'series'}>Series</option>
-                                <option value={'drama'}>Drama</option>
+                            <select id="category" required name="category" defaultValue={music?.category} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white ">
+                                <option value={'Classical'}>Classical</option>
+                                <option value={'Remix'}>Remix</option>
+                                <option value={'Sad'}>Sad</option>
+                                <option value={'SaHip-hopd'}>Hip-hop</option>
+                                <option value={'Romantic'}>Romantic</option>
+                                <option value={'webdding'}>webdding</option>
                             </select>
                         </div>
 
@@ -102,7 +98,7 @@ const VideoUpdateForm = ({ video }) => {
                             <label className="text-md font-medium" for='tages'>
                                 Tages<span className='text-red-500'>*</span>
                             </label>
-                            <MultiSelect id="tages" value={selectedTags} onChange={(e) => setSelectedTags(e.value)} options={tagOptions} optionLabel="name"
+                            <MultiSelect id="tages" options={tagOptions} optionLabel="name"
                                 placeholder="Select Tags" className="h-11  bg-[#101726] text-white rounded " />
 
                         </div>
@@ -114,19 +110,22 @@ const VideoUpdateForm = ({ video }) => {
                             <label className="text-md font-medium" for='language'>
                                 Language<span className='text-red-500'>*</span>
                             </label>
-                            <select id="language" name="language" required defaultValue={video?.language} className=" py-[13px] px-3 border drop-shadow rounded bg-[#101726] text-white ">
-                                <option value={'english'}>English</option>
-                                <option value={'bangla'}>Bangla</option>
-                                <option value={'hindi'}>Hindi</option>
+                            <select id="language" name="language" required defaultValue={music?.language} className=" py-[13px] px-3 border drop-shadow rounded bg-[#101726] text-white ">
+                                <option value={'English'}>English</option>
+                                <option value={'Bangla'}>Bangla</option>
+                                <option value={'Hindi'}>Hindi</option>
+                                <option value={'Arabic'}>Arabic</option>
+                                <option value={'korean'}>korean</option>
+                                <option value={'Spanish'}>Spanish</option>
                             </select>
                         </div>
 
 
                         <div className="flex flex-col gap-1 mb-2">
                             <label className="text-md font-medium" for='hero'>
-                                Hero Name<span className='text-red-500'>*</span>
+                                Singer Name<span className='text-red-500'>*</span>
                             </label>
-                            <input type="text" id='hero' name="hero" required defaultValue={video?.hero} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white " />
+                            <input type="text" id='hero' name="singerName" required defaultValue={music?.singerName} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white " />
                         </div>
                     </div>
 
@@ -135,21 +134,21 @@ const VideoUpdateForm = ({ video }) => {
                             <label className="text-md font-medium" for='rating'>
                                 Rating<span className='text-red-500'>*</span>
                             </label>
-                            <input type="number" max={10} min={1} id="rating" required name="rating" defaultValue={video?.rating} className=" py-[13px] px-3 border drop-shadow rounded bg-[#101726] text-white "></input>
+                            <input type="number" max={10} min={1} id="rating" required name="rating" defaultValue={music?.rating} className=" py-[13px] px-3 border drop-shadow rounded bg-[#101726] text-white "></input>
 
                         </div>
 
 
                         <div className="flex flex-col gap-1 mb-2">
                             <label className="text-md font-medium" for='thambnail'>
-                                Video Thambnail Url<span className='text-red-500'>*</span>
+                                Music Thambnail Url<span className='text-red-500'>*</span>
                             </label>
 
-                            <input type="url" id='thambnail' required name="thambnail" defaultValue={video?.thambnail} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
+                            <input type="url" id='thambnail' required name="thambnail" defaultValue={music?.thambnail} className=" py-[13px] px-3 border drop-shadow bg-[#101726] text-white rounded" />
                         </div>
                     </div>
 
-                    <textarea required defaultValue={video?.description} className=" md:mt-6 drop-shadow-lg w-full p-3 bg-[#101726] text-white rounded flex-1" name="description" id="" rows="7"></textarea>
+                    <textarea required defaultValue={music?.description} className=" md:mt-6 drop-shadow-lg w-full p-3 bg-[#101726] text-white rounded flex-1" name="description" id="" rows="7"></textarea>
 
 
                     <div className=" mt-6">
@@ -164,4 +163,4 @@ const VideoUpdateForm = ({ video }) => {
     );
 };
 
-export default VideoUpdateForm;
+export default MusicUpdateForm;

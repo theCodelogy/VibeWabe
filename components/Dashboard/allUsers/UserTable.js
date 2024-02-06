@@ -2,79 +2,67 @@
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-import VideoTabilRow from './VideoTabilRow';
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdNavigateNext } from "react-icons/md";
 import { GrFormPrevious } from "react-icons/gr";
 import { RxCross2 } from "react-icons/rx";
+import UserTableRow from './UserTableRow';
 
 
-const VideoTabil = () => {
+
+const UserTable = () => {
     const [searchText, setSearchText] = useState('')
-    const [category, setCategoty] = useState('')
-    const [language, setLanguage] = useState('')
     const [itemParPage, setItemParPage] = useState(15)
     const [currentPage, setCurrentPage] = useState(1)
     const [totalVideos, setTotalVieos] = useState()
+    const [role, setRole]=useState('')
 
 
 
-    const { data: allVideos = [], refetch, isLoading } = useQuery({
+    const { data: allUsers = [], refetch, isLoading } = useQuery({
         queryKey: [],
         queryFn: async () => {
-            const res = await axios.get(`https://vibewabe-server.vercel.app/video?title=${searchText}&category=${category}&language=${language}&limit=${itemParPage}&page=${currentPage - 1}`)
+            const res = await axios.get(`https://vibewabe-server.vercel.app/user?name=${searchText}&role=${role}&limit=${itemParPage}&page=${currentPage - 1}`)
             return res.data;
         }
     })
 
     useEffect(() => {
-        axios.get(`https://vibewabe-server.vercel.app/video?title=${searchText}&category=${category}&language=${language}`)
+        axios.get(`https://vibewabe-server.vercel.app/user?name=${searchText}&role=${role}`)
             .then(res => setTotalVieos(res.data.length))
         refetch()
 
-    }, [category, searchText, refetch, itemParPage, currentPage, allVideos, language])
+    }, [ searchText, refetch, itemParPage, currentPage, allUsers,role])
 
 
 
 
-    // Video search by title
+    // user search by name
     const searchHeandle = async e => {
         const value = await e.target.value
         setSearchText(value)
         setCurrentPage(1)
     }
 
-    // Video search clear
+    // user search clear
     const clearHandle = () => {
         setSearchText('')
         refetch()
     }
 
-    // video filter by category
+    // user filter by user role
     const filterHandle = async e => {
         const value = await e.target.value
         if (value === 'all') {
-            setCategoty('')
+            setRole('')
             setCurrentPage(1)
         } else {
-            setCategoty(value)
+            setRole(value)
             setCurrentPage(1)
         }
 
     }
 
-    // video filter by Language
-    const languageFilter = async e => {
-        const value = await e.target.value
-        if (value === 'all') {
-            setLanguage('')
-            setCurrentPage(1)
-        } else {
-            setLanguage(value)
-            setCurrentPage(1)
-        }
-
-    }
 
     // Pagination
     const pageNumber = Math.ceil(totalVideos / itemParPage)
@@ -110,23 +98,16 @@ const VideoTabil = () => {
                 <div className='flex items-center justify-center gap-3 mb-5 mt-3'>
 
                     <select onChange={filterHandle} defaultValue={'default'} className='px-3 md:px-4 lg:px-6 py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
-                        <option disabled value={'default'}>Category..</option>
+                        <option disabled value={'default'}>User Type..</option>
                         <option value={'all'}>All</option>
-                        <option value={'drama'}>Drama</option>
-                        <option value={'movie'}>Movie</option>
-                        <option value={'series'}>Series</option>
+                        <option value={'subscriber'}>Subscriber</option>
+                        <option value={'freeTrail'}>Free Trail</option>
+                        <option value={'musicUser'}>Music User</option>
+                        <option value={'videoUser'}>Video User</option>
+                        <option value={'videoPlusMusic'}>Video Plus Music</option>
                     </select>
 
-                    <select onChange={languageFilter} defaultValue={'default'} className='px-3 md:px-4 lg:px-6  py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
-                        <option disabled value={'default'}>Language...</option>
-                        <option value={'all'}>All</option>
-                        <option value={'English'}>English</option>
-                        <option value={'Bangla'}>Bangla</option>
-                        <option value={'Hindi'}>Hindi</option>
-                        <option value={'Arabic'}>Arabic</option>
-                        <option value={'korean'}>korean</option>
-                        <option value={'Spanish'}>Spanish</option>
-                    </select>
+                     
 
                     <div className=" flex items-center justify-center">
                         <input onChange={searchHeandle} value={searchText} className=" w-[150px] md:w-[180px] lg:w-[250px] py-2 pl-3 lg:py-[9px] text-xs lg:text-sm rounded-full  bg-slate-700 text-white placeholder:text-white shadow-sm shadow-gray-500" placeholder="Search By Name..." type="text" name="search" id="" />
@@ -144,24 +125,21 @@ const VideoTabil = () => {
                     <thead>
                         <tr className='text-gray-200 text-[10px] md:text-xs font-light '>
                             <th className='font-light lg:font-medium'>No:</th>
-                            <th className='font-light lg:font-medium'>Thambnail</th>
-                            <th className='font-light lg:font-medium'>Video Title</th>
-                            <th className='font-light lg:font-medium'>Date</th>
-                            <th className='font-light lg:font-medium'>Category</th>
-                            <th className='font-light lg:font-medium'>Recom..</th>
-                            <th className='font-light lg:font-medium'>Featured</th>
-                            <th className='font-light lg:font-medium'>Update</th>
+                            <th className='font-light lg:font-medium'>Name</th>
+                            <th className='font-light lg:font-medium'>Email</th>
+                            <th className='font-light lg:font-medium'>User Type</th>
+                            <th className='font-light lg:font-medium'>Admin</th>
                             <th className='font-light lg:font-medium'>Delete</th>
                         </tr>
                     </thead>
                     <tbody>
 
                         {
-                            allVideos?.map((video, videoIndex) => <VideoTabilRow
-                                key={video._id}
-                                video={video}
+                            allUsers?.map((user, userIndex) => <UserTableRow
+                                key={user._id}
+                                user={user}
                                 refetch={refetch}
-                                videoIndex={videoIndex}
+                                userIndex={userIndex}
                             />)
                         }
 
@@ -169,16 +147,12 @@ const VideoTabil = () => {
                     <tfoot>
                         <tr className='text-gray-200 text-[10px] md:text-xs font-light '>
                             <th className='font-light lg:font-medium'>No:</th>
-                            <th className='font-light lg:font-medium'>Thambnail</th>
-                            <th className='font-light lg:font-medium'>Video Title</th>
-                            <th className='font-light lg:font-medium'>Date</th>
-                            <th className='font-light lg:font-medium'>Category</th>
-                            <th className='font-light lg:font-medium'>Recom..</th>
-                            <th className='font-light lg:font-medium'>Featured</th>
-                            <th className='font-light lg:font-medium'>Update</th>
+                            <th className='font-light lg:font-medium'>Name</th>
+                            <th className='font-light lg:font-medium'>Email</th>
+                            <th className='font-light lg:font-medium'>User Type</th>
+                            <th className='font-light lg:font-medium'>Admin</th>
                             <th className='font-light lg:font-medium'>Delete</th>
                         </tr>
-
                     </tfoot>
                 </table>
                 <div className='flex flex-row justify-center items-center my-8 gap-1 lg:gap-2'>
@@ -205,4 +179,4 @@ const VideoTabil = () => {
     );
 };
 
-export default VideoTabil;
+export default UserTable;
