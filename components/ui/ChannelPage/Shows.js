@@ -13,47 +13,70 @@ import shows1 from "@/assets/channelImage/s1.jpg";
 import shows2 from "@/assets/channelImage/s2.webp";
 import shows3 from "@/assets/channelImage/s3.webp";
 import { FaCirclePlay } from "react-icons/fa6";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 
 const Shows = () => {
-  const {t} = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="px-5 container mx-auto mt-20">
-      <h2 className="text-white text-xl font-bold"> {t("channel:latestshows")}</h2>
+      <h2 className="text-white text-xl font-bold">
+        {" "}
+        {t("channel:latestshows")}
+      </h2>
       <div className="mt-10">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={5}
-          spaceBetween={30}
+          loop={true}
+          autoplay={{
+            delay: 1000,
+            disableOnInteraction:false,
+          }}
+          slidesPerView={3}
+          spaceBetween={20}
           coverflowEffect={{
             rotate: 50,
-            stretch: 0,
-            depth: 100,
-            modifier: 3,
+            stretch: -100,
+            depth: 500,
+            modifier: 1,
             slideShadows: true,
           }}
           pagination={true}
+          breakpoints={{
+            425: {
+              slidesPerView: 1,
+              depth: 100,
+              spaceBetween: 10,
+            },
+            768: {
+              slidesPerView: 2,
+              depth: 100,
+              spaceBetween: 10,
+            },
+            1024: {
+              slidesPerView: 3,
+              spaceBetween: 10,
+            },
+          }}
           modules={[EffectCoverflow, Pagination]}
           className="mySwiper"
         >
           <SwiperSlide>
-            <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60 mt-5 hover:opacity-100 transition-opacity duration-300">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50  mt-5 hover:opacity-100 transition-opacity duration-300 ">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows1}
                 alt="slice image"
               />
-              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-40 bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
+              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-full bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60  mt-5">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50  mt-5">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows2}
@@ -62,26 +85,24 @@ const Shows = () => {
               <div className="absolute text-xl text-white -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60 mt-5 hover:opacity-100 transition-opacity duration-300">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50 mt-5 hover:opacity-100 transition-opacity duration-300">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows3}
                 alt="slice image"
               />
-              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-40 bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
+              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-full bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60  mt-5">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50  mt-5">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows2}
@@ -90,26 +111,24 @@ const Shows = () => {
               <div className="absolute text-xl text-white -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-            <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60 mt-5 hover:opacity-100 transition-opacity duration-300">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50 mt-5 hover:opacity-100 transition-opacity duration-300">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows1}
                 alt="slice image"
               />
-              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-40 bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
+              <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-full bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>
           <SwiperSlide>
-          <div className="group relative lg:h-60 md:h-60 h-40 lg:w-40 md:w-60  mt-5">
+            <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50  mt-5">
               <Image
                 className="w-full h-full mb-2 transition duration-300 rounded-lg"
                 src={shows2}
@@ -118,7 +137,6 @@ const Shows = () => {
               <div className="absolute text-xl text-white -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-lg">
                 <h2>TV Shows</h2>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
-               
               </div>
             </div>
           </SwiperSlide>

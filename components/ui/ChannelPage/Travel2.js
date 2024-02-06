@@ -28,7 +28,7 @@ const Travel2 = () => {
         {/* first part */}
 
         <div className=" bg-zinc-700 rounded-md mb-3 ">
-          <div className="bg-gradient-to-r from-red-600 to-blue-500">
+          <div className="bg-gradient-to-r from-red-600 to-zinc-600">
             <h2 className="mb-2 text-center text-white">Youtube Channel</h2>
           </div>
           <div className="bg-slate-800 grid grid-cols-3 items-center justify-around py-1 text-slate-300">
@@ -153,11 +153,11 @@ const Travel2 = () => {
            
           </div>
           <div className="w-[150px] h-[100px] mx-auto">
-          <button className=" flex mx-auto justify-center mt-4 text-xs rounded-lg px-3 py-2 bg-gradient-to-r from-red-600 to-blue-500  text-slate-300 hover:text-white ">Watch</button> </div>
+          <button className=" flex mx-auto justify-center mt-4 text-xs rounded-lg px-3 py-2 bg-gradient-to-r from-red-600 to-zinc-600  text-slate-300 hover:text-white ">Watch</button> </div>
         </div>
         {/* third part */}
         <div className=" bg-zinc-700 rounded-md mb-3 ">
-          <div className="bg-gradient-to-r from-red-600 to-blue-500">
+          <div className="bg-gradient-to-r from-red-600 to-zinc-600">
             <h2 className="mb-2 text-center text-white">Youtube Channel</h2>
           </div>
           <div className="bg-slate-800 pl-9 grid grid-cols-3 items-center justify-around py-1 text-slate-300 mx-auto">

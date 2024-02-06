@@ -46,7 +46,7 @@ const HotArtists = () => {
           }}
       >
         <SwiperSlide>
-            <div className='grid grid-cols-8 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-8 gap-4'>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
             
@@ -88,7 +88,7 @@ const HotArtists = () => {
         </SwiperSlide>
         
         <SwiperSlide>
-            <div className='grid grid-cols-8 gap-4'>
+            <div className='grid grid-cols-2 lg:grid-cols-8 gap-4'>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
             

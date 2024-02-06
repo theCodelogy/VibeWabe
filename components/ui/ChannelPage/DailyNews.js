@@ -38,13 +38,13 @@ const DailyNews = () => {
           clickable: true,
         }}
         breakpoints={{
-          640: {
+          425: {
             slidesPerView: 1,
-            spaceBetween: 20,
+            spaceBetween: 10,
           },
           768: {
             slidesPerView: 2,
-            spaceBetween: 40,
+            spaceBetween: 10,
           },
           1024: {
             slidesPerView: 4,
@@ -56,6 +56,7 @@ const DailyNews = () => {
       >
         {/* column 1 */}
         <SwiperSlide >
+           
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700'>
                     
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 px-3 py-2'>
@@ -118,6 +119,7 @@ const DailyNews = () => {
                     
                     </div>
                 </div>
+                
         </SwiperSlide>
         {/* column 2 */}
         <SwiperSlide >
