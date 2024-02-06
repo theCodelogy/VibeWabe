@@ -1,4 +1,5 @@
-import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
+// import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
+import Filter from "@/components/ui/filter/Filter";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -17,7 +18,8 @@ const Page = async ({ params }) => {
 
   return (
     <div className="text-white">
-      <Filter />
+      <Filter categoryType="series" />
+      {/* <Filter /> */}
 
       <h2 className="text-3xl font-semibold">{capitalizedSubCategory}</h2>
 
