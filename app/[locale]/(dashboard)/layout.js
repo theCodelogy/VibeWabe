@@ -36,6 +36,9 @@ export default function DashboardLayout({ children }) {
             <Link href={"/dashboard/alreadyWatched"}>Profile</Link>
           </li>
           <li>
+            <Link href={"/dashboard/allUsers"}>All Users</Link>
+          </li>
+          <li>
             <Link href={"/dashboard/allVideos"}>All Videos</Link>
           </li>
           <li>

@@ -53,10 +53,10 @@ const VideoUpdateForm = ({ video }) => {
 
         axios.put(`https://vibewabe-server.vercel.app/video/${video._id}`, updateVideo)
             .then(res => {
-                if (res.data.modifiedCount) {
+                if (res.data.modifiedCount > 0) {
                     toast.success('Successfully Update Video!')
                     router.push('/dashboard/allVideos')
-                }else if(res.data){
+                }else if(res.data.modifiedCount === 0){
                     toast.error("Please edit this video")
                 }
             })

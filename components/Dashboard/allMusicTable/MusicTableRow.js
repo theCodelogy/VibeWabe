@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
 import { MdEdit } from "react-icons/md";
 import Link from 'next/link';
-import { RiDeleteBin2Fill } from "react-icons/ri";
+import { MdDelete } from "react-icons/md";
 
 
 const MusicTableRow = ({ music, refetch, musicIndex }) => {
@@ -88,7 +88,7 @@ const MusicTableRow = ({ music, refetch, musicIndex }) => {
 
             <td><Image className=' w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px]  lg:h-[50px] rounded' src={music?.thambnail} alt='image' width={50} height={50} /></td>
 
-            <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{music.title.length > 22 ? music.title.slice(0, 20) + '..' : music.title}</td>
+            <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{music.title?.length > 22 ? music.title.slice(0, 20) + '..' : music.title}</td>
 
             <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{music.date}</td>
 
@@ -105,7 +105,7 @@ const MusicTableRow = ({ music, refetch, musicIndex }) => {
                 <Link href={`/dashboard/updateMusic/${music._id}`} className='text-lg lg:text-2xl cursor-pointer text-indigo-400 '><MdEdit /></Link>
             </td>
             <td>
-                <span onClick={() => musicDelete(music._id)} className='  text-red-600   text-lg lg:text-2xl cursor-pointer'><RiDeleteBin2Fill /></span>
+                <span onClick={() => musicDelete(music._id)} className='  text-red-600   text-lg lg:text-2xl cursor-pointer'><MdDelete /></span>
             </td>
         </tr>
     );
