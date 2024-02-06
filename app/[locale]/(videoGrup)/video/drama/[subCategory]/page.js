@@ -1,19 +1,22 @@
-import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
+// import Filter from "@/components/ui/VideoGrupComponents/movieCategory/Filter";
+// import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
+// import Filter from "@/components/ui/VideoGrupComponents/movieCategory/Filter";
+import Filter from "@/components/ui/VideoGrupComponents/DramaCategory/Filter";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
 const Page = async ({ params }) => {
   const res = await fetch(
-    `https://vibewabe-server.vercel.app/video?category=series&tags=${params.subCategory}`,
+    `https://vibewabe-server.vercel.app/video?category=drama&tags=${params?.subCategory}`,
     {
       cache: "no-cache",
     }
   );
   const data = await res.json();
 
-  const capitalizedSubCategory =
-    params.subCategory.charAt(0).toUpperCase() + params.subCategory.slice(1);
+    const capitalizedSubCategory =
+      params?.subCategory?.charAt(0).toUpperCase() + params.subCategory.slice(1);
 
   return (
     <div className="text-white">

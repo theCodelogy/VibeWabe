@@ -62,7 +62,7 @@ const Filter = () => {
                 : ""
             }`}
           >
-            {category.label} Movie
+            {category.label}
           </Link>
         ))}
       </div>

@@ -12,13 +12,14 @@ const page = () => {
   return (
     <div>
       <DramaBanner />
+      {/* <Filter /> */}
       <Filter />
       <DramaTrandingCard />
       <DramaUpcomingCard />
-      <DramaComedy/>
-      <DramaRomantic/>
-      <DramaKids/>
-      <DramaHorror/>
+      <DramaComedy />
+      <DramaRomantic />
+      <DramaKids />
+      <DramaHorror />
     </div>
   );
 };
