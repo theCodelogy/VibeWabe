@@ -41,10 +41,10 @@ const MusicUpdateForm = ({ music }) => {
 
         axios.put(`https://vibewabe-server.vercel.app/music/${music._id}`, updateMusic)
             .then(res => {
-                if (res.data.modifiedCount) {
+                if (res.data.modifiedCount > 0) {
                     toast.success('Successfully Update Video!')
                     router.push('/dashboard/allMusics')
-                } else if(res.data){
+                } else if(res.data.modifiedCount === 0){
                     toast.error("Please edit this music")
                 }
             })
