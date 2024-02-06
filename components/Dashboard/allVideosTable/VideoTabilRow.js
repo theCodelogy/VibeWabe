@@ -5,7 +5,7 @@ import toast from 'react-hot-toast';
 import Swal from 'sweetalert2';
 import {  MdEdit } from "react-icons/md";
 import Link from 'next/link';
-import { RiDeleteBin2Fill } from "react-icons/ri";
+import { MdDelete } from "react-icons/md";
 
 
 const VideoTabilRow = ({ video, refetch, videoIndex }) => {
@@ -86,7 +86,7 @@ const VideoTabilRow = ({ video, refetch, videoIndex }) => {
         <tr>
             <th className='font-light lg:font-medium text-xs md:text-sm'>{videoIndex + 1}</th>
             <td><Image className=' w-[30px] md:w-[40px] lg:w-[50px] h-[30px] md:h-[40px]  lg:h-[50px] rounded' src={video?.thambnail} alt='image' width={50} height={50} /></td>
-            <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.title.length > 22 ? video.title.slice(0, 20) + '..' : video.title}</td>
+            <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.title?.length > 22 ? video.title.slice(0, 20) + '..' : video.title}</td>
             <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.date}</td>
             <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.category}</td>
             <td>
@@ -100,7 +100,7 @@ const VideoTabilRow = ({ video, refetch, videoIndex }) => {
                 <Link href={`/dashboard/updateVideo/${video._id}`} className='text-lg lg:text-2xl cursor-pointer text-indigo-400 '><MdEdit /></Link>
             </td>
             <td>
-                <span onClick={() => videoDelete(video._id)} className='  text-red-600   text-lg lg:text-2xl cursor-pointer'><RiDeleteBin2Fill /></span>
+                <span onClick={() => videoDelete(video._id)} className='  text-red-600   text-lg lg:text-2xl cursor-pointer'><MdDelete /></span>
             </td>
         </tr>
     );
