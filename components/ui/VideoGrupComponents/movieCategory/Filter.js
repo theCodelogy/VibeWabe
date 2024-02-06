@@ -17,7 +17,6 @@ const filterLink = [
 const Filter = () => {
   const { t } = useTranslation();
   const pathname = usePathname();
-  // console.log(router);
 
   return (
     <div className="my-10">

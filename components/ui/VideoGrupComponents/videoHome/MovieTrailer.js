@@ -1,5 +1,4 @@
 import React from "react";
-import Video from "@/assets/PeakyBlinder.webm";
 
 const Upcomming = () => {
   return (
@@ -14,7 +13,6 @@ const Upcomming = () => {
             src="https://www.youtube.com/embed/Ruyl8_PT_y8"
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-           
           ></iframe>
         </div>
       </div>
