@@ -1,5 +1,5 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
 import toast from 'react-hot-toast';
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
@@ -16,6 +16,18 @@ const DynamicVideoBanner = ({video}) => {
     document.execCommand('copy');
     document.body.removeChild(textArea);
     toast.success('link copied to clipboard!');
+  };
+
+
+  const [likes, setLikes] = useState(0);
+  const [dislikes, setDislikes] = useState(0);
+
+  const handleLike = () => {
+    setLikes(likes + 1);
+  };
+
+  const handleDislike = () => {
+    setDislikes(dislikes + 1);
   };
 
   return (
@@ -63,21 +75,21 @@ const DynamicVideoBanner = ({video}) => {
 
           <div className="w-full lg:w-1/3 px-4">
             <div className="flex justify-around text-white">
-              <button className="MuiButtonBase-root MuiIconButton-root" tabIndex="0" type="button" aria-label="up vote">
+              <button onClick={handleLike} className="MuiButtonBase-root MuiIconButton-root" tabIndex="0" type="button" aria-label="up vote">
 
                 <div className='flex justify-center items-center'>
                   <AiFillLike />
                 </div>
 
-                <span >Like</span>
+                <span>Like {likes}</span>
               </button>
 
-              <button type="button" aria-label="down vote">
+              <button onClick={handleDislike} type="button" aria-label="down vote">
                 <div className='flex justify-center items-center'>
                   <AiFillDislike />
                 </div>
 
-                <span>disLike</span>
+                <span>Dislike {dislikes}</span>
               </button>
 
               <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
