@@ -49,7 +49,7 @@ const MovieTrandingCard = () => {
         }}
       >
         {drama.map((data) => (
-          <SwiperSlide key={data?._id}>
+          <SwiperSlide key={data.id}>
             <Link href={`/video/${data._id}`}>
               <div className="relative group overflow-hidden">
                 <Image
