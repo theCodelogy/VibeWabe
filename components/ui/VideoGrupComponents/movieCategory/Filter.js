@@ -6,12 +6,12 @@ import { useTranslation } from "react-i18next";
 
 const filterLink = [
   { href: "/video/movies", label: "All" },
-  { href: "/video/movies/action", label: "Action" },
-  { href: "/video/movies/comedy", label: "Comedy" },
-  { href: "/video/movies/romance", label: "Romance" },
-  { href: "/video/movies/sci-fi", label: "Sci-Fi" },
-  { href: "/video/movies/thriller", label: "Thriller" },
-  { href: "/video/movies/horror", label: "Horror" },
+  { href: "/video/movie/action", label: "Action" },
+  { href: "/video/movie/comedy", label: "Comedy" },
+  { href: "/video/movie/romance", label: "Romance" },
+  { href: "/video/movie/sci-fi", label: "Sci-Fi" },
+  { href: "/video/movie/thriller", label: "Thriller" },
+  { href: "/video/movie/horror", label: "Horror" },
 ];
 
 const Filter = () => {

@@ -1,8 +1,6 @@
-// import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
 import Filter from "@/components/ui/filter/Filter";
 import Image from "next/image";
 import Link from "next/link";
-import React from "react";
 
 const Page = async ({ params }) => {
   const res = await fetch(
@@ -19,10 +17,7 @@ const Page = async ({ params }) => {
   return (
     <div className="text-white">
       <Filter categoryType="series" />
-      {/* <Filter /> */}
-
       <h2 className="text-3xl font-semibold">{capitalizedSubCategory}</h2>
-
       <div className="grid grid-cols-6 gap-5">
         {data?.map((data) => (
           <Link href={`/video/${data?._id}`}>
