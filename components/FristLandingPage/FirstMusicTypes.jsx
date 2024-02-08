@@ -8,10 +8,9 @@ import music2 from "../../assets/music/music2.webp";
 import music3 from "../../assets/music/music3.webp";
 import music4 from "../../assets/music/music4.webp";
 import music5 from "../../assets/music/music5.webp";
-import music6 from "../../assets/music/music5.webp";
 import { useTranslation } from "react-i18next";
 
-const images = [music1, music2, music3, music4, music5, music6];
+const images = [music1, music2, music3, music4, music5];
 
 const FirstMusicTypes = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -19,7 +18,7 @@ const FirstMusicTypes = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="text-center my-10 max-w-7xl mx-auto md:px-16 lg:px-24 py-5">
+    <div className="text-center my-10 max-w-7xl mx-auto py-5">
       <h2 className="md:text-4xl text-xl font-semibold text-gray-100">
         {t("landing:real")}
       </h2>
@@ -27,7 +26,8 @@ const FirstMusicTypes = () => {
         We work with leading music creators from around the world to bring you
         exclusive, authentic new tracks on a daily basis.
       </p>
-      <div className="grid md:grid-cols-3 grid-cols-2 items-center gap-5 justify-center max-w-7xl">
+      {/* <div className="grid md:grid-cols-3 grid-cols-2 gap-5 justify-center max-w-7xl mx-auto items-center"> */}
+      <div className="flex flex-wrap gap-8 justify-center max-w-7xl mx-auto items-center">
         {images.map((imgSrc, index) => (
           <div
             key={index}
