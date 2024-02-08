@@ -1,29 +1,32 @@
-"use client";
-import Filter from "@/components/ui/VideoGrupComponents/webSeries/Filter";
 import SeriesBanner from "@/components/ui/VideoGrupComponents/webSeries/SeriesBanner";
 import SeriesCard from "@/components/ui/VideoGrupComponents/webSeries/SeriesCard";
 import UpComingCard from "@/components/ui/VideoGrupComponents/webSeries/UpComingCard";
-import React from "react";
-import Footer from "@/components/shared/footer/footer";
-import SeriesComedy from "@/components/ui/VideoGrupComponents/webSeries/SeriesComedy";
-import SeriesKids from "@/components/ui/VideoGrupComponents/webSeries/SeriesKids";
-import SeriesAdventure from "@/components/ui/VideoGrupComponents/webSeries/SeriesAdventure";
-import SeriesRomantic from "@/components/ui/VideoGrupComponents/webSeries/SeriesRomantic";
-import SeriesHorror from "@/components/ui/VideoGrupComponents/webSeries/SeriesHorror";
-const page = () => {
+import Slider from "@/components/ui/cards/Slider";
+import Filter from "@/components/ui/filter/Filter";
+import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
+const SeriesPage = () => {
   return (
     <div>
       <SeriesBanner />
-      <Filter />
+      <Filter categoryType="series" />
       <SeriesCard />
+      <VideoTrailer
+        title={"   Peaky Blinders - Trailer serise"}
+        description={
+          " A SWAT agent is assigned into the dangerous world of international drug cartels and terrorism. His mission:destroy the operation from the inside out. Will he survive and succeed? "
+        }
+        genres={"Action, Drama"}
+        src={"https://www.youtube.com/embed/Ruyl8_PT_y8"}
+        year={"2022"}
+      />
       <UpComingCard />
-      <SeriesComedy/>
-      <SeriesKids/>
-      <SeriesAdventure/>
-      <SeriesRomantic/>
-      <SeriesHorror/>
+      <Slider category={"series"} tags={"comedy"} title={"Comedy"} />
+      <Slider category={"series"} tags={"kids"} title={"Kids"} />
+      <Slider category={"series"} tags={"adventure"} title={"Adventure"} />
+      <Slider category={"series"} tags={"romantic"} title={"Romantic"} />
+      <Slider category={"series"} tags={"horror"} title={"Horror"} />
     </div>
   );
 };
 
-export default page;
+export default SeriesPage;

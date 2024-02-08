@@ -161,7 +161,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 
 // eslint-disable-next-line @next/next/no-async-client-component
-const DramaTrandingCard = async () => {
+const DramaTrandingCard =  () => {
   const {t} = useTranslation();
   const [drama ,setDrama] = useState([])
   useEffect(() =>{
@@ -198,7 +198,7 @@ const DramaTrandingCard = async () => {
         }}
       >
         {drama.map((data) => (
-          <SwiperSlide key={data.id}>
+          <SwiperSlide key={data._id}>
             <Link href={`/video/${data._id}`}>
               <div className="relative group overflow-hidden">
                 <Image

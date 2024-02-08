@@ -1,16 +1,11 @@
-import React from "react";
-
-const Upcomming = () => {
+const VideoTrailer = ({ title, year, genres, src, description }) => {
   return (
     <div className="sm:flex items-center max-w-screen-xl  ">
       <div className="sm:w-1/2 p-10">
         <div>
-          {/* <video className="w-full h-[43vh] " controls>
-            <source src={Video} type="video/mp4" />
-          </video> */}
           <iframe
-            className=" w-full h-[100vh] md:h-[43vh]"
-            src="https://www.youtube.com/embed/Ruyl8_PT_y8"
+            className="w-full h-[100vh] md:h-[43vh]"
+            src={src}
             title="YouTube video"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           ></iframe>
@@ -23,29 +18,24 @@ const Upcomming = () => {
             <div className=" p-4 rounded-md shadow-md relative z-10">
               <div className="mb-4">
                 <h3 className="text-2xl font-semibold text-white mb-2">
-                  Peaky Blinders - Trailer
+                  {title}
                 </h3>
               </div>
               <div className="mb-4">
                 <h6 className="text-sm text-gray-600 mb-1">
-                  2022 | Action, Drama
+                  {year} | {genres}
                 </h6>
                 <div className="flex items-center">
-                  <button className="bg-gradient-to-r from-red-500 to-yellow-500  text-white px-4 py-2 rounded-full mr-2">
+                  <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">
                     Rent ৳20
                   </button>
                 </div>
               </div>
               <div className="mb-4">
-                <h6 className="text-sm text-gray-600 mb-2">
-                  A SWAT agent is assigned into the dangerous world of
-                  international drug cartels and terrorism. His mission: destroy
-                  the operation from the inside out. Will he survive and
-                  succeed?
-                </h6>
+                <h6 className="text-sm text-gray-600 mb-2">{description}</h6>
               </div>
               <div className="flex">
-                <button className="bg-gradient-to-r from-red-500 to-yellow-500  text-white px-4 py-2 rounded-full mr-2">
+                <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">
                   Watch Now
                 </button>
                 <button className="text-white border border-red-600 px-4 py-2 rounded-full">
@@ -60,4 +50,4 @@ const Upcomming = () => {
   );
 };
 
-export default Upcomming;
+export default VideoTrailer;
