@@ -8,7 +8,8 @@
         "description": "Time can be a beautiful thing. Life can be a beautiful thing.",
         "rating": "4",
         "language": "Bangla",
-        "singerName": "Jetao"
+        "singerName": "Jetao",
+        "releaseDate": "2022-01-25"
     },
     {
         "title": "Bujhina Toh Tai (বুঝিনা তো তাই )",
@@ -18,7 +19,8 @@
         "description": "The fear of falling in love and the possibility of getting one's heart broken is a universal experience. Despite this, some people contemplate whether it is better to suppress those fears.",
         "rating": "4",
         "language": "Bangla",
-        "singerName": "Nusraat Faria"
+        "singerName": "Nusraat Faria",
+        "releaseDate": "2023-05-15"
     },
     {
         "title": "Kalachan | কালাচান",
@@ -28,7 +30,8 @@
         "description": "Attention all viewers! We would like to remind you that all content on our YouTube channel is protected by copyright laws. This includes our music, videos, and any other material that we upload.",
         "rating": "5",
         "language": "Bangla",
-        "singerName": "Pronome Nafi"
+        "singerName": "Pronome Nafi",
+        "releaseDate": "2023-05-10"
     },
     {
         "title": "Ek Sundori Maiyaa",
@@ -38,7 +41,8 @@
         "description": "Eagle Music Brings Eid Al-fitr 2018 Gift For Bengali Music Lovers. Proudly Presenting Most Awaited Official Music Video Ek Sundori Maiyaa",
         "rating": "5",
         "language": "Bangla",
-        "singerName": "tosiko | liki"
+        "singerName": "tosiko | liki",
+        "releaseDate": "2019-01-17"
     },
     {
         "title": "Ki Nesha Jorale BALAM III",
@@ -48,7 +52,74 @@
         "description": "Ki Nesha Jhorale Lyrics Version_কি নেশা জড়ালে লিরিক্স ভার্সন_By Balam",
         "rating": "5",
         "language": "Bangla",
-        "singerName": "Rafique Babul"
+        "singerName": "Rafique Babul",
+        "releaseDate": "2016-09-05"
+    },
+    {
+        "title": "Jhumka (Official Music Video)",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1446506665&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Hip-hop",
+        "thambnail": "https://i.ibb.co/cgQDwD6/maxresdefault-15.jpg",
+        "description": "Ki Nesha Jhorale Lyrics Version_কি নেশা জড়ালে লিরিক্স ভার্সন_By Balam",
+        "rating": "4",
+        "language": "Bangla",
+        "singerName": "Xefer & Muza",
+        "releaseDate": "2023-08-10"
+    },
+    {
+        "title": "বিন্দিয়ারে বিন্দিয়া লাল শাড়ি পিন্দিয়া",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1168117513&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Classical",
+        "thambnail": "https://i.ibb.co/kDDVrs7/maxresdefault-16.jpg",
+        "description": "Bindiya re Bindiya Lal Saree Pindiya | FULL SONG | Bindiya re Bindiya Lal Shari Pindiya | বিন্দিয়ারে বিন্দিয়া লাল শাড়ি পিন্দিয়া",
+        "rating": "5",
+        "language": "Bangla",
+        "singerName": "Nur Nobi",
+        "releaseDate": "2022-07-30"
+    },
+    {
+        "title": "Tomake Chai",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/282370351&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Romantic",
+        "thambnail": "https://i.ibb.co/DLn0LFt/maxresdefault-17.jpg",
+        "description": "A song that is going to touch your hearts, Tomake Chai from GANGSTER starring Yash Dasgupta and Mimi. This song has been composed by Arindom and sung by Arijit Singh.",
+        "rating": "5",
+        "language": "Bangla",
+        "singerName": "Arijit Singh",
+        "releaseDate": "2023-05-16"
+    },
+    {
+        "title": "Tumi Purnimari Alo",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/676689450&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Sad",
+        "thambnail": "https://i.ibb.co/m5hDnPj/artworks-000593263755-m56zg0-t500x500.jpg",
+        "description": "Tumi Purnimari Alo, Eagle Music brings Samz Vai song for Bengali music lovers. Presenting official music video of Bangla song Tumi Purnimari Alo",
+        "rating": "5",
+        "language": "Bangla",
+        "singerName": "Samz Vai",
+        "releaseDate": "2020-04-18"
+    },
+    {
+        "title": "Chader khopa",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1704439668&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Romantic",
+        "thambnail": "https://i.ibb.co/YtLdjvx/maxresdefault-19.jpg",
+        "description": "Chader khopa.(চাঁদের খোপা)। lyrical song.Mahtim Shakib & Antora Rahman.S.M.Shawn.",
+        "rating": "5",
+        "language": "Bangla",
+        "singerName": "Mahtim Shakib · Antora Rahman",
+        "releaseDate": "2024-01-10"
+    },
+    {
+        "title": "Radhar Kunje",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1443843406&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Hip-hop",
+        "thambnail": "https://i.ibb.co/7pcNqmg/maxresdefault-20.jpg",
+        "description": "Radhar Kunje | রাধার কুঞ্জে | Alvee | Shima | Anamika Oyshe | F Raw | Bangla Music Video 2023 ❤️",
+        "rating": "3",
+        "language": "Bangla",
+        "singerName": "Alvee, Shima, F Raw",
+        "releaseDate": "2023-01-19"
     },
     {
         "title": "Jhoome Jo Pathaan Song",
@@ -58,7 +129,19 @@
         "description": "Indian RAW agent “Pathaan” (Shah Rukh Khan) gets to know of a major impending attack against India, mounted by a mercenary group led by the ruthless enigma Jim (John Abraham), who has a history of his own.",
         "rating": "5",
         "language": "hindi",
-        "singerName": "Arijit Singh, Sukriti Kakar, Vishal and Sheykhar"
+        "singerName": "Arijit Singh, Sukriti Kakar, Vishal and Sheykhar",
+        "releaseDate": "2022-11-06"
+    },
+    {
+        "title": "BAARISH KE AANE SE",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1672586913&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Romantic",
+        "thambnail": "https://i.ibb.co/CBR1C8y/maxresdefault-18.jpg",
+        "description": "How far will they go for love? Presenting Baarish Ke Aane Se featuring Manisha Rani & Parth Samthaan. Sung by Shreya Ghoshal & Tony Kakkar, composed by Tony Kakkar",
+        "rating": "3",
+        "language": "hindi",
+        "singerName": "SHREYA GHOSHAL,TONY KAKKAR",
+        "releaseDate": "2024-01-06"
     },
     {
         "title": "Guli Mata - Saad Lamjarred",
@@ -68,7 +151,8 @@
         "description": "Anshul Garg presents Guli Mata, performed by Saad Lamjarred and Shreya Ghoshal, featuring Jennifer Winget",
         "rating": "5",
         "language": "hindi",
-        "singerName": "Saad Lamjarred & Shreya Ghoshal"
+        "singerName": "Saad Lamjarred & Shreya Ghoshal",
+        "releaseDate": "2023-08-20"
     },
     {
         "title": "CHANDNI",
@@ -78,7 +162,8 @@
         "description": "Presenting the song CHANDNI sung by Sachet Tandon & Parampara Tandon, composed by B Praak & written by Jaani. Featuring Sachet Tandon & Parampara Tandon.",
         "rating": "5",
         "language": "hindi",
-        "singerName": "Sachet Tandon & Parampara Tandon "
+        "singerName": "Sachet Tandon & Parampara Tandon ",
+        "releaseDate": "2023-08-10"
     },
     {
         "title": "Lut Gaye (Full Song)",
@@ -88,7 +173,74 @@
         "description": "Gulshan Kumar & T-Series presents Bhushan Kumar's Lut Gaye; a romantic ballad composed by Tanishk Bagchi, penned by Manoj Muntashir and sung by Jubin Nautiyal featuring Emraan Hashmi",
         "rating": "4",
         "language": "hindi",
-        "singerName": "Jubin Nautiyal"
+        "singerName": "Jubin Nautiyal",
+        "releaseDate": "2022-02-19"
+    },
+    {
+        "title": "Param Sundari",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/1344054721&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Hip-hop",
+        "thambnail": "https://i.ibb.co/YXKz0cN/Param-Sundari-Cover.jpg",
+        "description": "Ghar toh chhudvaya, Ab kya chhudayegi naukri? ",
+        "rating": "4",
+        "language": "hindi",
+        "singerName": "Shreya Ghoshal",
+        "releaseDate": "2022-02-25"
+    },
+    {
+        "title": "LAGDI LAHORE DI",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/764709670&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Classical",
+        "thambnail": "https://i.ibb.co/wBWLy0q/maxresdefault-21.jpg",
+        "description": "Presenting the full video song Lagdi Lahore Di from the bollywood movie Street Dancer 3D. This most awaited track Lagdi Lahore Di is sung by Guru Randhawa, Tulsi Kumar. ",
+        "rating": "5",
+        "language": "hindi",
+        "singerName": "Guru Randhawa, Tulsi Kumar",
+        "releaseDate": "2021-07-05"
+    },
+    {
+        "title": "Roi Na Je yaad Meri Aayi Ve",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1275724780&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Sad",
+        "thambnail": "https://i.ibb.co/wNNsF9F/x720.jpg",
+        "description": "Presenting the full video song Lagdi Lahore Di from the bollywood movie Street Dancer 3D. This most awaited track Lagdi Lahore Di is sung by Guru Randhawa, Tulsi Kumar. ",
+        "rating": "5",
+        "language": "hindi",
+        "singerName": "Guru Randhawa, Tulsi Kumar",
+        "releaseDate": "2021-03-15"
+    },
+    {
+        "title": "Riyaz Aly and Anushka Sen.",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1305519634&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Classical",
+        "thambnail": "https://i.ibb.co/wNNsF9F/x720.jpg",
+        "description": "Anshul Garg presents Superstar by Neha Kakkar & Vibhor Parashar ft. Riyaz Aly and Anushka Sen. ",
+        "rating": "5",
+        "language": "hindi",
+        "singerName": "Neha Kakkar & Vibhor Parashar",
+        "releaseDate": "2020-06-14"
+    },
+    {
+        "title": "Tum Hi Aana",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/920378494&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Sad",
+        "thambnail": "https://i.ibb.co/QpXJ0SV/artworks-RWg-C5p4v1-Evu-XYh-O-z-Jd-SHQ-t500x500.jpg",
+        "description": "Anshul Garg presents Superstar by Neha Kakkar & Vibhor Parashar ft. Riyaz Aly and Anushka Sen. ",
+        "rating": "5",
+        "language": "hindi",
+        "singerName": "Neha Kakkar & Vibhor Parashar",
+        "releaseDate": "2020-06-02"
+    },
+    {
+        "title": "Badshah - Genda Phool",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/784800565&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Hip-hop",
+        "thambnail": "https://i.ibb.co/sskzcFs/MV5-BNTY5-N2-Q5-ZTgt-NTQ0-NS00-ODYz-LTg1-Zm-It-Ym-Q0-MGFm-M2-Vi-OWI5-Xk-Ey-Xk-Fqc-Gde-QXVy-MTA5-Nz-I.jpg",
+        "description": "The hit duo Badshah & Jacqueline Fernandez in this steamy track has broken all records and continues to feature in all the top charts across platforms making it the Anthem of the Year",
+        "rating": "4",
+        "language": "hindi",
+        "singerName": "Badshah",
+        "releaseDate": "2021-04-04"
     },
     {
         "title": "Meri Zindagi Hai Tu",
@@ -98,7 +250,8 @@
         "description": "GHOST SISTERS - Hollywood Movie Hindi Dubbed | Hollywood Horror Movies In Hindi Dubbed Full HD",
         "rating": "4",
         "language": "english",
-        "singerName": "Milea (Vanesha Prescilla)"
+        "singerName": "Milea (Vanesha Prescilla)",
+        "releaseDate": "2022-03-16"
     },
     {
         "title": "Let Me Down Slowly",
@@ -108,7 +261,8 @@
         "description": "Another remix that you guys asked for, hope you'll like it.",
         "rating": "4",
         "language": "english",
-        "singerName": "Kim Tae Hyung "
+        "singerName": "Kim Tae Hyung ",
+        "releaseDate": "2019-09-25"
     },
     {
         "title": "DHARIA - Sugar & Brownies",
@@ -118,27 +272,19 @@
         "description": "Period Drama - Animated Short Film by Lauryn Anthony and Anushka Tina Nair",
         "rating": "5",
         "language": "english",
-        "singerName": " Sugar & Brownies"
+        "singerName": " Sugar & Brownies",
+        "releaseDate": "2021-02-12"
     },
     {
         "title": "faded remix arabic",
         "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1572233368&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
         "category": "Romantic",
-        "thambnail": "Sawaha Faded",
+        "thambnail": "https://i.ibb.co/7nngqDc/mqdefault.jpg",
         "description": "Tinker Bell and the Great Fairy Rescue - Opening Logos/“Summers Just Begun”",
         "rating": "5",
         "language": "english",
-        "singerName": "TINKER BELL"
-    },
-    {
-        "title": "Leo and Tig 🦁 Summer best",
-        "url": "https://www.youtube.com/embed/LUexXsF14Z0?si=i_13pgLW1T6B4zre",
-        "category": "Romantic",
-        "thambnail": "https://i.ibb.co/1X4H0M1/hq720-1.jpg",
-        "description": "Magical Ocean Moments! | Disney Princess",
-        "rating": "5",
-        "language": "english",
-        "singerName": "Disney Princess"
+        "singerName": "TINKER BELL",
+        "releaseDate": "2023-07-19"
     },
     {
         "title": "DJ Snake & Justin Bieber",
@@ -148,7 +294,63 @@
         "description": "Music video by DJ Snake performing Magenta Riddim. © 2018 DJ Snake Music, under exclusive license to UMG Recordings, Inc.",
         "rating": "5",
         "language": "english",
-        "singerName": "DJ Snake & Justin Bieber"
+        "singerName": "DJ Snake & Justin Bieber",
+        "releaseDate": "2017-05-04"
+    },
+    {
+        "title": "Pink Venom",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1335308386&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Classical",
+        "thambnail": "https://i.ibb.co/zR9RrT4/artworks-Zlm-D96-Dxyw-DFk-S5j-zu9j-JQ-t500x500.jpg",
+        "description": "Music video by DJ Snake performing Magenta Riddim. © 2018 DJ Snake Music, under exclusive license to UMG Recordings, Inc.",
+        "rating": "5",
+        "language": "english",
+        "singerName": "rose, lisa, jennie",
+        "releaseDate": "2023-02-13"
+    },
+    {
+        "title": "Ckay - Love Nwantiti",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1130363938&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Romantic",
+        "thambnail": "https://i.ibb.co/zR9RrT4/artworks-Zlm-D96-Dxyw-DFk-S5j-zu9j-JQ-t500x500.jpg",
+        "description": "Ckay - Love Nwantiti (Tiktok Remix) Lyrics",
+        "rating": "5",
+        "language": "english",
+        "singerName": "Ckay",
+        "releaseDate": "2021-08-10"
+    },
+    {
+        "title": "Alan Walker & Ava Max - Alone, Pt. II",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1693399398&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Sad",
+        "thambnail": "https://i.ibb.co/9qRS2Ty/alan-walker-takes-it-back-to-the-beginning-with-his-new-single-dreamer-which-pays-homage-to-his-brea.jpg",
+        "description": "Ckay - Love Nwantiti (Tiktok Remix) Lyrics",
+        "rating": "5",
+        "language": "english",
+        "singerName": "Alan Walker & Ava",
+        "releaseDate": "2020-01-11"
+    },
+    {
+        "title": "Elley Duhé - MIDDLE OF THE NIGHT",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1331887618&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Sad",
+        "thambnail": "https://i.ibb.co/HF6YK9s/Elley-Duh-Middle-of-the-Night.png",
+        "description": "Elley Duhé - MIDDLE OF THE NIGHT (Official Video)",
+        "rating": "5",
+        "language": "english",
+        "singerName": "Elley Duhé",
+        "releaseDate": "2020-05-25"
+    },
+    {
+        "title": "AURORA - Runaway",
+        "url": "https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/190236801&color=%23ff5500&auto_play=true&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true",
+        "category": "Classical",
+        "thambnail": "https://i.ibb.co/T0SMTJQ/Aurora-Runaway.png",
+        "description": "Elley Duhé - MIDDLE OF THE NIGHT (Official Video)",
+        "rating": "4",
+        "language": "english",
+        "singerName": "AURORA",
+        "releaseDate": "2016-09-08"
     }
     
 ]

@@ -6,8 +6,10 @@
 
 body{
     background-color: #101726;
+    /* background-color: #191919; */
 }
 
 .slick-slide>div{
     margin: 0 10px;
 }
+
