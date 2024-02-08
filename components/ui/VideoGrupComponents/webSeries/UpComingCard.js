@@ -16,9 +16,9 @@
 // //         className={className}
 // //         style={{ ...style, display: "block", color:'red', }}
 // //         onClick={onClick}
-        
+
 // //       />
-      
+
 // //     );
 // //   }
 
@@ -67,7 +67,7 @@
 //                 <div>
 //         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
 //           <Image src={slide1} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-         
+
 // //         </a>
 
 // //         <div className="flex flex-col">
@@ -78,12 +78,11 @@
 
 // // {/* end slide one */}
 
-
 // // {/* slide two */}
 // // <div>
 // //         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
 // //           <Image src={slide2} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-         
+
 // //         </a>
 
 // //         <div className="flex flex-col">
@@ -96,7 +95,7 @@
 // //                     <div>
 // //         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
 // //           <Image src={slide3} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-         
+
 // //         </a>
 
 // //         <div className="flex flex-col">
@@ -106,12 +105,12 @@
 // //       </div>
 
 // //                     {/* end slide three */}
-                    
+
 // //                     {/* slide four */}
 // //                     <div>
 // //         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
 // //           <Image src={slide4} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-         
+
 // //         </a>
 
 // //         <div className="flex flex-col">
@@ -120,12 +119,12 @@
 // //         </div>
 // //       </div>
 // //                     {/* end slide four */}
-                    
+
 // //                     {/* slide five */}
 // //                     <div>
 // //         <a href="#" className="group relative mb-2 block h-96 overflow-hidden rounded-lg bg-gray-100 shadow-lg lg:mb-3">
 // //           <Image src={slide5} loading="lazy" alt="Photo by Austin Wade" className="h-full w-full object-cover object-center transition duration-200 group-hover:scale-110" />
-         
+
 // //         </a>
 
 // //         <div className="flex flex-col">
@@ -141,13 +140,6 @@
 // // };
 
 // // export default UpComingCard;
-
-
-
-
-
-
-
 
 // // "use client";
 
@@ -314,27 +306,28 @@ import "swiper/css/navigation";
 import { FreeMode, Navigation } from "swiper/modules";
 import Image from "next/image";
 import Link from "next/link";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
 // eslint-disable-next-line @next/next/no-async-client-component
-const UpComingCard = async () => {
-  const {t} = useTranslation();
-  const [drama ,setDrama] = useState([])
-  useEffect(() =>{
-    axios.get('https://vibewabe-server.vercel.app/video?category=series')
-    .then(res =>{
-      setDrama(res.data)
-    })
-  },[])
+const UpComingCard = () => {
+  const { t } = useTranslation();
+  const [drama, setDrama] = useState([]);
+  useEffect(() => {
+    axios
+      .get("https://vibewabe-server.vercel.app/video?category=series")
+      .then((res) => {
+        setDrama(res.data);
+      });
+  }, []);
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div className="relative group">
         <Link href="#">
           <h3 className="text-xl font-semibold mb-6 group-hover:text-red-500">
-          {t("series:upcomingseries")}
+            {t("series:upcomingseries")}
           </h3>
           <button className="absolute top-0 left-32 hidden group-hover:inline-block px-4 py-2 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline">
             See All
@@ -355,16 +348,16 @@ const UpComingCard = async () => {
           1024: { slidesPerView: 4 },
         }}
       >
-        {drama.slice(10,30).map((data) => (
-          <SwiperSlide key={data.id}>
-            <Link href={`/video/${data.id}`}>
+        {drama.slice(10, 30).map((data) => (
+          <SwiperSlide key={data?._id}>
+            <Link href={`/video/${data?._id}`}>
               <div className="relative group overflow-hidden">
                 <Image
                   className="w-[350px] md:w-[300px] h-[350px] transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
-                  src={data.thambnail}
+                  src={data?.thambnail}
                   width={350}
                   height={350}
-                  alt={data.title}
+                  alt={data?.title}
                   priority={true}
                 />
               </div>

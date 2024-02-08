@@ -14,13 +14,13 @@ export const metadata = {
 };
 
 export default async function RootLayout({ children, params: {locale}}) {
-  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama'];
+  const i18NameSpaces = ['common', 'mystuff', 'landing', 'Movies', 'video', 'music', 'series', 'drama', 'channel'];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
   return (
     <TranslationsProvider resources={resources} locale={locale} namespaces={i18NameSpaces}>
     <html lang="en">
       <head>
-        <link rel="stylesheet" type="text/css" charset="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
+        <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </head>
       <body className={inter.className}>

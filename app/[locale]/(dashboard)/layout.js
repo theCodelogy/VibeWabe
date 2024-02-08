@@ -35,10 +35,16 @@ export default function DashboardLayout({ children }) {
           <li>
             <Link href={"/dashboard/alreadyWatched"}>Profile</Link>
           </li>
-          <li >
+          <li>
+            <Link href={"/dashboard/allUsers"}>All Users</Link>
+          </li>
+          <li>
             <Link href={"/dashboard/allVideos"}>All Videos</Link>
           </li>
-          <li >
+          <li>
+            <Link href={"/dashboard/allMusics"}>All Musics</Link>
+          </li>
+          <li>
             <Link href={"/dashboard/videoUpload"}>Video Upload</Link>
           </li>
           <li>
