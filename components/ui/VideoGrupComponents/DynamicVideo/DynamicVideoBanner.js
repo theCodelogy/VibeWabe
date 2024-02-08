@@ -1,11 +1,35 @@
 'use client'
-import React from 'react';
+import React, { useState } from 'react';
+import toast from 'react-hot-toast';
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike } from "react-icons/ai";
 import { AiFillDislike } from "react-icons/ai";
 
 
 const DynamicVideoBanner = ({video}) => {
+  const handleCopyClick = () => {
+    const codeElement = document.querySelector('.language-javascript code');
+    const textArea = document.createElement('textarea');
+    textArea.value = codeElement.textContent;
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea);
+    toast.success('link copied to clipboard!');
+  };
+
+
+  const [likes, setLikes] = useState(0);
+  const [dislikes, setDislikes] = useState(0);
+
+  const handleLike = () => {
+    setLikes(likes + 1);
+  };
+
+  const handleDislike = () => {
+    setDislikes(dislikes + 1);
+  };
+
   return (
     <div className='max-w-screen-xl mx-auto'>
       <iframe
@@ -21,8 +45,12 @@ const DynamicVideoBanner = ({video}) => {
           <h6 className="text-white text-xs md:text-lg">Starting from ৳60</h6>
           <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
         </div>
-        <button className="btn bg-gradient-to-r from-red-600 to-zinc-500  text-white rounded-full focus:outline-none focus:ring focus:border-blue-300">
-          Remove Ads
+        <button  id="copyButton"
+            onClick={handleCopyClick} className="btn bg-gradient-to-r from-red-600 to-zinc-500  text-white rounded-full focus:outline-none focus:ring focus:border-blue-300">
+          Copy Link
+          <pre className="language-javascript">
+          <code className="text-sm hidden">{video.url}</code>
+        </pre>
         </button>
       </div>
 
@@ -47,21 +75,21 @@ const DynamicVideoBanner = ({video}) => {
 
           <div className="w-full lg:w-1/3 px-4">
             <div className="flex justify-around text-white">
-              <button className="MuiButtonBase-root MuiIconButton-root" tabIndex="0" type="button" aria-label="up vote">
+              <button onClick={handleLike} className="MuiButtonBase-root MuiIconButton-root" tabIndex="0" type="button" aria-label="up vote">
 
                 <div className='flex justify-center items-center'>
                   <AiFillLike />
                 </div>
 
-                <span >Like</span>
+                <span>Like {likes}</span>
               </button>
 
-              <button type="button" aria-label="down vote">
+              <button onClick={handleDislike} type="button" aria-label="down vote">
                 <div className='flex justify-center items-center'>
                   <AiFillDislike />
                 </div>
 
-                <span>disLike</span>
+                <span>Dislike {dislikes}</span>
               </button>
 
               <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
@@ -81,8 +109,7 @@ const DynamicVideoBanner = ({video}) => {
 
 
 
-
-
+     
 
 
     </div>

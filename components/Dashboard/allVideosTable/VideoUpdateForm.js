@@ -8,13 +8,9 @@ import { useRouter } from 'next/navigation'
 
 
 
-const VideoUpdateForm = ({ id }) => {
+const VideoUpdateForm = ({ video }) => {
     const router = useRouter();
-    const [video, setVideo] = useState({})
-    useEffect(() => {
-        axios.get(`https://vibewabe-server.vercel.app/video/${id}?admin=true`)
-            .then(res => setVideo(res.data))
-    }, [id])
+    
     const tagOptions = [
         { name: 'Romantic', code: 'NY' },
         { name: 'Horor', code: 'RM' },
@@ -51,15 +47,17 @@ const VideoUpdateForm = ({ id }) => {
             tags: tags,
             featured: video.featured ? video.featured : false,
             recommended: video.recommended ? video.recommended : false,
-            view: video.view
+            view: video.view ? video.view : 0
         }
 
 
-        axios.put(`https://vibewabe-server.vercel.app/video/${id}`, updateVideo)
+        axios.put(`https://vibewabe-server.vercel.app/video/${video._id}`, updateVideo)
             .then(res => {
-                if (res.data.modifiedCount) {
+                if (res.data.modifiedCount > 0) {
                     toast.success('Successfully Update Video!')
                     router.push('/dashboard/allVideos')
+                }else if(res.data.modifiedCount === 0){
+                    toast.error("Please edit this video")
                 }
             })
             .catch(err=>console.log(err.message))
@@ -93,7 +91,7 @@ const VideoUpdateForm = ({ id }) => {
                             <label className="text-md font-medium" for='category'>
                                 Categoty<span className='text-red-500'>*</span>
                             </label>
-                            <select id="category" required name="category" defaultValue={video?.category} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white ">
+                            <select id="category" required name="category" defaultValue={video.category} className=" py-[13px] px-3 border rounded drop-shadow bg-[#101726] text-white ">
                                 <option value={'movie'}>Movie</option>
                                 <option value={'series'}>Series</option>
                                 <option value={'drama'}>Drama</option>

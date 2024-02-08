@@ -45,12 +45,12 @@ const MovieTrandingCard = () => {
         breakpoints={{
           640: { slidesPerView: 1 },
           768: { slidesPerView: 3 },
-          1024: { slidesPerView: 4 },
+          1024: { slidesPerView: 5 },
         }}
       >
         {drama.map((data) => (
           <SwiperSlide key={data?._id}>
-            <Link href={`/video/${data._id}`}>
+            <Link href={`/video/${data?._id}`}>
               <div className="relative group overflow-hidden">
                 <Image
                   className="w-[350px] md:w-[300px] h-[350px] transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
