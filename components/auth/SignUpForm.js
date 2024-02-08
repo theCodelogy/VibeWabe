@@ -85,7 +85,7 @@ const SignUpForm = () => {
     return (
         <div>
             <form onSubmit={handleSubmit((data) => handle(data))} className=" px-6 pt-4 pb-6 text-sm ">
-                <h1 className="text-4xl text-red-600 pt-3 font-bold text-center mb-4">Sign Up</h1>
+                <h1 className="text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text pt-3  text-center mb-4">Sign Up</h1>
                 <div className="flex flex-col gap-1 mb-2">
                     <label className="text-md font-medium" for='name'>
                         Name<span className='text-red-600'>*</span>
@@ -116,7 +116,7 @@ const SignUpForm = () => {
                     <p className="text-red-600">{errors.password?.message}</p>
                 </div>
                 <div className=" mt-6">
-                    <button type="submit" className="bg-gradient-to-r from-red-600 to-zinc-500 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
+                    <button type="submit" className="bg-gradient-to-r from-red-500 to-yellow-500  font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">SUBMIT</button>
                 </div>
                 <div onClick={gogleLoginHandle} className="text-center border-t border-slate-600 my-4 pt-3">
                     <FcGoogle className="text-3xl cursor-pointer mx-auto"></FcGoogle>
@@ -136,7 +136,7 @@ const SignUpForm = () => {
         //             <form onSubmit={handleSubmit((data) => handle(data))} className="mt-12 flex flex-col items-center">
         //                 <div className="w-full flex-1 mt-8">
         //                     <div className="flex flex-col items-center">
-        //                         <button onClick={gogleLoginHandle} className="w-full max-w-xs font-bold shadow-sm rounded-lg py-3 bg-red-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
+        //                         <button onClick={gogleLoginHandle} className="w-full max-w-xs  shadow-sm rounded-lg py-3 bg-red-100 text-gray-800 flex items-center justify-center transition-all duration-300 ease-in-out focus:outline-none hover:shadow focus:shadow-sm focus:shadow-outline">
         //                             <div className="bg-white p-2 rounded-full">
         //                                 <svg className="w-4" viewBox="0 0 533.5 544.3">
         //                                     <svg className="w-4" viewBox="0 0 533.5 544.3">

@@ -56,10 +56,10 @@ const SubscriptionForm = () => {
         onSubmit={handleSubmit((data) => handle(data))}
         className=" px-6 pt-4 pb-6 text-sm "
       >
-        <h1 className="text-4xl text-red-500 pt-3 font-bold text-center">
+        <h1 className="text-4xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-bold pt-3  text-center">
           Subscription Form
         </h1>
-        <h3 className="text-lg text-red-400  font-bold text-center mb-4">
+        <h3 className="text-lg text-red-400   text-center mb-4">
           Your Subscription Price: ${price}
         </h3>
 
@@ -137,7 +137,7 @@ const SubscriptionForm = () => {
         <div className=" mt-6">
           <button
             type="submit"
-            className="bg-[#6D28D9 bg-gradient-to-r from-red-600 to-zinc-500 font-medium text-lg -md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center"
+            className="bg-[#6D28D9 bg-gradient-to-r from-red-500 to-yellow-500  font-medium text-lg -md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center"
           >
             Pay Now
           </button>
