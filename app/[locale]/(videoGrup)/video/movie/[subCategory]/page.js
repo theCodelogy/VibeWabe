@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-key */
 import Filter from "@/components/ui/filter/Filter";
 import Image from "next/image";
 import Link from "next/link";

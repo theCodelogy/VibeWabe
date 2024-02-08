@@ -25,12 +25,12 @@ const MusicBanner = () => {
                   <div className="flex justify-between lg:flex-row flex-col gap-6">
                     <div>
                         <h1 className="max-w-5xl md:text-5xl lg:text-6xl  text-4xl font-bold leading-none tracking-tighter text-white ">
-                        Music to <span className="font-extralight text-5xl text-red-500">back up</span> <br/> your story <br className="hidden lg:block"/>
+                        Music to <span className="font-extralight text-5xl bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">back up</span> <br/> your story <br className="hidden lg:block"/>
                         
                         </h1>
                         <p className="text-lg lg:w-10/12 w-auto my-9 text-zinc-300">Hear whats trending for free in the SoundCloud community. Save tracks, follow artists and build playlists. All for free.</p>
                         <div className=" rounded-lg sm:mt-0">
-                            <button className="text-white bg-gradient-to-r from-red-600 to-zinc-400  border-0 py-2 px-6 focus:outline-none hover:from-zinc-400 hover:to-red-600 font-semibold duration-300 transition rounded text-md">Listen More Music</button>
+                            <button className="text-white bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px  border-0 py-2 px-6 focus:outline-none   font-semibold duration-300 transition rounded text-md">Listen More Music</button>
                         </div>
                     </div>
                     <div className="lg:w-6/12">

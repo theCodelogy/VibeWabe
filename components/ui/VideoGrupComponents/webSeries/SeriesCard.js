@@ -61,7 +61,7 @@
 //     };
 //     return (
 //         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5'>
-//             <h1 className='text-2xl my-5 text-white font-bold'>{t("series:trendingseries")} </h1>
+//             <h1 className='text-2xl my-5 text-white '>{t("series:trendingseries")} </h1>
 //             <div>
 //                 <Slider {...settings}>
 // {/* slide One */}

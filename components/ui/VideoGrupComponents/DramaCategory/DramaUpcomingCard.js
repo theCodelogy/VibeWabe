@@ -60,7 +60,7 @@
 //     };
 //     return (
 //         <div className='max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10'>
-//               <h1 className='text-2xl my-5 text-white font-bold'>{t("drama:upcomingdrama")} </h1>
+//               <h1 className='text-2xl my-5 text-white '>{t("drama:upcomingdrama")} </h1>
 //             <div>
 //                 <Slider {...settings}>
 // {/* slide One */}
@@ -72,7 +72,7 @@
 
 // //         <div className="flex flex-col">
 // //           <span className="text-gray-200">JHON WICK</span>
-// //           <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+// //           <a href="#" className="text-lg  text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
 // //         </div>
 // //       </div>
 
@@ -87,7 +87,7 @@
 
 // //         <div className="flex flex-col">
 // //           <span className="text-gray-200">JHON WICK</span>
-// //           <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+// //           <a href="#" className="text-lg  text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
 // //         </div>
 // //       </div>
 // //     {/* end slide two */}
@@ -100,7 +100,7 @@
 
 // //         <div className="flex flex-col">
 // //           <span className="text-gray-200">JHON WICK</span>
-// //           <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+// //           <a href="#" className="text-lg  text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
 // //         </div>
 // //       </div>
 
@@ -115,7 +115,7 @@
 
 // //         <div className="flex flex-col">
 // //           <span className="text-gray-200">JHON WICK</span>
-// //           <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+// //           <a href="#" className="text-lg  text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
 // //         </div>
 // //       </div>
 // //                     {/* end slide four */}
@@ -129,7 +129,7 @@
 
 // //         <div className="flex flex-col">
 // //           <span className="text-gray-200">JHON WICK</span>
-// //           <a href="#" className="text-lg font-bold text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
+// //           <a href="#" className="text-lg  text-gray-800 transition duration-100 hover:text-gray-500 lg:text-xl">Business Causual</a>
 // //         </div>
 // //       </div>
 // //                     {/* end slide five */}

@@ -53,7 +53,7 @@ const NavBtn = () => {
           </div>
           <button
             onClick={signout}
-            className="bg-gradient-to-r from-red-600 to-zinc-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
+            className="bg-gradient-to-r from-red-600 to-orange-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
             // className="bg-[#F29F05] drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
           >
             {t("Logout")}
@@ -64,13 +64,13 @@ const NavBtn = () => {
           <LanguageChanger />
           <Link
             href={"/login"}
-            className="bg-[#6D28D9 bg-gradient-to-r from-red-600 to-zinc-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
+            className="bg-gradient-to-r from-red-600 to-orange-500 drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-2 px-8 rounded-xl flex items-center justify-center"
           >
             {t("login")}
           </Link>
           <Link
             href={"/signUp"}
-            className="text-white border border-red-600 px-4 py-2 rounded-full"
+            className="text-white border border-bg-gradient-to-r from-red-600 to-orange-500 px-4 py-2 rounded-full"
           >
             {t("signup")}
           </Link>

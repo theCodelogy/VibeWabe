@@ -9,7 +9,7 @@ const Banner = () => {
         <Image src={banner} alt="Movie Banner Img" />
         <div className="absolute flex items-center h-full left-0 top-0 rounded-xl bg-gradient-to-r from-[#151515] to-rgba(21, 21, 21, 0.00)  ">
           <div className="text-white md:w-1/2 py-4 pl-8  md:pl-20">
-            <h5 className="text-lg w-full font-bold">Movie Name</h5>
+            <h5 className="text-lg w-full ">Movie Name</h5>
             <p className="text-xs lg:text-lg w-full font-normal my-2">
                 Run time | Publish Year | Category
             </p>

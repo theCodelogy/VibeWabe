@@ -5,7 +5,7 @@ import { Toaster } from "react-hot-toast";
 import GotoTop from "@/components/GotoTop/GotoTop"
 import initTranslations from "../i18n";
 import QueryProvider from "@/QueryProvider";
-const inter = Inter({ subsets: ["latin"] });
+const inter = Inter({ subsets: ["latin-ext"] });
 import TranslationsProvider from "@/components/TranslationProvider";
 
 export const metadata = {
@@ -23,7 +23,7 @@ export default async function RootLayout({ children, params: {locale}}) {
         <link rel="stylesheet" type="text/css" charSet="UTF-8" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.min.css" />
         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick-theme.min.css" />
       </head>
-      <body className={inter.className}>
+      <body >
         <QueryProvider>
           <AuthProvider>
             {children}

@@ -58,7 +58,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -70,7 +70,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -97,7 +97,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -109,7 +109,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -121,7 +121,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -136,7 +136,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -148,7 +148,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -160,7 +160,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -175,7 +175,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -187,7 +187,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -199,7 +199,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -214,7 +214,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -226,7 +226,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -238,7 +238,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -253,7 +253,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -265,7 +265,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -277,7 +277,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>

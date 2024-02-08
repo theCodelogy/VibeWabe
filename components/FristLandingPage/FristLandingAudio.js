@@ -2,7 +2,7 @@
 import React from 'react';
 import Image from 'next/image';
 import war1 from '@/assets/war1.png';
-import war2 from '@/assets/war2.png';
+import war2 from '@/assets/music-banner-design-template-8e6c5e552401d0f18d40be039164e213_screen.jpg';
 import { useTranslation } from "react-i18next";
 
 const FristLandingAudio = () => {
@@ -18,7 +18,7 @@ const FristLandingAudio = () => {
                    {t("landing:compatible")}
                     </h1>
                     <p className="mb-8 leading-relaxed text-xs lg:text-xl text-white">
-                    Experience a new dimension of music with VideoWeb Visionary. Sync your playlists with captivating music videos, adding a visual layer to your audio journey. Choose from customizable themes, and watch as each beat comes to life in perfect harmony. Elevate your music experience with VideoWeb Visionary – where sound meets sight in perfect sync! 🎵📽️✨
+                    Experience a new dimension of music with VideoWeb Visionary. Sync your playlists with captivating music videos, adding a visual layer to your audio journey. Choose from customizable themes, and watch as each beat comes to life in perfect harmony. Elevate your music experience with VideoWeb Visionary – where sound meets sight in perfect sync! 📽✨
                     </p>
                     
                 </div>

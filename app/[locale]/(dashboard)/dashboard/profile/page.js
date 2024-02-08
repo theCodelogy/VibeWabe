@@ -1,12 +1,35 @@
+import Calender from "@/components/Dashboard/Calender/Calender";
+import ChartComponent from "@/components/Dashboard/ChartComponent/ChartComponent";
+import ChartTwo from "@/components/Dashboard/ChartTwo";
+import OurAdmin from "@/components/Dashboard/OurAdmin/OurAdmin";
+import PieChart from "@/components/Dashboard/PieChart/PieChart";
+import StatisticsWithAction from "@/components/Dashboard/StatisticsWithAction/StatisticsWithAction ";
+import TopMoviesTable from "@/components/Dashboard/TopMoviesTable/TopMoviesTable";
 import React from "react";
 
 const Profile = () => {
   return (
     <div className="text-white">
-      <h2 className="text-2xl font-semibold text-gray-200 pb-2">
-        Profile
-      </h2>
-      <div className="w-full bg-gray-400 h-[2px] rounded-full"></div>
+       <div className="mt-5 text-xl md:text-2xl font-bold bg-gray-600 my-5 min-h-[100px] h-[23vh] flex  justify-center pl-[5%] flex-col gap-3 ">
+              <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 24 24" class="text-3xl md:text-4xl" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M20 2H8a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm-6 2.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM19 15H9v-.25C9 12.901 11.254 11 14 11s5 1.901 5 3.75V15z"></path>
+                   <path d="M4 8H2v12c0 1.103.897 2 2 2h12v-2H4V8z">
+                   </path>
+                </svg>
+             <h2 className="font-bold "><span className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">WellCome</span>  to Dashboard</h2>
+            </div>
+    <StatisticsWithAction/>
+  <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
+
+  <PieChart/>
+  <ChartTwo/>
+  
+  </div>
+
+ <OurAdmin/>
+ <ChartComponent/>
+  {/* <Calender/> */}
+  <TopMoviesTable/>
 
     </div>
   );
