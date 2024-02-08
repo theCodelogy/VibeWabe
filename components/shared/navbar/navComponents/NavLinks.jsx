@@ -114,6 +114,10 @@ const NavLinks = () => {
         { href: "/video/drama/adventure", label: "Adventure" },
       ],
     },
+    {
+      href: "/video/feedback",
+      label: "Feedback",
+    }
   ];
 
   return (

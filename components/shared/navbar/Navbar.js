@@ -5,19 +5,22 @@ import NavLinks from "./navComponents/NavLinks";
 import NavBtn from "./navComponents/NavBtn";
 import Link from "next/link";
 import VideoSearch from "../Search/VideoSearch";
+import Image from "next/image";
+import logo from '@/assets/logo/1VibeWaveLogo3.png';
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
 
   return (
     <header className="px-[0.375rem] z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
-      <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-gray-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
+      <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-zinc-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
         {/* logo */}
         <div className="lg:flex-1 h-full justify-center">
           {/* <Image className="h-[60px] p-2" src={logo} alt="logo" /> */}
           <Link className="flex h-full" href="/">
             <p className="text-2xl  text-white flex justify-center items-center font-bold">
               VibeWabe
+              {/* <Image className="h-[70px] p-2" src={logo} alt="logo" /> */}
             </p>
           </Link>
         </div>
