@@ -29,9 +29,9 @@ const Filter = () => {
           <Link
             href={category.href}
             key={index}
-            className={`py-3 w-[25%] md:w-[20%] lg:w-[13%] flex-shrink-0 text-center hover:bg-gradient-to-r from-red-600 to-zinc-500 border border-gray-300 cursor-pointer duration-[.4s] text-sm flex justify-center text-white ${
+            className={`py-3 w-[25%] md:w-[20%] lg:w-[13%] flex-shrink-0 text-center hover:bg-gradient-to-r from-red-500 to-yellow-500 border border-gray-300 cursor-pointer duration-[.4s] text-sm flex justify-center text-white ${
               pathname === category.href
-                ? "bg-gradient-to-r from-red-600 to-zinc-500"
+                ? "bg-gradient-to-r from-red-500 to-yellow-500"
                 : ""
             }`}
           >

@@ -15,29 +15,29 @@ const Faq = () => {
   };
   const accordionData = [
     {
-      question: "How does your product work?",
+      question: " Can I stream movies and audio content on multiple devices simultaneously with my premium subscription?",
       answer:
-        "Our product is designed to simplify your tasks. It utilizes cutting-edge technology to provide a user-friendly experience. For detailed information, you can check our product documentation.",
+        "Yes, premium subscribers can enjoy streaming content on multiple devices simultaneously, depending on the terms of the subscription plan.",
     },
     {
-      question: "What payment methods do you accept?",
+      question: "Are there any restrictions on downloading movies and audio for offline viewing/listening?",
       answer:
-        "We accept various payment methods, including credit cards and online payment gateways. You can find the complete list of accepted payment methods in the billing section of your account.",
+        "Premium subscribers may have the option to download select movies and audio content for offline viewing or listening, subject to the terms and conditions of their subscription plan.",
     },
     {
-      question: "Is there a free trial available?",
+      question: "Do you offer a free trial period for your premium subscription?",
       answer:
-        "Yes, we offer a 14-day free trial for our product. During the trial period, you'll have full access to all features. If you decide to continue using our product after the trial, you can choose a subscription plan that suits your needs.",
+        "Yes, we offer a free trial period for new users to experience our premium features. The duration of the trial period may vary depending on promotional offers.",
     },
     {
-      question: "How can I get customer support?",
+      question: "How frequently is new content added to the platform?",
       answer:
-        "Our customer support team is available 24/7. You can contact us through our support portal on the website or by emailing support@example.com. We are dedicated to assisting you with any issues or queries you may have.",
+        "We strive to regularly update our library with new movies, audio tracks, and TV shows to provide our users with fresh and diverse content. The frequency of updates may vary.",
     },
     {
-      question: "What is your refund policy?",
+      question: " Can I cancel my premium subscription at any time, and will I be refunded for unused time?",
       answer:
-        "We have a 30-day money-back guarantee. If you're not satisfied with our product within the first 30 days of your subscription, you can request a full refund. Refunds for subscriptions beyond 30 days are considered on a case-by-case basis.",
+        " Yes, you can cancel your premium subscription at any time through your account settings. Refunds for unused time may be subject to the cancellation policy outlined in our terms of service.",
     },
   ];
 

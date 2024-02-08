@@ -47,14 +47,14 @@ const MainBanner = () => {
       <div className="flex w-full mx-auto text-left">
         <div className="relative inline-flex items-center mx-auto align-middle">
           <div className="">
-            <h1 className="max-w-5xl text-4xl font-bold leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
+            <h1 className="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
            JHON WICK <br className="hidden lg:block"/>
               
             </h1>
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500 lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px">Watch Now</button>
               </div>
             </div>
           </div>
@@ -89,14 +89,14 @@ const MainBanner = () => {
       <div class="flex w-full mx-auto text-left">
         <div class="relative inline-flex items-center mx-auto align-middle">
           <div class="">
-            <h1 class="max-w-5xl text-4xl font-bold leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
+            <h1 class="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
            JHON WICK <br class="hidden lg:block"/>
               
             </h1>
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div class="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div class="mt-3 rounded-lg sm:mt-0">
-                <button class="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button class="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px">Watch Now</button>
               </div>
             </div>
           </div>
@@ -130,14 +130,14 @@ const MainBanner = () => {
       <div className="flex w-full mx-auto text-left">
         <div className="relative inline-flex items-center mx-auto align-middle">
           <div className="">
-            <h1 className="max-w-5xl text-4xl font-bold leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
+            <h1 className="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
            JHON WICK <br className="hidden lg:block"/>
               
             </h1>
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px">Watch Now</button>
               </div>
             </div>
           </div>
@@ -171,14 +171,14 @@ const MainBanner = () => {
       <div className="flex w-full mx-auto text-left">
         <div className="relative inline-flex items-center mx-auto align-middle">
           <div className="">
-            <h1 className="max-w-5xl text-4xl font-bold leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
+            <h1 className="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
            JHON WICK <br className="hidden lg:block"/>
               
             </h1>
             <p className="text-[14px] md:text-xl  text-white my-5">Free and Premium themes, UI, templates and <br /> landing pages built with Tailwind CSS, HTML &amp; Next.js</p>
             <div className="w-full max-w-2xl gap-2 mx-auto mt-6">
               <div className="mt-3 rounded-lg sm:mt-0">
-                <button className="px-5 py-4 text-base font-medium text-center text-white transition duration-500 ease-in-out transform bg-gradient-to-r from-red-600 to-zinc-500lg:px-10 rounded-xl hover:bg-gradient-to-r from-red-600 to-zinc-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">Watch Now</button>
+                <button className="inline-block w-auto min-w-[250px] px-6 py-4 text-white transition-all rounded-md shadow-xl sm:w-auto bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px">Watch Now</button>
               </div>
             </div>
           </div>

@@ -50,38 +50,38 @@ const HotArtists = () => {
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
             
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Taylor Swift</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
             
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Katy Perry</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists5} alt='artists'/>
             
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Taylor Swift</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
             
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Katy Perry</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             </div>
         
@@ -92,38 +92,38 @@ const HotArtists = () => {
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
             
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Taylor Swift</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
             
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Katy Perry</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
             
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Taylor Swift</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
             
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
-            <h3 className='text-sm mx-auto text-zinc-500 hover:text-blue-500 text-center mt-5'>Katy Perry</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             <div className='w-full h-full relative group'>
             <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
-            <h3 className='mx-auto text-sm text-zinc-500 hover:text-blue-500 text-center mt-5'>Drake</h3>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
             </div>
         

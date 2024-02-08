@@ -24,7 +24,7 @@ const MovieTrailerOne = () => {
                 className="mt-8 border border-transparent rounded-md shadow px-6 py-3 inline-flex items-center text-base leading-6 font-medium text-white transition duration-150 ease-in-out">
                 Get started
               </a>
-              <a href="#" target="_blank" className="ml-4 mt-8 text-white font-bold text-sm underline">
+              <a href="#" target="_blank" className="ml-4 mt-8 text-white  text-sm underline">
                 Learn more
               </a>
             </div>
@@ -63,7 +63,7 @@ const MovieTrailerOne = () => {
         <div className="mb-4">
             <h6 className="text-sm text-gray-600 mb-1">2022 | Action, Drama</h6>
             <div className="flex items-center">
-                <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Rent ৳20</button>
+                <button className="bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-full mr-2">Rent ৳20</button>
             </div>
         </div>
         <div className="mb-4">
@@ -72,7 +72,7 @@ const MovieTrailerOne = () => {
             </h6>
         </div>
         <div className="flex">
-            <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
+            <button className="bg-gradient-to-r from-red-500 to-yellow-500 text-white px-4 py-2 rounded-full mr-2">Watch Now</button>
             <button className="text-white  border-red-600 px-4 py-2 rounded-full">Add to List</button>
         </div>
     </div>

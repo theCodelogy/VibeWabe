@@ -33,7 +33,7 @@ const Upcomming = () => {
                   2022 | Action, Drama
                 </h6>
                 <div className="flex items-center">
-                  <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">
+                  <button className="bg-gradient-to-r from-red-500 to-yellow-500  text-white px-4 py-2 rounded-full mr-2">
                     Rent ৳20
                   </button>
                 </div>
@@ -47,7 +47,7 @@ const Upcomming = () => {
                 </h6>
               </div>
               <div className="flex">
-                <button className="bg-gradient-to-r from-red-600 to-zinc-500 text-white px-4 py-2 rounded-full mr-2">
+                <button className="bg-gradient-to-r from-red-500 to-yellow-500  text-white px-4 py-2 rounded-full mr-2">
                   Watch Now
                 </button>
                 <button className="text-white border border-red-600 px-4 py-2 rounded-full">
