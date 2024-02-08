@@ -25,7 +25,7 @@ export default async function HomePage({ params: { locale } }) {
         <FirstMusicTypes />
         <FristLandingFeature />
         <FristLandingAudio />
-        <FirstTrendingMovies />
+        {/* <FirstTrendingMovies /> */}
         <Faq />
         <ReviewCard />
         <LandPageFooter />

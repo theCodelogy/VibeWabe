@@ -24,6 +24,7 @@ import Link from 'next/link';
 const BanglaMusic = ({allMusics}) => {
     return (
         <div>
+            
             <div className="container mx-auto my-20 lg:px-5">
                 <h1 className='text-white text-xl font-bold lg:px-5 mb-8'>Trending Bangla Music</h1>
                 <div>

@@ -49,7 +49,44 @@ const MusicCategory = () => {
         modules={[Pagination]}
         className="mySwiper mt-10"
       >
-        
+        <SwiperSlide>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner1} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner2} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner3} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+        </SwiperSlide>
         {/* banner 2 */}
         <SwiperSlide>
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
@@ -60,7 +97,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -72,7 +109,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -84,7 +121,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -99,7 +136,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -111,7 +148,7 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
@@ -123,12 +160,90 @@ const MusicCategory = () => {
                         </div>
                     </div>
                     <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
                     <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
                     </div>
                 </div>
         </SwiperSlide>
         {/* banner 4 */}
+        <SwiperSlide>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner4} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner5} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner6} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+        </SwiperSlide>
+        {/* banner 5 */}
+        <SwiperSlide>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner1} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner2} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
+                    <div className='group relative rounded-lg h-16 w-16'>
+                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner3} alt='slice image'/>
+                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        </div>
+                    </div>
+                    <div className='text-white '>
+                    <h3 className='hover:text-orange-400'>I Remember Everything feat. Kacey Musgraves</h3>
+                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
+                    </div>
+                </div>
+        </SwiperSlide>
+        {/* banner 6 */}
         <SwiperSlide>
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
                     <div className='group relative rounded-lg h-16 w-16'>
@@ -157,45 +272,6 @@ const MusicCategory = () => {
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
                     <div className='group relative rounded-lg h-16 w-16'>
                         <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner6} alt='slice image'/>
-                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                        </div>
-                    </div>
-                    <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
-                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
-                    </div>
-                </div>
-        </SwiperSlide>
-        {/* banner 5 */}
-        <SwiperSlide>
-                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
-                    <div className='group relative rounded-lg h-16 w-16'>
-                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner1} alt='slice image'/>
-                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                        </div>
-                    </div>
-                    <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
-                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
-                    </div>
-                </div>
-                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
-                    <div className='group relative rounded-lg h-16 w-16'>
-                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner2} alt='slice image'/>
-                        <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                        </div>
-                    </div>
-                    <div className='text-white '>
-                    <h3 className='hover:text-sky-400'>I Remember Everything feat. Kacey Musgraves</h3>
-                    <p className='text-xs text-zinc-400'>Zach Bryan feat. Kacey Musgraves</p>
-                    </div>
-                </div>
-                <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-2 px-3 my-6'>
-                    <div className='group relative rounded-lg h-16 w-16'>
-                        <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={banner3} alt='slice image'/>
                         <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
                             <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
                         </div>

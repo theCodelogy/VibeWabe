@@ -21,10 +21,10 @@ const HotArtists = () => {
   const {t} = useTranslation();
     return (
         <div className='my-15 container mx-auto px-10 mb-10'>
-             <h1 className='text-2xl font-bold text-white py-3 border-b-2 border-white mb-6 '>{t("music:hotartists")}</h1>
+             <h1 className='text-xl font-bold text-slate-300 py-3 mb-6 '>{t("music:hotartists")}</h1>
              <Swiper
-        slidesPerView={4}
-        spaceBetween={30}
+        slidesPerView={1}
+        spaceBetween={1}
         pagination={{
           clickable: true,
         }}
@@ -37,59 +37,99 @@ const HotArtists = () => {
             },
             // For medium device
             768: {
-              slidesPerView: 2,
+              slidesPerView: 1,
             },
             // For larger screens 
             1024: {
-              slidesPerView: 4,
+              slidesPerView: 1,
             },
           }}
       >
         <SwiperSlide>
+            <div className='grid grid-cols-8 gap-4'>
             <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists1} alt='artists'/>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
             
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Taylor Swift</h3>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
             
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists5} alt='artists'/>
+            
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
+            
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
             </div>
         
         </SwiperSlide>
+        
         <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists2} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Katy Perry</h3>
+            <div className='grid grid-cols-8 gap-4'>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists1} alt='artists'/>
+            
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
+            
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists3} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Drake</h3>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists4} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Ed Sheeran</h3>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists5} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Nicki Minaj</h3>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
+            
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Taylor Swift</h3>
+            
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists1} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Taylor Swift</h3>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists2} alt='artists'/>
+            <h3 className='text-sm mx-auto text-zinc-500 hover:text-orange-500 text-center mt-5'>Katy Perry</h3>
             </div>
-        </SwiperSlide>
-        <SwiperSlide>
-        <div className='w-full h-full relative group'>
-            <Image className='w-[200px] h-[200px] rounded-full contain overflow-hidden ml-10 transition duration-300 transform group-hover:scale-110' src={artists2} alt='artists'/>
-            <h3 className='text-xl text-gray-300 text-center mt-5'>Katy Perry</h3>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
             </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists4} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
+            <div className='w-full h-full relative group'>
+            <Image className='w-[80px] h-[80px] rounded-full contain overflow-hidden transition duration-300 transform group-hover:scale-110 mx-auto' src={artists3} alt='artists'/>
+            <h3 className='mx-auto text-sm text-zinc-500 hover:text-orange-500 text-center mt-5'>Drake</h3>
+            </div>
+            </div>
+        
         </SwiperSlide>
+       
+        
 
       </Swiper>
         </div>

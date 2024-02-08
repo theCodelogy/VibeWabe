@@ -14,7 +14,7 @@ const ReviewCard = () => {
     return (
         <div class=" py-6 sm:py-8 lg:py-12">
         <div class="mx-auto max-w-screen-2xl px-4 md:px-8">
-          <h2 class="mb-4 text-center text-2xl font-bold text-gray-300 md:mb-8 lg:text-3xl xl:mb-12">Customer Reviews</h2>
+          <h2 class="mb-4 text-center text-2xl  text-gray-300 md:mb-8 lg:text-3xl xl:mb-12">Customer Reviews</h2>
 
 
 
@@ -48,7 +48,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">John McCulling</span>
+                <span class="block text-sm  md:text-base text-gray-400">John McCulling</span>
                 <span class="block text-sm text-white">August 28, 2021</span>
               </div>
       
@@ -82,7 +82,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Kate Berg</span>
+                <span class="block text-sm  md:text-base text-gray-400">Kate Berg</span>
                 <span class="block text-sm text-white">July 21, 2021</span>
               </div>
       
@@ -117,7 +117,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Greg Jackson</span>
+                <span class="block text-sm  md:text-base text-gray-400">Greg Jackson</span>
                 <span class="block text-sm text-white">March 16, 2021</span>
               </div>
       
@@ -152,7 +152,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Greg Jackson</span>
+                <span class="block text-sm  md:text-base text-gray-400">Greg Jackson</span>
                 <span class="block text-sm text-white">March 16, 2021</span>
               </div>
       
@@ -187,7 +187,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Greg Jackson</span>
+                <span class="block text-sm  md:text-base text-gray-400">Greg Jackson</span>
                 <span class="block text-sm text-white">March 16, 2021</span>
               </div>
       
@@ -222,7 +222,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Greg Jackson</span>
+                <span class="block text-sm  md:text-base text-gray-400">Greg Jackson</span>
                 <span class="block text-sm text-white">March 16, 2021</span>
               </div>
       
@@ -257,7 +257,7 @@ const ReviewCard = () => {
         <SwiperSlide>
         <div class="flex flex-col gap-3 rounded-lg border p-4 md:p-6">
               <div>
-                <span class="block text-sm font-bold md:text-base text-gray-400">Greg Jackson</span>
+                <span class="block text-sm  md:text-base text-gray-400">Greg Jackson</span>
                 <span class="block text-sm text-white">March 16, 2021</span>
               </div>
       
