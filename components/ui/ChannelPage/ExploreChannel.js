@@ -18,12 +18,12 @@ const ExploreChannel = () => {
   return (
     <div className="mt-20 container mx-auto">
       <div className="flex">
-        <button className="bg-slate-700 text-white font-bold text-xl py-4 px-9 rounded-md">
+        <button className="bg-slate-700 text-white font-bold text-xl py-1 px-9 rounded-md">
           {t("channel:explorechannel")}
         </button>
         {/* channels logo */}
-        <Marquee pauseOnHover={true} speed={100} className="text-white">
-            <div className="grid grid-rows-1 grid-flow-col gap-10">
+        <Marquee pauseOnHover={true} speed={100} className="text-white bg-[#8b33a1]">
+            {/* <div className="grid grid-rows-1 grid-flow-col gap-10">
             <div className="w-[80ppx] h-[80px]">
             <Image className='w-full h-full rounded-lg mb-2  bg-contain' src={channel1} alt='slice image'/>
             </div>
@@ -51,6 +51,31 @@ const ExploreChannel = () => {
             <div  className="w-[80ppx] h-[80px]">
             <Image className='w-full h-full rounded-lg mb-2  bg-contain' src={channel8} alt='slice image'/>
             </div>
+            
+            </div> */}
+            <div className="flex gap-8 text-white">
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+           #FoxChannel
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+           #BBCNews
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+           #FoxChannel
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #BBCNews
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+           #FoxChannel
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #BBCNews
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #BBCNews
+            </div>
+        
             
             </div>
         </Marquee>
