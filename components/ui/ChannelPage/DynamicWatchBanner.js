@@ -1,8 +1,10 @@
 "use client";
 
+import { Span } from "next/dist/trace";
+
 const DynamicWatchBanner = () => {
   return (
-    <div className="max-w-screen-xl mx-auto">
+    <div className="max-w-screen-xl mx-auto opacity-70">
       <iframe
         className="mx-auto"
         width="100%"
@@ -12,7 +14,7 @@ const DynamicWatchBanner = () => {
         allowfullscreen
       ></iframe>
 
-      <div className=" p-4    ">
+      <div className=" p-4 ">
         <div>
           <h6 className="text-white text-xs md:text-lg">
             Messi, Ronaldo, Neymar & Mbappe Showing Their Class in 2023
@@ -24,15 +26,15 @@ const DynamicWatchBanner = () => {
         </div>
        
       </div>
-      <div className="w-full rounded-md px-4 bg-[#3c3c3c]">
-          <p className="text-[#a6a6a6] my-4">
-            This content is both in Transformative and Educational nature. Video
+      <div className="w-full rounded-md px-4 bg-[#3c3c3c] py-1">
+          <p className="text-[#a6a6a6] my-4 text-xs md:text-sm">
+           <span className="font-bold">Description:</span> This content is both in Transformative and Educational nature. Video
             is in compliance with Content Quality section of YPP Policies as the
             editing adds creative value which makes the content unique.This content is both in Transformative and Educational nature. Video
             is in compliance with Content Quality section of YPP Policies as the
             editing adds creative value which makes the content unique.
           </p>
-          <h2 className="text-sm text-blue-500 my-4 md:my-0 ">
+          <h2 className="text-xs md:text-sm text-blue-500 my-4 md:my-0 ">
           Behance: https://www.behance.net/al7nd
           </h2>
         </div>

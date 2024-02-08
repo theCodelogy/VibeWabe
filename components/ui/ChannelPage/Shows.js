@@ -14,6 +14,7 @@ import shows2 from "@/assets/channelImage/s2.webp";
 import shows3 from "@/assets/channelImage/s3.webp";
 import { FaCirclePlay } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+import Link from "next/link";
 
 const Shows = () => {
   const { t } = useTranslation();
@@ -23,7 +24,7 @@ const Shows = () => {
         {" "}
         {t("channel:latestshows")}
       </h2>
-      <div className="mt-10">
+      <div className="mt-10 opacity-70">
         <Swiper
           effect={"coverflow"}
           grabCursor={true}
@@ -71,7 +72,10 @@ const Shows = () => {
               />
               <div className="absolute text-xl text-white -top-0 left-0 flex justify-center items-center h-60 w-full bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
                 <h2>TV Shows</h2>
+                <Link href={`channel/shows/id`}>
                 <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
+                </Link>
+                
               </div>
             </div>
           </SwiperSlide>

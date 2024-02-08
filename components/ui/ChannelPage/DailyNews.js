@@ -23,6 +23,7 @@ import { FaCirclePlay } from "react-icons/fa6";
 import { GrLike } from "react-icons/gr";
 import { IoEyeOutline } from "react-icons/io5";
 import { useTranslation } from 'react-i18next';
+import Link from 'next/link';
 
 
 const DailyNews = () => {
@@ -67,9 +68,9 @@ const DailyNews = () => {
                     </div>
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Fox News </h3>
-                    
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
-                    
+                    </Link>
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
                     <p className='text-xs text-zinc-400 inline-flex gap-2'><GrLike />1</p>
@@ -88,9 +89,9 @@ const DailyNews = () => {
                     </div>
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>CNN News </h3>
-                    
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
-                    
+                    </Link>
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
                     <p className='text-xs text-zinc-400 inline-flex gap-2'><GrLike />1</p>
@@ -108,9 +109,9 @@ const DailyNews = () => {
                     </div>
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Al Jajira News </h3>
-                    
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
-                    
+                    </Link>
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
                     <p className='text-xs text-zinc-400 inline-flex gap-2'><GrLike />1</p>
@@ -134,7 +135,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>BBC News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -155,7 +158,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>CTV News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -175,7 +180,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Khaleej Times News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -199,7 +206,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Fox News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -220,7 +229,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>CNN News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -239,8 +250,9 @@ const DailyNews = () => {
                     </div>
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Al Jajira News </h3>
-                    
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -265,7 +277,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>BBC News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -287,7 +301,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>CTV News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>
@@ -308,7 +324,9 @@ const DailyNews = () => {
                     <div className='text-slate-300'>
                     <h3 className='hover:text-sky-400 text-sm'>Khaleej Times News </h3>
                     
+                    <Link href={`channel/news/id`}>
                     <button className="mb-2 text-xs rounded-lg px-1 bg-red-700 hover:bg-orange-600 text-white hover:text-white ">View</button> 
+                    </Link>
                     
                    
                     <div className='grid grid-cols-3 gap-1 items-center'>

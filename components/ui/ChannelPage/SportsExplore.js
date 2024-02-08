@@ -15,12 +15,12 @@ const SportsExplore = () => {
     return (
         <div className="mt-20 container mx-auto">
         <div className="flex">
-          <button className="bg-slate-700 text-white font-bold text-xl py-4 px-9 rounded-md">
+          <button className="bg-slate-700 text-white font-bold text-xl py-1 px-4 rounded-md">
           Explore Sports channel
           </button>
           {/* channels logo */}
-          <Marquee pauseOnHover={true} speed={100} direction="right"  className="text-white">
-              <div className="grid grid-rows-1 grid-flow-col gap-9">
+          <Marquee pauseOnHover={true} speed={100} direction="right"  className="bg-[#8b33a1]">
+              {/* <div className="grid grid-rows-1 grid-flow-col gap-9">
               <div className="w-[80ppx] h-[80px]">
               <Image className='w-full h-full rounded-lg mb-2  bg-contain' src={channel1} alt='slice image'/>
               </div>
@@ -48,7 +48,32 @@ const SportsExplore = () => {
               <div  className="w-[80ppx] h-[80px]">
               <Image className='w-full h-full rounded-lg mb-2  bg-contain' src={channel8} alt='slice image'/>
               </div>
-              </div>
+              </div> */}
+              <div className="flex gap-10 text-white">
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+           #StarSports
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #Sony3
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #StarSports
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #Sony3
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #StarSports
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #Sony3
+            </div>
+            <div className=" h-[20px] text-center text-xl font-bold flex justify-center items-center">
+            #StarSports
+            </div>
+        
+            
+            </div>
           </Marquee>
         </div>
       </div>

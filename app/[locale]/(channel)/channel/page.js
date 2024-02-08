@@ -1,6 +1,7 @@
 
 import ChannelBanner from "@/components/ui/ChannelPage/ChannelBanner";
 import ChannelBanner2 from "@/components/ui/ChannelPage/ChannelBanner2";
+import ChannelBanner3 from "@/components/ui/ChannelPage/ChannelBanner3";
 import DailyNews from "@/components/ui/ChannelPage/DailyNews";
 import ExploreChannel from "@/components/ui/ChannelPage/ExploreChannel";
 import Podcast from "@/components/ui/ChannelPage/Podcast";
@@ -16,8 +17,11 @@ const channel = () => {
         <div>
             {/*  banner section */}
             <div>
-                <ChannelBanner></ChannelBanner>
+                <ChannelBanner3></ChannelBanner3>
             </div>
+            {/* <div>
+                <ChannelBanner></ChannelBanner>
+            </div> */}
             {/* channel section */}
             <div>
                 <ExploreChannel></ExploreChannel>
