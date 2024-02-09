@@ -1,7 +1,11 @@
 
+import ChannelBanner from "@/components/ui/ChannelPage/ChannelBanner";
 import ChannelBanner2 from "@/components/ui/ChannelPage/ChannelBanner2";
+import ChannelBanner3 from "@/components/ui/ChannelPage/ChannelBanner3";
 import DailyNews from "@/components/ui/ChannelPage/DailyNews";
 import ExploreChannel from "@/components/ui/ChannelPage/ExploreChannel";
+import Podcast from "@/components/ui/ChannelPage/Podcast";
+import Radio from "@/components/ui/ChannelPage/Radio";
 import Shows from "@/components/ui/ChannelPage/Shows";
 import Sports from "@/components/ui/ChannelPage/Sports";
 import SportsExplore from "@/components/ui/ChannelPage/SportsExplore";
@@ -13,8 +17,11 @@ const channel = () => {
         <div>
             {/*  banner section */}
             <div>
-                <ChannelBanner2></ChannelBanner2>
+                <ChannelBanner3></ChannelBanner3>
             </div>
+            {/* <div>
+                <ChannelBanner></ChannelBanner>
+            </div> */}
             {/* channel section */}
             <div>
                 <ExploreChannel></ExploreChannel>
@@ -33,6 +40,12 @@ const channel = () => {
             </div>
             <div>
                 <Sports></Sports>
+            </div>
+            <div>
+                <Podcast></Podcast>
+            </div>
+            <div>
+                <Radio></Radio>
             </div>
             {/* travel section */}
             <div>

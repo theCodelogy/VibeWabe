@@ -19,8 +19,9 @@ import musicImg4 from '@/assets/Musics/CategoryImg/newupload5.jpg'
 import musicImg5 from '@/assets/Musics/CategoryImg/newupload3.jpg'
 import musicImg6 from '@/assets/Musics/CategoryImg/newupload4.jpg'
 import { FaCirclePlay } from 'react-icons/fa6';
+import Link from 'next/link';
 
-const MixMusic = () => {
+const MixMusic = ({romanticMusics}) => {
     return (
         <div>
            <div className="my-5 bg-black px-5 pb-10">
@@ -44,14 +45,20 @@ const MixMusic = () => {
                                 modules={[EffectCards]}
                                 className="mySwiper h-96 w-64"
                             >
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg1} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
+                                {
+                                    romanticMusics.map(romanticMusic => <SwiperSlide key={romanticMusic?._id}> 
+                                    <Link href={`/music/${romanticMusic?._id}`}>
+                                    <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
+                                        <Image className='w-full h-full object-fill rounded-lg mb-2 transition duration-300' src={romanticMusic?.thambnail} height={100} width={100} alt='slice image'/>
+                                        <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
+                                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                                        </div>
+                                    </div> 
+                                    </Link>
+                                </SwiperSlide>)
+                                }
+                            
+                            
                             <SwiperSlide>
                             <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
                                 <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg2} alt='slice image'/>
