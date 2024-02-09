@@ -27,15 +27,21 @@ const CoustomerReview = ({id}) => {
 
 
 
+const [comments, setComment] = useState([]);
+const [loading, setLoading] = useState(true);
 
-const [comments , setComment] = useState([])
-useEffect(() =>{
-  axios.get(`https://vibewabe-server.vercel.app/videoComment/individual/${id}`)
-  .then(res =>{
-   setComment(res.data)
-
-  })  
-},[id])
+useEffect(() => {
+  axios
+    .get(`https://vibewabe-server.vercel.app/videoComment/individual/${id}`)
+    .then((res) => {
+      setComment(res.data);
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("Error fetching comments:", error);
+      setLoading(false);
+    });
+}, [id]);
 
 
 
