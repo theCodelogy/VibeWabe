@@ -3,6 +3,7 @@ import { FreeMode, Navigation } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "swiper/css/navigation";
 import Image from "next/image";
 import "swiper/css/free-mode";
@@ -26,17 +27,17 @@ const Slider = ({ category, tags, title }) => {
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
-      <div className="py-3 group relative flex justify-start items-center">
+      <motion.div className="py-3 group relative flex justify-start items-center">
         <h2 className="text-2xl font-semibold group-hover:text-red-500">
           {t(`${title}`)}
         </h2>
         <Link
-          href={`${category}/${tags}`}
+          href={`video/${category}/${tags}`}
           className="hidden group-hover:inline-block px-2 py-1 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline"
         >
           See All
         </Link>
-      </div>
+      </motion.div>
       <Swiper
         slidesPerView={1}
         spaceBetween={10}
