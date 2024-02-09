@@ -1,11 +1,13 @@
 'use client'
+import { authContext } from '@/utils/AuthProvider';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
 const DynamicVideoBanner = ({ video, id }) => {
+  const {user} = useContext(authContext)
   const { data: singleVideo = [], refetch } = useQuery({
     queryKey: [],
     queryFn: async () => {
@@ -13,7 +15,12 @@ const DynamicVideoBanner = ({ video, id }) => {
       return res.data;
     }
   });
+ 
 
+
+
+
+  
   const [isLikeActive, setIsLikeActive] = useState(false);
   const [isDislikeActive, setIsDislikeActive] = useState(false);
 
@@ -56,6 +63,23 @@ const DynamicVideoBanner = ({ video, id }) => {
         if (isLikeActive) setIsLikeActive(false);
       });
   };
+
+const handleList = () =>{
+  const title =singleVideo.title
+  const email = user.email
+  const date = new Date() ;
+  const thambnail = singleVideo.thambnail;
+  const VideoId = singleVideo._id;
+  const allData = {title,thambnail,VideoId,email,date}
+  console.log(allData)
+
+  axios.post('https://vibewabe-server.vercel.app/videoPlaylist', allData)
+  .then(res=>{
+    console.log(res.data)
+  })
+}
+
+
 
   return (
     <div className='max-w-screen-xl mx-auto'>
@@ -109,7 +133,7 @@ const DynamicVideoBanner = ({ video, id }) => {
 
               <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
                 <span className="MuiIconButton-label">
-                  <div className='flex items-center justify-center'><AiOutlinePlus /></div>
+                  <div onClick={handleList} className='cursor-pointer flex items-center justify-center'><AiOutlinePlus /></div>
                   <p className="MuiTypography-root MuiTypography-body1">My List</p>
                 </span>
                 <span className="MuiTouchRipple-root"></span>
