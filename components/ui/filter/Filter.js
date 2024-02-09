@@ -16,7 +16,7 @@ const Filter = ({ categoryType }) => {
       { href: "/video/drama/comedy", label: "Comedy" },
       { href: "/video/drama/romance", label: "Romance" },
       { href: "/video/drama/sci-fi", label: "Sci-Fi" },
-      { href: "/video/drama/thriller", label: "Thriller" },
+      { href: "/video/drama/adventure", label: "Adventure" },
       { href: "/video/drama/horror", label: "Horror" },
     ];
   } else if (categoryType === "movies") {
@@ -26,7 +26,7 @@ const Filter = ({ categoryType }) => {
       { href: "/video/movie/comedy", label: "Comedy" },
       { href: "/video/movie/romance", label: "Romance" },
       { href: "/video/movie/sci-fi", label: "Sci-Fi" },
-      { href: "/video/movie/thriller", label: "Thriller" },
+      { href: "/video/movie/adventure", label: "Adventure" },
       { href: "/video/movie/horror", label: "Horror" },
     ];
   } else if (categoryType === "series") {
@@ -36,7 +36,7 @@ const Filter = ({ categoryType }) => {
       { href: "/video/series/comedy", label: "Comedy" },
       { href: "/video/series/romance", label: "Romance" },
       { href: "/video/series/sci-fi", label: "Sci-Fi" },
-      { href: "/video/series/thriller", label: "Thriller" },
+      { href: "/video/series/adventure", label: "Adventure" },
       { href: "/video/series/horror", label: "Horror" },
     ];
   }
