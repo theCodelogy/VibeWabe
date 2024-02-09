@@ -22,8 +22,10 @@ import { useTranslation } from "react-i18next";
 import { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import { authContext } from "@/utils/AuthProvider";
+import Link from "next/link";
 
-const Watched = () => {
+
+const StuffBanner = () => {
   const {t} = useTranslation();
   const {user} = useContext(authContext)
   const [lists , setLists] = useState([])
@@ -61,9 +63,9 @@ const Watched = () => {
                 <div className="flex gap-5 mt-4">
                   <h3 className="text-xl text-white">{list.title}</h3>
                   <p className="text-white">{date}</p>
-                  <button className="py-1 px-1 lg:py-2 lg:px-2 font-base lg:font-thin bg-gradient-to-r from-red-600 to-orange-500 rounded-md text-sm lg:text-base text-white transition-all hover:scale-95 ease-in-out">
+                  <Link href={`/video/${list?.videoId}`} className="py-1 px-1 lg:py-2 lg:px-2 font-base lg:font-thin bg-gradient-to-r from-red-600 to-orange-500 rounded-md text-sm lg:text-base text-white transition-all hover:scale-95 ease-in-out">
                     Watch Now
-                  </button>
+                  </Link>
                 </div>
               </div>
             </SwiperSlide>) }
@@ -80,28 +82,28 @@ const Watched = () => {
 
         <div className="w-full col-span-2 max-h-[500px] flex flex-col gap-5 overflow-y-auto border border-zinc-500 p-3 bg-slate-800 rounded-md">
 
-          {lists.map(list => <div key={list._id}  className="grid grid-cols-3 gap-5 ">
-            <Image
-              className="col-span-2 border border-zinc-500 w-full h-[200px] contain overflow-hidden rounded-md shadow-xl"
-              src={list.thambnail}
-              alt="slice image"
-              width={300}
-              height={300}
-            />
-            <div className="text-white col-span-1 my-4">
-              <h3 className="text-base font-bold">{list.title}</h3>
-              <h4 className="text-sm text-zinc-500">Watched</h4>
-              <button className="mt-2 py-1 px-1 lg:py-1 lg:px-2 font-thin lg:font-medium bg-gradient-to-r from-red-600 to-orange-500 rounded-md text-sm lg:text-sm text-white">
-                1:14:07
-              </button>
-            </div>
-          </div>)
+{lists.map(list => <div key={list._id}  className="grid grid-cols-3 gap-5 ">
+  <Image
+    className="col-span-2 border border-zinc-500 w-full h-[200px] contain overflow-hidden rounded-md shadow-xl"
+    src={list.thambnail}
+    alt="slice image"
+    width={300}
+    height={300}
+  />
+  <div className="text-white col-span-1 my-4">
+    <h3 className="text-base font-bold">{list.title}</h3>
+    <h4 className="text-sm text-zinc-500">Watched</h4>
+    <Link href={`/video/${list?.videoId}`} className="mt-2 py-1 px-1 lg:py-1 lg:px-2 font-thin lg:font-medium bg-gradient-to-r from-red-600 to-orange-500 rounded-md text-sm lg:text-sm text-white">
+      1:14:07
+    </Link>
+  </div>
+</div>)
 }
-         
-        </div>
+
+</div>
       </div>
     </div>
   );
 };
 
-export default Watched;
+export default StuffBanner;
