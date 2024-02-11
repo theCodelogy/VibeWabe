@@ -20,7 +20,7 @@ const DramaPage = () => {
         year={"2022"}
       />
       <DramaUpcomingCard />
-      <Slider category={"drama"} tags={"comedy"} title={"Comedy"} />
+      <Slider  category={"drama"} tags={"comedy"} title={"Comedy"} />
       <Slider category={"drama"} tags={"Romantic"} title={"Romantic"} />
       <Slider category={"drama"} tags={"kids"} title={"Kids"} />
       <Slider category={"drama"} tags={"horror"} title={"Horror"} />

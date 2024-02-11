@@ -27,26 +27,23 @@ const CoustomerReview = ({id}) => {
 
 
 
+const [comments, setComment] = useState([]);
+const [loading, setLoading] = useState(true);
 
-const [comments , setComment] = useState([])
-useEffect(() =>{
-  axios.get(`https://vibewabe-server.vercel.app/comment/${id}?category=video`)
-  .then(res =>{
-   setComment(res.data)
+useEffect(() => {
+  axios
+    .get(`https://vibewabe-server.vercel.app/videoComment/individual/${id}`)
+    .then((res) => {
+      setComment(res.data);
+      setLoading(false);
+    })
+    .catch((error) => {
+      console.error("Error fetching comments:", error);
+      setLoading(false);
+    });
+}, [id]);
 
-  })  
-},[id])
 
-//  const { data: allComments = [], refetch } = useQuery({
-//   queryKey:[],
-//   queryFn: async () =>{
-//     const res = await axios.get(`https://vibewabe-server.vercel.app/comment/${id}?category=video`);
-//     return res.data
-
-//   }
-  
-//  })
-// console.log(allComments)
 
 
   const handle = async (event) => {
@@ -55,18 +52,16 @@ useEffect(() =>{
     const videoId = id;
     const email = user.email
     const content = from.feedback.value
-    const category = 'video'
     const time = formattedDate
-    console.log(time)
     from.reset()
 
-    const allData = {videoId,email,content,category,time}
-    console.log({videoId ,email ,content,category,time})
+    const allData = {videoId,email,content,time}
+    console.log({videoId ,email ,content,time})
 
 
 
 
-    axios.post('https://vibewabe-server.vercel.app/comment',allData)
+    axios.post('https://vibewabe-server.vercel.app/videoComment',allData)
     .then(res => {
       console.log(res.data)
     })
@@ -215,27 +210,23 @@ useEffect(() =>{
 </form>
 
 
-
-<div className="flex  flex-col h-64 overflow-y-auto">
-
-    
-
-{comments.map(data =>  <div key={data.videoId} className="border rounded-md p-3 ml-3 my-3 ">
-   <div className="flex gap-3 items-center">
-     
-
-     <h3 className="font-bold text-gray-100">{data.email}</h3>
-     <p class="block text-sm text-gray-500">{data.time}</p>
-   </div>
-  
-   <p className="text-gray-200 mt-2">{data.content}</p>
- </div>)}
-
-
-
-
-</div>
-
+<div className="flex border flex-col h-64 overflow-y-auto">
+        {loading ? (
+          <div className="p-3 ml-3 my-3 text-gray-400">Loading comments...</div>
+        ) : comments.length === 0 ? (
+          <div className="p-3 ml-3 my-3 text-gray-400">No comments yet.</div>
+        ) : (
+          comments.map((data) => (
+            <div key={data.videoId} className="rounded-md p-3 ml-3 my-3">
+              <div className="flex gap-3 items-center">
+                <h3 className="font-bold text-gray-100">{data.email}</h3>
+                <p className="block text-sm text-gray-500">{data.time}</p>
+              </div>
+              <p className="text-gray-200 mt-2">{data.content}</p>
+            </div>
+          ))
+        )}
+      </div>
 
 </div>
   );

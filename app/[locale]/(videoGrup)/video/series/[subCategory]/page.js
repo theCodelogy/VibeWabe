@@ -20,7 +20,7 @@ const Page = async ({ params }) => {
       <h2 className="text-3xl font-semibold">{capitalizedSubCategory}</h2>
       <div className="grid grid-cols-6 gap-5">
         {data?.map((data) => (
-          <Link href={`/video/${data?._id}`}>
+          <Link key={data?._id} href={`/video/${data?._id}`}>
             <div className="relative group overflow-hidden">
               <Image
                 className="object-cover w-[160px] h-[160px] transform transition-transform duration-300 group-hover:scale-110 rounded-xl"
