@@ -3,17 +3,18 @@
 
 import StuffBanner from "@/components/ui/categoryGroupComponents/MyStuffPage/StuffBanner";
 import Watched from "@/components/ui/categoryGroupComponents/MyStuffPage/Watched";
+import Watchlist2 from "@/components/ui/categoryGroupComponents/MyStuffPage/Watchlist2";
 
 export default async function MyStuff () {
   
   return (
     <>
       <div>
-        <h1>HI</h1>
-        <StuffBanner></StuffBanner>
-        <div>
+        {/* <StuffBanner></StuffBanner> */}
+        <Watchlist2></Watchlist2>
+        {/* <div>
           <Watched></Watched>
-        </div>
+        </div> */}
       </div>
     </>
   );

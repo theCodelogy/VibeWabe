@@ -170,7 +170,10 @@ const NavBtn = () => {
                     <Link href={"/dashboard/profile"}>Dashboard</Link>
                   </li>
                   <li>
-                    <Link href={"/mystuff"}>My Stuff</Link>
+                    <Link href={"/mystuff"}>WatchLists</Link>
+                  </li>
+                  <li>
+                    <Link href={"/watched"}>My Lists</Link>
                   </li>
                   <li>
                     <Link href={"/feedback"}>Feedback</Link>
