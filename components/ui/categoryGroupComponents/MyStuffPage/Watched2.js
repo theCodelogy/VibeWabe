@@ -1,4 +1,4 @@
-'use client'
+"use client";
 
 import Image from "next/image";
 import { ImCross } from "react-icons/im";
@@ -10,11 +10,11 @@ import image3 from "@/assets/WatchlistImage/w-3.webp";
 import image4 from "@/assets/WatchlistImage/w-4.webp";
 
 const Watched2 = () => {
-    return (
-        <div className="container mx-auto pt-10 px-20">
+  return (
+    <div className="container mx-auto pt-10 px-20">
       <div className="flex justify-between items-center border-b border-zinc-500">
         <div>
-          <h1 className="text-xl font-bold text-white py-5  ">My Lists</h1>
+          <h1 className="text-xl font-bold text-white py-5  ">PlayLists</h1>
         </div>
 
         <div>
@@ -25,7 +25,6 @@ const Watched2 = () => {
       </div>
       {/* main section starts from here */}
       <div className="mt-5 opacity-70">
-
         {/* section one */}
         <section className="md:flex md:justify-between items-center mb-6 border-b md:border-b-0 border-slate-600">
           <div className="flex items-center gap-5">
@@ -41,7 +40,9 @@ const Watched2 = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">Top of The World</h2>
+              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">
+                Top of The World
+              </h2>
               <p className="text-zinc-400 text-sm md:text-base">
                 This is a world number one ranking movie.Must see movie.
               </p>
@@ -68,7 +69,9 @@ const Watched2 = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">The She</h2>
+              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">
+                The She
+              </h2>
               <p className="text-zinc-400 text-sm md:text-base">
                 This is a world number one ranking movie.Must see movie.
               </p>
@@ -95,7 +98,9 @@ const Watched2 = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">Love Africa</h2>
+              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">
+                Love Africa
+              </h2>
               <p className="text-zinc-400 text-sm md:text-base">
                 This is a world number one ranking movie.Must see movie.
               </p>
@@ -122,7 +127,9 @@ const Watched2 = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">The Lost Girl</h2>
+              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">
+                The Lost Girl
+              </h2>
               <p className="text-zinc-400 text-sm md:text-base">
                 This is a world number one ranking movie.Must see movie.
               </p>
@@ -149,7 +156,9 @@ const Watched2 = () => {
             </div>
 
             <div className="text-white">
-              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">Top of The World</h2>
+              <h2 className="text-base md:text-xl  hover:text-red-600 font-semibold my-2">
+                Top of The World
+              </h2>
               <p className="text-zinc-400 text-sm md:text-base">
                 This is a world number one ranking movie.Must see movie.
               </p>
@@ -162,7 +171,7 @@ const Watched2 = () => {
         </section>
       </div>
     </div>
-    );
+  );
 };
 
 export default Watched2;
