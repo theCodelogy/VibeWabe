@@ -44,8 +44,8 @@ const ChannelBanner3 = () => {
                  animate={{ rotate: 360 }}
                  transition={{ delay: 0.5 }}
                  className='absolute top-1/2 transform -translate-y-1/2 left-10 p-8 mb-1'>
-                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
-        <h2 className='text-white text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
+                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-4/12 lg:w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
+        <h2 className='text-white text-3xl lg:text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
         <p className='text-white mt-4 text-sm ml-2'>News|Documentary|Podcast|Radio|TV Shows</p>
     </motion.div>
               </div>
@@ -60,8 +60,8 @@ const ChannelBanner3 = () => {
                   animate={{ y: -200 }}
                   transition={{ delay: 4}}
                  className='absolute top-1/2 transform -translate-y-1/2 left-10 p-8 mb-1'>
-                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
-        <h2 className='text-white text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
+                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-4/12 lg:w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
+        <h2 className='text-white text-3xl lg:text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
         <p className='text-white mt-4 text-sm ml-2'>News|Documentary|Podcast|Radio|TV Shows</p>
     </motion.div>
               </div>
@@ -76,8 +76,8 @@ const ChannelBanner3 = () => {
                  animate={{ rotate: 360 }}
                  transition={{ delay: 7 }}
                 className='absolute top-1/2 transform -translate-y-1/2 left-10 p-8 mb-1'>
-                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
-        <h2 className='text-white text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
+                <div className="bg-gradient-to-r from-red-600 to-orange-500 w-4/12 w-2/12 py-1 mb-4 text-center text-white"><h2>Channel</h2></div>
+        <h2 className='text-white text-3xl lg:text-5xl font-bold leading-1'>Welcome To <br/> <span className='bg-gradient-to-r from-red-600 to-orange-500 text-transparent bg-clip-text'>VibeWave</span> Channel</h2>
         <p className='text-white mt-4 text-sm ml-2'>News|Documentary|Podcast|Radio|TV Shows</p>
     </motion.div>
               </div>

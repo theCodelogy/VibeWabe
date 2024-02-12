@@ -6,6 +6,7 @@ import ChannelBanner3 from "@/components/ui/ChannelPage/ChannelBanner3";
 import DailyNews from "@/components/ui/ChannelPage/DailyNews";
 import ExploreChannel from "@/components/ui/ChannelPage/ExploreChannel";
 import Podcast from "@/components/ui/ChannelPage/Podcast";
+import UniqueAudio from "@/components/ui/ChannelPage/UniqueAudio";
 import Radio from "@/components/ui/ChannelPage/Radio";
 import Shows from "@/components/ui/ChannelPage/Shows";
 import Sports from "@/components/ui/ChannelPage/Sports";
@@ -45,6 +46,9 @@ const channel = () => {
       </div>
       <div>
         <Podcast></Podcast>
+      </div>
+      <div>
+        <UniqueAudio></UniqueAudio>
       </div>
       <div>
         <Radio></Radio>
