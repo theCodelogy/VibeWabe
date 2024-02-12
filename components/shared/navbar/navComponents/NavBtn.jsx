@@ -87,10 +87,12 @@ import { useEffect, useRef } from "react";
 import LanguageChanger from "@/components/LanguageChanger/LanguageChanger";
 import { authContext } from "@/utils/AuthProvider";
 import Link from "next/link";
+import { MdOutlineFeedback } from "react-icons/md";
 import { useContext, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { IoLogOutOutline } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
+import { MdOutlineSpaceDashboard } from "react-icons/md";
 
 const NavBtn = () => {
   const { user, signout } = useContext(authContext);
@@ -167,13 +169,20 @@ const NavBtn = () => {
                   </div>
                   <div className="divider"></div>
                   <li>
-                    <Link href={"/dashboard/profile"}>Dashboard</Link>
+                    <Link href={"/dashboard/profile"}>
+                      <MdOutlineSpaceDashboard />
+                      Dashboard
+                    </Link>
                   </li>
                   <li>
                     <Link href={"/mystuff"}>My Stuff</Link>
                   </li>
                   <li>
-                    <Link href={"/feedback"}>Feedback</Link>
+                    <Link href={"/feedback"}>
+                      {" "}
+                      <MdOutlineFeedback />
+                      Feedback
+                    </Link>
                   </li>
                   <li>
                     <button
