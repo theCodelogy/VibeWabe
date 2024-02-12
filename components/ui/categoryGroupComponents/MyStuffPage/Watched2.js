@@ -1,4 +1,4 @@
-"use client";
+'use client'
 
 import Image from "next/image";
 import { ImCross } from "react-icons/im";
@@ -9,12 +9,12 @@ import image2 from "@/assets/WatchlistImage/w-2.webp";
 import image3 from "@/assets/WatchlistImage/w-3.webp";
 import image4 from "@/assets/WatchlistImage/w-4.webp";
 
-const Watchlist2 = () => {
-  return (
-    <div className="container mx-auto pt-10 px-20">
+const Watched2 = () => {
+    return (
+        <div className="container mx-auto pt-10 px-20">
       <div className="flex justify-between items-center border-b border-zinc-500">
         <div>
-          <h1 className="text-xl font-bold text-white py-5  ">Watchlists</h1>
+          <h1 className="text-xl font-bold text-white py-5  ">My Lists</h1>
         </div>
 
         <div>
@@ -162,7 +162,7 @@ const Watchlist2 = () => {
         </section>
       </div>
     </div>
-  );
+    );
 };
 
-export default Watchlist2;
+export default Watched2;
