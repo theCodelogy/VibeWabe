@@ -175,7 +175,10 @@ const NavBtn = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/mystuff"}>My Stuff</Link>
+                    <Link href={"/mystuff"}>WatchLists</Link>
+                  </li>
+                  <li>
+                    <Link href={"/watched"}>My Lists</Link>
                   </li>
                   <li>
                     <Link href={"/feedback"}>
