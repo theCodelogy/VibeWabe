@@ -27,7 +27,7 @@ const Slider = ({ category, tags, title }) => {
   }, [category, tags]);
 
   const handleWatch = (video) => {
-    const allData = {videoId : video._id  , email: user.email ,thambnail: video.thambnail , title: video.title,}
+    const allData = {videoId : video._id  , email: user.email ,thambnail: video.thambnail , title: video.title, description: video.description}
     axios.post('https://vibewabe-server.vercel.app/videoHistory',allData )
     .then(res => console.log(res.data))
     console.log("User email:", user.email); // Add this console.log

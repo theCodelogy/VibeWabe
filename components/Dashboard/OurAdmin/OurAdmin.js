@@ -4,6 +4,7 @@ import Image from 'next/image';
 const OurAdmin = () => {
     return (
         <div>
+          <h1 className='text-xl font-bold text-center my-5'>Our Admin</h1>
             <div className="overflow-x-auto">
       <table className="table">
         {/* head */}
@@ -36,8 +37,8 @@ const OurAdmin = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="font-bold">Hart Hagerty</div>
-                  <div className="text-sm opacity-50">United States</div>
+                  <div className="font-bold">Khaled Ahmed</div>
+                  <div className="text-sm opacity-50">Feni , Bangladesh</div>
                 </div>
               </div>
             </td>
@@ -66,8 +67,8 @@ const OurAdmin = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="font-bold">Brice Swyre</div>
-                  <div className="text-sm opacity-50">China</div>
+                  <div className="font-bold">Shajada Nirob</div>
+                  <div className="text-sm opacity-50">Feni, Bangladesh</div>
                 </div>
               </div>
             </td>
@@ -96,8 +97,8 @@ const OurAdmin = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="font-bold">Marjy Ferencz</div>
-                  <div className="text-sm opacity-50">Russia</div>
+                  <div className="font-bold">Mahbuba Khanom</div>
+                  <div className="text-sm opacity-50">Duvai , Arab amirat</div>
                 </div>
               </div>
             </td>
@@ -126,8 +127,66 @@ const OurAdmin = () => {
                   </div>
                 </div>
                 <div>
-                  <div className="font-bold">Yancy Tear</div>
-                  <div className="text-sm opacity-50">Brazil</div>
+                  <div className="font-bold">Fahim Hasan</div>
+                  <div className="text-sm opacity-50">Feni ,Bangladesh</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              Wyman-Ledner
+              <br/>
+              <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+            </td>
+            <td>Indigo</td>
+            <th>
+              <button className="btn btn-ghost btn-xs">details</button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label>
+                <input type="checkbox" className="checkbox" />
+              </label>
+            </th>
+            <td>
+              <div className="flex items-center gap-3">
+                <div className="avatar">
+                  <div className="mask mask-squircle w-12 h-12">
+                  <Image src={profile} alt="Avatar Tailwind CSS Component" />
+                  </div>
+                </div>
+                <div>
+                  <div className="font-bold">Ariful , Islam</div>
+                  <div className="text-sm opacity-50">Feni ,Bangladesh</div>
+                </div>
+              </div>
+            </td>
+            <td>
+              Wyman-Ledner
+              <br/>
+              <span className="badge badge-ghost badge-sm">Community Outreach Specialist</span>
+            </td>
+            <td>Indigo</td>
+            <th>
+              <button className="btn btn-ghost btn-xs">details</button>
+            </th>
+          </tr>
+          <tr>
+            <th>
+              <label>
+                <input type="checkbox" className="checkbox" />
+              </label>
+            </th>
+            <td>
+              <div className="flex items-center gap-3">
+                <div className="avatar">
+                  <div className="mask mask-squircle w-12 h-12">
+                  <Image src={profile} alt="Avatar Tailwind CSS Component" />
+                  </div>
+                </div>
+                <div>
+                  <div className="font-bold">Eva Khatun</div>
+                  <div className="text-sm opacity-50">Khulna ,Bangladesh</div>
                 </div>
               </div>
             </td>
