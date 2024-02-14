@@ -115,9 +115,9 @@ const NavLinks = () => {
       ],
     },
     {
-      href: "/video/feedback",
-      label: "Feedback",
-    }
+      href: "/channel",
+      label: "Channel",
+    },
   ];
 
   return (

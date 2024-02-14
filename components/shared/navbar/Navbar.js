@@ -5,8 +5,6 @@ import NavLinks from "./navComponents/NavLinks";
 import NavBtn from "./navComponents/NavBtn";
 import Link from "next/link";
 import VideoSearch from "../Search/VideoSearch";
-import Image from "next/image";
-import logo from '@/assets/logo/1VibeWaveLogo3.png';
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
@@ -31,7 +29,7 @@ const Navbar = () => {
         </ul>
 
         <div className="ml-4">
-          <VideoSearch/>
+          <VideoSearch />
         </div>
         <div className="hidden md:flex gap-6 items-center lg:flex-1 lg:justify-end">
           <NavBtn />

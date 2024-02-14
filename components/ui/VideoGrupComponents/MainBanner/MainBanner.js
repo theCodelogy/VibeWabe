@@ -7,13 +7,17 @@ import imageOne from '@/assets/BannerImage/2.jpeg'
 import imageTwo from '@/assets/BannerImage/3.jpg'
 import imageThree from '@/assets/BannerImage/5.jpg'
 import imageFour from '@/assets/BannerImage/gruesome-banner-john-wick-2.jpg'
-
+import Aos from 'aos';
+import 'aos/dist/aos.css'
+import { useEffect } from "react";
 
 
 const MainBanner = () => {
 
 
-
+  useEffect(() =>{
+    Aos.init();
+      },[])
    
 
     return (
@@ -47,7 +51,7 @@ const MainBanner = () => {
       <div className="flex w-full mx-auto text-left">
         <div className="relative inline-flex items-center mx-auto align-middle">
           <div className="">
-            <h1 className="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
+            <h1 data-aos='zoom-in-up' className="max-w-5xl text-4xl  leading-none tracking-tighter text-white md:text-5xl lg:text-6xl lg:max-w-7xl">
            JHON WICK <br className="hidden lg:block"/>
               
             </h1>

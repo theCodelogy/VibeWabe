@@ -26,7 +26,6 @@ const FirstMusicTypes = () => {
         We work with leading music creators from around the world to bring you
         exclusive, authentic new tracks on a daily basis.
       </p>
-      {/* <div className="grid md:grid-cols-3 grid-cols-2 gap-5 justify-center max-w-7xl mx-auto items-center"> */}
       <div className="flex flex-wrap gap-8 justify-center max-w-7xl mx-auto items-center">
         {images.map((imgSrc, index) => (
           <div
