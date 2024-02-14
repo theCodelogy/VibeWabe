@@ -7,6 +7,7 @@ import { BiSolidUserCircle } from "react-icons/bi";
 import { IoLogOutOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { authContext } from "@/utils/AuthProvider";
+import { FaFileUpload } from "react-icons/fa";
 
 export default function DashboardLayout({ children }) {
   const { signout } = useContext(authContext);
@@ -66,7 +67,10 @@ export default function DashboardLayout({ children }) {
             </Link>
           </li>
           <li>
-            <Link href={"/dashboard/videoUpload"}>Video Upload</Link>
+            <Link href={"/dashboard/videoUpload"}>
+              <FaFileUpload />
+              Video Upload
+            </Link>
           </li>
           <li>
             <Link href={"/dashboard/musicUpload"}>Music Upload</Link>
