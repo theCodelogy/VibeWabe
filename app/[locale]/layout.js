@@ -7,6 +7,7 @@ import initTranslations from "../i18n";
 import QueryProvider from "@/QueryProvider";
 const inter = Inter({ subsets: ["latin-ext"] });
 import TranslationsProvider from "@/components/TranslationProvider";
+import Massenger from "@/components/Massenger/Massenger";
 
 export const metadata = {
   title: "Home",
@@ -32,6 +33,7 @@ export default async function RootLayout({ children, params: {locale}}) {
               reverseOrder={false}
             />
             <GotoTop />
+            <Massenger/>
           </AuthProvider>
         </QueryProvider>
       </body>
