@@ -9,7 +9,7 @@ const movieDetailPage = async ({ params }) => {
   );
   const video = res.data;
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <DynamicVideoBanner video={video} id={params.id} />
       <CoustomerReview id={params.id} />
       <VideoDetails />

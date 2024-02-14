@@ -93,6 +93,9 @@ import { useTranslation } from "react-i18next";
 import { IoLogOutOutline } from "react-icons/io5";
 import { AnimatePresence, motion } from "framer-motion";
 import { MdOutlineSpaceDashboard } from "react-icons/md";
+import { LuHistory } from "react-icons/lu";
+import { MdPlaylistAdd } from "react-icons/md";
+import { IoIosNotifications } from "react-icons/io";
 
 const NavBtn = () => {
   const { user, signout } = useContext(authContext);
@@ -118,6 +121,7 @@ const NavBtn = () => {
       {user?.email ? (
         <>
           <LanguageChanger />
+          <IoIosNotifications className="text-gray-100 text-2xl" />
           <div ref={dropdownRef} className="dropdown dropdown-end">
             <label
               onClick={() => {
@@ -175,10 +179,16 @@ const NavBtn = () => {
                     </Link>
                   </li>
                   <li>
-                    <Link href={"/mystuff"}>WatchLists</Link>
+                    <Link href={"/mystuff"}>
+                      <LuHistory />
+                      WatchLists
+                    </Link>
                   </li>
                   <li>
-                    <Link href={"/watched"}>PlayLists</Link>
+                    <Link href={"/watched"}>
+                      <MdPlaylistAdd />
+                      PlayLists
+                    </Link>
                   </li>
                   <li>
                     <Link href={"/feedback"}>
