@@ -9,7 +9,6 @@ import Navbar from "@/components/shared/navbar/Navbar";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationProvider";
 import ReviewCard from "@/components/ReviewCrad/ReviewCard";
-
 export default async function HomePage({ params: { locale } }) {
   const i18NameSpaces = ["common", "mystuff", "landing"];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
@@ -25,7 +24,7 @@ export default async function HomePage({ params: { locale } }) {
         <FirstMusicTypes />
         <FristLandingFeature />
         <FristLandingAudio />
-        {/* <FirstTrendingMovies /> */}
+        <FirstTrendingMovies />
         <Faq />
         <ReviewCard />
         <LandPageFooter />

@@ -1,10 +1,7 @@
-import Footer from "@/components/shared/footer/footer";
 import CoustomerReview from "@/components/ui/CoustomerReview/CoustomerReview";
 import DynamicVideoBanner from "@/components/ui/VideoGrupComponents/DynamicVideo/DynamicVideoBanner";
 import MoreLikeThis from "@/components/ui/VideoGrupComponents/VideoDetails/MoreLikeThis";
 import axios from "axios";
-import React from "react";
-
 
 const movieDetailPage = async ({ params }) => {
   const res = await axios.get(`https://vibewabe-server.vercel.app/video/${params.id}`)
@@ -15,7 +12,7 @@ const movieDetailPage = async ({ params }) => {
 const category = data.data
 
   return (
-    <div>
+    <div className="max-w-7xl mx-auto">
       <DynamicVideoBanner video={video} id={params.id} />
       <CoustomerReview id={params.id} />
       {/* <VideoDetails /> */}
