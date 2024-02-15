@@ -4,11 +4,13 @@ import NewReleses from "@/components/ui/VideoGrupComponents/videoHome/NewReleses
 import Recomanded from "@/components/ui/VideoGrupComponents/videoHome/Recomanded";
 import Slider from "@/components/ui/cards/Slider";
 import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
+import PrivateRoute from "../../PraivetRoute/PraivetRoute";
 
 const VideoPage = () => {
   return (
     <>
-      <div>
+    <PrivateRoute>
+    <div>
         <MainBanner />
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
           <Recomanded />
@@ -54,6 +56,8 @@ const VideoPage = () => {
           <Slider category={"drama"} tags={"horror"} title={"Horror Drama"} />
         </div>
       </div>
+    </PrivateRoute>
+     
     </>
   );
 };
