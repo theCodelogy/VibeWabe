@@ -28,12 +28,12 @@ const MixMusic = ({romanticMusics}) => {
             <section className="text-gray-600 body-font">
                 <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center justify-around">
                     <div className="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 flex flex-col md:items-start md:text-left mb-16 md:mb-0 items-center text-center">
-                        <h1 className="title-font sm:text-4xl text-3xl mb-8 font-medium text-white">Recently <span className="text-red-500">played Music</span></h1>
+                        <h1 className="title-font sm:text-4xl text-3xl mb-8 font-medium text-white">Favorite <span className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">Romantic Music</span></h1>
                         <p className="mb-10 leading-relaxed text-zinc-300 lg:w-2/3 w-auto ">
                         This week Green Day get back to basics on a hooky, heavy pop record, Sleater-Kinney plays with a sense of cathartic purpose, and Kid Cudis ninth effort features all the trademark humming, production, and introspective lyrics fans expect.
                         </p>
                         <div className="flex justify-center">
-                            <button className=" inline-flex text-white bg-gradient-to-r from-red-600 to-zinc-500  border-0 py-2 px-6 focus:outline-none hover:from-zinc-500 hover:to-red-600 font-semibold duration-300 transition rounded text-md">
+                            <button className=" inline-flex text-white bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b dark:shadow-indigo-900  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px  border-0 py-2 px-6 focus:outline-none   font-semibold duration-300 transition rounded text-md">
                                 See More Music
                             </button>
                         </div>
@@ -58,47 +58,6 @@ const MixMusic = ({romanticMusics}) => {
                                 </SwiperSlide>)
                                 }
                             
-                            
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg2} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg3} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg4} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg5} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
-                            <SwiperSlide>
-                            <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
-                                <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={musicImg6} alt='slice image'/>
-                                <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
-                                </div>
-                            </div>
-                            </SwiperSlide>
                         </Swiper>
                     </div>
                 </div>
