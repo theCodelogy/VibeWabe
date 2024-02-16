@@ -4,7 +4,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import Image from "next/image";
 import imageOne from '@/assets/BannerImage/2.jpeg'
-import imageTwo from '@/assets/BannerImage/3.jpg'
+import imageTwo from '@/assets/BannerImage/black-banner.png'
 import imageThree from '@/assets/BannerImage/5.jpg'
 import imageFour from '@/assets/BannerImage/gruesome-banner-john-wick-2.jpg'
 import Aos from 'aos';
