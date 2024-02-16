@@ -5,7 +5,9 @@ import NavLinks from "./navComponents/NavLinks";
 import NavBtn from "./navComponents/NavBtn";
 import Link from "next/link";
 import VideoSearch from "../Search/VideoSearch";
-
+import logo from "../../../assets/logo/vibeWave1.png";
+import Image from "next/image";
+import SearchField from "../Search/SearchField";
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
 
@@ -13,13 +15,16 @@ const Navbar = () => {
     <header className="px-[0.375rem] z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
       <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-zinc-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
         {/* logo */}
-        <div className="lg:flex-1 h-full justify-center">
-          {/* <Image className="h-[60px] p-2" src={logo} alt="logo" /> */}
-          <Link className="flex h-full" href="/">
-            <p className="text-2xl  text-white flex justify-center items-center font-bold">
-              VibeWabe
-              {/* <Image className="h-[70px] p-2" src={logo} alt="logo" /> */}
-            </p>
+        <div className="lg:flex-1 h-full flex items-center">
+          <Link href="/" className="flex items-center">
+            <Image
+              className="w-full h-full"
+              height={60}
+              width={60}
+              src={logo}
+              alt="logo"
+            />
+            <p className="text-2xl text-white font-bold">VibeWabe</p>
           </Link>
         </div>
 
@@ -30,6 +35,7 @@ const Navbar = () => {
 
         <div className="ml-4">
           <VideoSearch />
+          {/* <SearchField /> */}
         </div>
         <div className="hidden md:flex gap-6 items-center lg:flex-1 lg:justify-end">
           <NavBtn />

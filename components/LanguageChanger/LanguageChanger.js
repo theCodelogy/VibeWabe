@@ -3,8 +3,6 @@ import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import i18nConfig from "@/i18nConfig";
-import logo from "../../assets/logo/multiLanguage.png";
-import Image from "next/image";
 import { GrLanguage } from "react-icons/gr";
 
 export default function LanguageChanger() {
@@ -49,7 +47,7 @@ export default function LanguageChanger() {
         value={currentLocale}
       >
         <option value="en">English</option>
-        <option value="bn">Bengali</option>
+        <option value="bn">Bengla</option>
         <option value="ar">Arabic</option>
       </select>
     </div>

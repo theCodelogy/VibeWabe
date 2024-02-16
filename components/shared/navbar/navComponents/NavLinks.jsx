@@ -77,7 +77,7 @@ const NavLinks = () => {
     <>
       {navigationLinks.map((link, index) => (
         <li
-          className="hover:scale-95 duration-200 ease-in-out transition-all text-white"
+          className="hover:scale-95 duration-200 ease-in-out transition-all text-white lg:text-base xl:text-lg"
           key={index}
         >
           <div className="dropdown dropdown-hover">
