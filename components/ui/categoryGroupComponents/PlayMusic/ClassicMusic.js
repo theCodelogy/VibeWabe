@@ -12,19 +12,15 @@ import { Pagination } from 'swiper/modules';
 
 //music banner img
 import Image from 'next/image';
-import banner1 from '@/assets/Musics/CategoryImg/played1.jpg'
-import banner2 from '@/assets/Musics/CategoryImg/played2.jpg'
-import banner3 from '@/assets/Musics/CategoryImg/played3.jpg'
-import banner6 from '@/assets/Musics/CategoryImg/played4.jpg'
-import banner5 from '@/assets/Musics/CategoryImg/played5.jpg'
-import banner4 from '@/assets/Musics/CategoryImg/played6.jpg'
 import { FaCirclePlay } from 'react-icons/fa6';
 import Link from 'next/link';
 
-const PlayMusicList = ({sadMusics}) => {
+
+const ClassicMusic = ({classicalMusics}) => {
     return (
-        <div className='mb-10 px-5 container mx-auto mt-20'>
-        <h3 className='text-white text-xl font-bold pl-5'>Broken Hart Music Playlist</h3>
+        <div>
+            <div className='mb-20 px-5 container mx-auto'>
+        <h3 className='text-white text-xl font-bold pl-5'>Classical Music Playlist</h3>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -46,10 +42,10 @@ const PlayMusicList = ({sadMusics}) => {
           },
         }}
         modules={[Pagination]}
-        className="mySwiper mt-7"
+        className="mySwiper"
       >
         {
-          sadMusics.map(music => <SwiperSlide key={music?._id}>
+          classicalMusics.map(music => <SwiperSlide key={music?._id}>
                 <Link href={`/music/${music?._id}`}>
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-3 px-3 my-6 bg-zinc-950 mb-16 transition duration-500'> 
                     <div className='group relative rounded-lg h-16 w-16'>
@@ -74,7 +70,8 @@ const PlayMusicList = ({sadMusics}) => {
         }
     </Swiper>
    </div>
+        </div>
     );
 };
 
-export default PlayMusicList;
+export default ClassicMusic;

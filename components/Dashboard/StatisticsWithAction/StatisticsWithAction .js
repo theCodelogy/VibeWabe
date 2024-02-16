@@ -19,7 +19,30 @@ const StatisticsWithAction = () => {
     axios.get('https://vibewabe-server.vercel.app/music')
     .then(res => setMusics(res.data))
   },[])
+ 
+  const [walet , setWalet] = useState([])
+  const [total, setTotalPrice] = useState(0);
 
+  useEffect(() => {
+    axios.get('https://vibewabe-server.vercel.app/order')
+      .then(response => {
+        // Update the state with the fetched data
+        setWalet(response.data);
+        console.log(response.data)
+      })
+      
+  }, []);
+
+  useEffect(() => {
+    // Calculate total price
+    const totalPrice = walet.reduce((acc, item) => {
+    
+        return acc + item.price;
+      
+     
+    }, 0);
+    setTotalPrice(totalPrice);
+  }, [walet]);
 
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
@@ -144,7 +167,7 @@ const StatisticsWithAction = () => {
         {/* Body */}
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">$2,670</dt>
+            <dt className="text-2xl font-bold">${total}</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-300 dark:text-gray-400">
               Wallet
             </dd>
