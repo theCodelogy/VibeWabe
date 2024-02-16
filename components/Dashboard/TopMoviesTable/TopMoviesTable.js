@@ -1,111 +1,62 @@
-import React from 'react';
+'use client'
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const TopMoviesTable = () => {
+  const [topMovies, setTopMovies] = useState([]);
+
+  useEffect(() => {
+    axios.get('https://vibewabe-server.vercel.app/video')
+      .then(res => {
+        const sortedMovies = res.data.sort((a, b) => b.view - a.view);
+        // Set the top 5 movies based on view
+        setTopMovies(sortedMovies.slice(0, 5));
+      })
+      .catch(error => {
+        console.error('Error fetching top movies:', error);
+      });
+  }, []);
+
   return (
     <div className='flex justify-center items-center'>
-   <div className="block w-full  overflow-x-auto max-w-xl border">
-      <table className="items-center w-full bg-transparent border-collapse">
-        <thead>
-          <tr>
-            <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
-              Top Movies
-            </th>
-            <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
-              Total Like
-            </th>
-            <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
-              Views
-            </th>
-          </tr>
-        </thead>
-        <tbody className="divide-y divide-gray-100">
-          <tr className="text-gray-100">
-            <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">Organic Search</th>
-            <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
-              5,649
-            </td>
-            <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
-              <div className="flex items-center">
-                <span className="mr-2 text-xs font-medium">30%</span>
-                <div className="relative w-full">
-                  <div className="w-full bg-gray-200 rounded-sm h-2">
-                    <div className="bg-cyan-600 h-2 rounded-sm" style={{ width: '30%' }}></div>
+      <div className="block w-full  overflow-x-auto max-w-xl border">
+        <table className="items-center w-full bg-transparent border-collapse">
+          <thead>
+            <tr>
+              <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                Top Movies
+              </th>
+              <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap">
+                Total Views
+              </th>
+              <th className="px-4 bg-gray-50 text-gray-700 align-middle py-3 text-xs font-semibold text-left uppercase border-l-0 border-r-0 whitespace-nowrap min-w-140-px">
+                Views
+              </th>
+            </tr>
+          </thead>
+          <tbody className="divide-y divide-gray-100">
+            {topMovies.map(movie => (
+              <tr key={movie._id} className="text-gray-100">
+                <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">{movie.title}</th>
+                <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
+                  {movie.view}
+                </td>
+                <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
+                  <div className="flex items-center">
+                    <span className="mr-2 text-xs font-medium">30%</span>
+                    <div className="relative w-full">
+                      <div className="w-full bg-gray-200 rounded-sm h-2">
+                        <div className="bg-cyan-600 h-2 rounded-sm" style={{ width: '30%' }}></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr className="text-gray-100">
-            <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">
-              Referral
-            </th>
-            <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
-              4,025
-            </td>
-            <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
-              <div className="flex items-center">
-                <span className="mr-2 text-xs font-medium">24%</span>
-                <div className="relative w-full">
-                  <div className="w-full bg-gray-200 rounded-sm h-2">
-                    <div className="bg-orange-300 h-2 rounded-sm" style={{ width: '24%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr className="text-gray-100">
-            <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">Direct</th>
-            <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
-              3,105
-            </td>
-            <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
-              <div className="flex items-center">
-                <span className="mr-2 text-xs font-medium">18%</span>
-                <div className="relative w-full">
-                  <div className="w-full bg-gray-200 rounded-sm h-2">
-                    <div className="bg-teal-400 h-2 rounded-sm" style={{ width: '18%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr className="text-gray-100">
-            <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">Social</th>
-            <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
-              1251
-            </td>
-            <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
-              <div className="flex items-center">
-                <span className="mr-2 text-xs font-medium">12%</span>
-                <div className="relative w-full">
-                  <div className="w-full bg-gray-200 rounded-sm h-2">
-                    <div className="bg-pink-600 h-2 rounded-sm" style={{ width: '12%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-          <tr className="text-gray-100">
-            <th className="border-t-0 px-4 align-middle text-sm font-normal whitespace-nowrap p-4 text-left">Other</th>
-            <td className="border-t-0 px-4 align-middle text-xs font-medium text-gray-100 whitespace-nowrap p-4">
-              734
-            </td>
-            <td className="border-t-0 px-4 align-middle text-xs whitespace-nowrap p-4">
-              <div className="flex items-center">
-                <span className="mr-2 text-xs font-medium">9%</span>
-                <div className="relative w-full">
-                  <div className="w-full bg-gray-200 rounded-sm h-2">
-                    <div className="bg-indigo-600 h-2 rounded-sm" style={{ width: '9%' }}></div>
-                  </div>
-                </div>
-              </div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+                </td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </div>
-    </div>
- 
   );
 };
 

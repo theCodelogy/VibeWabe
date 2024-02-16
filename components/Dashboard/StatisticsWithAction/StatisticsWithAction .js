@@ -1,6 +1,49 @@
-import React from "react";
+'use client'
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 
 const StatisticsWithAction = () => {
+  const [users, setUsers] = useState([])
+  useEffect(() =>{
+    axios.get('https://vibewabe-server.vercel.app/user')
+    .then(res => setUsers(res.data))
+  },[])
+
+  const [videos, setVideos] = useState([])
+  useEffect(() =>{
+    axios.get('https://vibewabe-server.vercel.app/video')
+    .then(res => setVideos(res.data))
+  },[])
+  const [musics, setMusics] = useState([])
+  useEffect(() =>{
+    axios.get('https://vibewabe-server.vercel.app/music')
+    .then(res => setMusics(res.data))
+  },[])
+ 
+  const [walet , setWalet] = useState([])
+  const [total, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    axios.get('https://vibewabe-server.vercel.app/order')
+      .then(response => {
+        // Update the state with the fetched data
+        setWalet(response.data);
+        console.log(response.data)
+      })
+      
+  }, []);
+
+  useEffect(() => {
+    // Calculate total price
+    const totalPrice = walet.reduce((acc, item) => {
+    
+        return acc + item.price;
+      
+     
+    }, 0);
+    setTotalPrice(totalPrice);
+  }, [walet]);
+
   return (
     <div className="grid grid-cols-1 gap-4 md:grid-cols-2 lg:gap-8">
       {/* Card 1 */}
@@ -8,7 +51,7 @@ const StatisticsWithAction = () => {
         {/* Body */}
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">146</dt>
+            <dt className="text-2xl font-bold">{users.length}</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-300 dark:text-gray-400">
               Total user
             </dd>
@@ -47,7 +90,7 @@ const StatisticsWithAction = () => {
         {/* Body */}
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">5,128</dt>
+            <dt className="text-2xl font-bold">{videos.length}</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-300 dark:text-gray-400">
               Total Video 
             </dd>
@@ -85,7 +128,7 @@ const StatisticsWithAction = () => {
         {/* Body */}
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">128</dt>
+            <dt className="text-2xl font-bold">{musics.length}</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-300 dark:text-gray-400">
               Total Audio 
             </dd>
@@ -124,7 +167,7 @@ const StatisticsWithAction = () => {
         {/* Body */}
         <div className="flex grow items-center justify-between p-5">
           <dl className="space-y-1">
-            <dt className="text-2xl font-bold">$2,670</dt>
+            <dt className="text-2xl font-bold">${total}</dt>
             <dd className="text-sm font-semibold uppercase tracking-wider text-gray-300 dark:text-gray-400">
               Wallet
             </dd>

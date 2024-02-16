@@ -30,6 +30,8 @@ const DramaKids = async () => {
   },[])
  
 
+  
+
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
       <div className="relative group">

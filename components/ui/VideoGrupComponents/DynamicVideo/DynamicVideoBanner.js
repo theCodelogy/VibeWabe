@@ -1,11 +1,15 @@
 'use client'
+import { authContext } from '@/utils/AuthProvider';
 import { useQuery } from '@tanstack/react-query';
 import axios from 'axios';
-import { useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 import toast from 'react-hot-toast';
 import { AiOutlinePlus } from "react-icons/ai";
 import { AiFillLike, AiFillDislike } from "react-icons/ai";
+import { AiFillEye } from "react-icons/ai";
+
 const DynamicVideoBanner = ({ video, id }) => {
+  const {user} = useContext(authContext)
   const { data: singleVideo = [], refetch } = useQuery({
     queryKey: [],
     queryFn: async () => {
@@ -13,7 +17,12 @@ const DynamicVideoBanner = ({ video, id }) => {
       return res.data;
     }
   });
+ 
 
+
+
+
+  
   const [isLikeActive, setIsLikeActive] = useState(false);
   const [isDislikeActive, setIsDislikeActive] = useState(false);
 
@@ -57,8 +66,38 @@ const DynamicVideoBanner = ({ video, id }) => {
       });
   };
 
+const handleList = () =>{
+  const title =singleVideo.title
+  const email = user.email
+  const date = new Date() ;
+  const thambnail = singleVideo.thambnail;
+  const VideoId = singleVideo._id;
+  const description = singleVideo.description
+  const allData = {title,thambnail,VideoId,email,date,description}
+  console.log(allData)
+
+  axios.post('https://vibewabe-server.vercel.app/videoPlaylist', allData)
+  .then(res=>{
+   
+    toast.success('added my list')
+    console.log(res.data)
+  })
+}
+
+
+const [category, setCategory] = useState([])
+useEffect(() =>{
+  axios.get(`https://vibewabe-server.vercel.app/video?category=${video.category}&tags=${video.tags}`)
+  .then(res =>{
+    console.log(res.data)
+    setCategory(res.data)
+  })
+},[video])
+
+
   return (
-    <div className='max-w-screen-xl mx-auto'>
+   <div>
+     <div className='max-w-screen-xl mx-auto'>
       <iframe
         src={video.url}
         title={video.title}
@@ -72,12 +111,14 @@ const DynamicVideoBanner = ({ video, id }) => {
           <p className="text-gray-400 text-xs md:text-sm">Enjoy premium experience without any ads</p>
         </div>
         {/*  onClick={handleCopyClick}  */}
-        <button id="copyButton" className="btn bg-gradient-to-r from-red-500 to-yellow-500 text-white rounded-full focus:outline-none focus:ring focus:border-orange-400">
-          Copy Link
-          {/* <pre className="language-javascript">
-            <code className="text-sm hidden">{video.url}</code>
-          </pre> */}
-        </button>
+      
+        <button className="MuiButtonBase-root text-white MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
+                <span className="MuiIconButton-label">
+                  <div onClick={handleList} className='cursor-pointer flex items-center justify-center'><AiOutlinePlus /></div>
+                  <p className="MuiTypography-root MuiTypography-body1">My List</p>
+                </span>
+                <span className="MuiTouchRipple-root"></span>
+              </button>
       </div>
 
       <main className="container mx-auto px-4 py-8">
@@ -106,19 +147,42 @@ const DynamicVideoBanner = ({ video, id }) => {
                 <span>Dislike {singleVideo.disLike}</span>
               </button>
 
-
+{/* 
               <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
                 <span className="MuiIconButton-label">
-                  <div className='flex items-center justify-center'><AiOutlinePlus /></div>
+                  <div onClick={handleList} className='cursor-pointer flex items-center justify-center'><AiOutlinePlus /></div>
                   <p className="MuiTypography-root MuiTypography-body1">My List</p>
                 </span>
                 <span className="MuiTouchRipple-root"></span>
+              </button> */}
+
+
+              <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
+                <span className="MuiIconButton-label">
+                  <div  className='cursor-pointer flex items-center justify-center'><AiFillEye />
+</div>
+                  <p className="MuiTypography-root MuiTypography-body1">{video.view}</p>
+                </span>
+                <span className="MuiTouchRipple-root"></span>
               </button>
+
+
             </div>
           </div>
         </div>
       </main>
+
+
+      
     </div>
+
+
+    {/* <div className="text-white max-w-screen-xl mx-auto ">
+            <h2 className="text-xl text-white  font-semibold my-4 md:my-10 ">More Like Movie</h2>
+          <MoreLikeThis category={category}/>
+      </div> */}
+    
+   </div>
   );
 };
 
