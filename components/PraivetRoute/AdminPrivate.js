@@ -13,6 +13,7 @@ const AdminPrivate = ({ children }) => {
             .then(res => setDbUser(res.data))
     }, [user])
 
+
     if (isLoading || dbUser === ''){
         return <p>Loading</p>    
       }

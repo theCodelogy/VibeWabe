@@ -17,6 +17,7 @@ const PrivateByUserRole = ({ children }) => {
         return <p>Loading</p>    
       }
 
+
     if (dbUser?.role === 'freeTrail' || dbUser?.role === 'premium' || dbUser.admin === true) {
         return children
     }

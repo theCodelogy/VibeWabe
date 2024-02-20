@@ -11,7 +11,7 @@ const UserTableRow = ({ user, refetch, userIndex }) => {
     // Make video Recommended or UnRecommended
     const adminHendle = (id) => {
         if (user.admin === false || !user.admin) {
-            axios.patch(`http://localhost:5000/user/${id}`, { admin: true })
+            axios.patch(`https://vibewabe-server.vercel.app/user/${id}`, { admin: true })
                 .then(res => {
                     if (res.data.modifiedCount) {
                         refetch()
@@ -21,7 +21,7 @@ const UserTableRow = ({ user, refetch, userIndex }) => {
                 .catch(err => console.log(err.message))
         } else if (user.admin === true) {
             {
-                axios.patch(`http://localhost:5000/user/${id}`, { admin: false })
+                axios.patch(`https://vibewabe-server.vercel.app/user/${id}`, { admin: false })
                     .then(res => {
                         if (res.data.modifiedCount) {
                             refetch()
