@@ -7,10 +7,10 @@ import Link from "next/link";
 import VideoSearch from "../Search/VideoSearch";
 import logo from "../../../assets/logo/vibeWave1.png";
 import Image from "next/image";
-import SearchField from "../Search/SearchField";
+import { usePathname } from "next/navigation";
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
-
+  const pathname = usePathname()
   return (
     <header className="px-[0.375rem] z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
       <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-zinc-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
@@ -33,9 +33,13 @@ const Navbar = () => {
           <NavLinks />
         </ul>
 
+        {/* Search component */}
         <div className="ml-4">
-          <VideoSearch />
-          {/* <SearchField /> */}
+          {
+            pathname.split('/')[1] === 'video' || pathname.split('/')[1] === 'music' ?
+              <VideoSearch /> : ''
+          }
+
         </div>
         <div className="hidden md:flex gap-6 items-center lg:flex-1 lg:justify-end">
           <NavBtn />

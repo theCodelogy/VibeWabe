@@ -9,7 +9,6 @@ const FreeTrailCard = () => {
     const router = useRouter();
     const { user } = useContext(authContext);
     const [freeTrailUser, setFreeTrailUser] = useState({})
-   console.log(user)
 
    useEffect(()=>{
     axios.get(`https://vibewabe-server.vercel.app/user/${user?.email}`)
@@ -39,7 +38,6 @@ const FreeTrailCard = () => {
 
     }
 
-    console.log(freeTrailUser)
     return (
 
         <div className="relative p-8 border border-gray-200 rounded-2xl shadow-sm flex flex-col">

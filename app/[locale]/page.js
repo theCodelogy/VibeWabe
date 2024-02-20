@@ -30,5 +30,6 @@ export default async function HomePage({ params: { locale } }) {
         <LandPageFooter />
       </div>
     </TranslationsProvider>
+    
   );
 }
