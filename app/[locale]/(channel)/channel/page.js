@@ -13,9 +13,13 @@ import Sports from "@/components/ui/ChannelPage/Sports";
 import SportsExplore from "@/components/ui/ChannelPage/SportsExplore";
 
 import Travel2 from "@/components/ui/ChannelPage/Travel2";
+import PrivateByUserRole from "@/components/PraivetRoute/PrivateByUserRole";
+import PrivateRoute from "@/components/PraivetRoute/PraivetRoute";
 
 const channel = () => {
   return (
+    <PrivateRoute>
+    <PrivateByUserRole>
     <div>
       <Navbar />
       {/*  banner section */}
@@ -59,6 +63,8 @@ const channel = () => {
       </div>
       <Footer />
     </div>
+    </PrivateByUserRole>
+    </PrivateRoute>
   );
 };
 

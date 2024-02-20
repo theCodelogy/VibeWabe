@@ -4,7 +4,7 @@ import axios from 'axios';
 import { useContext, useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation'; 
 
-const PrivateByUserRole = ({ children }) => {
+const AdminPrivate = ({ children }) => {
     const router = useRouter();
     const { user, isLoading } = useContext(authContext);
     const [dbUser, setDbUser] = useState('')
@@ -17,16 +17,15 @@ const PrivateByUserRole = ({ children }) => {
         return <p>Loading</p>    
       }
 
-    if (dbUser?.role === 'freeTrail' || dbUser?.role === 'premium' || dbUser.admin === true) {
+    if ( dbUser.admin === true) {
         return children
-    }
-
-    if (dbUser?.role === 'subscriber') {
-        router.replace('/subscription'); 
+    }else{
+        router.replace('/'); 
         return null;
     }
 
+    
 
 };
 
-export default PrivateByUserRole;
+export default AdminPrivate;
