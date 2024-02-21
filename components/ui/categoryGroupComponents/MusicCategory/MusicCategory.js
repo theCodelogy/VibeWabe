@@ -20,7 +20,7 @@ const MusicCategory = ({romantics}) => {
     const {t} = useTranslation();
     return (
         <div className='mb-20 px-5 container mx-auto mt-20'>
-        <h3 className='text-white text-xl font-bold pl-5'>Romantic Music List</h3>
+        <h3 className='text-white text-xl font-bold pl-5'>Trending Music List</h3>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}

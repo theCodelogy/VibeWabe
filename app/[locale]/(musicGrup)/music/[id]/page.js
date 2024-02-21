@@ -7,7 +7,6 @@ import axios from 'axios';
 import React from 'react';
 
 const MusicDetails = async({params}) => {
-    console.log(params)
     const res = await axios.get(`https://vibewabe-server.vercel.app/music/${params.id}`)
     const musicPlay = res.data;
 

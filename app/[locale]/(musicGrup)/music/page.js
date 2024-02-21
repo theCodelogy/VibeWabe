@@ -11,25 +11,27 @@ import EnglishMuiscCard from "@/components/ui/categoryGroupComponents/MusicCateg
 import NewReleaseMusic from "@/components/ui/categoryGroupComponents/MusicCategory/NewReleaseMusic";
 import ArabicMusicCard from "@/components/ui/categoryGroupComponents/MusicCategory/ArabicMusicCard";
 import SpanishMusicCard from "@/components/ui/categoryGroupComponents/MusicCategory/SpanishMusicCard";
+import Link from "next/link";
+import useMusicFetch from "@/utils/hooks/useMusicFetch";
 
 const Musec = async() => {
   //Romantic music
-  const roman = await axios.get(`https://vibewabe-server.vercel.app/music?category=romantic`)
+  const roman = await axios.get(`https://vibewabe-server.vercel.app/music?sortBy=view&sort=-1&limit=20`)
   const romantics = roman.data;
   //sad music
   const sad = await axios.get(`https://vibewabe-server.vercel.app/music?recommended=true`)
   const sadMusic = sad.data;
   //hindi music
-  const res = await axios.get(`https://vibewabe-server.vercel.app/music?language=hindi`)
+  const res = await axios.get(`https://vibewabe-server.vercel.app/music?language=hindi&sortBy=view&sort=-1&limit=20`)
   const hindi = res.data;
   //bangla music
   const ress = await axios.get(`https://vibewabe-server.vercel.app/music?language=bangla`)
   const bangla = ress.data;
   //english music
-  const resh = await axios.get(`https://vibewabe-server.vercel.app/music?language=english`)
+  const resh = await axios.get(`https://vibewabe-server.vercel.app/music?language=english&sortBy=view&sort=-1&limit=20`)
   const english = resh.data;
   //arabic music
-  const arad = await axios.get(`https://vibewabe-server.vercel.app/music?language=arabic`)
+  const arad = await axios.get(`https://vibewabe-server.vercel.app/music?language=arabic&sortBy=view&sort=-1&limit=20`)
   const arabic = arad.data;
   //arabic music
   const spani = await axios.get(`https://vibewabe-server.vercel.app/music?language=spanish`)
@@ -47,7 +49,8 @@ const Musec = async() => {
       {/* <Card2></Card2> */}
       
       <div className="mb-20">
-        <BanglaMusicCard bangla={bangla}></BanglaMusicCard>
+      
+        <BanglaMusicCard bangla={bangla} category={"bangla"}></BanglaMusicCard>
       </div>
       <div className="mb-20">
         <HindiMusicCard hindi={hindi}></HindiMusicCard>

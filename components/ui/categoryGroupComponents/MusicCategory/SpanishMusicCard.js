@@ -45,7 +45,7 @@ const SpanishMusicCard = ({spanish}) => {
                 className="mySwiper bg-zinc-950  h-80 rounded-md"
             >
                 {
-                    spanish.map(music => <SwiperSlide key={music?._id}>
+                    spanish.slice(0,21).map(music => <SwiperSlide key={music?._id}>
                         <div className='group relative rounded-lg lg:w-48 md:w-48 w-auto lg:h-48 md:h-48 h-56 mt-5 mx-5 py-3'>
                                 <Link href={`/music/${music?._id}`}>
                                 <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={music?.thambnail} width={200} height={200} alt='slice image'/>
