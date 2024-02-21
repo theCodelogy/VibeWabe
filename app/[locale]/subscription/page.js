@@ -1,4 +1,4 @@
-import PrivateRoute from '@/components/PraivetRoute/PraivetRoute';
+import PrivateRoute from '@/utils/PraivetRoute/PraivetRoute';
 import SubscriptionCard from '@/components/Subscription/SubscriptionCard';
 import React from 'react';
 

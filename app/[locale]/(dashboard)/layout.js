@@ -8,8 +8,8 @@ import { IoLogOutOutline } from "react-icons/io5";
 import { useContext } from "react";
 import { authContext } from "@/utils/AuthProvider";
 import { FaFileUpload } from "react-icons/fa";
-import AdminPrivate from "@/components/PraivetRoute/AdminPrivate";
-import PrivateRoute from "@/components/PraivetRoute/PraivetRoute";
+import AdminPrivate from "@/utils/PraivetRoute/AdminPrivate";
+import PrivateRoute from "@/utils/PraivetRoute/PraivetRoute";
 
 export default function DashboardLayout({ children }) {
   const { signout } = useContext(authContext);
