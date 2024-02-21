@@ -23,12 +23,13 @@ export default async function HomePage({ params: { locale } }) {
         <FristHomeBanner />
         <FirstMusicTypes />
         <FristLandingFeature />
-        <FristLandingAudio />
+        {/* <FristLandingAudio /> */}
         <FirstTrendingMovies />
         <Faq />
         <ReviewCard />
         <LandPageFooter />
       </div>
     </TranslationsProvider>
+    
   );
 }
