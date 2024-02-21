@@ -73,7 +73,7 @@ const Musec = async() => {
       <div className="mb-16">
         <ArabicMusicCard arabic={arabic} category={"arabic"}></ArabicMusicCard>
       </div>
-      <div className="mb-16">
+      <div className="mb-20">
         <SpanishMusicCard spanish={spanish} category={"spanish"}></SpanishMusicCard>
       </div>
     </div>
