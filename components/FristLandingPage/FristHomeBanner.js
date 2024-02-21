@@ -46,11 +46,6 @@ const FristHomeBanner = () => {
                                     <Link href={'/signup'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
                                             Get Started
                                         </Link>
-
-
-
-
-
                                     </div>
                                 </div>
                             </div>

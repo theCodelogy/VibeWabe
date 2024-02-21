@@ -15,12 +15,24 @@ import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 
 
-const ArabicMusicCard = ({arabic}) => {
+const ArabicMusicCard = ({arabic, category}) => {
     const {t} = useTranslation();
     
     return (
         <div className='container mx-auto px-5'>
-            <h3 className='text-white text-xl font-bold mb-8 px-5 '>Arabic Music</h3>
+            <div className="py-3 group relative flex justify-start items-center">
+                <h2 className="text-2xl font-semibold group-hover:text-orange-500">
+                Arabic Musics
+                </h2>
+                <div>
+                <Link
+                    href={`/music/allMusic/${category}`}
+                    className="hidden group-hover:inline-block px-2 py-1 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline"
+                >
+                    See All
+                </Link>
+                </div>
+            </div>
             <Swiper 
                 slidesPerView={1}
                 spaceBetween={10}
