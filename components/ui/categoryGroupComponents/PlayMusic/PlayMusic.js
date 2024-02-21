@@ -25,9 +25,10 @@ const PlayMusic = ({ musicPlay }) => {
                                 </div> */}
                                 
                             </div>
-                            <p>Music Singer Name - {musicPlay?.singerName}</p>
+                            <p className='text-sm font-normal leading-7 text-zinc-800'>Singer Name - {musicPlay?.releaseDate}</p>
+                            <p>{musicPlay?.view} Views </p>
 
-                            <p className='text-sm font-normal leading-7 text-zinc-800'>Music Release Date - {musicPlay?.releaseDate}</p>
+                            {/* <p className='text-sm font-normal leading-7 text-zinc-800'>Music Release Date - {musicPlay?.releaseDate}</p> */}
                             
                         </div>
                         <div className='flex gap-6 h-10 mt-5'>

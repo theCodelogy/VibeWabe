@@ -16,11 +16,10 @@ import { FaCirclePlay } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 
-const MusicCategory = ({romantics}) => {
-    const {t} = useTranslation();
+const TopRatedMusic = ({TopRatedMusics}) => {
     return (
-        <div className='mb-7 px-5 container mx-auto mt-20'>
-        <h3 className='text-white text-xl font-bold '>Trending Music List</h3>
+        <div className='mb-5 px-5 container mx-auto '>
+        <h3 className='text-white text-xl font-bold'>Top Rated Musics Musics</h3>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
@@ -46,7 +45,7 @@ const MusicCategory = ({romantics}) => {
       >
         
         {
-          romantics.map(music => <SwiperSlide key={music?._id}>
+          TopRatedMusics.map(music => <SwiperSlide key={music?._id}>
                 <Link href={`/music/${music?._id}`}>
                 <div className='flex gap-4 rounded-md hover:bg-zinc-700 py-3 px-3 my-6 bg-zinc-950 mb-16 transition duration-500'> 
                     <div className='group relative rounded-lg h-16 w-16'>
@@ -68,4 +67,4 @@ const MusicCategory = ({romantics}) => {
     );
 };
 
-export default MusicCategory;
+export default TopRatedMusic;
