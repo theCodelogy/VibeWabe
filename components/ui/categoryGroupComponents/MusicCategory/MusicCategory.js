@@ -19,8 +19,8 @@ import Link from 'next/link';
 const MusicCategory = ({romantics}) => {
     const {t} = useTranslation();
     return (
-        <div className='mb-20 px-5 container mx-auto mt-20'>
-        <h3 className='text-white text-xl font-bold pl-5'>Trending Music List</h3>
+        <div className='mb-7 px-5 container mx-auto mt-20'>
+        <h3 className='text-white text-xl font-bold '>Trending Music List</h3>
         <Swiper
         slidesPerView={1}
         spaceBetween={10}
