@@ -1,26 +1,6 @@
-// import Image from "next/image";
-// import register from '@/assets/register.png'
-// import SignUpForm from "@/components/auth/SignUpForm";
-
-
-// const Register = () => {
-//     return (
-//         <div>
-//            <SignUpForm/>
-//         </div>
-//     );
-// };
-
-// export default Register;
-
-
-
-
-
-
 import Image from "next/image";
 import register from '@/assets/register.png'
-import SignUpForm from "@/components/auth/SignUpForm";
+import SignUpForm from "@/components/ui/auth/SignUpForm";
 
 
 const Register = () => {
@@ -32,7 +12,7 @@ const Register = () => {
                     <div className="hidden md:block ">
                             <Image className="" src={register} alt="register image" />
                         </div>
-                        <div className="  w-full  bg-white  ">
+                        <div className="  max-w-[420px] bg-white  ">
                             <SignUpForm/>
                         </div>
                     </div>
