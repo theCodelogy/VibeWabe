@@ -85,6 +85,12 @@ export default function DashboardLayout({ children }) {
               <li>
                 <Link href={"/dashboard/channelUpload"}>Channel Upload</Link>
               </li>
+              <li>
+                <Link href={"/dashboard/bannerUpload"}>
+                  <FaFileUpload />
+                  banner Upload
+                </Link>
+              </li>
               {/* Logout button */}
               <li className="absolute bottom-0 left-0 right-0 p-2">
                 <button
