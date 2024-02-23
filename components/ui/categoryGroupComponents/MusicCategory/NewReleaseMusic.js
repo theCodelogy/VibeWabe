@@ -3,7 +3,7 @@
 import banner1 from '@/assets/Musics/Screenshot 2024-02-11 220328.png'
 import Image from 'next/image';
 import Link from "next/link";
-import { FaCirclePlay } from "react-icons/fa6";
+import { IoIosMusicalNotes } from 'react-icons/io';
 
 const NewReleaseMusic = ({sadMusic}) => {
     return (
@@ -44,7 +44,7 @@ const NewReleaseMusic = ({sadMusic}) => {
                     <div className='group relative rounded-lg h-20 w-20'>
                         <Image className='w-full h-full rounded-lg mb-2 transition duration-300 object-cover' src={music?.thambnail} width={100} height={100} alt='slice image'/>
                         <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-20 w-20 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        <IoIosMusicalNotes className='cursor-pointer'></IoIosMusicalNotes>
                         </div>
                     </div>
                     <div className='text-white '>

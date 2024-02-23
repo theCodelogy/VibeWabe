@@ -11,8 +11,8 @@ import 'swiper/css/pagination';
 // import required modules
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
-import { FaCirclePlay } from 'react-icons/fa6';
 import Link from 'next/link';
+import { IoIosMusicalNotes } from 'react-icons/io';
 
 const BanglaMusic = ({allMusics}) => {
     return (
@@ -43,7 +43,7 @@ const BanglaMusic = ({allMusics}) => {
                             <div className='group relative lg:h-80 md:h-60 h-40 lg:w-64 md:w-60 w-full mt-5'>
                                 <Image className='w-full h-full mb-2 transition duration-300' src={music?.thambnail} width={100} height={100} alt='slice image'/>
                                 <div className='absolute text-3xl text-white -top-0 left-0  flex justify-center items-center h-full w-full bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                                <IoIosMusicalNotes className='cursor-pointer'></IoIosMusicalNotes>
                                 </div>
                             </div>
                         </Link>

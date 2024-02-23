@@ -14,6 +14,7 @@ import { Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { FaCirclePlay } from 'react-icons/fa6';
 import Link from 'next/link';
+import { IoIosMusicalNotes } from 'react-icons/io';
 
 
 const ClassicMusic = ({classicalMusics}) => {
@@ -51,7 +52,7 @@ const ClassicMusic = ({classicalMusics}) => {
                     <div className='group relative rounded-lg h-16 w-16'>
                         <Image className='w-full h-full rounded-lg mb-2 transition duration-300 object-cover' src={music?.thambnail} width={50} height={50} alt='slice image'/>
                         <div className='absolute text-xl text-white rounded-lg -top-0 left-0  flex justify-center items-center h-16 w-16 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                            <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                        <IoIosMusicalNotes className='cursor-pointer'></IoIosMusicalNotes>
                         </div>
                     </div>
                     <div className='text-white '>

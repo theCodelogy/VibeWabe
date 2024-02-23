@@ -25,7 +25,7 @@ const MusicDetails = async({params}) => {
     return (
         <div>
             {/* music open */}
-            <PlayMusic musicPlay={musicPlay}></PlayMusic>
+            <PlayMusic musicPlay={musicPlay} id={params.id}></PlayMusic>
             {/* sad music list */}
             <PlayMusicList sadMusics={sadMusics}></PlayMusicList>
             {/* classical music list */}
