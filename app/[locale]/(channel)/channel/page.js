@@ -15,6 +15,8 @@ import SportsExplore from "@/components/ui/ChannelPage/SportsExplore";
 
 import Travel2 from "@/components/ui/ChannelPage/Travel2";
 import axios from "axios";
+import PrivateByUserRole from "@/utils/PraivetRoute/PrivateByUserRole";
+import PrivateRoute from "@/utils/PraivetRoute/PraivetRoute";
 
 const channel = async() => {
   //shows
@@ -35,6 +37,8 @@ const channel = async() => {
   const res6 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=documentary`)
   const allDocumentary = res6.data;
   return (
+    <PrivateRoute>
+    <PrivateByUserRole>
     <div>
       <Navbar />
       {/*  banner section */}
@@ -78,6 +82,8 @@ const channel = async() => {
       </div>
       <Footer />
     </div>
+    </PrivateByUserRole>
+    </PrivateRoute>
   );
 };
 

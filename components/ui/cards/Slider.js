@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 // "use client";
 // import { useContext, useEffect, useState } from "react";
 // import { FreeMode, Navigation } from "swiper/modules";
@@ -131,19 +132,13 @@ const Slider = ({ category, tags, title }) => {
   }, [category, tags]);
 
   const handleWatch = (video) => {
-    const allData = {
-      videoId: video._id,
-      email: user.email,
-      thambnail: video.thambnail,
-      title: video.title,
-    };
-    axios
-      .post("https://vibewabe-server.vercel.app/videoHistory", allData)
-      .then((res) => console.log(res.data))
-      .catch((error) => console.error("Error posting data:", error));
-    console.log("User email:", user.email);
-    console.log("Video clicked:", allData);
-  };
+    const allData = {videoId : video._id  , email: user.email ,thambnail: video.thambnail , title: video.title, description: video.description}
+    axios.post('https://vibewabe-server.vercel.app/videoHistory',allData )
+    .then(res => console.log(res.data))
+    console.log("User email:", user.email); // Add this console.log
+    console.log("Video clicked:",allData);
+   
+  }
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">

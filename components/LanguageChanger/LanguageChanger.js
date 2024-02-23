@@ -1,11 +1,9 @@
 "use client";
-
 import { useRouter } from "next/navigation";
 import { usePathname } from "next/navigation";
 import { useTranslation } from "react-i18next";
 import i18nConfig from "@/i18nConfig";
-import logo from "../../assets/logo/multiLanguage.png";
-import Image from "next/image";
+import { GrLanguage } from "react-icons/gr";
 
 export default function LanguageChanger() {
   const { i18n } = useTranslation();
@@ -39,16 +37,17 @@ export default function LanguageChanger() {
   };
 
   return (
-    <div className="flex">
+    <div className="flex items-center">
       {/* <Image src={logo} alt="multiLenguageIcon" height={27} width={27} /> */}
-      <Image src={logo} alt="Multi-language Image" width={27} height="auto" />
+      {/* <Image src={logo} alt="Multi-language Image" width={27} height="auto" /> */}
+      <GrLanguage className="text-gray-100 text-xl" />
       <select
         className="text-white font-semibold p-2 rounded-lg bg-black text-sm w-ful"
         onChange={handleChange}
         value={currentLocale}
       >
         <option value="en">English</option>
-        <option value="bn">Bengali</option>
+        <option value="bn">Bengla</option>
         <option value="ar">Arabic</option>
       </select>
     </div>

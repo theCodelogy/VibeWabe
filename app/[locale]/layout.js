@@ -7,6 +7,8 @@ import initTranslations from "../i18n";
 import QueryProvider from "@/QueryProvider";
 const inter = Inter({ subsets: ["latin-ext"] });
 import TranslationsProvider from "@/components/TranslationProvider";
+import Massenger from "@/components/Massenger/Massenger";
+import UserValidation from "@/utils/PraivetRoute/UserValidation";
 
 export const metadata = {
   title: "Home",
@@ -26,12 +28,15 @@ export default async function RootLayout({ children, params: {locale}}) {
       <body >
         <QueryProvider>
           <AuthProvider>
+            <UserValidation>
             {children}
+            </UserValidation>
             <Toaster
               position="top-right"
               reverseOrder={false}
             />
             <GotoTop />
+            <Massenger/>
           </AuthProvider>
         </QueryProvider>
       </body>

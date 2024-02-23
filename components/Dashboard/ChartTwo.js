@@ -1,13 +1,98 @@
 'use client'
-import React from 'react';
+import axios from 'axios';
+import React, { useEffect, useState } from 'react';
 import { Chart } from "react-google-charts";
 const ChartTwo = () => {
+    const [basicWalet , setBasicWalet] = useState([])
+    const [basicTotal, setBasicTotal] = useState(0);
+  
+    useEffect(() => {
+      axios.get('https://vibewabe-server.vercel.app/order?package=basic')
+        .then(response => {
+          // Update the state with the fetched data
+          setBasicWalet(response.data);
+          console.log(response.data)
+        })
+        
+    }, []);
+  
+    useEffect(() => {
+      // Calculate total price
+      const totalPrice = basicWalet.reduce((acc, item) => {
+      
+          return acc + item.price;
+        
+       
+      }, 0);
+      setBasicTotal(totalPrice);
+    }, [basicWalet]);
+
+
+
+
+
+    const [regulerWalet , setRegulerWalet] = useState([])
+    const [regulerTotal, setRegulerTotal] = useState(0);
+  
+    useEffect(() => {
+      axios.get('https://vibewabe-server.vercel.app/order?package=reguler')
+        .then(response => {
+          // Update the state with the fetched data
+          setRegulerWalet(response.data);
+          console.log(response.data)
+        })
+        
+    }, []);
+  
+    useEffect(() => {
+      // Calculate total price
+      const totalPrice = regulerWalet.reduce((acc, item) => {
+      
+          return acc + item.price;
+        
+       
+      }, 0);
+      setRegulerTotal(totalPrice);
+    }, [regulerWalet]);
+
+
+
+    const [populerWalet , setPopulerWalet] = useState([])
+    const [populerTotal, setPopulerTotal] = useState(0);
+  
+    useEffect(() => {
+      axios.get('https://vibewabe-server.vercel.app/order?package=populer')
+        .then(response => {
+          // Update the state with the fetched data
+          setPopulerWalet(response.data);
+          console.log(response.data)
+        })
+        
+    }, []);
+  
+    useEffect(() => {
+      // Calculate total price
+      const totalPrice = populerWalet.reduce((acc, item) => {
+      
+          return acc + item.price;
+        
+       
+      }, 0);
+      setPopulerTotal(totalPrice);
+    }, [populerWalet]);
+
+
+
+
+
+
+
     const data = [
-        ["Element", "Density", { role: "style" }],
-        ["Copper", 8.94, "#b87333"], // RGB value
-        ["Silver", 10.49, "silver"], // English color name
-        ["Gold", 19.3, "gold"],
-        ["Platinum", 21.45, "color: #e5e4e2"], // CSS-style declaration
+        ["Element", "Total Walet", { role: "style" }],
+        ["Basic Income", basicTotal, "#b87333"], // RGB value
+        ["Reguler Income", regulerTotal, "silver"], // English color name
+        ["Gold Income", populerTotal , "gold"],
+       
     ];
 
     return (

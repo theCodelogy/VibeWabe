@@ -1,10 +1,11 @@
-import Calender from "@/components/Dashboard/Calender/Calender";
+
 import ChartComponent from "@/components/Dashboard/ChartComponent/ChartComponent";
 import ChartTwo from "@/components/Dashboard/ChartTwo";
 import OurAdmin from "@/components/Dashboard/OurAdmin/OurAdmin";
 import PieChart from "@/components/Dashboard/PieChart/PieChart";
 import StatisticsWithAction from "@/components/Dashboard/StatisticsWithAction/StatisticsWithAction ";
 import TopMoviesTable from "@/components/Dashboard/TopMoviesTable/TopMoviesTable";
+import PieChartMusic from "@/components/PieChartMusci/PieChartMusic";
 import React from "react";
 
 const Profile = () => {
@@ -22,10 +23,10 @@ const Profile = () => {
   <div className="grid grid-cols-1 md:grid-cols-2 gap-5">
 
   <PieChart/>
-  <ChartTwo/>
+ <PieChartMusic/>
   
   </div>
-
+  <ChartTwo/>
  <OurAdmin/>
  <ChartComponent/>
   {/* <Calender/> */}

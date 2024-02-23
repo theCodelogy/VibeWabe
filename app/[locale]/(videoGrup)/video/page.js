@@ -8,7 +8,8 @@ import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
 const VideoPage = () => {
   return (
     <>
-      <div>
+  
+    <div>
         <MainBanner />
         <div className=" max-w-screen-xl mx-auto md:px-16 lg:px-24 py-5 px-4">
           <Recomanded />
@@ -54,6 +55,7 @@ const VideoPage = () => {
           <Slider category={"drama"} tags={"horror"} title={"Horror Drama"} />
         </div>
       </div>
+     
     </>
   );
 };

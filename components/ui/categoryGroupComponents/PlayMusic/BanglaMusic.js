@@ -12,13 +12,6 @@ import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
 import Image from 'next/image';
 import { FaCirclePlay } from 'react-icons/fa6';
-import banner1 from '@/assets/Musics/CategoryImg/played1.jpg'
-import banner2 from '@/assets/Musics/CategoryImg/played2.jpg'
-import banner3 from '@/assets/Musics/CategoryImg/played3.jpg'
-import banner4 from '@/assets/Musics/CategoryImg/played4.jpg'
-import banner5 from '@/assets/Musics/CategoryImg/played5.jpg'
-import banner6 from '@/assets/Musics/CategoryImg/played6.jpg'
-import banner7 from '@/assets/Musics/CategoryImg/played7.jpg'
 import Link from 'next/link';
 
 const BanglaMusic = ({allMusics}) => {
@@ -26,7 +19,7 @@ const BanglaMusic = ({allMusics}) => {
         <div>
             
             <div className="container mx-auto my-20 lg:px-5">
-                <h1 className='text-white text-xl font-bold lg:px-5 mb-8'>Trending Bangla Music</h1>
+                <h1 className='text-white text-xl font-bold lg:px-5 mb-8'>Trending Remix Music</h1>
                 <div>
                 <Swiper
                     effect={'coverflow'}

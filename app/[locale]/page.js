@@ -9,7 +9,7 @@ import Navbar from "@/components/shared/navbar/Navbar";
 import initTranslations from "../i18n";
 import TranslationsProvider from "@/components/TranslationProvider";
 import ReviewCard from "@/components/ReviewCrad/ReviewCard";
-
+import LandingPageValidation from "@/utils/PraivetRoute/LandingPageValidation";
 export default async function HomePage({ params: { locale } }) {
   const i18NameSpaces = ["common", "mystuff", "landing"];
   const { t, resources } = await initTranslations(locale, i18NameSpaces);
@@ -19,17 +19,20 @@ export default async function HomePage({ params: { locale } }) {
       locale={locale}
       namespaces={i18NameSpaces}
     >
+      <LandingPageValidation>
       <div className="">
         <Navbar />
         <FristHomeBanner />
         <FirstMusicTypes />
         <FristLandingFeature />
-        <FristLandingAudio />
-        {/* <FirstTrendingMovies /> */}
+        {/* <FristLandingAudio /> */}
+        <FirstTrendingMovies />
         <Faq />
         <ReviewCard />
         <LandPageFooter />
       </div>
+      </LandingPageValidation>
     </TranslationsProvider>
+    
   );
 }
