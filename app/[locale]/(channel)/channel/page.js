@@ -18,21 +18,21 @@ import axios from "axios";
 
 const channel = async() => {
   //shows
-  const res1 = await axios.get(`http://localhost:5000/channel?tags=shows`)
+  const res1 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=shows`)
   const allShows = res1.data;
   //tv
-  const res2 = await axios.get(`http://localhost:5000/channel?tags=tv`)
+  const res2 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=tv`)
   const allTv = res2.data;
   //podcast
-  const res3 = await axios.get(`http://localhost:5000/channel?tags=podcast`)
+  const res3 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=podcast`)
   const allPodcast = res3.data;
   //sports
-  const res4 = await axios.get(`http://localhost:5000/channel?tags=football`)
+  const res4 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=football`)
   const allFootball = res4.data;
-  const res5 = await axios.get(`http://localhost:5000/channel?tags=cricket`)
+  const res5 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=cricket`)
   const allCricket = res5.data;
   //documentary
-  const res6 = await axios.get(`http://localhost:5000/channel?tags=documentary`)
+  const res6 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=documentary`)
   const allDocumentary = res6.data;
   return (
     <div>

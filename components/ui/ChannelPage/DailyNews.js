@@ -29,7 +29,7 @@ const DailyNews = ({allTv}) => {
     useEffect(() => {
       axios
         .get(
-          "http://localhost:5000/channel"
+          "https://vibewabe-server.vercel.app/channel"
         )
         .then((res) => {
             setTvChannel(res?.data);

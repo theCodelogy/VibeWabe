@@ -13,7 +13,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
     // Make video Recommended or UnRecommended
     const recommendedHendle = (id) => {
         if (video.recommended === false||!video.recommended) {
-            axios.patch(`http://localhost:5000/channel/${id}`, { recommended: true })
+            axios.patch(`https://vibewabe-server.vercel.app/channel/${id}`, { recommended: true })
                 .then(res => {
                     if (res.data.modifiedCount) {
                         refetch()
@@ -23,7 +23,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
                 .catch(err => console.log(err.message))
         } else if (video.recommended === true) {
             {
-                axios.patch(`http://localhost:5000/channel/${id}`, { recommended: false })
+                axios.patch(`https://vibewabe-server.vercel.app/channel/${id}`, { recommended: false })
                     .then(res => {
                         if (res.data.modifiedCount) {
                             refetch()
@@ -38,7 +38,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
     // Make video Featured or UnFeatured
     const featuredHandle = (id) => {
         if (video.featured === false||!video.featured) {
-            axios.patch(`http://localhost:5000/channel/${id}`, { featured: true })
+            axios.patch(`https://vibewabe-server.vercel.app/channel/${id}`, { featured: true })
                 .then(res => {
                     if (res.data.modifiedCount) {
                         refetch()
@@ -47,7 +47,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
                 })
                 .catch(err => console.log(err.message))
         } else if (video.featured === true) {
-            axios.patch(`http://localhost:5000/channel/${id}`, { featured: false })
+            axios.patch(`https://vibewabe-server.vercel.app/channel/${id}`, { featured: false })
                 .then(res => {
                     if (res.data.modifiedCount) {
                         refetch()
@@ -70,7 +70,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
             confirmButtonText: "Yes, Delete it!"
         }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/channel/${id}`)
+                axios.delete(`https://vibewabe-server.vercel.app/channel/${id}`)
                     .then(res => {
                         if (res.data.deletedCount) {
                             refetch()

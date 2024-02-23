@@ -6,10 +6,10 @@ import axios from "axios";
 
 const page =async({params}) => {
         //shows
-  const res1 = await axios.get(`http://localhost:5000/channel/${params.id}`)
+  const res1 = await axios.get(`https://vibewabe-server.vercel.app/channel/${params.id}`)
   const allTv = res1.data;
 
-  const res2 = await axios.get(`http://localhost:5000/channel?tags=${allTv.tags}`)
+  const res2 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=${allTv.tags}`)
   const category = res2.data;
     return (
         <div>

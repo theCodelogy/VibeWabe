@@ -25,7 +25,7 @@ const Shows = ({allShows}) => {
   useEffect(() => {
     axios
       .get(
-        "http://localhost:5000/channel"
+        "https://vibewabe-server.vercel.app/channel"
       )
       .then((res) => {
         setShows(res?.data);

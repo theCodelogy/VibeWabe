@@ -19,13 +19,13 @@ const ChannelTable = () => {
     const { data: allVideos = [], refetch, isLoading } = useQuery({
         queryKey: [],
         queryFn: async () => {
-            const res = await axios.get(`http://localhost:5000/channel?title=${searchText}&category=${category}&language=${language}&limit=${itemParPage}&page=${currentPage - 1}`)
+            const res = await axios.get(`https://vibewabe-server.vercel.app/channel?title=${searchText}&category=${category}&language=${language}&limit=${itemParPage}&page=${currentPage - 1}`)
             return res.data;
         }
     })
 
     useEffect(() => {
-        axios.get(`http://localhost:5000/channel?title=${searchText}&category=${category}&language=${language}`)
+        axios.get(`https://vibewabe-server.vercel.app/channel?title=${searchText}&category=${category}&language=${language}`)
             .then(res => setTotalVieos(res.data.length))
         refetch()
 
