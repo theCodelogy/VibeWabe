@@ -2,16 +2,23 @@
 
 import DynamicNewsBanner from "@/components/ui/ChannelPage/DynamicNewsBanner";
 import MoreNews from "@/components/ui/ChannelPage/MoreNews";
+import axios from "axios";
 
-const page = () => {
+const page =async({params}) => {
+        //shows
+  const res1 = await axios.get(`http://localhost:5000/channel/${params.id}`)
+  const allTv = res1.data;
+
+  const res2 = await axios.get(`http://localhost:5000/channel?tags=${allTv.tags}`)
+  const category = res2.data;
     return (
         <div>
             <div>
-            <DynamicNewsBanner></DynamicNewsBanner>
+            <DynamicNewsBanner allTv={allTv} id={params.id}></DynamicNewsBanner>
             </div>
             {/* second part */}
             <div>
-            <MoreNews></MoreNews>
+            <MoreNews category={category} id={params.id}></MoreNews>
             </div>
         </div>
     );

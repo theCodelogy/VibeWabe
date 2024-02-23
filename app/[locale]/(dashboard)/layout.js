@@ -45,10 +45,16 @@ export default function DashboardLayout({ children }) {
             <Link href={"/dashboard/allMusics"}>All Musics</Link>
           </li>
           <li>
+            <Link href={"/dashboard/allChannel"}>All Channel</Link>
+          </li>
+          <li>
             <Link href={"/dashboard/videoUpload"}>Video Upload</Link>
           </li>
           <li>
             <Link href={"/dashboard/musicUpload"}>Music Upload</Link>
+          </li>
+          <li>
+            <Link href={"/dashboard/channelUpload"}>Channel Upload</Link>
           </li>
         </ul>
       </div>
