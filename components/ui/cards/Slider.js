@@ -132,13 +132,19 @@ const Slider = ({ category, tags, title }) => {
   }, [category, tags]);
 
   const handleWatch = (video) => {
-    const allData = {videoId : video._id  , email: user.email ,thambnail: video.thambnail , title: video.title, description: video.description}
-    axios.post('https://vibewabe-server.vercel.app/videoHistory',allData )
-    .then(res => console.log(res.data))
+    const allData = {
+      videoId: video._id,
+      email: user.email,
+      thambnail: video.thambnail,
+      title: video.title,
+      description: video.description,
+    };
+    axios
+      .post("https://vibewabe-server.vercel.app/videoHistory", allData)
+      .then((res) => console.log(res.data));
     console.log("User email:", user.email); // Add this console.log
-    console.log("Video clicked:",allData);
-   
-  }
+    console.log("Video clicked:", allData);
+  };
 
   return (
     <div className="text-white max-w-screen-xl mx-auto px-8 md:px-16 lg:px-24 py-5 my-10">
@@ -148,7 +154,7 @@ const Slider = ({ category, tags, title }) => {
         </h2>
         <motion.div>
           <Link
-            href={`video/${category}/${tags}`}
+            href={`${category}/${tags}`}
             className="hidden group-hover:inline-block px-2 py-1 text-white rounded-md transition-transform transform group-hover:translate-x-2 hover:underline"
           >
             See All

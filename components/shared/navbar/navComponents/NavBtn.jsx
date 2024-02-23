@@ -96,12 +96,16 @@ import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { LuHistory } from "react-icons/lu";
 import { MdPlaylistAdd } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
+import { usePathname } from "next/navigation";
+import VideoSearch from "../../Search/VideoSearch";
+import SearchField from "../../Search/SearchField";
 
 const NavBtn = () => {
   const { user, signout } = useContext(authContext);
   const [showProfile, setShowProfile] = useState(false);
   const { t } = useTranslation();
   const dropdownRef = useRef(null);
+  const pathname = usePathname();
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -192,7 +196,6 @@ const NavBtn = () => {
                   </li>
                   <li>
                     <Link href={"/feedback"}>
-                      {" "}
                       <MdOutlineFeedback />
                       Feedback
                     </Link>

@@ -8,14 +8,15 @@ import VideoSearch from "../Search/VideoSearch";
 import logo from "../../../assets/logo/vibeWave1.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+import SearchField from "../Search/SearchField";
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
-  const pathname = usePathname()
+  const pathname = usePathname();
   return (
-    <header className="px-[0.375rem] z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
-      <nav className="h-[4.3rem] flex justify-between items-center px-6 dark:border-none bg-gradient-to-tr from-zinc-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
+    <header className="z-50 xl:px-0 w-full duration-200 ease-in sticky top-0 left-0 right-0 ">
+      <nav className="h-[4.3rem] flex justify-between items-center md:px-6 dark:border-none bg-gradient-to-tr from-zinc-900 to-black dark:bg-[#301934] text-[#2f2f2f]">
         {/* logo */}
-        <div className="lg:flex-1 h-full flex items-center">
+        <div className="lg:flex-1 h-full flex items-center md:hidden lg:flex">
           <Link href="/" className="flex items-center">
             <Image
               className="w-full h-full"
@@ -24,22 +25,24 @@ const Navbar = () => {
               src={logo}
               alt="logo"
             />
-            <p className="text-2xl text-white font-bold">VibeWabe</p>
+            <p className="text-lg md:text-2xl text-white font-bold">VibeWabe</p>
           </Link>
         </div>
 
         {/* large screen navigation */}
-        <ul className="hidden md:flex gap-4 font-semibold text-lg lg:flex-1 xl:justify-center">
+        <ul className="hidden md:flex gap-4 font-semibold md:text-base lg:text-lg lg:flex-1 xl:justify-center">
           <NavLinks />
         </ul>
 
         {/* Search component */}
         <div className="ml-4">
-          {
-            pathname.split('/')[1] === 'video' || pathname.split('/')[1] === 'music' ?
-              <VideoSearch /> : ''
-          }
-
+          {pathname.split("/")[1] === "video" ||
+          pathname.split("/")[1] === "music" ? (
+            // <VideoSearch />
+            <SearchField />
+          ) : (
+            ""
+          )}
         </div>
         <div className="hidden md:flex gap-6 items-center lg:flex-1 lg:justify-end">
           <NavBtn />
@@ -47,7 +50,7 @@ const Navbar = () => {
         {/* Mobile screen navigation icon toggle */}
         <div
           onClick={() => setMenuIcon(!menuIcon)}
-          className="flex md:hidden text-2xl dark:text-white"
+          className="flex md:hidden text-2xl dark:text-white items-center gap-2"
         >
           {menuIcon ? <AiOutlineClose /> : <AiOutlineMenu />}
         </div>
