@@ -28,7 +28,7 @@ const HindiMusicCard = ({bangla, category}) => {
             {/* <h3 className='text-white text-xl font-bold mb-8 px-5 '>Bangla Music</h3> */}
 
             <div className="py-3 group relative flex justify-start items-center">
-                <h2 className="text-2xl font-semibold group-hover:text-orange-500">
+                <h2 className="text-xl font-semibold group-hover:text-orange-500">
                 Bangla Musics
                 </h2>
                 <div>

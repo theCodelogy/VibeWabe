@@ -57,7 +57,7 @@ const PlayMusic = ({ musicPlay, id }) => {
                         title={musicPlay?.thambnail}
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     />
-                    <div className="flex justify-between lg:flex-row md:flex-row flex-col ">
+                    <div className="flex justify-between lg:flex-row md:flex-row flex-col gap-10">
                         <div>
                             <div className=" mt-5">
                                 <h1 className='lg:text-3xl md:text-3xl text-2xl font-bold'>{musicPlay?.title}</h1>
@@ -69,25 +69,25 @@ const PlayMusic = ({ musicPlay, id }) => {
                             {/* <p className='text-sm font-normal leading-7 text-zinc-800'>Music Release Date - {musicPlay?.releaseDate}</p> */}
                             
                         </div>
-                        <div className='flex gap-6 h-10 mt-5'>
+                        <div className='flex h-10  mt-5'>
                         <button onClick={handleLike} className={`MuiButtonBase-root MuiIconButton-root${!isLikeActive ? 'text-black' : ' text-red-600'}`} tabIndex="0" type="button" aria-label="up vote">
-                            <div className='flex justify-center items-center'>
+                            <div className='flex justify-center items-center w-24'>
                             <AiFillLike className="mb-1"/>
                             </div>
-                            <span>Like {singleVideo.like}</span>
+                            <p className="">Like {singleVideo.like}</p>
                         </button>
 
                         <button onClick={handleDislike} className={`MuiButtonBase-root MuiIconButton-root${!isDislikeActive ? 'text-black' : ' text-red-600'}`} tabIndex="0" type="button" aria-label="down vote">
-                            <div className='flex justify-center items-center'>
+                            <div className='flex justify-center items-center w-24'>
                             <AiFillDislike className="mb-1"/>
                             </div>
-                            <span>Dislike {singleVideo.disLike}</span>
+                            <span className="flex justify-center">Dislike {singleVideo.disLike}</span>
                         </button>
                         <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
                             <span className="MuiIconButton-label">
                             <div  className='cursor-pointer flex items-center justify-center'><AiFillEye />
                                 </div>
-                            <p className="MuiTypography-root MuiTypography-body1 pt-1 flex">View {musicPlay?.view}</p>
+                            <p className="MuiTypography-root MuiTypography-body1 pt-1 flex justify-center w-24">View {musicPlay?.view}</p>
                             </span>
                         </button>
                         </div>

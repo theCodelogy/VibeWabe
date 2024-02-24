@@ -21,7 +21,7 @@ const HindiMusicCard = ({hindi, category}) => {
     return (
         <div className='container mx-auto px-5'>
             <div className="py-3 group relative flex justify-start items-center">
-                <h2 className="text-2xl font-semibold group-hover:text-orange-500">
+                <h2 className="text-xl font-semibold group-hover:text-orange-500">
                 Hindi Musics
                 </h2>
                 <div>
