@@ -37,7 +37,7 @@ const NewReleaseMusic = ({ sadMusic }) => {
                                                 </div>
                                                 <div className='text-white '>
                                                     <h3 className='hover:text-sky-400'>{music?.title}</h3>
-                                                    <p className='text-xs text-zinc-400'>Singer- {music?.singerName}</p>
+                                                    <p className='text-xs text-zinc-400'>Singer- {music?.singerName} {music?.Singer}</p>
                                                     <p className='text-xs text-zinc-400'>Rating- {music?.rating}</p>
                                                 </div>
                                             </div>

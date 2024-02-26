@@ -74,7 +74,7 @@ const HindiMusicCard = ({bangla, category}) => {
                                 </div>
                             <h3 className='text-white hover:text-sky-400'>{music?.title}</h3>
                             </Link>
-                            <p className='text-sm text-zinc-500'>{music?.singerName}</p>
+                            <p className='text-sm text-zinc-500'>{music?.singerName} {music?.Singer}</p>
                         </div>
                     </SwiperSlide>)
                 }

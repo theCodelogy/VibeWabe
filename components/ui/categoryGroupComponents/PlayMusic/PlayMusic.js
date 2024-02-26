@@ -64,7 +64,7 @@ const PlayMusic = ({ musicPlay, id }) => {
                                 <p className="w-10/12">{musicPlay?.description}</p>
                                 
                             </div>
-                            <p className='text-sm font-normal leading-7 text-zinc-800'>Singer Name - {musicPlay?.releaseDate}</p>
+                            <p className='text-sm font-normal leading-7 text-zinc-800'>Singer Name - {musicPlay?.Singer}</p>
 
                             {/* <p className='text-sm font-normal leading-7 text-zinc-800'>Music Release Date - {musicPlay?.releaseDate}</p> */}
                             
@@ -100,3 +100,4 @@ const PlayMusic = ({ musicPlay, id }) => {
 };
 
 export default PlayMusic;
+

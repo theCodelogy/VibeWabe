@@ -8,21 +8,20 @@ import axios from 'axios';
 import React from 'react';
 
 const MusicDetails = async({params}) => {
-    console.log(params)
     const res = await axios.get(`https://vibewabe-server.vercel.app/music/${params.id}`)
     const musicPlay = res.data;
 
     //all music
-    const resl = await axios.get(`https://vibewabe-server.vercel.app/music?category=remix`)
+    const resl = await axios.get(`https://vibewabe-server.vercel.app/music?category=remix&sortBy=view&sort=-1&limit=20`)
     const allMusics = resl.data;
     //sad music
-    const resa = await axios.get(`https://vibewabe-server.vercel.app/music?category=sad`)
+    const resa = await axios.get(`https://vibewabe-server.vercel.app/music?category=sad&sortBy=view&sort=-1&limit=20`)
     const sadMusics = resa.data;
     //sad music
-    const classic = await axios.get(`https://vibewabe-server.vercel.app/music?category=classical`)
+    const classic = await axios.get(`https://vibewabe-server.vercel.app/music?category=classical&sortBy=view&sort=-1&limit=20`)
     const classicalMusics = classic.data;
     //Romantic music
-    const resr = await axios.get(`https://vibewabe-server.vercel.app/music?category=Romantic`)
+    const resr = await axios.get(`https://vibewabe-server.vercel.app/music?category=Romantic&sortBy=view&sort=-1&limit=20`)
     const romanticMusics = resr.data;
     return (
         <div>
@@ -31,13 +30,13 @@ const MusicDetails = async({params}) => {
             {/* music coustomer review */}
             <MusicCoustomerReview id={params.id} category={musicPlay.language}></MusicCoustomerReview>
             {/* sad music list */}
-            <PlayMusicList sadMusics={sadMusics}></PlayMusicList>
+            <PlayMusicList sadMusics={sadMusics} category={"sad"}></PlayMusicList>
             {/* classical music list */}
-            <ClassicMusic classicalMusics={classicalMusics}></ClassicMusic>
+            <ClassicMusic classicalMusics={classicalMusics} category={"classical"}></ClassicMusic>
             {/* Recently play music */}
-            <MixMusic romanticMusics={romanticMusics}></MixMusic>
+            <MixMusic romanticMusics={romanticMusics} category={"Romantic"}></MixMusic>
             {/* classical music  */}
-            <BanglaMusic allMusics={allMusics}></BanglaMusic>
+            <BanglaMusic allMusics={allMusics} category={"remix"}></BanglaMusic>
         </div>
     );
 };

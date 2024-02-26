@@ -9,6 +9,7 @@ import { IoIosMusicalNotes } from "react-icons/io";
 
 const MusicCoustomerReview = ({id, category}) => {
     const [musicCategory, setMusicCategory]=  useState([]);
+
     useEffect(() => {
         axios
           .get(`https://vibewabe-server.vercel.app/music?language=${category}`)
@@ -70,13 +71,14 @@ const MusicCoustomerReview = ({id, category}) => {
         .then((res) => {
           console.log(res.data);
         });
+
     };
     return (
         <div>
             <div className="container mx-auto px-5">
                 <div className="flex lg:flex-row flex-col gap-5  p-5 rounded-md">
                     <div className="flex-initial lg:w-[50%] w-full relative">
-                    <div className="  rounded-lg  p-2 my-4 mx-6">
+                    <div className="  rounded-lg  pr-2 mt-4 mr-6">
                         <form onSubmit={handle}>
                             <div className="w-full ">
                             <textarea
@@ -90,7 +92,7 @@ const MusicCoustomerReview = ({id, category}) => {
                             <div className="w-full flex justify-end px-3">
                             <input
                                 type="submit"
-                                className="px-2.5 py-1.5 mb-7 mt-1 rounded-md text-white text-sm bg-gradient-to-r from-red-600 to-orange-500"
+                                className="px-2.5 py-1.5 mb-7 mt-1 rounded-md text-white text-sm bg-gradient-to-r from-red-600 to-orange-500 cursor-pointer"
                                 value="Post Comment"
                             />
                             </div>
@@ -130,7 +132,7 @@ const MusicCoustomerReview = ({id, category}) => {
                                                 </div>
                                                 <div className='text-white '>
                                                     <h3 className='hover:text-sky-400'>{music?.title}</h3>
-                                                    <p className='text-xs text-zinc-400'>Singer- {music?.singerName}</p>
+                                                    <p className='text-xs text-zinc-400'>Singer- {music?.singerName} {music?.Singer}</p>
                                                     <p className='text-xs text-zinc-400'>Rating- {music?.rating}</p>
                                                 </div>
                                             </div>
