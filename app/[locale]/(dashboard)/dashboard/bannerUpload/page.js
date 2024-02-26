@@ -1,10 +1,11 @@
+import BannerFrom from '@/components/Dashboard/BannerFrom/BannerFrom';
 import MusicTable from '@/components/Dashboard/allMusicTable/MusicTable';
 import React from 'react';
 
 const Page = () => {
     return (
         <div>
-            <h1 className='text-xl text-white'>Banner Upload</h1>
+           <BannerFrom/>
          
         </div>
     );
