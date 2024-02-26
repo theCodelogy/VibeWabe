@@ -2,15 +2,22 @@
 
 import DynamicDocumentary from "@/components/ui/ChannelPage/DynamicDocumentary";
 import MoreDocumentary from "@/components/ui/ChannelPage/MoreDocumentary";
+import axios from "axios";
 
-const page = () => {
+const page = async({params}) => {
+        //documentary
+  const res1 = await axios.get(`https://vibewabe-server.vercel.app/channel/${params.id}`)
+  const allDocumentary = res1.data;
+
+  const res2 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=${allDocumentary.tags}`)
+  const category = res2.data;
     return (
         <div>
             <div>
-                <DynamicDocumentary></DynamicDocumentary>
+                <DynamicDocumentary allDocumentary={allDocumentary} id={params.id}></DynamicDocumentary>
             </div>
             <div>
-                <MoreDocumentary></MoreDocumentary>
+                <MoreDocumentary category={category} id={params.id}></MoreDocumentary>
             </div>
         </div>
     );

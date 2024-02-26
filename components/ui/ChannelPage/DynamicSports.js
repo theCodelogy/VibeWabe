@@ -5,11 +5,12 @@ import MoreSports from "./MoreSports";
 
 
 
-const DynamicSports = () => {
+const DynamicSports = ({allSport, id, category}) => {
+    console.log(allSport, id, category)
     return (
         <div>
-           <DynamicWatchBanner></DynamicWatchBanner> 
-        <MoreSports></MoreSports>
+           <DynamicWatchBanner allSport={allSport} id={params.id}></DynamicWatchBanner> 
+        <MoreSports category={category} id={params.id}></MoreSports>
         </div>
     );
 };
