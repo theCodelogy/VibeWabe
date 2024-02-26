@@ -38,8 +38,8 @@ const Navbar = () => {
         <div className="ml-4">
           {pathname.split("/")[1] === "video" ||
           pathname.split("/")[1] === "music" ? (
-            // <VideoSearch />
-            <SearchField />
+            <VideoSearch />
+            // <SearchField />
           ) : (
             ""
           )}
