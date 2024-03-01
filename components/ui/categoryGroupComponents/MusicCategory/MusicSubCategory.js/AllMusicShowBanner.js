@@ -16,8 +16,6 @@ const AllMusicShowBanner = ({language}) => {
     return (
         <div>
             <div className="mb-20">
-
-
                 <div className="relative">
                     <Carousel
                         showThumbs={false}
@@ -56,8 +54,6 @@ const AllMusicShowBanner = ({language}) => {
                         </div>
                         {/* end slide one */}
 
-
-
                         {/* slide Two */}
                         <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-[700px] text-white overflow-hidden">
                             <div className="absolute inset-0">
@@ -77,18 +73,14 @@ const AllMusicShowBanner = ({language}) => {
                                             by showcasing your creative skills through
                                         </h1>
                                         <div className="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-                                            <Link href={'/music'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                                                Go Back
+                                            <Link href={'/music'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                                                Go Back <FaArrowRight className="ml-3" />
                                             </Link>
-
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
 
                         {/* end slide Two */}
                         <div className="relative bg-gradient-to-r from-purple-600 to-blue-600 h-[700px] text-white overflow-hidden">
@@ -109,28 +101,16 @@ const AllMusicShowBanner = ({language}) => {
                                             by showcasing your creative skills through
                                         </h1>
                                         <div className="px-8 sm:items-start sm:justify-center sm:px-0 sm:space-x-5 sm:flex mt-9">
-                                            <Link href={'/music'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
-                                                Go Back
+                                            <Link href={'/music'} className="mb-3 sm:mb-0 inline-flex items-center justify-center w-full px-6 py-2 text-lg font-bold text-white transition-all duration-200 bg-gradient-to-r from-red-600 to-orange-500  hover:bg-gradient-to-b  hover:shadow-2xl hover:shadow-orange-400 hover:-translate-y-px border-transparent sm:w-auto rounded-xl border-0 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900">
+                                                Go Back <FaArrowRight className="ml-3" />
                                             </Link>
-
-
-
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-
-
-
-
                     </Carousel>
                 </div>
-
-
-
-
-
             </div>
         </div>
     );

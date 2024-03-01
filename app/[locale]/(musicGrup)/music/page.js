@@ -44,20 +44,21 @@ const Musec = async() => {
     <div className="text-white container mx-auto">
       <MusicBanner></MusicBanner>
       {/* <MusicBanner></MusicBanner> */}
-      <HotArtists></HotArtists>
       {/* <MusicSlider></MusicSlider> */}
       {/* <Card></Card> */}
       {/* <TrendingMusic></TrendingMusic> */}
-      <MusicCategory romantics={romantics}></MusicCategory>
       {/* <MusicSlider2></MusicSlider2> */}
       {/* <Card2></Card2> */}
-      <div className="">
       
-        <TopRatedMusic TopRatedMusics={TopRatedMusics}></TopRatedMusic>
-      </div>
       
       <div className="mb-16">
-      
+      <MusicCategory romantics={romantics} ></MusicCategory>
+      </div>
+      <div className="mb-16">
+        <TopRatedMusic TopRatedMusics={TopRatedMusics}></TopRatedMusic>
+      </div>
+      <HotArtists></HotArtists>
+      <div className="mb-16">
         <BanglaMusicCard bangla={bangla} category={"bangla"}></BanglaMusicCard>
       </div>
       <div className="mb-20">
