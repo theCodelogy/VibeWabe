@@ -8,7 +8,6 @@ import 'swiper/css/pagination';
 
 // import required modules
 import { Pagination } from 'swiper/modules';
-import { FaCirclePlay } from "react-icons/fa6";
 //music imag
 import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
@@ -16,6 +15,7 @@ import Link from 'next/link';
 import SeeAllMusic from './SeeAllMusic';
 import axios from 'axios';
 import { useEffect } from 'react';
+import { IoIosMusicalNotes } from 'react-icons/io';
 
 
 const HindiMusicCard = ({bangla, category}) => {
@@ -28,7 +28,7 @@ const HindiMusicCard = ({bangla, category}) => {
             {/* <h3 className='text-white text-xl font-bold mb-8 px-5 '>Bangla Music</h3> */}
 
             <div className="py-3 group relative flex justify-start items-center">
-                <h2 className="text-2xl font-semibold group-hover:text-orange-500">
+                <h2 className="text-xl font-semibold group-hover:text-orange-500">
                 Bangla Musics
                 </h2>
                 <div>
@@ -70,11 +70,11 @@ const HindiMusicCard = ({bangla, category}) => {
                                 <Image className='w-full h-full rounded-lg mb-2 transition duration-300' src={music?.thambnail} width={200} height={200} alt='slice image'/>
                                 
                                 <div className='absolute text-3xl text-white rounded-lg -top-0 left-0  flex justify-center items-center lg:w-48 md:w-48 w-full lg:h-48 md:h-48 h-56 bg-black bg-opacity-55 opacity-0 group-hover:opacity-100 transition-opacity duration-300 '>
-                                    <FaCirclePlay className='cursor-pointer'></FaCirclePlay>
+                                <IoIosMusicalNotes className='cursor-pointer'></IoIosMusicalNotes>
                                 </div>
                             <h3 className='text-white hover:text-sky-400'>{music?.title}</h3>
                             </Link>
-                            <p className='text-sm text-zinc-500'>{music?.singerName}</p>
+                            <p className='text-sm text-zinc-500'>{music?.singerName} {music?.Singer}</p>
                         </div>
                     </SwiperSlide>)
                 }

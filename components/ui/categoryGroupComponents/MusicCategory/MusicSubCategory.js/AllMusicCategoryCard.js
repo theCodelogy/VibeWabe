@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { IoIosMusicalNotes } from "react-icons/io";
 
-const AllMusicCard = ({AllmusicShows}) => {
+const AllMusicCategoryCard = ({musicCategoryShows}) => {
     return (
-        <div className="container mx-auto mb-16">
+        <div>
+            <div className="container mx-auto mb-16">
             <div className="grid xl:grid-cols-6 lg:grid-cols-4 md:grid-cols-2 grid-cols-2 gap-5">
                 {
-                    AllmusicShows.map(AllmusicShow=><>
+                    musicCategoryShows.map(AllmusicShow=><>
                     <div key={AllmusicShow?._id} className="mb-20">
                         <div className='group relative rounded-lg lg:w-48 md:w-48 w-auto lg:h-48 md:h-48 h-56 mt-5 mx-5'>
                         <Link href={`/music/${AllmusicShow?._id}`}>
@@ -26,7 +27,8 @@ const AllMusicCard = ({AllmusicShows}) => {
 
             </div>
         </div>
+        </div>
     );
 };
 
-export default AllMusicCard;
+export default AllMusicCategoryCard;
