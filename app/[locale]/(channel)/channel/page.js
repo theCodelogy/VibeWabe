@@ -1,3 +1,4 @@
+'use client'
 import Footer from "@/components/shared/footer/footer";
 import Navbar from "@/components/shared/navbar/Navbar";
 import ChannelBanner from "@/components/ui/ChannelPage/ChannelBanner";
@@ -13,10 +14,28 @@ import Sports from "@/components/ui/ChannelPage/Sports";
 import SportsExplore from "@/components/ui/ChannelPage/SportsExplore";
 
 import Travel2 from "@/components/ui/ChannelPage/Travel2";
-import PrivateByUserRole from "@/components/PraivetRoute/PrivateByUserRole";
-import PrivateRoute from "@/components/PraivetRoute/PraivetRoute";
+import axios from "axios";
+import PrivateByUserRole from "@/utils/PraivetRoute/PrivateByUserRole";
+import PrivateRoute from "@/utils/PraivetRoute/PraivetRoute";
 
-const channel = () => {
+const channel = async() => {
+  //shows
+  const res1 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=shows`)
+  const allShows = res1.data;
+  //tv
+  const res2 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=tv`)
+  const allTv = res2.data;
+  //podcast
+  const res3 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=podcast`)
+  const allPodcast = res3.data;
+  //sports
+  const res4 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=football`)
+  const allFootball = res4.data;
+  const res5 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=cricket`)
+  const allCricket = res5.data;
+  //documentary
+  const res6 = await axios.get(`https://vibewabe-server.vercel.app/channel?tags=documentary`)
+  const allDocumentary = res6.data;
   return (
     <PrivateRoute>
     <PrivateByUserRole>
@@ -35,31 +54,31 @@ const channel = () => {
       </div>
       {/* news section */}
       <div>
-        <DailyNews></DailyNews>
+        <DailyNews allTv={allTv}></DailyNews>
       </div>
       {/* shows section */}
       <div>
-        <Shows></Shows>
+        <Shows allShows={allShows}></Shows>
       </div>
       {/* sports section */}
       <div>
         <SportsExplore></SportsExplore>
       </div>
       <div>
-        <Sports></Sports>
+        <Sports allFootball={allFootball} allCricket={allCricket}></Sports>
       </div>
       <div>
-        <Podcast></Podcast>
+        <Podcast allPodcast={allPodcast}></Podcast>
       </div>
       <div>
         <UniqueAudio></UniqueAudio>
       </div>
-      <div>
+      {/* <div>
         <Radio></Radio>
-      </div>
+      </div> */}
       {/* travel section */}
       <div>
-        <Travel2></Travel2>
+        <Travel2 allDocumentary={allDocumentary}></Travel2>
       </div>
       <Footer />
     </div>

@@ -10,13 +10,15 @@ import channel6 from '@/assets/channelImage/sp5.jpg';
 import channel7 from '@/assets/channelImage/sp6.png';
 import channel8 from '@/assets/channelImage/sp3.jpg';
 import channel9 from '@/assets/channelImage/sp4.png';
+import { useTranslation } from 'react-i18next';
 
 const SportsExplore = () => {
+  const {t} = useTranslation();
     return (
         <div className="mt-20 container mx-auto">
         <div className="flex">
           <button className="bg-slate-700 text-white font-bold text-xl py-1 px-4 rounded-md">
-          Explore Sports channel
+           {t("channel:exploresports")}
           </button>
           {/* channels logo */}
           <Marquee pauseOnHover={true} speed={100} direction="right"  className="bg-[#8b33a1]">
