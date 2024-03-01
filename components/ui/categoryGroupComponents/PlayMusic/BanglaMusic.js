@@ -25,12 +25,10 @@ import "swiper/css/pagination";
 import { EffectCoverflow, Pagination } from "swiper/modules";
 import Image from "next/image";
 //images
-import shows1 from "@/assets/channelImage/s1.jpg";
-import shows2 from "@/assets/channelImage/s2.webp";
-import shows3 from "@/assets/channelImage/s3.webp";
-import { FaCirclePlay } from "react-icons/fa6";
 import { useTranslation } from "react-i18next";
+import { IoIosMusicalNotes } from 'react-icons/io';
 import Link from "next/link";
+
 
 const BanglaMusic = ({allMusics, category}) => {
     return (
@@ -100,7 +98,7 @@ const BanglaMusic = ({allMusics, category}) => {
               />
               <div className="absolute text-3xl text-white -top-0 left-0 flex justify-center items-center h-60 w-full bg-black bg-opacity-55 opacity-0 hover:opacity-100 transition-opacity duration-300 rounded-lg ">
                 {/* <h2>TV Shows</h2> */}
-                <FaCirclePlay className="cursor-pointer ml-1"></FaCirclePlay>
+                <IoIosMusicalNotes className="cursor-pointer ml-1"></IoIosMusicalNotes>
                 
               </div>
             </div>
