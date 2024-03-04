@@ -16,7 +16,11 @@ import { FaCirclePlay } from 'react-icons/fa6';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 
+
 const TopRatedMusic = ({TopRatedMusics}) => {
+
+ 
+ 
     return (
         <div className='mb-5 px-5 container mx-auto '>
         <h3 className='text-white text-xl font-bold'>Top Rated Musics Musics</h3>

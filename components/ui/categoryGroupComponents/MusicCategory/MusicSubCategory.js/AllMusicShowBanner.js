@@ -13,6 +13,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 
 const AllMusicShowBanner = ({language}) => {
+    const upparLanguage = language[0].toUpperCase()+language.slice(1)
     return (
         <div>
             <div className="mb-20">
@@ -39,7 +40,7 @@ const AllMusicShowBanner = ({language}) => {
                                     <div className="text-center">
                                         <p
                                             className=" mx-auto mb-4 md:text-4xl font-bold  text-white text-2xl lg:text-5xl lg:leading-tight">
-                                            <span className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-extrabold">All {language} </span> Music See Here
+                                            <span className="bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text font-extrabold">All {upparLanguage} </span> Music See Here
                                         </p>
                                         <h1 className="max-w-2xl mx-auto px-6 lg:text-xl text-zinc-300 font-inter text-xs">
                                             You can join the recent trend of creating movie posters in the style of Disney Pixar
