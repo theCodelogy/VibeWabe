@@ -45,7 +45,6 @@ const VideoUpload = () => {
             date: new Date().toLocaleDateString('en-US')
         }
 
-        // const res = await axios.post('https://vibewabe-server.vercel.app/video', video)
         const res = await axios.post(`https://vibewabe-server.vercel.app/video?notifyingUser=${isNotifying}`, video)
         if (res.data.insertedId) {
             toast.success('Successfully Upload Video!')
@@ -114,6 +113,7 @@ const VideoUpload = () => {
                                 <option value={'english'}>English</option>
                                 <option value={'bangla'}>Bangla</option>
                                 <option value={'hindi'}>Hindi</option>
+                                <option value={'korean'}>korean</option>
                             </select>
                             <p className="text-red-700">{errors.language?.message}</p>
                         </div>

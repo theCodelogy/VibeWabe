@@ -98,8 +98,10 @@ import { MdPlaylistAdd } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
 import axios from "axios";
 import Notification from "@/components/ui/Notification/Notification";
+import { usePathname } from "next/navigation";
 
 const NavBtn = () => {
+  const pathname = usePathname()
   const { user, signout, isLoading } = useContext(authContext);
   const [showProfile, setShowProfile] = useState(false);
   const { t } = useTranslation();
@@ -132,7 +134,11 @@ const NavBtn = () => {
         <>
           <LanguageChanger />
           {/* notification component */}
-          <Notification/>
+          {
+            pathname.split('/')[1] === 'video' || pathname.split('/')[1] === 'music' || pathname.split('/')[1] === 'channel' ?
+            <Notification/> : ''
+          }
+          
           <div ref={dropdownRef} className="dropdown dropdown-end">
             <label
               onClick={() => {

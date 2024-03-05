@@ -3,6 +3,7 @@
 import Image from "next/image";
 import picture1 from "@/assets/channelImage/picture1.jpg";
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from "next/link";
 
 const uniqueAudio = () => {
   return (
@@ -37,7 +38,9 @@ const uniqueAudio = () => {
             {/* button div */}
             <div className="flex gap-7">
                 <button className="px-5 lg:px-7 py-3 bg-[#34B478] text-white uppercase inline-flex items-center gap-4 font-semibold">Radio <FaArrowRightLong className=""/></button>
+                <Link href={`channel/shows/65d60f5e92a0525478d866ec`}>
                 <button className="px-5 lg:px-7 py-3 bg-[#784CCB] text-white uppercase inline-flex items-center gap-4 font-semibold">Podcasts <FaArrowRightLong className=""/></button>
+                </Link>
             </div>
             </div>
 

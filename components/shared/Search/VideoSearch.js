@@ -79,7 +79,7 @@ const VideoSearch = () => {
                         <div ref={searchDropdownRef} className="relative">
                             
                             <motion.div className={`bg-[#0b101b]  absolute  left-0 ${hidden ? 'hidden' : ''} w-[200px] md:w-[250px]  lg:w-[350px] pt-5 rounded shadow-lg transition-all shadow-[#c0c0c04f]`}>
-                                <RxCross2 onClick={clearSearch} className="text-[#f05c1b] shadow shadow-gray-400   text-lg md:text-2xl font-bold absolute top-3 right-2 cursor-pointer" />
+                                <RxCross2 onClick={clearSearch} className="text-white shadow shadow-gray-400  bg-[#ec501e] rounded-md  text-lg md:text-2xl font-bold absolute top-3 right-2 cursor-pointer" />
 
                                 {
 

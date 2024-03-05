@@ -8,6 +8,7 @@ import VideoSearch from "../Search/VideoSearch";
 import logo from "../../../assets/logo/vibeWave1.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
+
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const pathname = usePathname()
