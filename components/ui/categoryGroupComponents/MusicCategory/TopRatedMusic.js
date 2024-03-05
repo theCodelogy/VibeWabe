@@ -17,7 +17,11 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { IoIosMusicalNotes } from 'react-icons/io';
 
+
 const TopRatedMusic = ({TopRatedMusics}) => {
+
+ 
+ 
     return (
       <div className='container mx-auto px-5'>
             <h3 className='text-white text-xl font-bold mb-4 '>Top Rated Musics Musics</h3>

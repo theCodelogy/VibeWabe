@@ -8,7 +8,6 @@ import VideoSearch from "../Search/VideoSearch";
 import logo from "../../../assets/logo/vibeWave1.png";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
-import SearchField from "../Search/SearchField";
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
   const pathname = usePathname();
@@ -39,8 +38,8 @@ const Navbar = () => {
           {pathname.split("/")[1] === "video" ||
           pathname.split("/")[1] === "music" ? (
             <VideoSearch />
-            // <SearchField />
           ) : (
+            // <SearchField />
             ""
           )}
         </div>
