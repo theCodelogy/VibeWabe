@@ -1,6 +1,5 @@
 import SeriesBanner from "@/components/ui/VideoGrupComponents/webSeries/SeriesBanner";
 import SeriesCard from "@/components/ui/VideoGrupComponents/webSeries/SeriesCard";
-import UpComingCard from "@/components/ui/VideoGrupComponents/webSeries/UpComingCard";
 import Slider from "@/components/ui/cards/Slider";
 import Filter from "@/components/ui/filter/Filter";
 import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
@@ -9,7 +8,8 @@ const SeriesPage = () => {
     <div>
       <SeriesBanner />
       <Filter categoryType="series" />
-      <SeriesCard />
+      {/* <SeriesCard /> */}
+      <Slider title={"Featured"} category="series" isFeatured={true} />
       <VideoTrailer
         title={"   Peaky Blinders - Trailer serise"}
         description={
@@ -19,7 +19,7 @@ const SeriesPage = () => {
         src={"https://www.youtube.com/embed/Ruyl8_PT_y8"}
         year={"2022"}
       />
-      <UpComingCard />
+      {/* <UpComingCard /> */}
       <Slider category={"series"} tags={"comedy"} title={"Comedy"} />
       <Slider category={"series"} tags={"kids"} title={"Kids"} />
       <Slider category={"series"} tags={"adventure"} title={"Adventure"} />

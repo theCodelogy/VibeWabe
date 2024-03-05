@@ -1,6 +1,4 @@
 import DramaBanner from "@/components/ui/VideoGrupComponents/DramaCategory/DramaBanner";
-import DramaTrandingCard from "@/components/ui/VideoGrupComponents/DramaCategory/DramaTrandingCard";
-import DramaUpcomingCard from "@/components/ui/VideoGrupComponents/DramaCategory/DramaUpcomingCard";
 import Filter from "@/components/ui/filter/Filter";
 import Slider from "@/components/ui/cards/Slider";
 import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
@@ -9,7 +7,7 @@ const DramaPage = () => {
     <div>
       <DramaBanner />
       <Filter categoryType="drama" />
-      <DramaTrandingCard />
+      <Slider title={"Featured"} category="drama" isFeatured={true} />
       <VideoTrailer
         title={"   Peaky Blinders - Trailer drama"}
         description={
@@ -19,8 +17,7 @@ const DramaPage = () => {
         src={"https://www.youtube.com/embed/Ruyl8_PT_y8"}
         year={"2022"}
       />
-      <DramaUpcomingCard />
-      <Slider  category={"drama"} tags={"comedy"} title={"Comedy"} />
+      <Slider category={"drama"} tags={"comedy"} title={"Comedy"} />
       <Slider category={"drama"} tags={"Romantic"} title={"Romantic"} />
       <Slider category={"drama"} tags={"kids"} title={"Kids"} />
       <Slider category={"drama"} tags={"horror"} title={"Horror"} />

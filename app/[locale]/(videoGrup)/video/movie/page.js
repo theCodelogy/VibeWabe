@@ -1,4 +1,3 @@
-import MovieTrandingCard from "@/components/ui/VideoGrupComponents/movieCategory/MovieTrandingCard";
 import MovieBanner from "@/components/ui/VideoGrupComponents/movieCategory/movieBanner";
 import VideoTrailer from "@/components/ui/trailer/VideoTrailer";
 import Filter from "@/components/ui/filter/Filter";
@@ -9,7 +8,8 @@ const MoviesPage = () => {
     <div>
       <MovieBanner />
       <Filter categoryType="movies" />
-      <MovieTrandingCard />
+      {/* <MovieTrandingCard /> */}
+      <Slider title={"Featured"} category="movie" isFeatured={true} />
       <Slider category="movie" tags="comedy" title={"Comedy"} />
       <VideoTrailer
         title={"   Peaky Blinders - Trailer movies"}
