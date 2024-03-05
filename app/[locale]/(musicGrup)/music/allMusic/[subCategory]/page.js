@@ -5,8 +5,6 @@ import axios from "axios";
 
 
 const page = async({params}) => {
-    console.log(params.subCategory)
-    //language 
     const res = await axios.get(`https://vibewabe-server.vercel.app/music?language=${params.subCategory}`)
     const AllmusicShows = res.data;
     //category
