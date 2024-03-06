@@ -44,16 +44,16 @@ const Notification = () => {
     }, []);
 
 
-
     useEffect(() => {
         const ntfView = notifications[0]?.view || [];
-        if (ntfView.filter(single => single === user?.email).length === 0) {
+        const filterCurrentUser = ntfView.filter(single => single === user?.email)
+        if (filterCurrentUser.length === 0) {
             setNftCounterHide(false)
             const previousNotification = notifications.find(item => item.view?.includes(user?.email))
             if (previousNotification) {
                 setNftCount(notifications.findIndex(item => item._id === previousNotification._id))
             } else {
-                setNftCount(null)
+                setNftCount(notifications.length)
             }
         }
         else {
@@ -61,12 +61,12 @@ const Notification = () => {
         }
     }, [notifications, user])
 
-
     const notificationViewHandle = () => {
         const ntfView = notifications[0]?.view || [];
         const userEmail = user?.email
+        const body = { view: [userEmail, ...ntfView] }
         if (ntfView.filter(single => single === user?.email).length === 0) {
-            axios.patch(`http://localhost:5000/notification/${notifications[0]?._id}`, { view: [userEmail, ...ntfView] })
+            axios.patch(`https://vibewabe-server.vercel.app/notification/${notifications[0]?._id}`,body )
                 .then(res => setNftCounterHide(true))
                 .catch(err => console.log(err.message))
         }
@@ -81,12 +81,13 @@ const Notification = () => {
                 <div onClick={() => setHidden(!hidden)} className="cursor-pointer relative">
                     {
                         nftCounterHide ? ''
-                        : <span className={`absolute -top-2 -right-[2px] text-white rounded-full bg-[#ed7d25] font-medium text-xs px-1 `}>
-                        {
-                            nftCount
-                        }
-                    </span>
+                            : <span className={`absolute -top-2 -right-[2px] text-white rounded-full bg-[#ed7d25] font-medium text-xs px-1 `}>
+                                {
+                                    nftCount
+                                }
+                            </span>
                     }
+
                     <IoIosNotifications className="text-gray-100 text-2xl" />
                 </div>
 
