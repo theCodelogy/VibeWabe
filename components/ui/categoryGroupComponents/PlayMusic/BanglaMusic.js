@@ -28,9 +28,27 @@ import Image from "next/image";
 import { useTranslation } from "react-i18next";
 import { IoIosMusicalNotes } from 'react-icons/io';
 import Link from "next/link";
+import axios from "axios";
+import { useEffect, useState } from "react";
 
 
-const BanglaMusic = ({allMusics, category}) => {
+const BanglaMusic = ({ category}) => {
+
+  const [allMusics, setAllMusics] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      axios
+        .get(`https://vibewabe-server.vercel.app/music?category=remix&sortBy=view&sort=-1&limit=20`)
+        .then((res) => {
+            setAllMusics(res.data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching comments:", error);
+          setLoading(false);
+        });
+    }, []);
     return (
         <div>
             <div className="px-5 container mx-auto mt-20 mb-28">
@@ -87,7 +105,7 @@ const BanglaMusic = ({allMusics, category}) => {
           className="mySwiper"
         >
           {/* slide1 */}
-          {
+          { loading ? <span className="loading loading-bars loading-lg"></span> :
                     allMusics.map(music => <SwiperSlide key={music?._id}>
                         <Link href={`/music/${music?._id}`}>
             <div className="group relative h-40 md:h-60 lg:h-60 w-full md:w-50 lg:w-50  mt-5 hover:opacity-100 transition-opacity duration-300 ">

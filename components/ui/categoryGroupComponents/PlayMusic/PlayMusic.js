@@ -20,38 +20,6 @@ const PlayMusic = ({ musicPlay, id }) => {
 
     const [isLikeActive, setIsLikeActive] = useState(false);
     const [isDislikeActive, setIsDislikeActive] = useState(false);
-  
-    // useEffect(() => {
-    //   setIsLikeActive(singleVideo.like > 0);
-    //   setIsDislikeActive(singleVideo.disLike > 0);
-    // }, [singleVideo.like, singleVideo.disLike]);
-
-    // const handleLike = () => {
-    //     const newLikeCount = isLikeActive ? singleVideo.like - 1 : singleVideo.like + 1 ;
-    //     const newDislikeCount = isDislikeActive ? singleVideo.disLike - 1 : singleVideo.disLike;
-    
-    //     axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { like: newLikeCount, disLike: newDislikeCount })
-    //       .then(res => {
-    //         refetch();
-    //         setIsLikeActive(!isLikeActive);
-    //         if (isDislikeActive) setIsDislikeActive(false);
-    //       });
-    //   };
-    
-    //   const handleDislike = () => {
-    //     const newDislikeCount = isDislikeActive ? singleVideo.disLike - 1 : singleVideo.disLike + 1;
-    //     const newLikeCount = isLikeActive ? singleVideo.like - 1 : singleVideo.like;
-    
-    //     axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { disLike: newDislikeCount, like: newLikeCount })
-    //       .then(res => {
-    //         refetch();
-    //         setIsDislikeActive(!isDislikeActive);
-    //         if (isLikeActive) setIsLikeActive(false);
-    //       });
-    //   };
-
-
-
 
       const { user } = useContext(authContext);
     //   const { data: singleVideo = [], refetch } = useQuery({
@@ -63,8 +31,6 @@ const PlayMusic = ({ musicPlay, id }) => {
     //   });
     
       const [likeCount, setLikeCount] = useState(0);
-    //   const [isLikeActive, setIsLikeActive] = useState(false);
-    //   const [isDislikeActive, setIsDislikeActive] = useState(false);
     
       useEffect(() => {
         setLikeCount(singleVideo.like);

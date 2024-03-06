@@ -74,7 +74,7 @@ const SpanishMusicCard = ({ category}) => {
                 modules={[Pagination]}
                 className="mySwiper bg-zinc-950  h-80 rounded-md"
             >
-                {
+                {   loading ? <span className="loading loading-bars loading-lg"></span> :
                     spanish.map(music => <SwiperSlide key={music?._id}>
                         <div className='group relative rounded-lg lg:w-48 md:w-48 w-auto lg:h-48 md:h-48 h-56 mt-5 mx-5 py-3'>
                                 <Link href={`/music/${music?._id}`}>
