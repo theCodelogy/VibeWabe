@@ -16,30 +16,9 @@ import useMusicFetch from "@/utils/hooks/useMusicFetch";
 import TopRatedMusic from "@/components/ui/categoryGroupComponents/MusicCategory/TopRatedMusic";
 
 const Musec = async() => {
-  //trending music
-  const roman = await axios.get(`https://vibewabe-server.vercel.app/music?sortBy=view&sort=-1&limit=20`)
-  const romantics = roman.data;
-   //top rated music
-   const topRet = await axios.get(`https://vibewabe-server.vercel.app/music?sortBy=rating&sort=-1&limit=20`)
-   const TopRatedMusics = topRet.data;
   //sad music
   const sad = await axios.get(`https://vibewabe-server.vercel.app/music?recommended=true`)
   const sadMusic = sad.data;
-  //hindi music
-  const res = await axios.get(`https://vibewabe-server.vercel.app/music?language=hindi&sortBy=view&sort=-1&limit=20`)
-  const hindi = res.data;
-  //bangla music
-  const ress = await axios.get(`https://vibewabe-server.vercel.app/music?language=bangla&sortBy=view&sort=-1&limit=20`)
-  const bangla = ress.data;
-  //english music
-  const resh = await axios.get(`https://vibewabe-server.vercel.app/music?language=english&sortBy=view&sort=-1&limit=20`)
-  const english = resh.data;
-  //arabic music
-  const arad = await axios.get(`https://vibewabe-server.vercel.app/music?language=arabic&sortBy=view&sort=-1&limit=20`)
-  const arabic = arad.data;
-  //arabic music
-  const spani = await axios.get(`https://vibewabe-server.vercel.app/music?language=spanish&sortBy=view&sort=-1&limit=20`)
-  const spanish = spani.data;
   return (
     <div className="text-white container mx-auto">
       <MusicBanner></MusicBanner>
@@ -52,30 +31,30 @@ const Musec = async() => {
       
       
       <div className="mb-16">
-      <MusicCategory romantics={romantics} ></MusicCategory>
+      <MusicCategory></MusicCategory>
       </div>
       <div className="mb-16">
-        <TopRatedMusic TopRatedMusics={TopRatedMusics}></TopRatedMusic>
+        <TopRatedMusic></TopRatedMusic>
       </div>
       <HotArtists></HotArtists>
       <div className="mb-16">
-        <BanglaMusicCard bangla={bangla} category={"bangla"}></BanglaMusicCard>
+        <BanglaMusicCard category={"bangla"}></BanglaMusicCard>
       </div>
       <div className="mb-20">
-        <HindiMusicCard hindi={hindi} category={"hindi"}></HindiMusicCard>
+        <HindiMusicCard category={"hindi"}></HindiMusicCard>
       </div>
       <div className="mb-16">
         <NewReleaseMusic sadMusic={sadMusic}></NewReleaseMusic>
       </div>
       
       <div className="mb-16">
-        <EnglishMuiscCard english={english} category={"english"}></EnglishMuiscCard>
+        <EnglishMuiscCard category={"english"}></EnglishMuiscCard>
       </div>
       <div className="mb-16">
-        <ArabicMusicCard arabic={arabic} category={"arabic"}></ArabicMusicCard>
+        <ArabicMusicCard category={"arabic"}></ArabicMusicCard>
       </div>
       <div className="mb-20">
-        <SpanishMusicCard spanish={spanish} category={"spanish"}></SpanishMusicCard>
+        <SpanishMusicCard category={"spanish"}></SpanishMusicCard>
       </div>
     </div>
   );

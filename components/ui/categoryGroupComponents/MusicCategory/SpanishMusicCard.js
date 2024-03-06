@@ -13,10 +13,28 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { IoIosMusicalNotes } from 'react-icons/io';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
-const SpanishMusicCard = ({spanish, category}) => {
+const SpanishMusicCard = ({ category}) => {
     const {t} = useTranslation();
+
+    const [spanish, setSpanish] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      axios
+        .get(`https://vibewabe-server.vercel.app/music?language=spanish&sortBy=view&sort=-1&limit=20`)
+        .then((res) => {
+            setSpanish(res.data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching comments:", error);
+          setLoading(false);
+        });
+    }, []);
     
     return (
         <div className='container mx-auto px-5'>

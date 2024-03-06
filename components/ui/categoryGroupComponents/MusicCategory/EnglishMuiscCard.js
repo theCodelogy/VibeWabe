@@ -13,10 +13,28 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { IoIosMusicalNotes } from 'react-icons/io';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
-const HindiMusicCard = ({english, category}) => {
+const HindiMusicCard = ({ category}) => {
     const {t} = useTranslation();
+
+    const [english, setEnglish] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      axios
+        .get(`https://vibewabe-server.vercel.app/music?language=english&sortBy=view&sort=-1&limit=20`)
+        .then((res) => {
+            setEnglish(res.data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching comments:", error);
+          setLoading(false);
+        });
+    }, []);
     
     return (
         <div className='container mx-auto px-5'>
@@ -56,7 +74,7 @@ const HindiMusicCard = ({english, category}) => {
                 modules={[Pagination]}
                 className="mySwiper bg-zinc-950  h-80 rounded-md"
             >
-                {
+                { loading ? <span className="loading loading-bars loading-lg"></span> :
                     english.map(music => <SwiperSlide key={music?._id}>
                         <div className='group relative rounded-lg lg:w-48 md:w-48 w-auto lg:h-48 md:h-48 h-56 mt-5 mx-5 py-3'>
                                 <Link href={`/music/${music?._id}`}>
