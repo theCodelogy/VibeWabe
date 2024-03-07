@@ -140,7 +140,7 @@ const DailyNews = ({allTv}) => {
   <div className='px-5 container mx-auto mt-20'>
   
    
-       <h3 className='text-white text-xl font-bold'>{t("channel:tv")}</h3>
+       <h3 className='text-white text-xl font-bold mb-10'>{t("channel:tv")}</h3>
        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 ml-5 lg:ml-0'>
        {
          allTv.slice(4, 17).map(tv=> 
