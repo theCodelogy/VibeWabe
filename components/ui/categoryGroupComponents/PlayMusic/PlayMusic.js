@@ -3,8 +3,10 @@ import { GoPlus } from "react-icons/go";
 import { BsThreeDots } from "react-icons/bs";
 import { AiFillDislike, AiFillEye, AiFillLike } from "react-icons/ai";
 import axios from "axios";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { authContext } from "@/utils/AuthProvider";
+import toast from "react-hot-toast";
 
 const PlayMusic = ({ musicPlay, id }) => {
 
@@ -18,33 +20,59 @@ const PlayMusic = ({ musicPlay, id }) => {
 
     const [isLikeActive, setIsLikeActive] = useState(false);
     const [isDislikeActive, setIsDislikeActive] = useState(false);
-  
-    useEffect(() => {
-      setIsLikeActive(singleVideo.like > 0);
-      setIsDislikeActive(singleVideo.disLike > 0);
-    }, [singleVideo.like, singleVideo.disLike]);
 
-    const handleLike = () => {
-        const newLikeCount = isLikeActive ? singleVideo.like - 1 : singleVideo.like + 1 ;
-        const newDislikeCount = isDislikeActive ? singleVideo.disLike - 1 : singleVideo.disLike;
+      const { user } = useContext(authContext);
+    //   const { data: singleVideo = [], refetch } = useQuery({
+    //     queryKey: [],
+    //     queryFn: async () => {
+    //       const res = await axios.get(`https://vibewabe-server.vercel.app/video/${id}`);
+    //       return res.data;
+    //     },
+    //   });
     
-        axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { like: newLikeCount, disLike: newDislikeCount })
+      const [likeCount, setLikeCount] = useState(0);
+    
+      useEffect(() => {
+        setLikeCount(singleVideo.like);
+        setIsLikeActive(Array.isArray(singleVideo.likes) && singleVideo.likes.includes(user.email));
+        setIsDislikeActive(Array.isArray(singleVideo.dislikes) && singleVideo.dislikes.includes(user.email));
+      }, [singleVideo.like, singleVideo.likes, singleVideo.dislikes, user.email]);
+      
+    
+      const handleLike = () => {
+        const currentLikes = singleVideo.likes || []; // Initialize likes as empty array if undefined
+        const newLikes = isLikeActive ? currentLikes.filter(email => email !== user.email) : [...currentLikes, user.email];
+        const newDislikes = isDislikeActive ? singleVideo.dislikes.filter(email => email !== user.email) : singleVideo.dislikes;
+      
+        axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { likes: newLikes, dislikes: newDislikes })
           .then(res => {
             refetch();
             setIsLikeActive(!isLikeActive);
-            if (isDislikeActive) setIsDislikeActive(false);
+            setIsDislikeActive(false);
+            toast.success(isLikeActive ? 'You unliked the video' : 'You liked the video');
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            toast.error('Failed to update like status');
           });
       };
-    
+
+
       const handleDislike = () => {
-        const newDislikeCount = isDislikeActive ? singleVideo.disLike - 1 : singleVideo.disLike + 1;
-        const newLikeCount = isLikeActive ? singleVideo.like - 1 : singleVideo.like;
-    
-        axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { disLike: newDislikeCount, like: newLikeCount })
+        const currentDislikes = singleVideo.dislikes || []; // Initialize dislikes as empty array if undefined
+        const newDislikes = isDislikeActive ? currentDislikes.filter(email => email !== user.email) : [...currentDislikes, user.email];
+        const newLikes = isLikeActive ? singleVideo.likes.filter(email => email !== user.email) : singleVideo.likes;
+      
+        axios.patch(`https://vibewabe-server.vercel.app/music/${id}`, { likes: newLikes, dislikes: newDislikes })
           .then(res => {
             refetch();
+            setIsLikeActive(false);
             setIsDislikeActive(!isDislikeActive);
-            if (isLikeActive) setIsLikeActive(false);
+            toast.success(isDislikeActive ? 'You removed your dislike' : 'You disliked the video');
+          })
+          .catch(error => {
+            console.error('Error:', error);
+            toast.error('Failed to update dislike status');
           });
       };
     return (
@@ -74,14 +102,14 @@ const PlayMusic = ({ musicPlay, id }) => {
                             <div className='flex justify-center items-center w-24'>
                             <AiFillLike className="mb-1"/>
                             </div>
-                            <p className="">Like {singleVideo.like}</p>
+                            <p className="">Like {singleVideo.likes ? singleVideo.likes.length : 0}</p>
                         </button>
 
                         <button onClick={handleDislike} className={`MuiButtonBase-root MuiIconButton-root${!isDislikeActive ? 'text-black' : ' text-red-600'}`} tabIndex="0" type="button" aria-label="down vote">
                             <div className='flex justify-center items-center w-24'>
                             <AiFillDislike className="mb-1"/>
                             </div>
-                            <span className="flex justify-center">Dislike {singleVideo.disLike}</span>
+                            <span className="flex justify-center">Dislike {singleVideo.dislikes ? singleVideo.dislikes.length : 0}</span>
                         </button>
                         <button className="MuiButtonBase-root MuiIconButton-root jss2687" tabIndex="0" type="button" aria-label="add to favorites">
                             <span className="MuiIconButton-label">

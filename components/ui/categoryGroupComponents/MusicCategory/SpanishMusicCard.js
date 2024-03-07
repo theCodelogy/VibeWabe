@@ -13,10 +13,28 @@ import Image from 'next/image';
 import { useTranslation } from 'react-i18next';
 import Link from 'next/link';
 import { IoIosMusicalNotes } from 'react-icons/io';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
 
-const SpanishMusicCard = ({spanish, category}) => {
+const SpanishMusicCard = ({ category}) => {
     const {t} = useTranslation();
+
+    const [spanish, setSpanish] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      axios
+        .get(`https://vibewabe-server.vercel.app/music?language=spanish&sortBy=view&sort=-1&limit=20`)
+        .then((res) => {
+            setSpanish(res.data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching comments:", error);
+          setLoading(false);
+        });
+    }, []);
     
     return (
         <div className='container mx-auto px-5'>
@@ -56,7 +74,7 @@ const SpanishMusicCard = ({spanish, category}) => {
                 modules={[Pagination]}
                 className="mySwiper bg-zinc-950  h-80 rounded-md"
             >
-                {
+                {   loading ? <span className="loading loading-bars loading-lg"></span> :
                     spanish.map(music => <SwiperSlide key={music?._id}>
                         <div className='group relative rounded-lg lg:w-48 md:w-48 w-auto lg:h-48 md:h-48 h-56 mt-5 mx-5 py-3'>
                                 <Link href={`/music/${music?._id}`}>

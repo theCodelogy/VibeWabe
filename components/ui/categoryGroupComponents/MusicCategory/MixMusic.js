@@ -15,8 +15,26 @@ import Image from "next/image";
 import { FaCirclePlay } from 'react-icons/fa6';
 import Link from 'next/link';
 import { IoIosMusicalNotes } from 'react-icons/io';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
 
-const MixMusic = ({romanticMusics, category}) => {
+const MixMusic = ({ category}) => {
+
+    const [romanticMusics, setRomanticMusics] = useState([]);
+    const [loading, setLoading] = useState(true);
+  
+    useEffect(() => {
+      axios
+        .get(`https://vibewabe-server.vercel.app/music?category=Romantic&sortBy=view&sort=-1&limit=20`)
+        .then((res) => {
+            setRomanticMusics(res.data);
+          setLoading(false);
+        })
+        .catch((error) => {
+          console.error("Error fetching comments:", error);
+          setLoading(false);
+        });
+    }, []);
     return (
         <div>
            <div className="my-5 bg-black px-5 pb-10">
@@ -42,7 +60,7 @@ const MixMusic = ({romanticMusics, category}) => {
                                 modules={[EffectCards]}
                                 className="mySwiper h-96 w-64"
                             >
-                                {
+                                {  loading ? <span className="loading loading-bars loading-lg"></span> :
                                     romanticMusics.map(romanticMusic => <SwiperSlide key={romanticMusic?._id}> 
                                     <Link href={`/music/${romanticMusic?._id}`}>
                                     <div className='group relative rounded-lg h-full w-full mt-5 mx-5'>
