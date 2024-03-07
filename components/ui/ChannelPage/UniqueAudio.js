@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const uniqueAudio = () => {
   return (
-    <div className="container mx-auto px-5 mt-10">
+    <div className="container mx-auto px-5 mt-20">
     <div className=" lg:px-20 bg-[#303030]">
       <section className="grid grid-cols-1 lg:grid-cols-2 items-center">
         {/* left div */}

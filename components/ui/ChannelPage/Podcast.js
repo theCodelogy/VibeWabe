@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Podcast = ({allPodcast}) => {
   const { t } = useTranslation();
     return (
-        <div className="container mx-auto px-5 mt-10 ">
+        <div className="container mx-auto px-5 mt-20 ">
             <h2 className="text-white text-xl font-bold mb-4"> {t("channel:podcast")}</h2>
             <h2 className="text-slate-300 text-2xl font-medium mb-10">Stay Updated With Vibewave Podcast</h2>
      
