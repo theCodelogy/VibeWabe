@@ -20,7 +20,7 @@ const FreeTrailCard = () => {
             role: 'freeTrail',
             freeTrailInfo: {
                 takeingTime: new Date(),
-                duration: 60,
+                duration: 43200,
             }
         }
         axios.get(`https://vibewabe-server.vercel.app/user/${user?.email}`)
@@ -42,7 +42,7 @@ const FreeTrailCard = () => {
 
         <div className="relative p-8 border border-gray-200 rounded-2xl shadow-sm flex flex-col">
             <div className="flex-1">
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">For : 1 Hour</h3>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-red-500 to-yellow-500 text-transparent bg-clip-text">For : 1 Month</h3>
                 <p className="absolute top-0 py-1.5 px-4 bg-gradient-to-r from-red-500 to-yellow-500  text-white rounded-full text-xs font-semibold uppercase tracking-wide transform -translate-y-1/2">
                     Free Trail
                 </p>
