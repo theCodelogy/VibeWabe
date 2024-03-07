@@ -104,7 +104,7 @@ const ChannelTable = () => {
     return (
         <div>
              <div className="overflow-x-auto">
-                <div className='flex items-center justify-center gap-3 mb-5 mt-3'>
+                {/* <div className='flex items-center justify-center gap-3 mb-5 mt-3'>
 
                     <select onChange={filterHandle} defaultValue={'default'} className='px-3 md:px-4 lg:px-6 py-1 lg:py-2 rounded-sm bg-slate-700 text-white shadow-sm shadow-gray-500 text-xs lg:text-sm'>
                         <option disabled value={'default'}>Tag..</option>
@@ -140,7 +140,7 @@ const ChannelTable = () => {
 
 
                     </div>
-                </div>
+                </div> */}
                 <table className="table table-xs lg:table-sm bg-[#101726] text-white px-0 mx-0 w-full ">
                     <thead>
                         <tr className='text-gray-200 text-[10px] md:text-xs font-light '>
@@ -152,7 +152,7 @@ const ChannelTable = () => {
                             <th className='font-light lg:font-medium'>Views</th>
                             <th className='font-light lg:font-medium'>Recom..</th>
                             <th className='font-light lg:font-medium'>Featured</th>
-                            <th className='font-light lg:font-medium'>Update</th>
+                            {/* <th className='font-light lg:font-medium'>Update</th> */}
                             <th className='font-light lg:font-medium'>Delete</th>
                         </tr>
                     </thead>
@@ -178,7 +178,7 @@ const ChannelTable = () => {
                             <th className='font-light lg:font-medium'>Views</th>
                             <th className='font-light lg:font-medium'>Recom..</th>
                             <th className='font-light lg:font-medium'>Featured</th>
-                            <th className='font-light lg:font-medium'>Update</th>
+                            {/* <th className='font-light lg:font-medium'>Update</th> */}
                             <th className='font-light lg:font-medium'>Delete</th>
                         </tr>
 

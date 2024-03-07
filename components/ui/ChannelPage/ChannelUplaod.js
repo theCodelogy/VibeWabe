@@ -7,6 +7,7 @@ import "primereact/resources/themes/lara-light-cyan/theme.css";
 import axios from "axios";
 
 const ChannelUplaod = () => {
+    const [isNotifying, setIsNotifying]=useState(false)
     const [selectedChannelTags, setSelectedChannelTags] = useState([]);
     const channelTags = [
         { name: 'tv', code: 'TV' },
@@ -40,7 +41,7 @@ const ChannelUplaod = () => {
             date: new Date().toLocaleDateString('en-US')
         }
 
-        const res = await axios.post('http://localhost:5000/channel', channel)
+        const res = await axios.post(`https://vibewabe-server.vercel.app/channel?notifyingUser=${isNotifying}`, channel)
         if (res.data.insertedId) {
             toast.success('Successfully Upload!')
             setSelectedChannelTags([])
@@ -142,6 +143,12 @@ const ChannelUplaod = () => {
 
                 <textarea {...register("description", { required: "This field is required" })} className=" md:mt-6 drop-shadow-lg w-full p-3 bg-[#101726] text-white rounded flex-1" name="description" placeholder="Enter Description" id="" rows="7"></textarea>
 
+                <div className="mt-3 ">
+                        <input className="cursor-pointer w-4" onChange={()=>setIsNotifying(!isNotifying)} id="notification" type="checkbox" />
+                        <label className="text-base font-medium ml-1 cursor-pointer" for='notification'>
+                            Notifying Users For This Channel.
+                        </label>
+                    </div>
 
                 <div className=" mt-6">
                     <button type="submit" className="bg-[#6D28D9 bg-gradient-to-r from-red-600 to-zinc-500 font-mdeium text-lg drop-shadow-md text-white transition-all hover:scale-95 ease-in-out duration-200 py-[10px] px-8 w-full rounded flex items-center justify-center">UPLOAD</button>

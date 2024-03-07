@@ -96,12 +96,24 @@ import { MdOutlineSpaceDashboard } from "react-icons/md";
 import { LuHistory } from "react-icons/lu";
 import { MdPlaylistAdd } from "react-icons/md";
 import { IoIosNotifications } from "react-icons/io";
+import axios from "axios";
+import Notification from "@/components/ui/Notification/Notification";
+import { usePathname } from "next/navigation";
 
 const NavBtn = () => {
-  const { user, signout } = useContext(authContext);
+  const pathname = usePathname()
+  const { user, signout, isLoading } = useContext(authContext);
   const [showProfile, setShowProfile] = useState(false);
   const { t } = useTranslation();
   const dropdownRef = useRef(null);
+
+// get current user from database
+    const [currentUser, setCurrentUser] = useState('')
+    useEffect(() => {
+        axios.get(`https://vibewabe-server.vercel.app/user/${user?.email}`)
+            .then(res => setCurrentUser(res.data))
+    }, [user])
+
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -121,7 +133,12 @@ const NavBtn = () => {
       {user?.email ? (
         <>
           <LanguageChanger />
-          <IoIosNotifications className="text-gray-100 text-2xl" />
+          {/* notification component */}
+          {
+            pathname.split('/')[1] === 'video' || pathname.split('/')[1] === 'music' || pathname.split('/')[1] === 'channel' ?
+            <Notification/> : ''
+          }
+          
           <div ref={dropdownRef} className="dropdown dropdown-end">
             <label
               onClick={() => {
@@ -172,12 +189,18 @@ const NavBtn = () => {
                     </div>
                   </div>
                   <div className="divider"></div>
+
+                  {/* show dashboard by admin role */}
+                 {
+                  currentUser?.admin===true?
                   <li>
-                    <Link href={"/dashboard/profile"}>
-                      <MdOutlineSpaceDashboard />
-                      Dashboard
-                    </Link>
-                  </li>
+                  <Link href={"/dashboard/profile"}>
+                    <MdOutlineSpaceDashboard />
+                    Dashboard
+                  </Link>
+                </li>:''
+                 }
+                 
                   <li>
                     <Link href={"/mystuff"}>
                       <LuHistory />

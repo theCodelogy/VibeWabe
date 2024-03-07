@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const Podcast = ({allPodcast}) => {
   const { t } = useTranslation();
     return (
-        <div className="container mx-auto px-5 mt-10 ">
+        <div className="container mx-auto px-5 mt-20 ">
             <h2 className="text-white text-xl font-bold mb-4"> {t("channel:podcast")}</h2>
             <h2 className="text-slate-300 text-2xl font-medium mb-10">Stay Updated With Vibewave Podcast</h2>
      
@@ -43,7 +43,7 @@ const Podcast = ({allPodcast}) => {
          <h2  className="text-white font-bold text-xl text-left mb-2">{data?.title}</h2>
          <h2 className="text-white text-base font-medium text-left mb-2">{data?.language}</h2>
          <h2 className="text-slate-300 text-sm text-left mb-2 w-3/4">{data?.description}</h2>
-         <h2 className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>{data?.views}</h2>
+         <h2 className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>{data?.view}</h2>
         </div>
       </div>
                 </div>)

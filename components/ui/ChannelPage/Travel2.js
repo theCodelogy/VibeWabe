@@ -111,9 +111,9 @@ const Travel2 = ({allDocumentary}) => {
             <h2 className=" text-sm text-slate-300 hover:text-sky-400">{data?.description}</h2>
             </div>)
           }
-          <Link href={`channel/documentary/id`}>
+          {/* <Link href={`channel/documentary/id`}>
           <div className="w-[150px] h-[100px] mx-auto">
-          <button className=" flex mx-auto justify-center mt-4 text-xs rounded-lg px-3 py-2 bg-gradient-to-r from-red-600 to-zinc-600  text-slate-300 hover:text-white ">Documentary</button> </div></Link>
+          <button className=" flex mx-auto justify-center mt-4 text-xs rounded-lg px-3 py-2 bg-gradient-to-r from-red-600 to-zinc-600  text-slate-300 hover:text-white ">Documentary</button> </div></Link> */}
         </div>
         {/* third part */}
         <div className=" bg-zinc-700 rounded-md mb-3 ">

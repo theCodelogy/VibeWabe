@@ -13,7 +13,7 @@ const Login = () => {
                             <LoginForm/>
                         </div>
                         <div className="hidden md:block ">
-                            <Image className="" src={liginimg } alt="register image" />
+                            <Image className="" src={liginimg } placeholder="blur" alt="register image" />
                         </div>
                     </div>
 

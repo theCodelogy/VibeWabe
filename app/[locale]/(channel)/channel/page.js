@@ -68,11 +68,12 @@ const channel = async() => {
         <Sports allFootball={allFootball} allCricket={allCricket}></Sports>
       </div>
       <div>
-        <Podcast allPodcast={allPodcast}></Podcast>
-      </div>
-      <div>
         <UniqueAudio></UniqueAudio>
       </div>
+      <div>
+        <Podcast allPodcast={allPodcast}></Podcast>
+      </div>
+      
       {/* <div>
         <Radio></Radio>
       </div> */}
