@@ -43,7 +43,7 @@ const Podcast = ({allPodcast}) => {
          <h2  className="text-white font-bold text-xl text-left mb-2">{data?.title}</h2>
          <h2 className="text-white text-base font-medium text-left mb-2">{data?.language}</h2>
          <h2 className="text-slate-300 text-sm text-left mb-2 w-3/4">{data?.description}</h2>
-         <h2 className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>{data?.views}</h2>
+         <h2 className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>{data?.view}</h2>
         </div>
       </div>
                 </div>)

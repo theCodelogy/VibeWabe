@@ -88,7 +88,7 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
         <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.title?.length > 22 ? video.title.slice(0, 20) + '..' : video.title}</td>
         <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.date}</td>
         <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.tags}</td>
-        <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.views}</td>
+        <td className='text-[10px] md:text-xs lg:text-sm font-light lg:font-medium'>{video.view}</td>
         <td>
         
             <input onClick={() => recommendedHendle(video._id)} type="checkbox" className="toggle toggle-accent text-gray-400 toggle-xs lg:toggle-sm " checked={video.recommended === true ? true : false} />
@@ -97,9 +97,9 @@ const ChannelTableRow = ({ video, refetch, videoIndex }) => {
         <td>
             <input onClick={() => featuredHandle(video._id)} type="checkbox" className="toggle toggle-info text-gray-400 toggle-xs lg:toggle-sm " checked={video.featured === true ? true : false} />
         </td>
-        <td>
+        {/* <td>
             <Link href={`/dashboard/updateVideo/${video._id}`} className='text-lg lg:text-2xl cursor-pointer text-indigo-400 '><MdEdit /></Link>
-        </td>
+        </td> */}
         <td>
             <span onClick={() => videoDelete(video._id)} className='  text-red-600   text-lg lg:text-2xl cursor-pointer'><MdDelete /></span>
         </td>
