@@ -46,14 +46,14 @@ const Filter = ({ categoryType }) => {
       <h1 className="text-center text-white text-xl font-semibold my-5">
         {t("Movies:selectcat")}
       </h1>
-      <div className="flex gap-4 justify-center items-center flex-wrap">
+      <div className="flex gap-2 justify-center items-center flex-wrap">
         {filterLinks.map((category, index) => (
           <Link
             href={category.href}
             key={index}
-            className={`py-3 w-[25%] md:w-[20%] lg:w-[13%] flex-shrink-0 text-center hover:bg-gradient-to-r from-red-600 to-zinc-500 border border-gray-300 cursor-pointer duration-[.4s] text-sm flex justify-center text-white ${
+            className={`py-2 w-[20%] md:w-[20%] lg:w-[10%] flex-shrink-0 text-center hover:bg-gradient-to-r from-red-600 to-orange-500 border border-gray-300 cursor-pointer duration-[.4s] text-sm flex justify-center text-white rounded-lg hover:border-none ${
               pathname === category.href
-                ? "bg-gradient-to-r from-red-600 to-zinc-500"
+                ? "bg-gradient-to-r from-red-600 to-orange-500 border-none"
                 : ""
             }`}
           >
