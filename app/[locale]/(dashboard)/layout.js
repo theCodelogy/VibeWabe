@@ -71,7 +71,9 @@ export default function DashboardLayout({ children }) {
                 </Link>
               </li>
               <li>
-                <Link href={"/dashboard/allChannel"}>All Channel</Link>
+                <Link href={"/dashboard/allChannel"}>
+                <BiSolidVideos />
+                  All Channel</Link>
               </li>
               <li>
                 <Link href={"/dashboard/videoUpload"}>
@@ -80,10 +82,14 @@ export default function DashboardLayout({ children }) {
                 </Link>
               </li>
               <li>
-                <Link href={"/dashboard/musicUpload"}>Music Upload</Link>
+                <Link href={"/dashboard/musicUpload"}>
+                <FaFileUpload />
+                  Music Upload</Link>
               </li>
               <li>
-                <Link href={"/dashboard/channelUpload"}>Channel Upload</Link>
+                <Link href={"/dashboard/channelUpload"}>
+                <FaFileUpload />
+                  Channel Upload</Link>
               </li>
               <li>
                 <Link href={"/dashboard/bannerUpload"}>

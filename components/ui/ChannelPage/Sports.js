@@ -343,7 +343,7 @@ const Sports = ({ allCricket, allFootball }) => {
          <h2 className="text-white text-base font-medium text-left mb-2">{data?.language}</h2>
          <h2 className="text-slate-300 text-sm text-left mb-2 w-3/4">{data?.description}</h2>
          <Link href={`channel/sports/${data?._id}`}>
-         <button className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>Watch</button></Link>
+         <button className="py-1 px-2 text-white bg-red-600 text-left mb-2 inline-flex items-center gap-1"><IoEyeOutline/>{data?.view}</button></Link>
         </div>
       </div>
                 </div>)
